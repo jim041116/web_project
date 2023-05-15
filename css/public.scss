@@ -1,6 +1,49 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
 
+// 共同變數-開始
+$web_bg: #F5F5F5;
+$btn_bg: #289DD2;
+$text_color_w: #FFFFFF;
+$text_color_g: #545454;
+$text_size-48px: 48px;
+$text_size-40px: 40px;
+$text_size-32px: 32px;
+$text_size-28px: 28px;
+$text_size-18px: 18px;
+$text_size-16px: 16px;
+$text_weight-b: 700;
+$transition_3ms: all .3s;
+$transition_5ms: all .5s;
+// 共同變數-結束
+
+// 重複使用屬性-開始
+// 藍點標題
+@mixin tittle() {
+    font-size: $text_size-40px;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+
+    div {
+        font-weight: $text_weight-b
+    }
+}
+// 藍點標題文字
+@mixin title_ball() {
+    width: 35px;
+    height: 35px;
+    background-color: $btn_bg;
+    border-radius: 30px;
+    opacity: 0.8;
+    position: absolute;
+    top: -3px;
+    left: -15px;
+    z-index: -1;
+}
+// 重複使用屬性-結束
+
+
 
 // 調整網頁元素-開始
 *,
@@ -27,26 +70,10 @@ ol {
 
 * {
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 // 調整網頁元素-結束
-
-// 共同變數-開始
-$web_bg: #F5F5F5;
-$btn_bg: #289DD2;
-$text_color_w: #FFFFFF;
-$text_color_g: #545454;
-$text_size-48px: 48px;
-$text_size-40px: 40px;
-$text_size-32px: 32px;
-$text_size-28px: 28px;
-$text_size-18px: 18px;
-$text_size-16px: 16px;
-$text_weight-b: 700;
-$transition_3ms: all .3s;
-$transition_5ms: all .5s;
-// 共同變數-結束
 
 body {
     height: 2000px;
@@ -111,8 +138,6 @@ header {
         ul {
             display: flex;
             margin-right: 1.5rem;
-
-
 
             .nav_bar_item {
                 position: relative;

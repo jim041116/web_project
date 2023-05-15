@@ -1,3 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  height: 2000px;
+}
+
+.go_top {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.go_top:hover {
+  background-color: #289DD2;
+}
+.go_top:active {
+  transform: translateY(-10px);
+}
+.go_top:hover > img {
+  animation: go_top 0.8s infinite alternate;
+}
+@keyframes go_top {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#fixedTop {
+  padding: 15px 13px 8px 13px;
+  border-radius: 15px;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 99;
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logo {
+  margin-left: 1rem;
+}
+header #nav_bar ul {
+  display: flex;
+  margin-right: 1.5rem;
+}
+header #nav_bar ul .nav_bar_item {
+  position: relative;
+  padding: 1rem;
+  color: #545454;
+  cursor: pointer;
+}
+header #nav_bar ul .nav_bar_item a {
+  color: #545454;
+}
+header #nav_bar ul .nav_bar_item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: -1px;
+  width: 0%;
+  height: 2px;
+  background-color: #545454;
+  transition: width 0.5s ease-in-out;
+}
+header #nav_bar ul .nav_bar_item:hover::after {
+  width: 100%;
+}
+header #nav_bar ul .nav_bar_item:hover > .drop_nav_bar {
+  display: block;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar {
+  display: none;
+  width: 100%;
+  text-align: center;
+  background-color: #545454;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item {
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
+  color: #FFFFFF;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
+  background-color: #289DD2;
+}
+
 section {
   width: 100%;
 }
