@@ -1,5 +1,24 @@
 @import "./public.scss";
 
+@mixin pc() {
+    @media (max-width:1440px) {
+        @content;
+    }
+}
+
+@mixin pad() {
+    @media (max-width:1024px) {
+        @content;
+    }
+}
+
+@mixin phone() {
+    @media (max-width:576px) {
+        @content;
+    }
+}
+
+
 section {
     width: 100%;
 }
@@ -10,17 +29,27 @@ section {
 }
 
 #video_section {
+    border: 1px solid red;
     position: relative;
-    height: 850px;
+    height: 100vh;
     z-index: -1;
 
     video {
-        height: 730px;
+        height: 80vh;
         position: absolute;
         top: 8%;
         right: 2%;
         z-index: -1;
         border-radius: 15px;
+
+        @include pc() {
+            height: 70vh;
+        }
+        @include pad() {
+            width: 90%;
+            top: 25%;
+            right: 0;
+        }
     }
 
     .g_box {
@@ -28,9 +57,19 @@ section {
         height: 30%;
         background-color: rgba(84, 84, 84, 0.75);
         position: absolute;
-        top: 66.5%;
+        top: 62%;
         left: 12%;
         z-index: -2;
+
+        @include pc() {
+            width: 40%;
+            height: 20%;
+            top: 65%;
+            left: 12%;
+        }
+        @include pad() {
+            display: none;
+        }
     }
 
     .b_box {
@@ -41,6 +80,16 @@ section {
         top: 10%;
         left: 9%;
         z-index: -3;
+
+        @include pc() {
+            width: 20%;
+            height: 60%;
+            top: 10%;
+            left: 9%;
+        }
+        @include pad() {
+            display: none;
+        }
     }
 
     .video_section_text_1,
@@ -57,11 +106,21 @@ section {
     .video_section_text_1 {
         top: 15%;
         left: 15%;
+
+        @include pc() {
+            top: 15%;
+            left: 10%;
+        }
     }
 
     .video_section_text_2 {
         top: 25%;
         left: 19.5%;
+
+        @include pc() {
+            top: 25%;
+            left: 15%;
+        }
     }
 }
 
@@ -117,6 +176,11 @@ section {
             left: -20px;
             opacity: 0.7;
             z-index: -3;
+
+            @include pc() {
+                width: 350px;
+                top: -120px;
+            }
         }
 
         .img_2 {
@@ -126,6 +190,13 @@ section {
             left: -450px;
             opacity: 0.75;
             z-index: -2;
+
+            @include pc() {
+                width: 365px;
+                height: 260px;
+                top: -90px;
+                left: -350px;
+            }
         }
 
         .img_3 {
@@ -135,6 +206,10 @@ section {
             left: -50px;
             opacity: 0.9;
             z-index: -1;
+
+            @include pc() {
+                width: 400px;
+            }
         }
     }
 
@@ -148,7 +223,7 @@ section {
 
     .tittle {
         @include tittle();
-        margin-left: -1500px;
+        margin-left: -80%;
 
         .tittle_ball {
             @include title_ball();
@@ -160,6 +235,11 @@ section {
         height: 250px;
         transition: .5s;
         position: relative;
+
+        @include pc() {
+            width: 50%;
+            height: 180px;
+        }
 
         &:hover {
             filter: brightness(70%);
@@ -199,6 +279,10 @@ section {
                 width: 200px;
                 height: 250px;
                 background-color: #f5f5f5;
+
+                @include pc() {
+                    height: 180px;
+                }
             }
 
             .box_4 {
@@ -206,6 +290,11 @@ section {
                 height: 0;
                 border-top: 250px solid #96161600;
                 border-left: 200px solid #f5f5f5;
+
+                @include pc() {
+                    border-top: 180px solid #96161600;
+                    border-left: 130px solid #f5f5f5;
+                }
             }
         }
 
@@ -215,6 +304,12 @@ section {
             left: 50px;
             margin: 0;
             color: $text_color_g;
+
+            @include pc() {
+                top: 40px;
+                left: 35px;
+                font-size: $text_size-32px;
+            }
 
             font: {
                 size: 45px;
@@ -234,14 +329,14 @@ section {
 
 #news {
     margin: 5rem auto;
-    width: 1330px;
+    width: 75%;
 
     .news_img {
         background-image: url(../img/DJI_0279.jpg);
         background-position: center;
         background-size: cover;
         width: 100%;
-        height: 400px;
+        height: 45vh;
         position: relative;
 
         .tittle {
@@ -373,6 +468,10 @@ section {
     .reserve_section {
         display: flex;
         margin-bottom: 5rem;
+
+        @include pc() {
+            width: 75%;
+        }
 
         .reserve_img {
             background-image: url(../img/DJI_0054.jpg);

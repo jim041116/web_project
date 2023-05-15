@@ -134,26 +134,52 @@ section {
 }
 
 #video_section {
+  border: 1px solid red;
   position: relative;
-  height: 850px;
+  height: 100vh;
   z-index: -1;
 }
 #video_section video {
-  height: 730px;
+  height: 80vh;
   position: absolute;
   top: 8%;
   right: 2%;
   z-index: -1;
   border-radius: 15px;
 }
+@media (max-width: 1440px) {
+  #video_section video {
+    height: 70vh;
+  }
+}
+@media (max-width: 1024px) {
+  #video_section video {
+    width: 90%;
+    top: 25%;
+    right: 0;
+  }
+}
 #video_section .g_box {
   width: 50%;
   height: 30%;
   background-color: rgba(84, 84, 84, 0.75);
   position: absolute;
-  top: 66.5%;
+  top: 62%;
   left: 12%;
   z-index: -2;
+}
+@media (max-width: 1440px) {
+  #video_section .g_box {
+    width: 40%;
+    height: 20%;
+    top: 65%;
+    left: 12%;
+  }
+}
+@media (max-width: 1024px) {
+  #video_section .g_box {
+    display: none;
+  }
 }
 #video_section .b_box {
   width: 25%;
@@ -163,6 +189,19 @@ section {
   top: 10%;
   left: 9%;
   z-index: -3;
+}
+@media (max-width: 1440px) {
+  #video_section .b_box {
+    width: 20%;
+    height: 60%;
+    top: 10%;
+    left: 9%;
+  }
+}
+@media (max-width: 1024px) {
+  #video_section .b_box {
+    display: none;
+  }
 }
 #video_section .video_section_text_1,
 #video_section .video_section_text_2 {
@@ -175,9 +214,21 @@ section {
   top: 15%;
   left: 15%;
 }
+@media (max-width: 1440px) {
+  #video_section .video_section_text_1 {
+    top: 15%;
+    left: 10%;
+  }
+}
 #video_section .video_section_text_2 {
   top: 25%;
   left: 19.5%;
+}
+@media (max-width: 1440px) {
+  #video_section .video_section_text_2 {
+    top: 25%;
+    left: 15%;
+  }
 }
 
 #about_me {
@@ -242,6 +293,12 @@ section {
   opacity: 0.7;
   z-index: -3;
 }
+@media (max-width: 1440px) {
+  #about_me .about_me_img .img_1 {
+    width: 350px;
+    top: -120px;
+  }
+}
 #about_me .about_me_img .img_2 {
   border-radius: 0 0 0 150px;
   position: absolute;
@@ -250,6 +307,14 @@ section {
   opacity: 0.75;
   z-index: -2;
 }
+@media (max-width: 1440px) {
+  #about_me .about_me_img .img_2 {
+    width: 365px;
+    height: 260px;
+    top: -90px;
+    left: -350px;
+  }
+}
 #about_me .about_me_img .img_3 {
   border-radius: 0 0 195px 0;
   position: absolute;
@@ -257,6 +322,11 @@ section {
   left: -50px;
   opacity: 0.9;
   z-index: -1;
+}
+@media (max-width: 1440px) {
+  #about_me .about_me_img .img_3 {
+    width: 400px;
+  }
 }
 
 #attractions {
@@ -270,7 +340,7 @@ section {
   margin: 0;
   z-index: 1;
   position: relative;
-  margin-left: -1500px;
+  margin-left: -80%;
 }
 #attractions .tittle div {
   font-weight: 700;
@@ -291,6 +361,12 @@ section {
   height: 250px;
   transition: 0.5s;
   position: relative;
+}
+@media (max-width: 1440px) {
+  #attractions .attractions_item {
+    width: 50%;
+    height: 180px;
+  }
 }
 #attractions .attractions_item:hover {
   filter: brightness(70%);
@@ -327,11 +403,22 @@ section {
   height: 250px;
   background-color: #f5f5f5;
 }
+@media (max-width: 1440px) {
+  #attractions .attractions_item .box_2 .box_3 {
+    height: 180px;
+  }
+}
 #attractions .attractions_item .box_2 .box_4 {
   width: 0;
   height: 0;
   border-top: 250px solid rgba(150, 22, 22, 0);
   border-left: 200px solid #f5f5f5;
+}
+@media (max-width: 1440px) {
+  #attractions .attractions_item .box_2 .box_4 {
+    border-top: 180px solid rgba(150, 22, 22, 0);
+    border-left: 130px solid #f5f5f5;
+  }
 }
 #attractions .attractions_item p {
   position: absolute;
@@ -342,6 +429,13 @@ section {
   font-size: 45px;
   font-weight: bold;
 }
+@media (max-width: 1440px) {
+  #attractions .attractions_item p {
+    top: 40px;
+    left: 35px;
+    font-size: 32px;
+  }
+}
 #attractions .item_1 {
   margin-left: -400px;
 }
@@ -351,14 +445,14 @@ section {
 
 #news {
   margin: 5rem auto;
-  width: 1330px;
+  width: 75%;
 }
 #news .news_img {
   background-image: url(../img/DJI_0279.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 400px;
+  height: 45vh;
   position: relative;
 }
 #news .news_img .tittle {
@@ -494,6 +588,11 @@ section {
 #reserve .reserve_section {
   display: flex;
   margin-bottom: 5rem;
+}
+@media (max-width: 1440px) {
+  #reserve .reserve_section {
+    width: 75%;
+  }
 }
 #reserve .reserve_section .reserve_img {
   background-image: url(../img/DJI_0054.jpg);
