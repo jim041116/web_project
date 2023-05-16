@@ -1,0 +1,100 @@
+@import "./public.scss";
+
+$green_block:  green;
+$red_block:  red;
+$gray_block:  gray  ;
+body {
+  background-color: $web_bg;
+}
+main {
+  section {
+    .container_info {
+      // border: 2px solid green;
+      align-items: center;
+      margin: 2rem auto;
+      display: flex;
+      width: 70vw;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      .ins_box {
+        // border: 2px solid black;
+        width: 610px;
+        height: 400px;
+        display: flex;
+        margin: 1rem;
+        margin-bottom: 4rem;
+        .left_img {
+          display: flex;
+          justify-content: center;
+          width: 50%;
+          overflow: hidden;
+          border-radius: 0 0 0 100px;
+          img {
+            height: 100%;
+          }
+        }
+        .right_info {
+          width: 50%;
+          // border: 2px solid blue;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: $text_size-16px;
+          .right_info_title {
+            border: 3px solid $text_color_g;
+            // height: 3rem;
+            border-radius: 0 15px 0 0;
+            border-left: 0;
+            p {
+              font-size: $text_size-18px;
+              text-align: center;
+              line-height: 3rem;
+              color: $text_color_g;
+            }
+          }
+          .right_info_content {
+            // border: 2px solid black;
+            padding: 0 1.5rem;
+            p{
+              color: $text_color_g;
+            }
+          }
+          .right_info_footer {
+            // border: 2px solid black;
+            padding: 0.2 0.4rem;
+            .footer_info_a,
+            .footer_info_b,
+            .footer_info_c {
+              // border: 1px solid red;
+              margin: 1rem 0.8rem;
+              .info_title {
+                background-color: $text_color_g;
+                color: $text_color_w;
+              }
+              .green {
+                background-color: $green_block;
+                color: $text_color_w;
+              }
+              .gray {
+                background-color:$gray_block;
+                color: $text_color_w;
+              }
+              span {
+                border: 2px solid $text_color_g;
+                margin-right: 0.2rem;
+                border-radius: 5px;
+                padding: 0.1rem 0.2rem;
+                color: $text_color_g;
+                padding: 0.3rem 0.5rem;
+              }
+            }
+            .footer_info_b hr {
+              margin-top: 1rem;
+              border: 1px solid $text_color_g;
+            }
+          }
+        }
+      }
+    }
+  }
+}
