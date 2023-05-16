@@ -1,0 +1,100 @@
+@import "./public.scss";
+
+section {
+    width: 100%;
+}
+
+#droneInt_bn {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/dorneInt.png);
+    background-position: center;
+    background-size: cover;
+
+    .text_box {
+        color: $text_color_g;
+        padding: 5% 0 0 3%;
+
+        .text_1 {
+            font: {
+                size: $text_size-48px;
+                weight: $text_weight-b;
+            }
+        }
+
+        .text_2 {
+            font: {
+                size: $text_size-32px;
+                weight: $text_weight-b;
+            }
+        }
+    }
+}
+
+.bn_text {
+    width: 80%;
+    height: 40vh;
+    background-image: url(../img/DJI_0155.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 3rem auto;
+    border-radius: 15px;
+    position: relative;
+    top: -150px;
+
+    p {
+        width: 80%;
+        line-height: 25px;
+        color: $text_color_w;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+}
+
+#drone_ifo {
+    .drone_item {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .drone_text {
+            width: 50%;
+            margin-left: 10rem;
+
+            .tittle {
+                @include tittle();
+                color: $text_color_g;
+
+                .tittle_ball {
+                    @include title_ball();
+                }
+            }
+
+            .drone_text_item {
+                color: $text_color_g;
+                margin: 1rem 0;
+            }
+
+            a {
+                border-radius: 15px;
+                text-align: center;
+                width: 25%;
+                padding: 0.5rem 0;
+                display: block;
+                background-color: $btn_bg;
+                color: $text_color_w;
+            }
+        }
+
+        video {
+            border-radius: 15px 0 0 15px;
+            width: 50%;
+        }
+
+        .fpv {
+            border-radius: 0 15px 15px 0;
+            width: 50%;
+        }
+    }
+}

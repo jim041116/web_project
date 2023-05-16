@@ -1,1 +1,223 @@
-/*# sourceMappingURL=droneInt.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+.go_top {
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  transition: 0.3s;
+}
+.go_top:hover {
+  background-color: #289DD2;
+}
+.go_top:active {
+  transform: translateY(-10px);
+}
+.go_top:hover > img {
+  animation: go_top 0.8s infinite alternate;
+}
+@keyframes go_top {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+#fixedTop {
+  padding: 15px 13px 8px 13px;
+  border-radius: 15px;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 99;
+  display: none;
+}
+
+header {
+  width: 100%;
+  height: 110px;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #logo {
+  margin-left: 1rem;
+}
+@media (max-width: 576px) {
+  header #logo img {
+    width: 100px;
+  }
+}
+header #nav_bar ul {
+  display: flex;
+  margin-right: 1.5rem;
+}
+header #nav_bar ul .nav_bar_item {
+  position: relative;
+  padding: 1rem;
+  color: #545454;
+  cursor: pointer;
+}
+header #nav_bar ul .nav_bar_item a {
+  color: #545454;
+}
+header #nav_bar ul .nav_bar_item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: -1px;
+  width: 0%;
+  height: 2px;
+  background-color: #545454;
+  transition: width 0.5s ease-in-out;
+}
+header #nav_bar ul .nav_bar_item:hover::after {
+  width: 100%;
+}
+header #nav_bar ul .nav_bar_item:hover > .drop_nav_bar {
+  display: block;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar {
+  display: none;
+  width: 100%;
+  text-align: center;
+  background-color: #545454;
+  position: absolute;
+  margin-top: 1rem;
+  left: 0;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item {
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
+  color: #FFFFFF;
+}
+header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
+  background-color: #289DD2;
+}
+
+section {
+  width: 100%;
+}
+
+#droneInt_bn {
+  width: 100%;
+  height: 40vh;
+  background-image: url(../img/dorneInt.png);
+  background-position: center;
+  background-size: cover;
+}
+#droneInt_bn .text_box {
+  color: #545454;
+  padding: 5% 0 0 3%;
+}
+#droneInt_bn .text_box .text_1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+#droneInt_bn .text_box .text_2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.bn_text {
+  width: 80%;
+  height: 40vh;
+  background-image: url(../img/DJI_0155.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 3rem auto;
+  border-radius: 15px;
+  position: relative;
+  top: -150px;
+}
+.bn_text p {
+  width: 80%;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#drone_ifo .drone_item {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#drone_ifo .drone_item .drone_text {
+  width: 50%;
+  margin-left: 10rem;
+}
+#drone_ifo .drone_item .drone_text .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  color: #545454;
+}
+#drone_ifo .drone_item .drone_text .tittle div {
+  font-weight: 700;
+}
+#drone_ifo .drone_item .drone_text .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+#drone_ifo .drone_item .drone_text .drone_text_item {
+  color: #545454;
+  margin: 1rem 0;
+}
+#drone_ifo .drone_item .drone_text a {
+  border-radius: 15px;
+  text-align: center;
+  width: 25%;
+  padding: 0.5rem 0;
+  display: block;
+  background-color: #289DD2;
+  color: #FFFFFF;
+}
+#drone_ifo .drone_item video {
+  border-radius: 15px 0 0 15px;
+  width: 50%;
+}
+#drone_ifo .drone_item .fpv {
+  border-radius: 0 15px 15px 0;
+  width: 50%;
+}/*# sourceMappingURL=droneInt.css.map */
