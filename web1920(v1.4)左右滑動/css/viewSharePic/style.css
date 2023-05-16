@@ -214,7 +214,7 @@ button:focus {
 }
 .info .text {
   position: relative;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));
   white-space: nowrap;
   color: #fff;
@@ -282,7 +282,7 @@ button:focus {
 }
 .loading__wrapper .loader--text {
   color: #fff;
-  font-family: "Montserrat";
+  /* font-family: "Montserrat"; */
   font-weight: 500;
   margin-bottom: 1.4rem;
 }

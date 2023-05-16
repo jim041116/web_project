@@ -1,24 +1,5 @@
 @import "./public.scss";
 
-@mixin pc() {
-    @media (max-width:1440px) {
-        @content;
-    }
-}
-
-@mixin pad() {
-    @media (max-width:1024px) {
-        @content;
-    }
-}
-
-@mixin phone() {
-    @media (max-width:576px) {
-        @content;
-    }
-}
-
-
 section {
     width: 100%;
 }
@@ -29,10 +10,16 @@ section {
 }
 
 #video_section {
-    border: 1px solid red;
     position: relative;
     height: 100vh;
     z-index: -1;
+
+    @include pad() {
+        height: 60vh;
+    }
+    @include phone() {
+        height: 40vh;
+    }
 
     video {
         height: 80vh;
@@ -47,8 +34,11 @@ section {
         }
         @include pad() {
             width: 90%;
-            top: 25%;
-            right: 0;
+            top: -15%;
+            right: 5%;
+        }
+        @include phone() {
+            top: -40%;
         }
     }
 
@@ -99,6 +89,10 @@ section {
             weight: $text_weight-b;
         }
 
+        @include phone() {
+            font-size: $text_size-18px;
+        }
+
         color: $text_color_w;
         position: absolute;
     }
@@ -130,15 +124,45 @@ section {
     align-items: center;
     height: 700px;
 
+    @include pad() {
+        flex-direction: column;
+        justify-content: start;
+    }
+    @include phone() {
+        height: 70vh;
+    }
+
     .about_me_text {
-        width: 300px;
+        width: 400px;
+        height: 300px;
         margin-left: -5rem;
+
+        @include pad() {
+            margin-top: 2rem;
+            width: 300px;
+            height: 410px;
+        }
+        @include phone() {
+            margin: auto;
+            width: 300px;
+            height: 300px;
+        }
 
         .tittle {
             @include tittle();
 
+            @include phone() {
+                font-size: $text_size-18px;
+            }
+
             .tittle_ball {
                 @include title_ball();
+
+                @include phone() {
+                    width: 20px;
+                    height: 20px;
+                    left: -10px;
+                }
             }
         }
 
@@ -149,6 +173,10 @@ section {
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 3;
+
+            @include phone() {
+                font-size: 14px;
+            }
         }
 
         .more {
@@ -181,6 +209,14 @@ section {
                 width: 350px;
                 top: -120px;
             }
+            @include pad() {
+                width: 250px;
+                top: -30px;
+                left: 30px;
+            }
+            @include phone() {
+                display: none;
+            }
         }
 
         .img_2 {
@@ -197,6 +233,16 @@ section {
                 top: -90px;
                 left: -350px;
             }
+            @include pad() {
+                width: 265px;
+                height: 160px;
+                top: 30px;
+                left: -200px;
+            }
+            @include phone() {
+                top:-180px;
+                left: -100px;
+            }
         }
 
         .img_3 {
@@ -209,6 +255,14 @@ section {
 
             @include pc() {
                 width: 400px;
+            }
+            @include pad() {
+                width: 300px;
+                top: 100px;
+                left: 10px;
+            }
+            @include phone() {
+                display: none;
             }
         }
     }
@@ -225,8 +279,22 @@ section {
         @include tittle();
         margin-left: -80%;
 
+        @include pad() {
+            margin-left: -70%;
+        }
+        @include phone() {
+            font-size: $text_size-18px;
+            margin-left: -60%;
+        }
+
         .tittle_ball {
             @include title_ball();
+
+            @include phone() {
+                width: 20px;
+                height: 20px;
+                left: -10px;
+            }
         }
     }
 
@@ -237,7 +305,7 @@ section {
         position: relative;
 
         @include pc() {
-            width: 50%;
+            width: 80%;
             height: 180px;
         }
 
@@ -274,6 +342,7 @@ section {
             position: absolute;
             top: 0px;
             left: 0;
+            width: 100%;
 
             .box_3 {
                 width: 200px;
@@ -282,6 +351,14 @@ section {
 
                 @include pc() {
                     height: 180px;
+                }
+                @include pad() {
+                    width: 180px;
+                }
+                @include phone() {
+                    width: 100%;
+                    height: 100px;
+                    background-color: #f5f5f58c;
                 }
             }
 
@@ -294,6 +371,10 @@ section {
                 @include pc() {
                     border-top: 180px solid #96161600;
                     border-left: 130px solid #f5f5f5;
+                }
+                @include pad() {
+                    border-top: 0px;
+                    border-left: 0px;
                 }
             }
         }
@@ -310,6 +391,15 @@ section {
                 left: 35px;
                 font-size: $text_size-32px;
             }
+            @include pad() {
+                left: 20px;
+                font-size: $text_size-28px;
+            }
+            @include phone() {
+                top: 10px;
+                left: 5%;
+                font-size: $text_size-28px;
+            }
 
             font: {
                 size: 45px;
@@ -320,10 +410,24 @@ section {
 
     .item_1 {
         margin-left: -400px;
+
+        @include pc() {
+            margin-left: -230px;
+        }
+        @include pad() {
+            margin-left: 0;
+        }
     }
 
     .item_3 {
         margin-left: 400px;
+
+        @include pc() {
+            margin-left: 230px;
+        }
+        @include pad() {
+            margin-left: 0;
+        }
     }
 }
 
@@ -339,11 +443,19 @@ section {
         height: 45vh;
         position: relative;
 
+        @include phone() {
+            height: 30vh;
+        }
+
         .tittle {
             @include tittle();
             position: absolute;
             top: 1rem;
             left: 2rem;
+
+            @include phone() {
+                font-size: $text_size-18px;
+            }
 
             div {
                 color: $text_color_w
@@ -351,6 +463,12 @@ section {
 
             .tittle_ball {
                 @include title_ball();
+
+                @include phone() {
+                    width: 20px;
+                    height: 20px;
+                    left: -10px;
+                }
             }
         }
     }
@@ -361,14 +479,32 @@ section {
         justify-content: space-around;
         align-items: center;
 
+        @include pad() {
+            flex-direction: column;
+        }
+
         .news_box {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
 
-            .news_itemt {
+            @include pad() {
+                grid-template-columns: repeat(1, 1fr);
+                .news_item:last-child {
+                    display: none;
+                }
+            }
+            @include phone() {
+                width: 100%;
+            }
+
+            .news_item {
                 width: 450px;
                 transition: all .5s;
+
+                @include phone() {
+                    width: 100%;
+                }
 
                 &:hover .news_title>.news_title_img {
                     animation: news_move 0.5s infinite alternate;
@@ -398,6 +534,10 @@ section {
                     display: flex;
                     padding: 0.5rem;
 
+                    @include phone() {
+                        font-size: 14px;
+                    }
+
                     div {
                         line-height: 35px;
                     }
@@ -420,6 +560,10 @@ section {
 
                     div {
                         font-size: $text_size-18px;
+
+                        @include phone() {
+                            font-size: 14px;
+                        }
                     }
 
                     .news_title_img {
@@ -428,6 +572,12 @@ section {
                         width: 26px;
                         height: 26px;
                         margin-left: 10rem;
+
+                        @include phone() {
+                            width: 16px;
+                            height: 16px;
+                            margin-left: 3rem;
+                        }
                     }
                 }
             }
@@ -443,6 +593,10 @@ section {
                 text-align: center;
                 line-height: 80px;
                 transition: $transition_3ms;
+
+                @include pad() {
+                    margin-top: 2rem;
+                }
     
                 &:hover {
                     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
@@ -460,8 +614,22 @@ section {
         @include tittle();
         margin: 1.5rem 0 1.5rem -65rem;
 
+        @include pad() {
+            margin: 1.5rem 0 1.5rem -40rem;
+        }
+        @include phone() {
+            font-size: $text_size-18px;
+            margin: 1.5rem 0 1.5rem -10rem;
+        }
+
         .tittle_ball {
             @include title_ball();
+            
+            @include phone() {
+                width: 20px;
+                height: 20px;
+                left: -10px;
+            }
         }
     }
 
@@ -472,6 +640,9 @@ section {
         @include pc() {
             width: 75%;
         }
+        @include pad() {
+            flex-direction: column;
+        }
 
         .reserve_img {
             background-image: url(../img/DJI_0054.jpg);
@@ -480,15 +651,29 @@ section {
             width: 670px;
             height: 630px;
             border-radius: 15px 0 0 15px;
+
+            @include pad() {
+                width: 100%;
+                height: 40vh;
+                border-radius: 15px 15px 0 0;
+            }
         }
 
         .reserve_box {
 
             .item_1 {
                 border-radius: 0 15px 0 0;
+
+                @include pad() {
+                    border-radius: 0;
+                }
             }
             .item_2 {
                 border-radius: 0 0 15px 0;
+
+                @include pad() {
+                    border-radius:  0 0 15px 15px;
+                }
             }
 
             .reserve_item {
@@ -496,12 +681,26 @@ section {
                 width: 630px;
                 height: 210px;
 
+                @include pad() {
+                    width: 100%;
+                }
+
+                .reserve_item_img {
+                    @include phone() {
+                        display: none;
+                    }
+                }
+
                 .reserve_item_img>img {
                     border-radius: 15px;
                 }
 
                 &:hover  .reserve_item_box img {
                     transform: translateX(255px);
+
+                    @include phone() {
+                        transform: translateX(230px);
+                    }
                 }
 
                 a {
@@ -516,6 +715,10 @@ section {
                             color: $text_color_w;
                             font-size: $text_size-18px;
                             padding: 0.5rem;
+
+                            @include phone() {
+                                font-size: 14px;
+                            }
                         }
 
                         .reserve_item_btn {
@@ -524,6 +727,10 @@ section {
                             img {
                                 transition: $transition_5ms;
                                 z-index: 1;
+
+                                @include phone() {
+                                    width: 30px;
+                                }
                             }
 
                             div {
@@ -536,6 +743,10 @@ section {
                                 padding: 0;
                                 margin-left: 1.5rem;
                                 z-index: 2;
+
+                                @include phone() {
+                                    width: 150px;
+                                }
                             }
                         }
                     }
@@ -552,6 +763,16 @@ footer {
     .footer_web_map {
         display: flex;
         justify-content: center;
+
+        @include pad() {
+            flex-direction: column;
+            .web_map_item {
+                display: flex;
+            }
+        }
+        @include phone() {
+            display: none;
+        }
 
         .web_map_item {
             margin: 0.5rem 2rem;
@@ -577,8 +798,20 @@ footer {
         text-align: end;
         margin-right: 2rem;
 
+        @include phone() {
+            text-align: center;
+            margin: 0;
+            img {
+                width: 150px;
+            }
+        }
+
         div {
             color: $text_color_w;
+
+            @include phone() {
+                font-size: 14px;
+            }
         }
     }
 }

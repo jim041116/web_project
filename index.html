@@ -129,7 +129,7 @@
         </div>
         <div class="news_section">
             <div class="news_box">
-                <div class="news_itemt">
+                <div class="news_item">
                     <a href="#">
                         <div class="news_date">
                             <div class="reserve_btn">預約體驗</div>
@@ -141,7 +141,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="news_itemt">
+                <div class="news_item">
                     <a href="#">
                         <div class="news_date">
                             <div class="reserve_btn">預約體驗</div>
@@ -153,7 +153,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="news_itemt">
+                <div class="news_item">
                     <a href="#">
                         <div class="news_date">
                             <div class="reserve_btn">預約體驗</div>
@@ -165,7 +165,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="news_itemt">
+                <div class="news_item">
                     <a href="#">
                         <div class="news_date">
                             <div class="reserve_btn">預約體驗</div>
@@ -332,12 +332,14 @@
         let moreText = document.querySelector('#about_me p');
         more = () => {
             moreText.style.overflow = 'visible';
-            moreText.style.width = '1150px';
+            moreText.style.width = '100%';
+            moreText.style.height = '100%';
             moreText.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
             moreText.style.color = 'white';
             moreText.style.padding = '1rem';
             moreText.style.borderRadius = '15px';
-            moreText.style.lineHeight = '30px';
+            moreText.style.lineHeight = '25px';
+            moreText.style.webkitLineClamp = '99';
 
         }
 
