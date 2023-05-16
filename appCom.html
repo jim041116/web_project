@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP推薦</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/appCom.css" />
+    <link rel="stylesheet" href="./css/appComSlide.css" />
+    <link rel="stylesheet" href="./css/public.css">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="./img/橫向排列.png" alt="logo" width="250px" />
+        </a>
+      </div>
+      <div id="nav_bar">
+        <ul>
+          <li class="nav_bar_item">
+            空拍景點
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">景點推薦</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">景點分享</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            認識空拍機
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">空拍機介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">基礎操作</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">機型介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">空拍法規</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">APP推薦</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">預約專區</a>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">最新消息</a>
+          </li>
+          <li class="nav_bar_item">
+            登入會員
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">登入頁面</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- content內容區 -->
+    <main>
+      <section>
+        <div class="banner">
+          <div class="left_info">
+            <div class="text">
+              <h1>APP推薦</h1>
+              <p>常用APP簡介</p>
+            </div>
+          </div>
+          <div class="background-img"></div>
+        </div>
+      </section>
+      <!-- 左右滾動 -->
+      <section class="silde-section">
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div
+            class="item active"
+            style="background-image: url(./img/lightCut.png)"
+          >
+            <div class="item-desc">
+              <h3>LightCut</h3>
+              <p>content</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./img/windy.png)">
+            <div class="item-desc">
+              <h3>Windy</h3>
+              <p>content</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./img/DJI-FLY.png)">
+            <div class="item-desc">
+              <h3>Dji Fly</h3>
+              <p>content</p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url(./img/UAV-foreacst.png)"
+          >
+            <!-- box_content -->
+            <div class="item-desc">
+              <h3>Uav Foreacst</h3>
+              <p>content</p>
+            </div>
+          </div>
+          <div class="item" style="background-image: url(./img/無人機行動.png)">
+            <div class="item-desc">
+              <h3>無人機行動服務</h3>
+              <p>content</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/appComSlide.js"></script>
+
+    <!-- 幻燈片 -->
+    <script>
+      setInterval(() => {
+        let getNext = document.querySelector(".background-img");
+        if (getNext.style.backgroundImage == 'url("../img/八斗子1000.jpg")') {
+          getNext.style.backgroundImage = 'url("../img/日出1000.jpg")';
+        } else if (
+          getNext.style.backgroundImage == 'url("../img/日出1000.jpg")'
+        ) {
+          getNext.style.backgroundImage = 'url("../img/南子1000.jpg")';
+        } else {
+          getNext.style.backgroundImage = 'url("../img/八斗子1000.jpg")';
+        }
+      }, 4000);
+    </script>
+    <!-- GO-top -->
+    <script>
+      $(function () {
+        $("body").append(
+          '<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>'
+        );
+        let fixedTop = $("#fixedTop");
+        fixedTop.on("click", function () {
+          $("html, body").animate({ scrollTop: "0" }, 1000);
+        });
+        $(window).on("load scroll resize", function () {
+          let showTop = 100;
+          let curScrollTop = $(window).scrollTop();
+
+          if (curScrollTop > showTop) {
+            fixedTop.fadeIn("false");
+          } else {
+            fixedTop.fadeOut("false");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
