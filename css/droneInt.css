@@ -274,6 +274,19 @@ section {
   display: block;
   background-color: #289DD2;
   color: #FFFFFF;
+  animation: btn_mre 1.5s infinite alternate;
+}
+@keyframes btn_mre {
+  from {
+    background-color: #289DD2;
+  }
+  to {
+    background-color: #1d7299;
+  }
+}
+#drone_ifo .drone_item .drone_text a:hover {
+  animation-play-state: paused;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 #drone_ifo .drone_item video {
   border-radius: 15px 0 0 15px;
