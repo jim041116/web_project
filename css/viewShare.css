@@ -126,6 +126,67 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
   background-color: #289DD2;
 }
 
+footer {
+  background-color: #545454;
+  width: 100%;
+}
+footer .footer_web_map {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 992px) {
+  footer .footer_web_map {
+    flex-direction: column;
+  }
+  footer .footer_web_map .web_map_item {
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  footer .footer_web_map {
+    display: none;
+  }
+}
+footer .footer_web_map .web_map_item {
+  margin: 0.5rem 2rem;
+  text-align: center;
+}
+footer .footer_web_map .web_map_item .web_map_title {
+  font-size: 18px;
+}
+footer .footer_web_map .web_map_item li {
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+footer .footer_web_map .web_map_item a:hover li {
+  background-color: #289DD2;
+}
+footer .logo {
+  text-align: end;
+  margin-right: 2rem;
+}
+@media (max-width: 576px) {
+  footer .logo {
+    text-align: center;
+    margin: 0;
+  }
+  footer .logo img {
+    width: 150px;
+  }
+}
+footer .logo div {
+  color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  footer .logo div {
+    font-size: 14px;
+  }
+}
+footer .logo .copyright {
+  padding-bottom: 1rem;
+}
+
 body {
   background-color: #F5F5F5;
 }
@@ -139,7 +200,7 @@ main section .container_info {
   flex-wrap: wrap;
 }
 main section .container_info .ins_box {
-  width: 610px;
+  width: 590px;
   height: 400px;
   display: flex;
   margin: 1rem;
@@ -213,7 +274,7 @@ main section .container_info .ins_box .right_info .right_info_footer .footer_inf
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
   color: #545454;
-  padding: 0.3rem 0.5rem;
+  padding: 0.3rem;
 }
 main section .container_info .ins_box .right_info .right_info_footer .footer_info_b hr {
   margin-top: 1rem;

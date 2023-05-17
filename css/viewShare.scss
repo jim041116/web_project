@@ -1,8 +1,9 @@
 @import "./public.scss";
 
-$green_block:  green;
-$red_block:  red;
-$gray_block:  gray  ;
+$green_block: green;
+$red_block: red;
+$gray_block: gray;
+
 body {
   background-color: $web_bg;
 }
@@ -18,7 +19,7 @@ main {
       flex-wrap: wrap;
       .ins_box {
         // border: 2px solid black;
-        width: 610px;
+        width: 590px;
         height: 400px;
         display: flex;
         margin: 1rem;
@@ -55,7 +56,7 @@ main {
           .right_info_content {
             // border: 2px solid black;
             padding: 0 1.5rem;
-            p{
+            p {
               color: $text_color_g;
             }
           }
@@ -76,7 +77,7 @@ main {
                 color: $text_color_w;
               }
               .gray {
-                background-color:$gray_block;
+                background-color: $gray_block;
                 color: $text_color_w;
               }
               span {
@@ -85,7 +86,7 @@ main {
                 border-radius: 5px;
                 padding: 0.1rem 0.2rem;
                 color: $text_color_g;
-                padding: 0.3rem 0.5rem;
+                padding: 0.3rem;
               }
             }
             .footer_info_b hr {
