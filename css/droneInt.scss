@@ -41,6 +41,7 @@ section {
     border-radius: 15px;
     position: relative;
     top: -150px;
+    background-attachment: fixed;
 
     p {
         width: 80%;
@@ -95,6 +96,40 @@ section {
         .fpv {
             border-radius: 0 15px 15px 0;
             width: 50%;
+        }
+    }
+}
+#drone_use {
+
+    .tittle {
+        @include tittle();
+        color: $text_color_g;
+        margin: 10rem 0 3rem 10rem;
+
+        .tittle_ball {
+            @include title_ball();
+        }
+    }
+
+    .drone_use_text {
+        width: 80%;
+        height: 40vh;
+        background-image: url(../img/DJI_0268.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: auto;
+        border-radius: 15px;
+        position: relative;
+        // top: 150px;
+    
+        p {
+            width: 80%;
+            line-height: 25px;
+            color: $text_color_w;
+            position: absolute;
+            top: 45%;
+            left: 10%;
         }
     }
 }
