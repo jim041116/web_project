@@ -85,6 +85,16 @@ section {
                 display: block;
                 background-color: $btn_bg;
                 color: $text_color_w;
+                animation: btn_mre 1.5s infinite alternate;
+                @keyframes btn_mre {
+                    from {background-color: $btn_bg;}
+                    to {background-color: #1d7299;}
+                }
+
+                &:hover {
+                    animation-play-state: paused;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+                }
             }
         }
 
