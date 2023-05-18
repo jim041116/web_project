@@ -1,0 +1,160 @@
+@import "./css/public.scss";
+
+$raduis: 15px;
+
+@mixin p_text() {
+  width: 80%;
+  line-height: 25px;
+  color: $text_color_w;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+@mixin background() {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+section {
+  position: relative;
+  .banner {
+    background-image: url(./img/law-bg.png);
+    @include background();
+    width: 100%;
+    .law_title_top {
+      padding: 5rem 7rem;
+      line-height: 2rem;
+      h1,
+      p {
+        color: $text_color_w;
+      }
+      h1 {
+        font-size: $text_size-48px;
+      }
+      p {
+        margin-top: 2rem;
+        font-size: $text_size-32px;
+      }
+    }
+  }
+  .middle_text {
+    position: absolute;
+    width: 80%;
+    top: 18rem;
+    left: 10%;
+    background-image: url(./img/伯朗.jpg);
+    @include background();
+    border-radius: $raduis;
+    .incul {
+      @include p_text();
+    }
+  }
+}
+//------ 易觸犯規範 ------//
+section {
+  .law_title_mix {
+    margin-top: 40vh;
+    display: flex;
+    justify-content: center;
+    .tittle {
+      @include tittle();
+      font-size: $text_size-40px;
+      .tittle_ball {
+        @include title_ball();
+      }
+    }
+  }
+  .box_touch {
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    margin: 2rem auto;
+    position: relative;
+    .box_img {
+      width: 660px;
+      height: 500px;
+    }
+    .list_outs {
+      width: 830px;
+      height: 510px;
+      // border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: absolute;
+      right: 3rem;
+      top: 2.5rem;
+      .list {
+        width: 600px;
+        background-color: hsla(0, 0%, 0%, 0.7);
+        padding: 1rem 1.5rem;
+        border-radius: $raduis;
+        color: $text_color_w;
+      }
+      .list_b {
+        margin-left: 60px;
+      }
+      .list_c {
+        margin-left: 120px;
+      }
+      .list_d {
+        margin-left: 180px;
+      }
+      .list_e {
+        margin-left: 240px;
+      }
+    }
+  }
+}
+//------ 限高區域 ------//
+section {
+  .limit_h {
+    width: 70%;
+    margin: 5rem auto;
+    display: flex;
+    // 左邊img & title
+    .left_box {
+      margin-top: 5rem;
+      width: 57%;
+      // title
+      .tittle {
+        @include tittle();
+        font-size: $text_size-40px;
+        .tittle_ball {
+          @include title_ball();
+        }
+      }
+      // 限高照片
+      img {
+        width: 800px;
+        height: 350px;
+        margin-top: 3rem;
+      }
+    }
+    // 右邊img &shadow
+    .shadow_pic {
+      width: 550px;
+      height: 540px;
+      // border: 6px solid black;
+      position: relative;
+      .shadow {
+        background-image: url(./img/law_info模糊.png);
+        width: 420px;
+        height: 420px;
+      }
+      img {
+        position: absolute;
+        width: 450px;
+        height: 450px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+//------ 綠黃紅灰區 ------//
