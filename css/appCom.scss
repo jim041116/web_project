@@ -7,17 +7,14 @@ main {
   width: 65%;
   margin: 0 auto;
   .banner {
-    margin: 2rem 4rem;
-    border: 3px solid rgb(117, 143, 228);
+    margin: 2rem;
     display: flex;
     height: 400px;
     .left_info {
       flex: 0.8;
-      border: 3px solid rgb(233, 26, 26);
       border-radius: 0 0 0 150px;
       background-color: black;
       .text {
-        // border: 1px solid green;
         text-align: center;
         h1 {
           font-size: $text_size-48px;
@@ -37,8 +34,6 @@ main {
       background-size: cover;
       background-position: center;
       transition: ease-in-out 2s;
-      // justify-content: center;
-      // align-items: center;
     }
   }
 }

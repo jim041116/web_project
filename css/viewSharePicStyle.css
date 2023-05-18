@@ -101,11 +101,13 @@ button:focus {
   transform: translateY(-50%);
   z-index: 100;
 }
+/* 左箭頭距離 */
 .cardList__btn.btn--left {
-  left: -5%;
+  left: -30%;
 }
+/* 右箭頭距離 */
 .cardList__btn.btn--right {
-  right: -5%;
+  right: -30%;
 }
 .cardList__btn .icon {
   width: 100%;

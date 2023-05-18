@@ -93,7 +93,7 @@
                     電池續航力：● ● ● ~ ● ● ● ● ●<br>
                     價格：● ● ~ ● ● ● ● ●<br>
                 </div>
-                <a href="#">More</a>
+                <a href="#" class="btnMore" onmouseover="go()"  onmouseout="more()">More</a>
             </div>
             <video src="./img/F19_WM2605_Webclips_banner_PC-M_V1_2400x1440_AfterCodecs.mp4" autoplay loop muted></video>
         </div>
@@ -111,17 +111,17 @@
                     電池續航力：● ● ○ ○ ○<br>
                     價格：● ● ● ○ ○<br>
                 </div>
-                <a href="#">More</a>
+                <a href="#" class="btnMore1" onmouseover="go1()"  onmouseout="more1()">More</a>
             </div>
         </div>
 
     </section>
     <section id="drone_use">
-        <div class="tittle">
-            <div>空拍機運用</div>
-            <div class="tittle_ball"></div>
-        </div>
         <div class="drone_use_text">
+            <div class="tittle">
+                <div>空拍機運用</div>
+                <div class="tittle_ball"></div>
+            </div>
             <p>現在空拍機不是只有娛樂用的功能，在這個數位化的時代空拍機已經被運用在許多領域上，像是在農業、巡檢及土地測量等方面，使用空拍機去完成這些作業已經是很成熟的技術了，可以帶來作業效率的提升及成本上的優化。</p>
         </div>
         <div class="wrapper">
@@ -149,8 +149,7 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae
-                                    suscipit c.</p>
+                                <p>空拍機運用在農業上可不只是能噴灑農藥而已，現在還能透過鏡頭及軟體針對農作物進行數位化的管理，能夠更有效率的管理農田並降低人力成本。</p>
                             </div>
                         </div>
                     </div>
@@ -164,8 +163,7 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae
-                                    suscipit c.</p>
+                                <p>空拍機可在土地測繪、都市計畫、工程管理及自然資源等方面帶來資料收集方面效率的提升，減少人力投入且提供標準化數據模型，讓測繪活動成本大幅降低。</p>
                             </div>
                         </div>
                     </div>
@@ -179,8 +177,7 @@
                         </div>
                         <div class="back">
                             <div class="inner">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae
-                                    suscipit c.</p>
+                                <p>以往需要人力前往高空及高危險環境巡檢及作業等，現在可先透過空拍機了解事故原因或是透過操控空拍機進行巡檢的動作，提升工作效率。</p>
                             </div>
                         </div>
                     </div>
@@ -208,7 +205,7 @@
                     <li>基礎操作</li>
                 </a> 
                 <a href="#">
-                    <li>機型接紹</li>
+                    <li>機型介紹</li>
                 </a> 
                 <a href="#">
                     <li>空拍法規</li>
@@ -266,6 +263,20 @@
                 }
             });
         });
+
+        //控制More跟Go之間的切換
+        let go = () => {
+            document.querySelector('.btnMore').innerHTML = 'Go'
+        }
+        let more = () => {
+            document.querySelector('.btnMore').innerHTML = 'More'
+        }
+        let go1 = () => {
+            document.querySelector('.btnMore1').innerHTML = 'Go'
+        }
+        let more1 = () => {
+            document.querySelector('.btnMore1').innerHTML = 'More'
+        }
     </script>
 </body>
 </html>

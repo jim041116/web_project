@@ -274,6 +274,19 @@ section {
   display: block;
   background-color: #289DD2;
   color: #FFFFFF;
+  animation: btn_mre 1.5s infinite alternate;
+}
+@keyframes btn_mre {
+  from {
+    background-color: #289DD2;
+  }
+  to {
+    background-color: #1d7299;
+  }
+}
+#drone_ifo .drone_item .drone_text a:hover {
+  animation-play-state: paused;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 #drone_ifo .drone_item video {
   border-radius: 15px 0 0 15px;
@@ -284,18 +297,33 @@ section {
   width: 50%;
 }
 
-#drone_use .tittle {
+#drone_use {
+  margin-top: 10rem;
+}
+#drone_use .drone_use_text {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/DJI_0268.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  position: relative;
+}
+#drone_use .drone_use_text .tittle {
   font-size: 40px;
   margin: 0;
   z-index: 1;
   position: relative;
-  color: #545454;
-  margin: 10rem 0 3rem 10rem;
+  color: #FFFFFF;
+  position: absolute;
+  top: 15%;
+  left: 10rem;
 }
-#drone_use .tittle div {
+#drone_use .drone_use_text .tittle div {
   font-weight: 700;
 }
-#drone_use .tittle .tittle_ball {
+#drone_use .drone_use_text .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289DD2;
@@ -305,17 +333,6 @@ section {
   top: -3px;
   left: -15px;
   z-index: -1;
-}
-#drone_use .drone_use_text {
-  width: 80%;
-  height: 40vh;
-  background-image: url(../img/DJI_0268.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: auto;
-  border-radius: 15px;
-  position: relative;
 }
 #drone_use .drone_use_text p {
   width: 80%;
