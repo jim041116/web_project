@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>忘記密碼</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <link rel="stylesheet" href="./css/forgetpw.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="./img/橫向排列.png" alt="logo" width="250px" />
+        </a>
+      </div>
+      <div id="nav_bar">
+        <ul>
+          <li class="nav_bar_item">
+            空拍景點
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">景點推薦</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">景點分享</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            認識空拍機
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">空拍機介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">基礎操作</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">機型介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">空拍法規</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">APP推薦</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">預約專區</a>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">最新消息</a>
+          </li>
+          <li class="nav_bar_item">
+            登入會員
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">登入頁面</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section id="forget_pw">
+      <div class="form_outs">
+      <!-- From title -->
+      <div class="form_title">
+        <div class="tittle">
+            <div>忘記密碼</div>
+            <div class="tittle_ball"></div>
+        </div>
+      </div>
+      <!-- From title -->
+
+        <form name="forget_form" id="forget_form" method="post">
+          <label for="email">會員信箱:</label>
+          <input type="email"  name="email" id="email" title="請輸入註冊信箱" placeholder="輸入信箱" required />
+          <br>
+          <label for="password">密碼:</label>
+          <input type="password" name="password" id="password"  title="請輸入新密碼"  placeholder="輸入密碼" required/>
+          <br>
+          <label for="password_1">確認新密碼:</label>
+          <input type="password"  name="password"  id="password_1"  title="請再次輸入密碼"  placeholder="再次輸入密碼" required />
+                
+          <button type="submit" value="發送驗證信">發送驗證信</button>
+           
+      
+        </form>
+
+      </div>
+    </section>
+    <footer>
+      <p>copyright &copy TravelDrone版權所有 reserved.</p>
+    </footer>
+  </body>
+</html>
