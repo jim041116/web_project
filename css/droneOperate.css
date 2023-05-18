@@ -246,8 +246,6 @@ main section .banner .text_word {
   left: 10%;
   background-image: url(../img/南子.jpg);
   background-position: center;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 main section .banner .text_word p {
   width: 80%;
