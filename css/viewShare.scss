@@ -10,7 +10,6 @@ body {
 main {
   section {
     .container_info {
-      // border: 2px solid green;
       align-items: center;
       margin: 2rem auto;
       display: flex;
@@ -18,7 +17,6 @@ main {
       justify-content: space-evenly;
       flex-wrap: wrap;
       .ins_box {
-        // border: 2px solid black;
         width: 590px;
         height: 400px;
         display: flex;
@@ -36,14 +34,12 @@ main {
         }
         .right_info {
           width: 50%;
-          // border: 2px solid blue;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           font-size: $text_size-16px;
           .right_info_title {
             border: 3px solid $text_color_g;
-            // height: 3rem;
             border-radius: 0 15px 0 0;
             border-left: 0;
             p {
@@ -54,19 +50,16 @@ main {
             }
           }
           .right_info_content {
-            // border: 2px solid black;
             padding: 0 1.5rem;
             p {
               color: $text_color_g;
             }
           }
           .right_info_footer {
-            // border: 2px solid black;
-            padding: 0.2 0.4rem;
+            padding: 0.2rem 0.4rem;
             .footer_info_a,
             .footer_info_b,
             .footer_info_c {
-              // border: 1px solid red;
               margin: 1rem 0.8rem;
               .info_title {
                 background-color: $text_color_g;
