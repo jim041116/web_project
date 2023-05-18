@@ -1,4 +1,4 @@
-@import "./css/public.scss";
+@import "./public.scss";
 
 $raduis: 15px;
 
@@ -23,7 +23,7 @@ $raduis: 15px;
 section {
   position: relative;
   .banner {
-    background-image: url(./img/law-bg.png);
+    background-image: url(../img/law-bg.png);
     @include background();
     width: 100%;
     .law_title_top {
@@ -47,7 +47,7 @@ section {
     width: 80%;
     top: 18rem;
     left: 10%;
-    background-image: url(./img/伯朗.jpg);
+    background-image: url(../img/伯朗.jpg);
     @include background();
     border-radius: $raduis;
     .incul {
