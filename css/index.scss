@@ -17,6 +17,7 @@ section {
     @include pad() {
         height: 60vh;
     }
+
     @include phone() {
         height: 40vh;
     }
@@ -32,11 +33,13 @@ section {
         @include pc() {
             height: 70vh;
         }
+
         @include pad() {
             width: 90%;
             top: -15%;
             right: 5%;
         }
+
         @include phone() {
             top: -40%;
         }
@@ -57,6 +60,7 @@ section {
             top: 65%;
             left: 12%;
         }
+
         @include pad() {
             display: none;
         }
@@ -77,6 +81,7 @@ section {
             top: 10%;
             left: 9%;
         }
+
         @include pad() {
             display: none;
         }
@@ -128,6 +133,7 @@ section {
         flex-direction: column;
         justify-content: start;
     }
+
     @include phone() {
         height: 70vh;
     }
@@ -142,6 +148,7 @@ section {
             width: 300px;
             height: 410px;
         }
+
         @include phone() {
             margin: auto;
             width: 300px;
@@ -209,11 +216,13 @@ section {
                 width: 350px;
                 top: -120px;
             }
+
             @include pad() {
                 width: 250px;
                 top: -30px;
                 left: 30px;
             }
+
             @include phone() {
                 display: none;
             }
@@ -233,14 +242,16 @@ section {
                 top: -90px;
                 left: -350px;
             }
+
             @include pad() {
                 width: 265px;
                 height: 160px;
                 top: 30px;
                 left: -200px;
             }
+
             @include phone() {
-                top:-180px;
+                top: -180px;
                 left: -100px;
             }
         }
@@ -256,11 +267,13 @@ section {
             @include pc() {
                 width: 400px;
             }
+
             @include pad() {
                 width: 300px;
                 top: 100px;
                 left: 10px;
             }
+
             @include phone() {
                 display: none;
             }
@@ -282,6 +295,7 @@ section {
         @include pad() {
             margin-left: -70%;
         }
+
         @include phone() {
             font-size: $text_size-18px;
             margin-left: -60%;
@@ -352,9 +366,11 @@ section {
                 @include pc() {
                     height: 180px;
                 }
+
                 @include pad() {
                     width: 180px;
                 }
+
                 @include phone() {
                     width: 100%;
                     height: 100px;
@@ -372,6 +388,7 @@ section {
                     border-top: 180px solid #96161600;
                     border-left: 130px solid #f5f5f5;
                 }
+
                 @include pad() {
                     border-top: 0px;
                     border-left: 0px;
@@ -391,10 +408,12 @@ section {
                 left: 35px;
                 font-size: $text_size-32px;
             }
+
             @include pad() {
                 left: 20px;
                 font-size: $text_size-28px;
             }
+
             @include phone() {
                 top: 10px;
                 left: 5%;
@@ -414,6 +433,7 @@ section {
         @include pc() {
             margin-left: -230px;
         }
+
         @include pad() {
             margin-left: 0;
         }
@@ -425,6 +445,7 @@ section {
         @include pc() {
             margin-left: 230px;
         }
+
         @include pad() {
             margin-left: 0;
         }
@@ -432,178 +453,34 @@ section {
 }
 
 #news {
-    margin: 5rem auto;
-    width: 75%;
+    margin: 5rem 0;
 
-    .news_img {
-        background-image: url(../img/DJI_0279.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 45vh;
-        position: relative;
-
-        @include phone() {
-            height: 30vh;
-        }
-
-        .tittle {
-            @include tittle();
-            position: absolute;
-            top: 1rem;
-            left: 2rem;
-
-            @include phone() {
-                font-size: $text_size-18px;
-            }
-
-            div {
-                color: $text_color_w
-            }
-
-            .tittle_ball {
-                @include title_ball();
-
-                @include phone() {
-                    width: 20px;
-                    height: 20px;
-                    left: -10px;
-                }
-            }
-        }
-    }
-
-
-    .news_section {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .tittle {
+        @include tittle();
+        margin: 1.5rem 0 1.5rem 0rem;
+        transform: translateX(300px);
+        width: 300px;
 
         @include pad() {
-            flex-direction: column;
+            margin: 1.5rem 0 1.5rem -40rem;
         }
 
-        .news_box {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
+        @include phone() {
+            font-size: $text_size-18px;
+            margin: 1.5rem 0 1.5rem -10rem;
+        }
 
-            @include pad() {
-                grid-template-columns: repeat(1, 1fr);
-                .news_item:last-child {
-                    display: none;
-                }
-            }
+        .tittle_ball {
+            @include title_ball();
+
             @include phone() {
-                width: 100%;
-            }
-
-            .news_item {
-                width: 450px;
-                transition: all .5s;
-
-                @include phone() {
-                    width: 100%;
-                }
-
-                &:hover .news_title>.news_title_img {
-                    animation: news_move 0.5s infinite alternate;
-
-                    @keyframes news_move {
-                        from {
-                            transform: translateX(0);
-                        }
-
-                        to {
-                            transform: translateX(20px);
-                        }
-                    }
-
-                    background-image: url(../img/hand-right_w.svg);
-                }
-
-                &:hover {
-                    background-color: rgba(54, 54, 54, 0.4);
-
-                    &:hover div {
-                        color: $text_color_w;
-                    }
-                }
-
-                .news_date {
-                    display: flex;
-                    padding: 0.5rem;
-
-                    @include phone() {
-                        font-size: 14px;
-                    }
-
-                    div {
-                        line-height: 35px;
-                    }
-
-                    .reserve_btn {
-                        width: 75px;
-                        height: 35px;
-                        background-color: $btn_bg;
-                        border-radius: 15px;
-                        color: $text_color_w;
-                        text-align: center;
-                        margin-right: 2rem;
-                    }
-                }
-
-                .news_title {
-                    display: flex;
-                    margin: 0.5rem 0.5rem 0 0.5rem;
-                    border-bottom: 1px dashed $text_color_g;
-
-                    div {
-                        font-size: $text_size-18px;
-
-                        @include phone() {
-                            font-size: 14px;
-                        }
-                    }
-
-                    .news_title_img {
-                        background-image: url(../img/hand-right.svg);
-                        background-size: cover;
-                        width: 26px;
-                        height: 26px;
-                        margin-left: 10rem;
-
-                        @include phone() {
-                            width: 16px;
-                            height: 16px;
-                            margin-left: 3rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        .news_btn .more {
-                color: $text_color_w;
-                font-size: $text_size-18px;
-                background-color: $btn_bg;
-                width: 110px;
-                height: 80px;
-                border-radius: 15px;
-                text-align: center;
-                line-height: 80px;
-                transition: $transition_3ms;
-
-                @include pad() {
-                    margin-top: 2rem;
-                }
-    
-                &:hover {
-                    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
-                }
+                width: 20px;
+                height: 20px;
+                left: -10px;
             }
         }
     }
+}
 
 #reserve {
     display: flex;
@@ -617,6 +494,7 @@ section {
         @include pad() {
             margin: 1.5rem 0 1.5rem -40rem;
         }
+
         @include phone() {
             font-size: $text_size-18px;
             margin: 1.5rem 0 1.5rem -10rem;
@@ -624,7 +502,7 @@ section {
 
         .tittle_ball {
             @include title_ball();
-            
+
             @include phone() {
                 width: 20px;
                 height: 20px;
@@ -640,6 +518,7 @@ section {
         @include pc() {
             width: 75%;
         }
+
         @include pad() {
             flex-direction: column;
         }
@@ -668,11 +547,12 @@ section {
                     border-radius: 0;
                 }
             }
+
             .item_2 {
                 border-radius: 0 0 15px 0;
 
                 @include pad() {
-                    border-radius:  0 0 15px 15px;
+                    border-radius: 0 0 15px 15px;
                 }
             }
 
@@ -695,7 +575,7 @@ section {
                     border-radius: 15px;
                 }
 
-                &:hover  .reserve_item_box img {
+                &:hover .reserve_item_box img {
                     transform: translateX(255px);
 
                     @include phone() {

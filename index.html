@@ -8,9 +8,13 @@
     <title>TravelDrone</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+    <link rel="stylesheet" href="./css/indexNews.css">
     <link rel="stylesheet" href="./css/index.css">
 
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -51,17 +55,17 @@
                 </li>
                 <li class="nav_bar_item">
                     <a href="#">預約專區</a>
-                </li>               
+                </li>
                 <li class="nav_bar_item">
                     <a href="#">最新消息</a>
-                </li>             
+                </li>
                 <li class="nav_bar_item">登入會員
                     <ul class="drop_nav_bar">
                         <li class="drop_nav_bar_item">
                             <a href="#">登入頁面</a>
                         </li>
                     </ul>
-                </li>              
+                </li>
             </ul>
         </div>
     </header>
@@ -81,12 +85,14 @@
                 <div class="tittle_ball"></div>
             </div>
             <p>空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常看到許多人想加入空拍的行列但卻不得其門而入，甚至是不了解空拍法規導致違規飛行。
-            所以我們想設計出一個介紹空拍機及台灣空拍景點的網站，讓想加入空拍的人有個網站可以了解到關於空拍機的相關資訊及空拍景點，並能透過投稿與大家分享空拍景點，讓大家跟我們一起從另一個角度看世界。</p>
+                所以我們想設計出一個介紹空拍機及台灣空拍景點的網站，讓想加入空拍的人有個網站可以了解到關於空拍機的相關資訊及空拍景點，並能透過投稿與大家分享空拍景點，讓大家跟我們一起從另一個角度看世界。</p>
             <div class="more" onclick="more();">More</div>
         </div>
         <div class="about_me_img">
-            <img class="img_1" src="./img/dji_fly_20230123_114334_435_1674465717246_photo_optimized.jpg" alt="img" width="490px">
-            <img class="img_2" src="./img/dji_fly_20230317_060406_494_1679004451789_photo_optimized.jpg" alt="img" width="465px" height="380px">
+            <img class="img_1" src="./img/dji_fly_20230123_114334_435_1674465717246_photo_optimized.jpg" alt="img"
+                width="490px">
+            <img class="img_2" src="./img/dji_fly_20230317_060406_494_1679004451789_photo_optimized.jpg" alt="img"
+                width="465px" height="380px">
             <img class="img_3" src="./img/DJI_0323.jpg" alt="img" width="565px">
         </div>
     </section>
@@ -121,66 +127,66 @@
         </a>
     </section>
     <section id="news">
-        <div class="news_img">
+        <div class="about_me_text">
             <div class="tittle">
                 <div>最新消息</div>
                 <div class="tittle_ball"></div>
             </div>
-        </div>
-        <div class="news_section">
-            <div class="news_box">
-                <div class="news_item">
-                    <a href="#">
-                        <div class="news_date">
-                            <div class="reserve_btn">預約體驗</div>
-                            <div>2023/4/20</div>
-                        </div>
-                        <div class="news_title">
-                            <div>5月份體驗課程時間出來啦~</div>
-                            <div class="news_title_img"></div>
-                        </div>
-                    </a>
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+
+                        <img src="./img/reserve_img.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">2023/7/7(五)</span>
+                        <div class="blog-slider__title">空拍體驗課程</div>
+                        <div class="blog-slider__text">7月份最後一場空拍體驗課程可以開始預約了，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作嗎?<br>快來參加免費體驗課程由我們帶領你進入空拍的世界~</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
                 </div>
-                <div class="news_item">
-                    <a href="#">
-                        <div class="news_date">
-                            <div class="reserve_btn">預約體驗</div>
-                            <div>2023/4/20</div>
-                        </div>
-                        <div class="news_title">
-                            <div>5月份體驗課程時間出來啦~</div>
-                            <div class="news_title_img"></div>
-                        </div>
-                    </a>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="./img/DJI_0323.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">2023/6/19(一)</span>
+                        <div class="blog-slider__title">精選景點-花蓮清水斷崖</div>
+                        <div class="blog-slider__text">炎炎夏日最適合到海邊消暑，本次新增精選景點為花蓮的清水斷崖，這裡除了可以體驗各項水上活動外也是個適合用空拍機拍攝的景點，但這裡屬於太魯閣國家公園區域，拍攝前請記得到太魯閣國家公園申請拍攝。</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
                 </div>
-                <div class="news_item">
-                    <a href="#">
-                        <div class="news_date">
-                            <div class="reserve_btn">預約體驗</div>
-                            <div>2023/4/20</div>
-                        </div>
-                        <div class="news_title">
-                            <div>5月份體驗課程時間出來啦~</div>
-                            <div class="news_title_img"></div>
-                        </div>
-                    </a>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="./img/reserve_img.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">2023/6/15(四)</span>
+                        <div class="blog-slider__title">空拍體驗課程</div>
+                        <div class="blog-slider__text">7月份第一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作嗎?<br>快來參加免費體驗課程由我們帶領你進入空拍的世界~</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
                 </div>
-                <div class="news_item">
-                    <a href="#">
-                        <div class="news_date">
-                            <div class="reserve_btn">預約體驗</div>
-                            <div>2023/4/20</div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="./img/map.jpg"
+                            alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">2023/6/12(一)</span>
+                        <div class="blog-slider__title">景點查詢地圖上線</div>
+                        <div class="blog-slider__text">買了空拍機還不知道可以去哪裡拍嗎? 現在景點查詢地圖上線囉，只要透過景點查詢地圖就可以瀏覽台灣可空拍景點並顯示景點是否需要申請等空拍資訊。
                         </div>
-                        <div class="news_title">
-                            <div>5月份體驗課程時間出來啦~</div>
-                            <div class="news_title_img"></div>
-                        </div>
-                    </a>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
                 </div>
+
             </div>
-            <a class="news_btn" href="#">
-                <div class="more">More</div>
-            </a>
+            <div class="blog-slider__pagination"></div>
         </div>
     </section>
     <section id="reserve">
@@ -191,60 +197,60 @@
         <div class="reserve_section">
             <div class="reserve_img"></div>
             <div class="reserve_box">
-                    <div class="reserve_item item_1">
-                        <a href="#">
-                            <div class="reserve_item_img">
-                                <img src="./img/reserve_img.jpg" alt="img" width="200px">
+                <div class="reserve_item item_1">
+                    <a href="#">
+                        <div class="reserve_item_img">
+                            <img src="./img/reserve_img.jpg" alt="img" width="200px">
+                        </div>
+                        <div class="reserve_item_box">
+                            <div>
+                                <div>日期:2023/5/20(六)</div>
+                                <div>時間:上午9點</div>
+                                <div>地點：台北-福德坑環保復育公園停車場</div>
                             </div>
-                            <div class="reserve_item_box">
-                                <div>
-                                    <div>日期:2023/5/20(六)</div>
-                                    <div>時間:上午9點</div>
-                                    <div>地點：台北-福德坑環保復育公園停車場</div>
-                                </div>
-                                <div class="reserve_item_btn">
-                                    <img src="./img/sport.svg" alt="img" width="40px">
-                                    <div>點我報名體驗課程!</div>
-                                </div>
+                            <div class="reserve_item_btn">
+                                <img src="./img/sport.svg" alt="img" width="40px">
+                                <div>點我報名體驗課程!</div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="reserve_item">
-                        <a href="#">
-                            <div class="reserve_item_img">
-                                <img src="./img/reserve_img.jpg" alt="img" width="200px">
+                        </div>
+                    </a>
+                </div>
+                <div class="reserve_item">
+                    <a href="#">
+                        <div class="reserve_item_img">
+                            <img src="./img/reserve_img.jpg" alt="img" width="200px">
+                        </div>
+                        <div class="reserve_item_box">
+                            <div>
+                                <div>日期:2023/5/20(六)</div>
+                                <div>時間:上午9點</div>
+                                <div>地點：台北-福德坑環保復育公園停車場</div>
                             </div>
-                            <div class="reserve_item_box">
-                                <div>
-                                    <div>日期:2023/5/20(六)</div>
-                                    <div>時間:上午9點</div>
-                                    <div>地點：台北-福德坑環保復育公園停車場</div>
-                                </div>
-                                <div class="reserve_item_btn">
-                                    <img src="./img/sport.svg" alt="img" width="40px">
-                                    <div>點我報名體驗課程!</div>
-                                </div>
+                            <div class="reserve_item_btn">
+                                <img src="./img/sport.svg" alt="img" width="40px">
+                                <div>點我報名體驗課程!</div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="reserve_item  item_2">
-                        <a href="#">
-                            <div class="reserve_item_img">
-                                <img src="./img/reserve_img.jpg" alt="img" width="200px">
+                        </div>
+                    </a>
+                </div>
+                <div class="reserve_item  item_2">
+                    <a href="#">
+                        <div class="reserve_item_img">
+                            <img src="./img/reserve_img.jpg" alt="img" width="200px">
+                        </div>
+                        <div class="reserve_item_box">
+                            <div>
+                                <div>日期:2023/5/20(六)</div>
+                                <div>時間:上午9點</div>
+                                <div>地點：台北-福德坑環保復育公園停車場</div>
                             </div>
-                            <div class="reserve_item_box">
-                                <div>
-                                    <div>日期:2023/5/20(六)</div>
-                                    <div>時間:上午9點</div>
-                                    <div>地點：台北-福德坑環保復育公園停車場</div>
-                                </div>
-                                <div class="reserve_item_btn">
-                                    <img src="./img/sport.svg" alt="img" width="40px">
-                                    <div>點我報名體驗課程!</div>
-                                </div>
+                            <div class="reserve_item_btn">
+                                <img src="./img/sport.svg" alt="img" width="40px">
+                                <div>點我報名體驗課程!</div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -256,44 +262,44 @@
                 <li class="web_map_title">空拍景點</li>
                 <a href="#">
                     <li>景點推薦</li>
-                </a> 
+                </a>
                 <a href="#">
                     <li>景點分享</li>
-                </a> 
+                </a>
             </ul>
             <ul class="web_map_item">
                 <li class="web_map_title">認識空拍機</li>
                 <a href="#">
                     <li>空拍機介紹</li>
-                </a> 
+                </a>
                 <a href="#">
                     <li>基礎操作</li>
-                </a> 
+                </a>
                 <a href="#">
-                    <li>機型接紹</li>
-                </a> 
+                    <li>機型介紹</li>
+                </a>
                 <a href="#">
                     <li>空拍法規</li>
-                </a> 
+                </a>
                 <a href="#">
                     <li>APP推薦</li>
-                </a> 
+                </a>
             </ul>
             <ul class="web_map_item">
                 <a href="#">
                     <li class="web_map_title">預約專區</li>
-                </a> 
+                </a>
             </ul>
             <ul class="web_map_item">
                 <a href="#">
                     <li class="web_map_title">最新消息</li>
-                </a> 
+                </a>
             </ul>
             <ul class="web_map_item">
                 <li class="web_map_title">登入會員</li>
                 <a href="#">
                     <li>登入頁面</li>
-                </a> 
+                </a>
             </ul>
         </div>
         <div class="logo">
@@ -310,6 +316,9 @@
 
 
     <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script src="./js/indexNews.js"></script>
     <script>
         $(function () {
             $('body').append('<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>');
@@ -323,7 +332,7 @@
 
                 if (curScrollTop > showTop) {
                     fixedTop.fadeIn('false');
-                }else {
+                } else {
                     fixedTop.fadeOut('false');
                 }
             });
@@ -345,4 +354,5 @@
 
     </script>
 </body>
+
 </html>

@@ -191,22 +191,22 @@ section {
   width: 100%;
 }
 
-#droneInt_bn {
+#droneType_bn {
   width: 100%;
   height: 40vh;
-  background-image: url(../img/dorneInt.png);
+  background-image: url(../img/39dc3e04639d280bc0f0817a36040362.jpg);
   background-position: center;
   background-size: cover;
 }
-#droneInt_bn .text_box {
+#droneType_bn .text_box {
   color: #545454;
   padding: 5% 0 0 3%;
 }
-#droneInt_bn .text_box .text_1 {
+#droneType_bn .text_box .text_1 {
   font-size: 48px;
   font-weight: 700;
 }
-#droneInt_bn .text_box .text_2 {
+#droneType_bn .text_box .text_2 {
   font-size: 32px;
   font-weight: 700;
 }
@@ -214,7 +214,7 @@ section {
 .bn_text {
   width: 80%;
   height: 40vh;
-  background-image: url(../img/DJI_0155.jpg);
+  background-image: url(../img/dji_fly_20230124_105622_463_1674529171801_photo_optimized.jpg);
   background-position: center;
   background-size: cover;
   margin: 3rem auto;
@@ -232,113 +232,20 @@ section {
   left: 10%;
 }
 
-#drone_ifo .drone_item {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-#drone_ifo .drone_item .drone_text {
-  width: 50%;
-  margin-left: 10rem;
-}
-#drone_ifo .drone_item .drone_text .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  color: #545454;
-}
-#drone_ifo .drone_item .drone_text .tittle div {
-  font-weight: 700;
-}
-#drone_ifo .drone_item .drone_text .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289DD2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
-}
-#drone_ifo .drone_item .drone_text .drone_text_item {
-  color: #545454;
-  margin: 1rem 0;
-}
-#drone_ifo .drone_item .drone_text a {
-  border-radius: 15px;
-  text-align: center;
-  width: 25%;
-  padding: 0.5rem 0;
-  display: block;
-  background-color: #289DD2;
-  color: #FFFFFF;
-  animation: btn_mre 1.5s infinite alternate;
-}
-@keyframes btn_mre {
-  from {
-    background-color: #289DD2;
-  }
-  to {
-    background-color: #1d7299;
-  }
-}
-#drone_ifo .drone_item .drone_text a:hover {
-  animation-play-state: paused;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
-}
-#drone_ifo .drone_item video {
-  border-radius: 15px 0 0 15px;
-  width: 50%;
-}
-#drone_ifo .drone_item .fpv {
-  border-radius: 0 15px 15px 0;
-  width: 50%;
-}
-
-#drone_use {
-  margin-top: 10rem;
-}
-#drone_use .drone_use_text {
-  width: 100%;
-  height: 50vh;
-  background-image: url(../img/DJI_0268.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+#drone_type .drone_type_btn {
   margin: auto;
-  position: relative;
-}
-#drone_use .drone_use_text .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  color: #FFFFFF;
-  position: absolute;
-  top: 15%;
-  left: 10rem;
-}
-#drone_use .drone_use_text .tittle div {
-  font-weight: 700;
-}
-#drone_use .drone_use_text .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289DD2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
-}
-#drone_use .drone_use_text p {
+  display: flex;
+  justify-content: space-around;
   width: 80%;
-  line-height: 25px;
+}
+#drone_type .drone_type_btn .btn {
+  width: 150px;
+  height: 50px;
+  background-color: #289DD2;
   color: #FFFFFF;
-  position: absolute;
-  top: 45%;
-  left: 10%;
-}/*# sourceMappingURL=droneInt.css.map */
+  text-align: center;
+  line-height: 50px;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}/*# sourceMappingURL=droneType.css.map */
