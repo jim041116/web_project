@@ -518,7 +518,7 @@ section .limit_h .shadow_pic {
   position: relative;
 }
 section .limit_h .shadow_pic .shadow {
-  background-image: url(./img/law_info模糊.png);
+  background-image: url(../img/law_infoVague.png);
   width: 420px;
   height: 420px;
 }

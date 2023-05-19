@@ -1,5 +1,9 @@
 @import "./public.scss";
 
+@mixin backPo() {
+  background-size: cover;
+  background-position: center;
+}
 main {
   position: relative;
   img.fixed-image {
@@ -24,8 +28,7 @@ main {
     .banner {
       background-image: url(../img/operatePic.png);
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      @include backPo();
       height: 40vh;
       display: flex;
       .title {
@@ -54,8 +57,7 @@ main {
         top: 19rem;
         left: 10%;
         background-image: url(../img/南子.jpg);
-        background-position: center;
-        // object-fit: contain;
+        @include backPo();
         p {
           width: 80%;
           line-height: 25px;
@@ -98,8 +100,7 @@ main {
     position: relative;
     .video {
       display: flex;
-      background-position: center;
-      background-size: cover;
+      @include backPo();
       height: 80vh;
       justify-content: center;
       align-items: center;

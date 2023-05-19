@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APP推薦</title>
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/appCom.css" />
     <link rel="stylesheet" href="./css/appComSlide.css" />
-    <link rel="stylesheet" href="./css/public.css">
+    <!-- 輪播 -->
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script src="./js/jquery.jcarousellite.min.js"></script>
     <link
@@ -19,12 +20,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
       <div id="logo">
         <a href="index.html">
-          <img src="./img/橫向排列.png" alt="logo" width="250px" />
+          <img src="./img/logo_g.png" alt="logo" width="250px" />
         </a>
       </div>
       <div id="nav_bar">
@@ -134,36 +142,78 @@
       </section>
     </main>
     <footer>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
-      <div>123</div>
+      <div class="footer_web_map">
+        <ul class="web_map_item">
+          <li class="web_map_title">空拍景點</li>
+          <a href="#">
+            <li>景點推薦</li>
+          </a>
+          <a href="#">
+            <li>景點分享</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <li class="web_map_title">認識空拍機</li>
+          <a href="#">
+            <li>空拍機介紹</li>
+          </a>
+          <a href="#">
+            <li>基礎操作</li>
+          </a>
+          <a href="#">
+            <li>機型介紹</li>
+          </a>
+          <a href="#">
+            <li>空拍法規</li>
+          </a>
+          <a href="#">
+            <li>APP推薦</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <a href="#">
+            <li class="web_map_title">預約專區</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <a href="#">
+            <li class="web_map_title">最新消息</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <li class="web_map_title">登入會員</li>
+          <a href="#">
+            <li>登入頁面</li>
+          </a>
+        </ul>
+      </div>
+      <div class="logo">
+        <div>
+          <a href="index.html">
+            <img src="./img/logo_w.png" alt="logo" width="250px" />
+          </a>
+        </div>
+        <div class="copyright">copyright © TravelDrone 版權所有</div>
+      </div>
     </footer>
-
+    <!-- 輪播 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./js/appComSlide.js"></script>
 
     <!-- 幻燈片 -->
-    <script>
+    <!-- <script>
       setInterval(() => {
         let getNext = document.querySelector(".background-img");
-        if (getNext.style.backgroundImage == 'url("../img/八斗子1000.jpg")') {
-          getNext.style.backgroundImage = 'url("../img/日出1000.jpg")';
-        } else if (
-          getNext.style.backgroundImage == 'url("../img/日出1000.jpg")'
-        ) {
-          getNext.style.backgroundImage = 'url("../img/南子1000.jpg")';
+        if (getNext.style.backgroundImage == 'url("../img/badouzi.jpg")') {
+          getNext.style.backgroundImage = 'url("../img/sunup.jpg")';
+        } else if (getNext.style.backgroundImage == 'url("../img/sunup.jpg")') {
+          getNext.style.backgroundImage = 'url("../img/Nanzihlin.jpg"")';
         } else {
-          getNext.style.backgroundImage = 'url("../img/八斗子1000.jpg")';
+          getNext.style.backgroundImage = 'url("../img/badouzi.jpg")';
         }
       }, 4000);
-    </script>
+    </script> -->
     <!-- GO-top -->
     <script>
       $(function () {
