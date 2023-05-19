@@ -387,7 +387,7 @@ main section .container_info .ins_box .left_img img {
   height: 100%;
 }
 main section .container_info .ins_box .right_info {
-  width: 50%;
+  width: 53%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -411,7 +411,7 @@ main section .container_info .ins_box .right_info .right_info_content p {
   color: #545454;
 }
 main section .container_info .ins_box .right_info .right_info_footer {
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.3rem;
 }
 main section .container_info .ins_box .right_info .right_info_footer .footer_info_a,
 main section .container_info .ins_box .right_info .right_info_footer .footer_info_b,
