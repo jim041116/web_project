@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
 *,
 *::after,
@@ -357,40 +358,174 @@ footer .logo .copyright {
   padding-bottom: 1rem;
 }
 
-body {
-  background-color: #F5F5F5;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-main {
-  width: 65%;
-  margin: 0 auto;
+section {
+  position: relative;
 }
-main section .banner {
-  margin: 2rem;
-  display: flex;
-  height: 400px;
-}
-main section .banner .left_info {
-  flex: 0.8;
-  border-radius: 0 0 0 150px;
-  background-color: black;
-}
-main section .banner .left_info .text {
-  text-align: center;
-}
-main section .banner .left_info .text h1 {
-  font-size: 48px;
-  margin: 6.5rem 0 3rem 0;
-  color: #FFFFFF;
-}
-main section .banner .left_info .text p {
-  font-size: 32px;
-  color: #FFFFFF;
-}
-main section .banner .background-img {
-  flex: 1.5;
-  background-image: url("../img/badouzi.jpg");
+section .banner {
+  background-image: url(../img/law-bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: ease-in-out 2s;
-}/*# sourceMappingURL=appCom.css.map */
+  height: 40vh;
+  width: 100%;
+}
+section .banner .law_title_top {
+  padding: 5rem 7rem;
+  line-height: 2rem;
+}
+section .banner .law_title_top h1,
+section .banner .law_title_top p {
+  color: #FFFFFF;
+}
+section .banner .law_title_top h1 {
+  font-size: 48px;
+}
+section .banner .law_title_top p {
+  margin-top: 2rem;
+  font-size: 32px;
+}
+section .middle_text {
+  position: absolute;
+  width: 80%;
+  top: 18rem;
+  left: 10%;
+  background-image: url(../img/伯朗.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  border-radius: 15px;
+}
+section .middle_text .incul {
+  width: 80%;
+  line-height: 25px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+section .law_title_mix {
+  margin-top: 40vh;
+  display: flex;
+  justify-content: center;
+}
+section .law_title_mix .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  font-size: 40px;
+}
+section .law_title_mix .tittle div {
+  font-weight: 700;
+}
+section .law_title_mix .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .box_touch {
+  height: 60vh;
+  width: 70%;
+  display: flex;
+  margin: 2rem auto;
+  position: relative;
+}
+section .box_touch .box_img {
+  width: 660px;
+  height: 500px;
+}
+section .box_touch .list_outs {
+  width: 830px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 3rem;
+  top: 2.5rem;
+}
+section .box_touch .list_outs .list {
+  width: 600px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+section .box_touch .list_outs .list_b {
+  margin-left: 60px;
+}
+section .box_touch .list_outs .list_c {
+  margin-left: 120px;
+}
+section .box_touch .list_outs .list_d {
+  margin-left: 180px;
+}
+section .box_touch .list_outs .list_e {
+  margin-left: 240px;
+}
+
+section .limit_h {
+  width: 70%;
+  margin: 5rem auto;
+  display: flex;
+}
+section .limit_h .left_box {
+  margin-top: 5rem;
+  width: 57%;
+}
+section .limit_h .left_box .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  font-size: 40px;
+}
+section .limit_h .left_box .tittle div {
+  font-weight: 700;
+}
+section .limit_h .left_box .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .limit_h .left_box img {
+  width: 800px;
+  height: 350px;
+  margin-top: 3rem;
+}
+section .limit_h .shadow_pic {
+  width: 550px;
+  height: 540px;
+  position: relative;
+}
+section .limit_h .shadow_pic .shadow {
+  background-image: url(../img/law_infoVague.png);
+  width: 420px;
+  height: 420px;
+}
+section .limit_h .shadow_pic img {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  right: 0;
+  bottom: 0;
+}/*# sourceMappingURL=law.css.map */
