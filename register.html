@@ -67,7 +67,7 @@
         </ul>
       </div>
     </header>
-    <section id="forget_pw">
+    <section id="register_member">
       <div class="form_outs">
       <!-- From title -->
       <div class="form_title">
@@ -78,27 +78,39 @@
       </div>
      
 
-        <form name="forget_form" id="forget_form" method="post">
+        <form name="register_form" id="register_form" method="post">
+          <div>
+            <label for="username">姓名:</label>
+            <input type="text"name="username" id="username" title="請輸入姓名" placeholder="請輸入姓名" required>
+        
+          </div>
           
           
-          <label for="username">姓名:</label>
-          <legend>姓別:</legend>
-          <input type="sex" name="sex" id="men" value="男"> 
+          <legend>性別:</legend>
+          <div class="sex_select">
+          <input type="radio" name="sex" id="men" value="男">
           <label for="men">男</label>
-          <input type="sex" name="sex" id="woman" value="女" checked>
+          <input type="radio" name="sex" id="woman" value="女" >
           <label for="woman">女</label>
-          <input type="sex" name="sex" id="other" value="其他" checked>
+          <input type="radio" name="sex" id="other" value="其他" checked>
           <label for="other">其他</label>
+          </div>
+    
           <!-- name="member"的member一定要一樣,才知道是一組的 -->
-          <input type="text"name="username" id="username" title="請輸入姓名" placeholder="王大明" required>
+          <div>
+          <label for="email">信箱:</label>
           <input type="email"  name="email" id="email" title="請輸入註冊信箱" placeholder="輸入信箱" required >
+        </div>
           <br>
+          <div>
           <label for="password">密碼:</label>
           <input type="password" name="password" id="password"  title="請輸入新密碼"  placeholder="輸入密碼" required>
+        </div>
           <br>
+          <div>
           <label for="password_1">確認密碼:</label>
           <input type="password"  name="password"  id="password_1"  title="請確認密碼"  placeholder="請確認密碼" required>
-                
+          </div>     
           <button>
                   <span>註冊會員</span>
 
@@ -114,3 +126,6 @@
     </footer>
   </body>
 </html>
+
+
+
