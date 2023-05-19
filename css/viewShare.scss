@@ -10,6 +10,7 @@ body {
 main {
   section {
     .container_info {
+      // border: 2px solid black;
       align-items: center;
       margin: 2rem auto;
       display: flex;
@@ -33,7 +34,7 @@ main {
           }
         }
         .right_info {
-          width: 50%;
+          width: 53%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -56,7 +57,7 @@ main {
             }
           }
           .right_info_footer {
-            padding: 0.2rem 0.4rem;
+            padding: 0.2rem 0.3rem;
             .footer_info_a,
             .footer_info_b,
             .footer_info_c {
