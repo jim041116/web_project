@@ -50,7 +50,7 @@ figure {
 /*   display: block; */
 
 body {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 100%;
   line-height: 1.5;
 }
@@ -87,7 +87,7 @@ Blueish tint overlay
 */
 .hero:after {
   content: "";
-  background: #545454;
+  /* background: #545454; */
   position: absolute;
   top: 0;
   right: 0;
@@ -156,7 +156,7 @@ https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
   text-transform: none;
   transition: opacity 0.15s;
   /* -webkit-appearance: none; */
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
   position: absolute;
   right: 0;
   top: 0;
@@ -183,7 +183,8 @@ https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
 .hamburger-inner::after {
   width: 30px;
   height: 2px;
-  background-color: #fff;
+  /* 漢堡欄顏色 */
+  background-color: #545454;
   border-radius: 4px;
   position: absolute;
   transition-property: -webkit-transform;
@@ -266,7 +267,7 @@ https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
   padding: 2.5em;
   width: 80%;
   margin: 0 auto;
-  border: 2px solid rgb(228, 179, 179);
+  /* border: 2px solid rgb(228, 179, 179); */
 }
 
 #site-nav.is-active {
