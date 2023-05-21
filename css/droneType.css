@@ -417,7 +417,11 @@ section {
   line-height: 50px;
   border-radius: 15px;
   font-size: 18px;
+  transition: all 0.5s;
   cursor: pointer;
+}
+#drone_type .drone_type_btn .novice_btn {
+  background-color: #377491;
 }
 #drone_type .drone_section {
   width: 100%;
@@ -428,80 +432,115 @@ section {
   align-items: center;
   margin-top: 5rem;
 }
-#drone_type .drone_section .novice_item {
+#drone_type .drone_section .drone_type_item {
   width: 80%;
   height: 300px;
   position: relative;
   transition: all 0.5s;
 }
-#drone_type .drone_section .novice_item .img_mini2_se {
+#drone_type .drone_section .drone_type_item .img_mini2_se {
   background-image: url(../img/mini2se.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-#drone_type .drone_section .novice_item .img_mini2 {
+#drone_type .drone_section .drone_type_item .img_mini2 {
   background-image: url(../img/mini2.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-#drone_type .drone_section .novice_item .img_mini3 {
+#drone_type .drone_section .drone_type_item .img_mini3 {
   background-image: url(../img/mini3.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-#drone_type .drone_section .novice_item .img_mini3_pro {
+#drone_type .drone_section .drone_type_item .img_mini3_pro {
   background-image: url(../img/mini3pro.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-#drone_type .drone_section .novice_item .box_2 {
+#drone_type .drone_section .drone_type_item .img_air2s {
+  background-image: url(../img/air2s.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#drone_type .drone_section .drone_type_item .img_m3c {
+  background-image: url(../img/m3c.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#drone_type .drone_section .drone_type_item .img_mv3p {
+  background-image: url(../img/mv3p.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#drone_type .drone_section .drone_type_item .img_fpv {
+  background-image: url(../img/fpv.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#drone_type .drone_section .drone_type_item .img_avata {
+  background-image: url(../img/avata.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+#drone_type .drone_section .drone_type_item .box_2 {
   display: flex;
   position: absolute;
   top: 0px;
   left: 0;
   width: 100%;
 }
-#drone_type .drone_section .novice_item .box_2 .box_3 {
+#drone_type .drone_section .drone_type_item .box_2 .box_3 {
   width: 25%;
   height: 300px;
   background-color: #f5f5f5;
 }
-#drone_type .drone_section .novice_item .box_2 .box_4 {
+#drone_type .drone_section .drone_type_item .box_2 .box_4 {
   width: 0;
   height: 0;
   border-top: 300px solid rgba(150, 22, 22, 0);
   border-left: 300px solid #f5f5f5;
 }
-#drone_type .drone_section .novice_item .novice_text {
+#drone_type .drone_section .drone_type_item .drone_text {
   position: absolute;
   top: 0px;
   left: 0;
-  width: 32%;
+  width: 35%;
   padding: 1rem;
   margin-top: 1.5rem;
 }
-#drone_type .drone_section .novice_item .novice_text .type_title {
+#drone_type .drone_section .drone_type_item .drone_text .type_title {
   font-size: 32px;
   font-weight: 700;
 }
-#drone_type .drone_section .novice_item .novice_text p {
+#drone_type .drone_section .drone_type_item .drone_text p {
   color: #545454;
   margin: 0.5rem 0;
 }
-#drone_type .drone_section .novice_item .novice_text .novice_btn {
+#drone_type .drone_section .drone_type_item .drone_text .more_btn {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-#drone_type .drone_section .novice_item .novice_text .novice_btn div {
+#drone_type .drone_section .drone_type_item .drone_text .more_btn div {
   background-color: rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
   padding: 0.5rem 1rem;
