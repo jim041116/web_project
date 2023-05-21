@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "./public.scss";
 
 $raduis: 15px;
@@ -70,47 +71,64 @@ section {
     }
   }
   .box_touch {
-    height: 60vh;
-    width: 70%;
+    height: 70vh;
+    width: 50%;
     display: flex;
-    margin: 2rem auto;
+    margin: 3rem auto;
     position: relative;
     .box_img {
-      width: 660px;
-      height: 500px;
+      height: 100%;
+      img {
+        width: 600px;
+        height: 100%;
+      }
     }
-    .list_outs {
-      width: 830px;
-      height: 510px;
-      // border: 2px solid black;
+    .col-box {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      position: absolute;
-      right: 3rem;
-      top: 2.5rem;
-      .list {
-        width: 600px;
-        background-color: hsla(0, 0%, 0%, 0.7);
-        padding: 1rem 1.5rem;
-        border-radius: $raduis;
-        color: $text_color_w;
-      }
-      .list_b {
-        margin-left: 60px;
-      }
-      .list_c {
-        margin-left: 120px;
-      }
-      .list_d {
-        margin-left: 180px;
-      }
-      .list_e {
-        margin-left: 240px;
+      width: 100%;
+      align-items: center;
+      .box-silde {
+        position: relative;
+        width: 250px;
+        height: 100px;
+        border: 3px solid #fff;
+        transition: ease-in-out 1.2s;
+        background-color: #289dd2;
+        align-items: center;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 100px;
+        color: #fff;
+        margin: auto 0;
+        box-shadow: inset 0 0 7px black;
+        .box-word {
+          position: absolute;
+          background-color: hsla(0, 0%, 0%, 0.39);
+          width: 400px;
+          height: 90px;
+          z-index: -1;
+          top: 3px;
+          left: -10px;
+          transition: ease-in-out 1.2s;
+          line-height: 1.35rem;
+          padding: 1rem;
+          text-align: left;
+          display: none;
+        }
+        &:hover {
+          cursor: pointer;
+          transform: translateX(100px);
+        }
+        &:hover .box-word {
+          display: block;
+          transform: translateX(-400px);
+        }
       }
     }
   }
 }
+
 //------ 限高區域 ------//
 section {
   .limit_h {
