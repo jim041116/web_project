@@ -545,4 +545,135 @@ section .limit_h .shadow_pic img {
   height: 450px;
   right: 0;
   bottom: 0;
+}
+
+section .law_login {
+  width: 60%;
+  margin: 0 auto;
+}
+section .law_login .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+section .law_login .tittle div {
+  font-weight: 700;
+}
+section .law_login .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .pic_mix {
+  width: 60%;
+  height: 45vh;
+  margin: 2rem auto;
+  position: relative;
+}
+section .pic_mix .pic_text {
+  width: 600px;
+  height: 228px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+section .pic_mix .pic_text .text {
+  padding: 3rem;
+}
+section .pic_mix .pic_text .text p {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+section .pic_mix .pic_p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+section .law_test {
+  width: 60%;
+  margin: 4rem auto 0;
+}
+section .law_test .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+section .law_test .tittle div {
+  font-weight: 700;
+}
+section .law_test .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .law_pic_mix {
+  width: 60%;
+  height: 86vh;
+  margin: 2rem auto 4rem;
+  display: flex;
+  background-image: url(../img/操作證-模糊.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+section .law_pic_mix .mix_left .mix_text {
+  width: 600px;
+  height: 228px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 3rem 5rem;
+  border-radius: 15px;
+}
+section .law_pic_mix .mix_left .mix_text .mix_word {
+  padding: 2rem;
+}
+section .law_pic_mix .mix_left .mix_text .mix_word p {
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+section .law_pic_mix .mix_left .difference {
+  overflow: hidden;
+  width: 480px;
+  height: 480px;
+  margin-left: 2rem;
+}
+section .law_pic_mix .mix_left .difference img {
+  width: 100%;
+}
+section .law_pic_mix .operate {
+  position: relative;
+  width: 100%;
+}
+section .law_pic_mix .operate img {
+  position: absolute;
+  width: 405px;
+  height: 550px;
+  bottom: 1.5rem;
+  left: -8rem;
+}
+
+section .fly-allow {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+section .fly-allow img {
+  width: 100%;
 }/*# sourceMappingURL=law.css.map */

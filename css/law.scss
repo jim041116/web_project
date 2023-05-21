@@ -175,4 +175,120 @@ section {
     }
   }
 }
-//------ 綠黃紅灰區 ------//
+
+//------ 註冊 ------//
+section {
+  .law_login {
+    width: 60%;
+    margin: 0 auto;
+    .tittle {
+      @include tittle();
+      .tittle_ball {
+        @include title_ball();
+      }
+    }
+  }
+  .pic_mix {
+    width: 60%;
+    height: 45vh;
+    margin: 2rem auto;
+    position: relative;
+    .pic_text {
+      width: 600px;
+      height: 228px;
+      background-color: hsla(0, 0%, 0%, 0.5);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      .text {
+        padding: 3rem;
+        p {
+          margin-bottom: 1.5rem;
+          color: #fff;
+        }
+      }
+    }
+    .pic_p {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+//------ 考照相關 ------//
+section {
+  .law_test {
+    width: 60%;
+    margin: 4rem auto 0;
+    .tittle {
+      @include tittle();
+      .tittle_ball {
+        @include title_ball();
+      }
+    }
+  }
+  //  照片
+  .law_pic_mix {
+    width: 60%;
+    height: 86vh;
+    margin: 2rem auto 4rem;
+    display: flex;
+
+    background-image: url(../img/操作證-模糊.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    .mix_left {
+      .mix_text {
+        width: 600px;
+        height: 228px;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 3rem 5rem;
+        border-radius: 15px;
+        .mix_word {
+          padding: 2rem;
+          p {
+            margin-bottom: 1.5rem;
+            color: #fff;
+          }
+        }
+      }
+      .difference {
+        overflow: hidden;
+        width: 480px;
+        height: 480px;
+        margin-left: 2rem;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .operate {
+      position: relative;
+      width: 100%;
+      img {
+        position: absolute;
+        width: 405px;
+        height: 550px;
+        bottom: 1.5rem;
+        left: -8rem;
+      }
+    }
+  }
+}
+
+//------ 安全飛行準則 ------//
+section {
+  .fly-allow {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+}
