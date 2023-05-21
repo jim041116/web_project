@@ -319,6 +319,10 @@ https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
   color: #545454;
 }
 
+#site-nav a {
+  text-decoration: none;
+}
+
 #site-nav ul {
   list-style-type: none;
   margin-top: 1em;
