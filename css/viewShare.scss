@@ -10,19 +10,17 @@ body {
 main {
   section {
     .container_info {
-      // border: 2px solid black;
       align-items: center;
-      margin: 2rem auto;
+      margin:auto;
       display: flex;
       width: 70vw;
-      justify-content: space-evenly;
+      justify-content: center;
       flex-wrap: wrap;
       .ins_box {
         width: 590px;
         height: 400px;
         display: flex;
         margin: 1rem;
-        margin-bottom: 4rem;
         .left_img {
           display: flex;
           justify-content: center;

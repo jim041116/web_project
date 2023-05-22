@@ -363,10 +363,10 @@ body {
 
 main section .container_info {
   align-items: center;
-  margin: 2rem auto;
+  margin: auto;
   display: flex;
   width: 70vw;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 main section .container_info .ins_box {
@@ -374,7 +374,6 @@ main section .container_info .ins_box {
   height: 400px;
   display: flex;
   margin: 1rem;
-  margin-bottom: 4rem;
 }
 main section .container_info .ins_box .left_img {
   display: flex;

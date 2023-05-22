@@ -4,6 +4,8 @@
   background-size: cover;
   background-position: center;
 }
+
+$border-rus: 15px;
 main {
   position: relative;
   img.fixed-image {
@@ -53,7 +55,7 @@ main {
         height: 40vh;
         color: $text_color_w;
         font-size: $text_size-18px;
-        border-radius: 15px;
+        border-radius: $border-rus;
         top: 19rem;
         left: 10%;
         background-image: url(../img/南子.jpg);

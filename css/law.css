@@ -399,10 +399,10 @@ section .big_c .middle_text {
   border-radius: 15px;
 }
 section .big_c .middle_text .incul {
+  position: absolute;
   width: 80%;
   line-height: 25px;
   color: #FFFFFF;
-  position: absolute;
   top: 30%;
   left: 10%;
 }
@@ -458,12 +458,12 @@ section .box_touch .col-box .box-silde {
   width: 250px;
   height: 100px;
   transition: ease-in-out 1.2s;
-  background-color: #289dd2;
+  background-color: #289DD2;
   align-items: center;
   border-radius: 15px;
   text-align: center;
   line-height: 100px;
-  color: #fff;
+  color: #FFFFFF;
   margin: auto 0;
   box-shadow: inset 0 0 7px black;
 }
@@ -586,7 +586,7 @@ section .pic_mix .pic_text .text {
 }
 section .pic_mix .pic_text .text p {
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #FFFFFF;
 }
 section .pic_mix .pic_p {
   position: absolute;
@@ -642,7 +642,7 @@ section .law_pic_mix .mix_left .mix_text .mix_word {
 }
 section .law_pic_mix .mix_left .mix_text .mix_word p {
   margin-bottom: 1.5rem;
-  color: #fff;
+  color: #FFFFFF;
 }
 section .law_pic_mix .mix_left .difference {
   overflow: hidden;
