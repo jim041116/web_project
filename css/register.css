@@ -411,7 +411,8 @@ body {
   border-radius: 40px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 28px;
   width: 60%;
   padding: 12px;
@@ -444,7 +445,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  break-before: always;
+  -moz-column-break-before: always;
+       break-before: always;
 }
 #register_member button span {
   color: #FFFFFF;

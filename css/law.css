@@ -365,6 +365,7 @@ footer .logo .copyright {
 
 section {
   position: relative;
+  z-index: -1;
 }
 section .banner {
   background-image: url(../img/law-bg.png);
