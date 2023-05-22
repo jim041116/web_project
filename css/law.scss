@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "./public.scss";
 
 $raduis: 15px;
@@ -21,8 +20,10 @@ $raduis: 15px;
   padding: 0;
   margin: 0;
 }
+//------- 伯朗 -------
 section {
   position: relative;
+  z-index: -1;
   .banner {
     background-image: url(../img/law-bg.png);
     @include background();
