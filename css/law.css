@@ -358,16 +358,12 @@ footer .logo .copyright {
   padding-bottom: 1rem;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+section .big_c {
+  position: relative;
 }
-
-section {
+section .big_c .banner {
   position: relative;
   z-index: -1;
-}
-section .banner {
   background-image: url(../img/law-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -375,22 +371,22 @@ section .banner {
   height: 40vh;
   width: 100%;
 }
-section .banner .law_title_top {
+section .big_c .banner .law_title_top {
   padding: 5rem 7rem;
   line-height: 2rem;
 }
-section .banner .law_title_top h1,
-section .banner .law_title_top p {
+section .big_c .banner .law_title_top h1,
+section .big_c .banner .law_title_top p {
   color: #FFFFFF;
 }
-section .banner .law_title_top h1 {
+section .big_c .banner .law_title_top h1 {
   font-size: 48px;
 }
-section .banner .law_title_top p {
+section .big_c .banner .law_title_top p {
   margin-top: 2rem;
   font-size: 32px;
 }
-section .middle_text {
+section .big_c .middle_text {
   position: absolute;
   width: 80%;
   top: 18rem;
@@ -402,7 +398,7 @@ section .middle_text {
   height: 40vh;
   border-radius: 15px;
 }
-section .middle_text .incul {
+section .big_c .middle_text .incul {
   width: 80%;
   line-height: 25px;
   color: #FFFFFF;
@@ -461,7 +457,6 @@ section .box_touch .col-box .box-silde {
   position: relative;
   width: 250px;
   height: 100px;
-  border: 3px solid #fff;
   transition: ease-in-out 1.2s;
   background-color: #289dd2;
   align-items: center;
@@ -488,11 +483,11 @@ section .box_touch .col-box .box-silde .box-word {
 }
 section .box_touch .col-box .box-silde:hover {
   cursor: pointer;
-  transform: translateX(100px);
+  transform: translateX(-100px);
 }
 section .box_touch .col-box .box-silde:hover .box-word {
   display: block;
-  transform: translateX(-400px);
+  transform: translateX(280px);
 }
 
 section .limit_h {

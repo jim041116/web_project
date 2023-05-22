@@ -16,44 +16,43 @@ $raduis: 15px;
   background-position: center;
   height: 40vh;
 }
-* {
-  padding: 0;
-  margin: 0;
-}
 //------- 伯朗 -------
 section {
-  position: relative;
-  z-index: -1;
-  .banner {
-    background-image: url(../img/law-bg.png);
-    @include background();
-    width: 100%;
-    .law_title_top {
-      padding: 5rem 7rem;
-      line-height: 2rem;
-      h1,
-      p {
-        color: $text_color_w;
-      }
-      h1 {
-        font-size: $text_size-48px;
-      }
-      p {
-        margin-top: 2rem;
-        font-size: $text_size-32px;
+  .big_c {
+    position: relative;
+    .banner {
+      position: relative;
+      z-index: -1;
+      background-image: url(../img/law-bg.png);
+      @include background();
+      width: 100%;
+      .law_title_top {
+        padding: 5rem 7rem;
+        line-height: 2rem;
+        h1,
+        p {
+          color: $text_color_w;
+        }
+        h1 {
+          font-size: $text_size-48px;
+        }
+        p {
+          margin-top: 2rem;
+          font-size: $text_size-32px;
+        }
       }
     }
-  }
-  .middle_text {
-    position: absolute;
-    width: 80%;
-    top: 18rem;
-    left: 10%;
-    background-image: url(../img/伯朗.jpg);
-    @include background();
-    border-radius: $raduis;
-    .incul {
-      @include p_text();
+    .middle_text {
+      position: absolute;
+      width: 80%;
+      top: 18rem;
+      left: 10%;
+      background-image: url(../img/伯朗.jpg);
+      @include background();
+      border-radius: $raduis;
+      .incul {
+        @include p_text();
+      }
     }
   }
 }
@@ -71,12 +70,15 @@ section {
       }
     }
   }
+
+  // 大外框
   .box_touch {
     height: 70vh;
     width: 50%;
     display: flex;
     margin: 3rem auto;
     position: relative;
+    // 照片
     .box_img {
       height: 100%;
       img {
@@ -84,6 +86,7 @@ section {
         height: 100%;
       }
     }
+    // 移動列
     .col-box {
       display: flex;
       flex-direction: column;
@@ -93,7 +96,6 @@ section {
         position: relative;
         width: 250px;
         height: 100px;
-        border: 3px solid #fff;
         transition: ease-in-out 1.2s;
         background-color: #289dd2;
         align-items: center;
@@ -119,11 +121,11 @@ section {
         }
         &:hover {
           cursor: pointer;
-          transform: translateX(100px);
+          transform: translateX(-100px);
         }
         &:hover .box-word {
           display: block;
-          transform: translateX(-400px);
+          transform: translateX(280px);
         }
       }
     }
