@@ -140,7 +140,7 @@ Making sure everything in .hero sits above our :after elements
   display: inline-block;
   float: none;
   font: inherit;
-  /*   margin: 0.8125em 0 0; */
+    /* margin: 0.8125em 0 0; */
   overflow: visible;
   outline: none;
   padding: 0;
@@ -389,7 +389,7 @@ Making sure everything in .hero sits above our :after elements
   font-size: 1em;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: 10%;
   right: 0.75em;
   transform: translateY(-50%);
   /* -webkit-appearance: none; */
