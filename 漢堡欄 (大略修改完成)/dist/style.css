@@ -1,17 +1,8 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-
-/* html,
-body {
-  height: 100%;
-} */
 
 html,
 body,
@@ -107,7 +98,7 @@ Making sure everything in .hero sits above our :after elements
 }
 /* 點開底下邊框陰影 */
 #masthead.is-active {
-  box-shadow: 0 4px 4px #545454;
+  box-shadow: 0 4px 5px #54545465;
 }
 
 #masthead:after {
@@ -306,7 +297,7 @@ Making sure everything in .hero sits above our :after elements
 
 #site-nav h4 {
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 18px;
   color: #545454;
 }
 
@@ -319,20 +310,31 @@ Making sure everything in .hero sits above our :after elements
   margin-top: 1em;
 }
 
+#site-nav .title_hover {
+  transition: all .3s ease;
+}
+
+#site-nav .title_hover:hover {
+  background-color: #289dd2;
+  color: white;
+}
+
 #site-nav li {
   margin-bottom: 0.5em;
 }
 
 #site-nav li a {
-  color: #289dd2;
+  color: #545454;
   text-decoration: none;
-  transition: color 0.3s ease;
   text-align: center;
+  padding: 0.5rem 1rem;
+  transition: all .3s ease;
 }
 
 #site-nav li a:hover,
 #site-nav li a:focus {
-  color: #686d6e;
+  background-color: #289dd2;
+  color: white;
 }
 
 #site-nav .social {
