@@ -119,8 +119,10 @@
             <label for="email">會員信箱:</label>
             <input type="email"  name="email" id="email" title="請輸入註冊信箱" placeholder="輸入信箱" required />
             <br>
-            <label for="password">密碼:</label>
-            <input type="password" name="password" id="password"  title="請輸入新密碼"  placeholder="輸入密碼" required/>
+            <form name="password_form" id="password_form" method="post">
+            <input class="password" name="password" id="password"  title="請輸入新密碼"  placeholder="輸入密碼" required/>
+            <button class="password_btn" type="password"><img src="./img/eye-slash-regular.svg" alt=""></button>
+            </form>
             <button>
                 <span>登入</span>
              </button>

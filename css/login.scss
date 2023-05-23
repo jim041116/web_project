@@ -4,3 +4,36 @@ body {
     width: 100%;
     height: 100vh;
   }
+
+#login {
+    width: 100%;
+    height: 770px;
+    background-image: url(/web_project/img/logoin.jpg);
+    background-size: cover;
+    background-position: center; 
+
+    .form{
+        flex-wrap: wrap;
+        width:376px;
+        height: 482px;
+        background-color: $web_bg;
+        border-radius: 50px;
+    }
+
+    .form_title {
+        margin: 1.5rem;
+        display: flex;
+        justify-content: center;
+        .tittle {
+          color: $text_color_g;
+          @include tittle();
+          font-size: $text_size-32px;
+         
+          .tittle_ball {
+            @include title_ball();
+          
+        }
+    }
+
+}
+    }
