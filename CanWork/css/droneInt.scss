@@ -1,0 +1,147 @@
+@import "./public.scss";
+
+section {
+    width: 100%;
+}
+
+#droneInt_bn {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/dorneInt.png);
+    background-position: center;
+    background-size: cover;
+
+    .text_box {
+        color: $text_color_g;
+        padding: 5% 0 0 3%;
+
+        .text_1 {
+            font: {
+                size: $text_size-48px;
+                weight: $text_weight-b;
+            }
+        }
+
+        .text_2 {
+            font: {
+                size: $text_size-32px;
+                weight: $text_weight-b;
+            }
+        }
+    }
+}
+
+.bn_text {
+    width: 80%;
+    height: 40vh;
+    background-image: url(../img/DJI_0155.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 3rem auto;
+    border-radius: 15px;
+    position: relative;
+    top: -150px;
+    background-attachment: fixed;
+
+    p {
+        width: 80%;
+        line-height: 25px;
+        color: $text_color_w;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+}
+
+#drone_ifo {
+    .drone_item {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .drone_text {
+            width: 50%;
+            margin-left: 10rem;
+
+            .tittle {
+                @include tittle();
+                color: $text_color_g;
+
+                .tittle_ball {
+                    @include title_ball();
+                }
+            }
+
+            .drone_text_item {
+                color: $text_color_g;
+                margin: 1rem 0;
+            }
+
+            a {
+                border-radius: 15px;
+                text-align: center;
+                width: 25%;
+                padding: 0.5rem 0;
+                display: block;
+                background-color: $btn_bg;
+                color: $text_color_w;
+                animation: btn_mre 1.5s infinite alternate;
+                @keyframes btn_mre {
+                    from {background-color: $btn_bg;}
+                    to {background-color: #1d7299;}
+                }
+
+                &:hover {
+                    animation-play-state: paused;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+                }
+            }
+        }
+
+        video {
+            border-radius: 15px 0 0 15px;
+            width: 50%;
+        }
+
+        .fpv {
+            border-radius: 0 15px 15px 0;
+            width: 50%;
+        }
+    }
+}
+#drone_use {
+    margin-top: 10rem;
+
+    .drone_use_text {
+        width: 100%;
+        height: 50vh;
+        background-image: url(../img/DJI_0268.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: auto;
+        // border-radius: 15px;
+        position: relative;
+
+        .tittle {
+            @include tittle();
+            color: $text_color_w;
+            position: absolute;
+            top: 15%;
+            left: 10rem;
+    
+            .tittle_ball {
+                @include title_ball();
+            }
+        }
+    
+        p {
+            width: 80%;
+            line-height: 25px;
+            color: $text_color_w;
+            position: absolute;
+            top: 45%;
+            left: 10%;
+        }
+    }
+}

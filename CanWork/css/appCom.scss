@@ -1,0 +1,43 @@
+@import "./public.scss";
+
+body {
+  background-color: $web_bg;
+}
+main {
+  width: 65%;
+  margin: 0 auto;
+  .banner {
+    margin: 2rem;
+    display: flex;
+    height: 400px;
+    .left_info {
+      flex: 0.8;
+      border-radius: 0 0 0 150px;
+      background-color: black;
+      .text {
+        text-align: center;
+        h1 {
+          font-size: $text_size-48px;
+          margin: 6.5rem 0 3rem 0;
+          color: $text_color_w;
+        }
+        p {
+          font-size: $text_size-32px;
+          color: $text_color_w;
+        }
+      }
+    }
+<<<<<<< HEAD
+
+=======
+    // 幻燈片
+>>>>>>> main
+    .background-img {
+      flex: 1.5;
+      background-image: url("../img/badouzi.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: ease-in-out 2s;
+    }
+  }
+}
