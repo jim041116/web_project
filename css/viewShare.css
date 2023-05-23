@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
+@import "./hamburger.css";
 *,
 *::after,
 *::before {
@@ -67,18 +68,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* CORE STYLES */
-  /* MENU STYLES */
-  /* Hamburger Line */
-  /* Hamburger Lines - Top & Bottom */
-  /* Moves Line Down */
-  /* Toggler Animation */
-  /* Turns Lines Into X */
-  /* Rotate On Hover When Checked */
-  /* Show Menu */
 }
 header #logo {
   margin-left: 1rem;
+  z-index: 10;
 }
 @media (max-width: 576px) {
   header #logo img {
@@ -138,161 +131,6 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
   background-color: #289DD2;
-}
-header :root {
-  --menu-speed: 0.75s;
-}
-header .menu-wrap {
-  position: fixed;
-  top: 0;
-  right: 60px;
-  /* left: 0; */
-  z-index: 999;
-}
-header .menu-wrap {
-  display: none;
-}
-header .menu-wrap .toggler {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-}
-header .menu-wrap .hamburger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 60px;
-  height: 60px;
-  padding: 1rem;
-  background: #289DD2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .menu-wrap .hamburger > div {
-  position: relative;
-  flex: none;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-header .menu-wrap .hamburger > div::before,
-header .menu-wrap .hamburger > div::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
-}
-header .menu-wrap .hamburger > div::after {
-  top: 10px;
-}
-header .menu-wrap .toggler:checked + .hamburger > div {
-  transform: rotate(135deg);
-}
-header .menu-wrap .toggler:checked + .hamburger > div:before,
-header .menu-wrap .toggler:checked + .hamburger > div:after {
-  top: 0;
-  transform: rotate(90deg);
-}
-header .menu-wrap .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
-}
-header .menu-wrap .toggler:checked ~ .menu {
-  visibility: visible;
-}
-header .menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration: var(--menu-speed);
-}
-header .menu-wrap .toggler:checked ~ .menu > div > div {
-  opacity: 1;
-  transition: opacity 0.4s ease 0.4s;
-}
-header .menu-wrap .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-header .menu-wrap .menu > div {
-  background: rgba(40, 156, 210, 0.9176470588);
-  border-radius: 50%;
-  width: 200vw;
-  height: 300vw;
-  display: flex;
-  flex: none;
-  /* align-items: center; */
-  justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-header .menu-wrap .menu > div > div {
-  margin-top: 45%;
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-header .menu-wrap .menu > div > div > ul > li {
-  list-style: none;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-header .menu-wrap .menu > div > div > ul > li > a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.4s ease;
-}
-header .menu-wrap .menu > div > div > ul > li > a:hover {
-  background-color: white;
-  color: #289DD2;
-}
-@media (max-width: 992px) {
-  header .menu-wrap {
-    display: block;
-  }
-  header .menu-wrap .menu > div > div {
-    margin-top: 60%;
-  }
-  header .menu-wrap .menu > div > div > ul > li {
-    font-size: 16px;
-  }
-  header .menu-wrap .menu > div > div > ul > li > a {
-    padding: 0.5rem;
-  }
-}
-@media (max-width: 576px) {
-  header .menu-wrap .menu > div > div > ul > li {
-    font-size: 16px;
-    padding: 0.3rem 0.3rem;
-  }
-  header .menu-wrap .menu > div > div > ul > li > a {
-    padding: 0.5rem 0.3rem;
-  }
-  header .menu-wrap .menu > div > div {
-    margin-top: 55%;
-  }
 }
 
 footer {
@@ -363,10 +201,10 @@ body {
 
 main section .container_info {
   align-items: center;
-  margin: 2rem auto;
+  margin: auto;
   display: flex;
   width: 70vw;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
 }
 main section .container_info .ins_box {
@@ -374,7 +212,6 @@ main section .container_info .ins_box {
   height: 400px;
   display: flex;
   margin: 1rem;
-  margin-bottom: 4rem;
 }
 main section .container_info .ins_box .left_img {
   display: flex;
