@@ -1,0 +1,480 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ol,
+ul,
+li,
+form,
+legend,
+label,
+table,
+header,
+footer,
+nav,
+section,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* header, footer, nav, section, article, hgroup, figure {
+/*   display: block; */
+
+body {
+  /* font-family: "Roboto", sans-serif; */
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+}
+/* margin-left: auto; */
+/* margin-right: auto; */
+/* width: 90%; */
+/* max-width: 1200px; */
+/* 
+Full screen background image
+*/
+.hero {
+  /* background: url('https://hd.unsplash.com/photo-1454165804606-c3d57bc86b40'); */
+  /* background-size: cover; */
+  /*   width: 100%; */
+  /* height: 100%; */
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+/*
+Blueish tint overlay
+*/
+.hero:after {
+  content: "";
+  /* background: #545454; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+Making sure everything in .hero sits above our :after elements 
+*/
+.hero * {
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#masthead {
+  /*   padding: 2.5em 0; */
+  position: relative;
+  right: 0;
+}
+/* 點開底下邊框陰影 */
+#masthead.is-active {
+  box-shadow: 0 4px 5px #54545465;
+}
+
+#masthead:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#masthead.is-active:after {
+  opacity: 1;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  float: none;
+  font: inherit;
+    /* margin: 0.8125em 0 0; */
+  overflow: visible;
+  outline: none;
+  padding: 0;
+  text-transform: none;
+  transition: opacity 0.15s;
+  /* -webkit-appearance: none; */
+  /* border: 3px solid yellow; */
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+/* 漢堡欄 & X的變化 */
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  /* 漢堡欄顏色 */
+  background-color: #545454;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+/* X的color */
+#masthead.is-active .hamburger-inner,
+#masthead.is-active .hamburger-inner::before,
+#masthead.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  /* border: 2px solid black; */
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -6px;
+}
+
+.hamburger-inner::after {
+  bottom: -6px;
+}
+
+.hamburger--boring .hamburger-inner,
+.hamburger--boring .hamburger-inner::before,
+.hamburger--boring .hamburger-inner::after {
+  transition-property: none;
+}
+
+.hamburger--boring.is-active .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamburger--boring.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+}
+
+.hamburger--boring.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* 以上漢堡欄 & X的變化 */
+
+.hamburger-label {
+  color: #545454;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-left: 0.3125em;
+  text-transform: uppercase;
+}
+
+#masthead.is-active .hamburger-label {
+  color: #000;
+}
+
+.hamburger-box,
+.hamburger-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* 點開後 底下nav */
+#site-nav {
+  display: flex;
+  flex-direction: column;
+  /*高度 調整欄縮小*/
+  height: 0;
+  overflow: hidden;
+  padding: 2.5em;
+  width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid rgb(228, 179, 179); */
+}
+
+#site-nav.is-active {
+  height: auto;
+  overflow: visible;
+}
+
+/* 子項目 & 框底距離 */
+#site-nav .col {
+  padding-bottom: 5em;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+  #site-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #site-nav .col {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #site-nav .col {
+    flex: 0 0 33.333333333%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #site-nav {
+    flex-wrap: nowrap;
+  }
+
+  #site-nav .col {
+    flex: 0 0 20%;
+  }
+  /*last-child  使後面增加排列跑版*/
+  /* #site-nav .col:last-child {
+    display: flex;
+    justify-content: space-between;
+  } */
+}
+
+#site-nav h4 {
+  letter-spacing: 0.05em;
+  font-size: 18px;
+  color: #545454;
+}
+
+#site-nav a {
+  text-decoration: none;
+}
+
+#site-nav ul {
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+#site-nav .title_hover {
+  transition: all .3s ease;
+}
+
+#site-nav .title_hover:hover {
+  background-color: #289dd2;
+  color: white;
+}
+
+#site-nav li {
+  margin-bottom: 0.5em;
+}
+
+#site-nav li a {
+  color: #545454;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  transition: all .3s ease;
+}
+
+#site-nav li a:hover,
+#site-nav li a:focus {
+  background-color: #289dd2;
+  color: white;
+}
+
+#site-nav .social {
+  /* margin: 0; */
+  overflow: hidden;
+}
+
+#site-nav .social li {
+  /* float: left; */
+  margin: 0 0.3125em;
+  width: 32px;
+  height: 32px;
+}
+
+#site-nav .social li svg {
+  display: block;
+  fill: #b4b9ba;
+  width: 100%;
+  height: 100%;
+  transition: fill 0.3s ease;
+}
+
+#site-nav .social li:hover svg {
+  fill: #686d6e;
+}
+
+#masthead-search {
+  float: right;
+  margin-top: 0.625em;
+  width: 100%;
+  max-width: 14em;
+  position: relative;
+  /* -webkit-appearance: none; */
+}
+
+#masthead-search input {
+  background: transparent;
+  border: none;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  outline: none;
+  width: 100%;
+  padding: 0.75em 1.125em;
+  transition: border-color 0.3s ease;
+  /* -webkit-appearance: none; */
+}
+
+#masthead-search button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  padding: 0;
+  position: absolute;
+  top: 10%;
+  right: 0.75em;
+  transform: translateY(-50%);
+  /* -webkit-appearance: none; */
+}
+
+#masthead.is-active #masthead-search button {
+  color: #b4b9ba;
+}
+
+#masthead.is-active #masthead-search input {
+  border-color: #b4b9ba;
+}
+
+#masthead-search ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#masthead-search :-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#masthead-search ::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+#masthead-search :-ms-input-placeholder {
+  color: #fff;
+}
+
+#masthead.is-active #masthead-search ::-webkit-input-placeholder {
+  color: #b4b9ba;
+}
+
+#masthead.is-active #masthead-search :-moz-placeholder {
+  color: #b4b9ba;
+  opacity: 1;
+}
+
+/* #masthead.is-active #masthead-search ::-moz-placeholder {
+  color: #b4b9ba;
+  opacity: 1;
+} */
+
+/* #masthead.is-active #masthead-search :-ms-input-placeholder {
+  color: #b4b9ba;
+} */
+
+#masthead .col {
+  opacity: 0;
+}
+
+#masthead.is-active .col {
+  transform: translateY(40px);
+  transition: opacity 0.3s ease;
+  animation: fade-in-stagger 0.8s ease forwards;
+}
+
+/* 各list 出現時間 */
+#masthead.is-active .col:nth-child(1) {
+  animation-delay: 0;
+}
+
+#masthead.is-active .col:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+#masthead.is-active .col:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+#masthead.is-active .col:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+#masthead.is-active .col:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes fade-in-stagger {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
