@@ -119,6 +119,17 @@ body {
 }
 }
 
+#checkEye {
+  position: absolute;
+  top: 41.5%;
+  right:44%;
+  transform: translateY(-50%);
+}
+.ul{
+  display: flex;
+  justify-content: center;
+}
+
 /* 頁尾區*/
 footer {
   text-align: center;
