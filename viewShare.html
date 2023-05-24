@@ -8,6 +8,10 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/viewShare.css" />
+    <!-- light box -->
+    <link rel="stylesheet" href="./css/lightbox.css" />
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/lightbox.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
@@ -15,11 +19,6 @@
     <!-- viewSharePic -->
     <link rel="stylesheet" href="./css/viewSharePicStyle.css" />
     <script src="./js/jquery-1.11.3.min.js"></script>
-    <!-- Google-Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
@@ -207,8 +206,37 @@
           <div class="ins_box">
             <!-- info左照片 -->
             <div class="left_img">
-              <img src="./img/鋸齒稜.jpg" alt="鋸齒稜" />
+              <!-- <img src="./img/鋸齒稜.jpg" alt="鋸齒稜" /> -->
+              <a
+                class="example-image-link"
+                href="./img/照片輪播1.jpg"
+                data-lightbox="roadtrip"
+                data-title="地點：台灣　　拍攝者：A先生"
+                ><img class="example-image" src="./img/照片輪播1.jpg" alt=""
+              /></a>
+              <a
+                class="example-image-link"
+                href="./img/照片輪播2.jpg"
+                data-lightbox="roadtrip"
+                data-title="地點：台灣　　拍攝者：B先生"
+                ><img class="example-image" src="./img/照片輪播2.jpg" alt=""
+              /></a>
+              <a
+                class="example-image-link"
+                href="./img/照片輪播3.jpg"
+                data-lightbox="roadtrip"
+                data-title="地點：台灣　　拍攝者：C先生"
+                ><img class="example-image" src="./img/照片輪播3.jpg" alt=""
+              /></a>
+              <a
+                class="example-image-link"
+                href="./img/照片輪播4.jpg"
+                data-lightbox="roadtrip"
+                data-title="地點：台灣　　拍攝者：D先生"
+                ><img class="example-image" src="./img/照片輪播4.jpg" alt=""
+              /></a>
             </div>
+
             <!-- info右介紹(分:上中下div) -->
             <div class="right_info">
               <div class="right_info_title">
