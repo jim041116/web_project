@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelDrone</title>
+    <title>最新消息</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -78,14 +78,20 @@
             </div>
         </div>
     </div>
-    <div id="new_section">
+    <div id="news_section">
+        <div class="news_type_btn">
+            <div class="btn all_btn">全部</div>
+            <div class="btn reserve_btn">預約體驗</div>
+            <div class="btn new_drone_btn">新機相關</div>
+            <div class="btn info_btn">公告</div>
+        </div>
         <div class="content-wrapper">
-            <div class="news-card">
+            <div class="news-card news_reserve">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/reserve_img.jpg"
                     alt="" class="news-card__image">
                 <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">7月空拍體驗課程</h2>
+                    <h2 class="news-card__title">7月空拍體驗課程(2)</h2>
                     <div class="news-card__post-date">2023/7/7　#預約體驗</div>
                     <div class="news-card__details-wrapper">
                         <p class="news-card__excerpt">7月份最後一場空拍體驗課程可以開始預約了，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如...</p>
@@ -94,7 +100,7 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_info">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/news_DJI_0330.jpg"
                     alt="" class="news-card__image">
@@ -108,12 +114,12 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_reserve">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/reserve_img.jpg"
                     alt="" class="news-card__image">
                 <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">7月空拍體驗課程</h2>
+                    <h2 class="news-card__title">7月空拍體驗課程(1)</h2>
                     <div class="news-card__post-date">2023/6/15　#預約體驗</div>
                     <div class="news-card__details-wrapper">
                         <p class="news-card__excerpt">7月份第一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作...
@@ -123,7 +129,7 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_info">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/map.jpg"
                     alt="" class="news-card__image">
@@ -137,12 +143,12 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_reserve">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/reserve_img.jpg"
                     alt="" class="news-card__image">
                 <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">6月空拍體驗課程</h2>
+                    <h2 class="news-card__title">6月空拍體驗課程(2)</h2>
                     <div class="news-card__post-date">2023/6/6　#預約體驗</div>
                     <div class="news-card__details-wrapper">
                         <p class="news-card__excerpt">6月份最後一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作...
@@ -152,7 +158,7 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_info">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/news_DJI_0150.jpg"
                     alt="" class="news-card__image">
@@ -166,7 +172,7 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_info">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/news_DJI_0219.jpg"
                     alt="" class="news-card__image">
@@ -180,12 +186,12 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_reserve">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/reserve_img.jpg"
                     alt="" class="news-card__image">
                 <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">6月空拍體驗課程</h2>
+                    <h2 class="news-card__title">6月空拍體驗課程(1)</h2>
                     <div class="news-card__post-date">2023/5/22　#預約體驗</div>
                     <div class="news-card__details-wrapper">
                         <p class="news-card__excerpt">6月份第一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作...
@@ -195,7 +201,7 @@
                 </div>
             </div>
     
-            <div class="news-card">
+            <div class="news-card news_new_drone">
                 <a href="#" class="news-card__card-link"></a>
                 <img src="./img/news_mv3p.jpg"
                     alt="" class="news-card__image">
@@ -291,6 +297,74 @@
                 }
             });
         });
+
+        //按鈕動態效果
+        let allBtn = document.querySelector('.all_btn');
+        let reserveBtn = document.querySelector('.reserve_btn');
+        let newDroneBtn = document.querySelector('.new_drone_btn');
+        let infoBtn = document.querySelector('.info_btn');
+
+        let newsCard = document.querySelectorAll('.news-card');
+        let newsReserve = document.querySelectorAll('.news_reserve');
+        let newsInfo = document.querySelectorAll('.news_info');
+        let newsDrone = document.querySelectorAll('.news_new_drone');
+        console.log(newsReserve);
+
+        allBtn.onclick = () => {
+            for(let i = 0 ; i < newsCard.length; i++){
+                newsCard[i].style.display = 'block';
+            }
+            allBtn.style.backgroundColor = '#377491';
+            reserveBtn.style.backgroundColor = '#289DD2';
+            newDroneBtn.style.backgroundColor = '#289DD2';
+            infoBtn.style.backgroundColor = '#289DD2';
+        }
+        reserveBtn.onclick = () => {
+            for(let i = 0 ; i < newsReserve.length; i++){
+                newsReserve[i].style.display = 'block';
+            }
+            for(let i = 0 ; i < newsInfo.length; i++){
+                newsInfo[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsDrone.length; i++){
+                newsDrone[i].style.display = 'none';
+            }
+            allBtn.style.backgroundColor = '#289DD2';
+            reserveBtn.style.backgroundColor = '#377491';
+            newDroneBtn.style.backgroundColor = '#289DD2';
+            infoBtn.style.backgroundColor = '#289DD2';
+        }
+        newDroneBtn.onclick = () => {
+            for(let i = 0 ; i < newsReserve.length; i++){
+                newsReserve[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsInfo.length; i++){
+                newsInfo[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsDrone.length; i++){
+                newsDrone[i].style.display = 'block';
+            }
+            allBtn.style.backgroundColor = '#289DD2';
+            reserveBtn.style.backgroundColor = '#289DD2';
+            newDroneBtn.style.backgroundColor = '#377491';
+            infoBtn.style.backgroundColor = '#289DD2';
+        }
+        infoBtn.onclick = () => {
+            for(let i = 0 ; i < newsReserve.length; i++){
+                newsReserve[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsInfo.length; i++){
+                newsInfo[i].style.display = 'block';
+            }
+            for(let i = 0 ; i < newsDrone.length; i++){
+                newsDrone[i].style.display = 'none';
+            }
+            allBtn.style.backgroundColor = '#289DD2';
+            reserveBtn.style.backgroundColor = '#289DD2';
+            newDroneBtn.style.backgroundColor = '#289DD2';
+            infoBtn.style.backgroundColor = '#377491';
+        }
+
     </script>
 </body>
 
