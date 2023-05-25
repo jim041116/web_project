@@ -198,6 +198,9 @@ footer .logo .copyright {
   color: #545454;
 }
 
+section {
+  margin-top: 5rem;
+}
 section .text_box {
   margin-left: 20rem;
 }
@@ -220,25 +223,98 @@ section .text_box .news_title {
 section .news_item {
   margin: auto;
   width: 90%;
-  height: 545px;
+  min-width: 800px;
+  height: 700px;
   background-position: center;
   background-size: cover;
   border-radius: 15px;
-}
-section .news_item .news_item_box {
-  width: 50%;
-  padding: 2rem;
-  border-radius: 15px;
-  background-color: white;
-  margin: auto;
-}
-section .news_item .img {
-  margin-top: 3rem;
-  text-align: center;
-}
-section .news_item .img img {
-  border-radius: 15px;
+  filter: blur(2.5px);
+  position: relative;
+  z-index: -1;
 }
 section .news_1 {
   background-image: url(../img/reserve_img.jpg);
+}
+section .news_2 {
+  background-image: url(../img/DJI_0323.jpg);
+}
+section .news_4 {
+  background-image: url(../img/map.jpg);
+}
+section .news_6 {
+  background-image: url(../img/news_DJI_0150.jpg);
+}
+section .news_7 {
+  background-image: url(../img/news_DJI_0219.jpg);
+}
+section .news_9 {
+  background-image: url(../img/news_mv3p.jpg);
+}
+section .news_item_box {
+  width: 50%;
+  min-width: 600px;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: white;
+  margin: -35rem auto 0rem auto;
+}
+section .news_item_box .news_item_box_text {
+  line-height: 25px;
+}
+section .news_item_box .news_item_box_text a {
+  text-decoration: underline;
+  color: rgb(57, 57, 236);
+}
+section .news_item_box .link {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: auto;
+  background-color: #289DD2;
+  color: #FFFFFF;
+  border-radius: 15px;
+  transition: all 0.5s;
+  display: block;
+}
+section .news_item_box .link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+}
+section .news_item_box .img {
+  margin-top: 3rem;
+  text-align: center;
+}
+section .news_item_box .img img {
+  border-radius: 15px;
+}
+section .to_news {
+  margin: 3rem auto;
+  text-align: center;
+  line-height: 40px;
+  width: 150px;
+  height: 40px;
+  background-color: #289DD2;
+  border-radius: 15px;
+  cursor: pointer;
+}
+section .to_news:hover > a img {
+  animation: go_to_news 0.5s infinite alternate;
+}
+@keyframes go_to_news {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+section .to_news a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .to_news a div {
+  color: #FFFFFF;
+  line-height: 40px;
 }/*# sourceMappingURL=newspage.css.map */
