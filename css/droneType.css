@@ -256,6 +256,11 @@ section {
   font-size: 18px;
   transition: all 0.5s;
   cursor: pointer;
+  transition: all 0.5s;
+}
+#drone_type .drone_type_btn .btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.459);
 }
 #drone_type .drone_type_btn .novice_btn {
   background-color: #377491;
