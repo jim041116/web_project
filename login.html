@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>忘記密碼</title>
+    <title>會員登入</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/login.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
   </head>
 <body>
     <header>
@@ -62,52 +65,10 @@
                 </li>
             </ul>
         </div>
-        <div class="menu-wrap">
-            <input type="checkbox" class="toggler">
-            <div class="hamburger">
-                <div></div>
-            </div>
-            <div class="menu">
-                <div>
-                    <div>
-                        <ul>
-                            <li>空拍景點</li>
-                            <li><a href="#">景點推薦</a></li>
-                            <li><a href="#">景點分享</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>認識空拍機</li>
-                            <li><a href="#">空拍機介紹</a></li>
-                            <li><a href="#">基礎操作</a></li>
-                            <li><a href="#">機型介紹</a></li>
-                            <li><a href="#">空拍法規</a></li>
-                            <li><a href="#">APP推薦</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#">預約專區</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><a href="#">最新消息</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>登入會員</li>
-                            <li><a href="#">登入頁面</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
+        
     <section id="login">
-        <div class="form">
+        <div class="form_outs">
             <div class="form_title">
                 <div class="tittle">
                     <div>會員登入</div>
@@ -115,21 +76,41 @@
             </div>
         </div>
         
-        <form name="forget_form" id="forget_form" method="post">
-            <label for="email">會員信箱:</label>
-            <input type="email"  name="email" id="email" title="請輸入註冊信箱" placeholder="輸入信箱" required />
+        <form name="login_form" id="login_form" method="post">
+            <label for="email">信箱:</label>
+    
+            <input type="email"  name="email" id="email" title="輸入註冊信箱" placeholder="請輸入信箱" required />
             <br>
-            <form name="password_form" id="password_form" method="post">
-            <input class="password" name="password" id="password"  title="請輸入新密碼"  placeholder="輸入密碼" required/>
-            <button class="password_btn" type="password"><img src="./img/eye-slash-regular.svg" alt=""></button>
-            </form>
+            <div  class="password_form">
+            <label for="password">密碼:</label>
+            <input type="password" name="password" id="floatingPassword"  title="輸入密碼"  placeholder="請輸入密碼" required/>
+            <i id="checkEye" class="fas fa-eye"></i>
+     </div>
+        
+        
             <button>
                 <span>登入</span>
              </button>
-             <h2>註冊會員</h2>
-             <h2>忘記密碼</h2>   
+             <ul class="btn">
+                <li><a href="#">忘記密碼</a></li>  
+                <li><a href="#">註冊會員</a></li>
+            </ul>
         </form>
     </div>
     </section>
+    <footer>
+        <p>copyright &copy TravelDrone版權所有 reserved.</p>
+      </footer>
+      <script src="./js/jquery-1.11.3.min.js"></script>
+      <script>
+      $("#checkEye").click(function () {
+        if($(this).hasClass('fa-eye')){
+           $("#floatingPassword").attr('type', 'text');
+        }else{
+           $("#floatingPassword").attr('type', 'password');
+        }
+        $(this).toggleClass('fa-eye').toggleClass('fa-eye-slash');
+      }); 
+    </script>
 </body>
 </html>

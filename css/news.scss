@@ -1,0 +1,199 @@
+@import "./public.scss";
+
+#news_bn {
+    width: 100%;
+    height: 40vh;
+    background-image: url(../img/newspaper-g342480d10_1280.jpg);
+    background-position: center;
+    background-size: cover;
+
+    .text_box {
+        color: $text_color_w;
+        padding: 5% 0 0 3%;
+
+        .text_1 {
+            font: {
+                size: $text_size-48px;
+                weight: $text_weight-b;
+            }
+        }
+
+        .text_2 {
+            margin: 10px 0;
+
+            font: {
+                size: $text_size-32px;
+                weight: $text_weight-b;
+            }
+        }
+    }
+}
+
+#news_section {
+
+    margin-bottom: 5rem;
+
+    .news_type_btn {
+        margin: 5rem auto;
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+
+        .btn {
+            width: 150px;
+            height: 50px;
+            background-color: $btn_bg;
+            color: $text_color_w;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 15px;
+            font-size: $text_size-18px;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+        .all_btn {
+            background-color: #377491;
+        }
+    }
+
+    .content-wrapper {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .news-card {
+        margin: 2rem 1rem;
+        position: relative;
+        height: 12rem;
+        overflow: hidden;
+        border-radius: 0.5rem;
+        flex: 1;
+        min-width: 290px;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    @media (min-width: 900px) {
+
+        .news-card {
+            height: 20rem
+        }
+    }
+
+    .news-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 80%);
+        ;
+        z-index: 0;
+    }
+
+    .news-card__card-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .news-card__image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform 1s ease;
+        backface-visibility: hidden;
+        position: relative;
+        z-index: -1;
+    }
+
+    .news-card__text-wrapper {
+        position: absolute;
+        bottom: 0rem;
+        padding: 1rem;
+        color: white;
+        transition: background-color .5s ease;
+        width: 100%;
+    }
+
+    .news-card__title {
+        transition: color .5s ease;
+        margin-bottom: .5rem;
+    }
+
+    .news-card__post-date {
+        font-size: 0.8rem;
+        margin-bottom: .5rem;
+        color: #CCC;
+    }
+
+    .news-card__details-wrapper {
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 1s ease, opacity 1s ease;
+    }
+
+    @media (min-width: 900px) {
+        .news-card:hover .news-card__details-wrapper {
+            max-height: 20rem;
+            opacity: 1;
+        }
+
+        .news-card:hover .news-card__text-wrapper {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .news-card:hover .news-card__title {
+            color: #289DD2;
+        }
+
+        .news-card:hover .news-card__image {
+            transform: scale(1.2);
+            z-index: -1;
+        }
+    }
+
+    .news-card__excerpt {
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .news-card__read-more {
+        background: black;
+        color: #bbb;
+        display: block;
+        padding: 0.4rem 0.6rem;
+        border-radius: 0.3rem;
+        margin-top: 1rem;
+        border: 1px solid #444;
+        font-size: 0.8rem;
+        backface-visibility: hidden;
+        text-decoration: none;
+        width: 7rem;
+        margin-left: auto;
+        position: relative;
+        z-index: 5;
+    }
+
+    .news-card__read-more i {
+        position: relative;
+        left: 0.2rem;
+        color: #888;
+        transition: left 0.5s ease, color 0.6s ease;
+        backface-visibility: hidden;
+    }
+
+    .news-card__read-more:hover i {
+        left: 0.5rem;
+        color: #289DD2;
+    }
+}

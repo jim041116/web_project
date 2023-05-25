@@ -19,7 +19,7 @@ body {
     .form_outs {
       flex-wrap: wrap;
       width:376px;
-      height: 482px;
+      height: 520px;
       background-color: $web_bg;
       border-radius: 50px;
     }
@@ -44,7 +44,7 @@ body {
       background-color: rgba(84, 84, 84, 0.3);
       backdrop-filter: blur(5px);
       height: 28px;
-      width: 60%;
+      width: 100%;
       padding: 12px;
       margin: 3px;
     
@@ -52,8 +52,6 @@ body {
       }
       #register_form label{
         width: 40%;
-        
-    
       }
 
   

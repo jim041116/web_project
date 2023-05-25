@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelDrone</title>
+    <title>最新消息</title>
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.8/css/all.css'>
+    <link rel="stylesheet" href="./css/news.css">
 
 </head>
 
@@ -65,56 +68,158 @@
             </ul>
         </div>
     </header>
-    <!-- 漢堡欄 -->
-    <div class="hero">
-        <div id="masthead" role="banner">
-            <div class="container">
-                <button class="hamburger hamburger--boring" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                    <span class="hamburger-label"></span>
-                </button>
-
-                <nav id="site-nav" role="navigation">
-                    <div class="col">
-                        <h4>空拍景點</h4>
-                        <ul>
-                            <li><a href="#">景點推薦</a></li>
-                            <li><a href="#">景點分享</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h4>認識空拍機</h4>
-                        <ul>
-                            <li><a href="#">空拍機介紹</a></li>
-                            <li><a href="#">基礎操作</a></li>
-                            <li><a href="#">機型介紹</a></li>
-                            <li><a href="#">空拍法規</a></li>
-                            <li><a href="#">APP推薦</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <h4 class="title_hover">預約專區</h4>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <a href="#">
-                            <h4 class="title_hover">最新消息</h4>
-                        </a>
-                    </div>
-                    <div class="col">
-                        <h4>會員登入</h4>
-                        <ul>
-                            <li><a href="#">登入頁面</a></li>
-                        </ul>
-                    </div>
-                </nav>
+    <div id="news_bn">
+        <div class="text_box">
+            <div class="text_1">
+                最新消息
+            </div>
+            <div class="text_2">
+                預約．新機．公告
             </div>
         </div>
     </div>
-    <!-- 漢堡欄結束 -->
+    <div id="news_section">
+        <div class="news_type_btn">
+            <div class="btn all_btn">全部</div>
+            <div class="btn reserve_btn">預約體驗</div>
+            <div class="btn new_drone_btn">新機相關</div>
+            <div class="btn info_btn">公告</div>
+        </div>
+        <div class="content-wrapper">
+            <div class="news-card news_reserve">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/reserve_img.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">7月空拍體驗課程(2)</h2>
+                    <div class="news-card__post-date">2023/7/7　#預約體驗</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">7月份最後一場空拍體驗課程可以開始預約了，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如...</p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_info">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/news_DJI_0330.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">精選景點-花蓮清水斷崖</h2>
+                    <div class="news-card__post-date">2023/6/19　#公告</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">炎炎夏日最適合到海邊消暑，本次新增精選景點為花蓮的清水斷崖，這裡除了可以體驗各項水上活動外也是個適合用空拍機拍攝...</p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_reserve">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/reserve_img.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">7月空拍體驗課程(1)</h2>
+                    <div class="news-card__post-date">2023/6/15　#預約體驗</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">7月份第一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作...
+                        </p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_info">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/map.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">景點查詢地圖上線</h2>
+                    <div class="news-card__post-date">2023/6/12　#公告</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">買了空拍機還不知道可以去哪裡拍嗎? 現在景點查詢地圖上線囉，只要透過景點...</p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_reserve">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/reserve_img.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">6月空拍體驗課程(2)</h2>
+                    <div class="news-card__post-date">2023/6/6　#預約體驗</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">6月份最後一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作...
+                        </p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_info">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/news_DJI_0150.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">精選景點-南投合歡山</h2>
+                    <div class="news-card__post-date">2023/6/7　#公告</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">合歡山除了有台灣最高的公路外也是個知名廣告拍攝景點，只要開車就可以到達海拔超過3000公尺的高山，如果用空拍機...</p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_info">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/news_DJI_0219.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">精選景點-台東池上</h2>
+                    <div class="news-card__post-date">2023/5/30　#公告</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">台東池上的伯朗大道是個適合練習操控空拍機的地方，不但地方寬闊視野良好附近也沒有許多建築物，所以可以放心的去飛或是練習運鏡...</p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_reserve">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/reserve_img.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">6月空拍體驗課程(1)</h2>
+                    <div class="news-card__post-date">2023/5/22　#預約體驗</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">6月份第一場空拍體驗課程開始預約囉，想加入空拍的朋友們還在擔心空拍機不好操控或是不知道該如何操作...
+                        </p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="news-card news_new_drone">
+                <a href="#" class="news-card__card-link"></a>
+                <img src="./img/news_mv3p.jpg"
+                    alt="" class="news-card__image">
+                <div class="news-card__text-wrapper">
+                    <h2 class="news-card__title">新機上市 - DJI Mavic 3 Pro</h2>
+                    <div class="news-card__post-date">2023/5/18　#新機相關</div>
+                    <div class="news-card__details-wrapper">
+                        <p class="news-card__excerpt">DJI正式發布全新旗艦無人機DJI Mavic 3 Pro，開啟航拍多焦段三攝新時代。Mavic 3
+                            Pro搭載哈蘇主攝及雙焦段長焦相機，拍攝視角...
+                        </p>
+                        <a href="#" class="news-card__read-more">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
     <footer>
         <div class="footer_web_map">
             <ul class="web_map_item">
@@ -192,6 +297,74 @@
                 }
             });
         });
+
+        //按鈕動態效果
+        let allBtn = document.querySelector('.all_btn');
+        let reserveBtn = document.querySelector('.reserve_btn');
+        let newDroneBtn = document.querySelector('.new_drone_btn');
+        let infoBtn = document.querySelector('.info_btn');
+
+        let newsCard = document.querySelectorAll('.news-card');
+        let newsReserve = document.querySelectorAll('.news_reserve');
+        let newsInfo = document.querySelectorAll('.news_info');
+        let newsDrone = document.querySelectorAll('.news_new_drone');
+        console.log(newsReserve);
+
+        allBtn.onclick = () => {
+            for(let i = 0 ; i < newsCard.length; i++){
+                newsCard[i].style.display = 'block';
+            }
+            allBtn.style.backgroundColor = '#377491';
+            reserveBtn.style.backgroundColor = '#289DD2';
+            newDroneBtn.style.backgroundColor = '#289DD2';
+            infoBtn.style.backgroundColor = '#289DD2';
+        }
+        reserveBtn.onclick = () => {
+            for(let i = 0 ; i < newsReserve.length; i++){
+                newsReserve[i].style.display = 'block';
+            }
+            for(let i = 0 ; i < newsInfo.length; i++){
+                newsInfo[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsDrone.length; i++){
+                newsDrone[i].style.display = 'none';
+            }
+            allBtn.style.backgroundColor = '#289DD2';
+            reserveBtn.style.backgroundColor = '#377491';
+            newDroneBtn.style.backgroundColor = '#289DD2';
+            infoBtn.style.backgroundColor = '#289DD2';
+        }
+        newDroneBtn.onclick = () => {
+            for(let i = 0 ; i < newsReserve.length; i++){
+                newsReserve[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsInfo.length; i++){
+                newsInfo[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsDrone.length; i++){
+                newsDrone[i].style.display = 'block';
+            }
+            allBtn.style.backgroundColor = '#289DD2';
+            reserveBtn.style.backgroundColor = '#289DD2';
+            newDroneBtn.style.backgroundColor = '#377491';
+            infoBtn.style.backgroundColor = '#289DD2';
+        }
+        infoBtn.onclick = () => {
+            for(let i = 0 ; i < newsReserve.length; i++){
+                newsReserve[i].style.display = 'none';
+            }
+            for(let i = 0 ; i < newsInfo.length; i++){
+                newsInfo[i].style.display = 'block';
+            }
+            for(let i = 0 ; i < newsDrone.length; i++){
+                newsDrone[i].style.display = 'none';
+            }
+            allBtn.style.backgroundColor = '#289DD2';
+            reserveBtn.style.backgroundColor = '#289DD2';
+            newDroneBtn.style.backgroundColor = '#289DD2';
+            infoBtn.style.backgroundColor = '#377491';
+        }
+
     </script>
 </body>
 

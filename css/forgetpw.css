@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
-@import "./hamburger.css";
 *,
 *::after,
 *::before {
@@ -249,9 +248,10 @@ body {
   border-radius: 40px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 28px;
-  width: 210px;
+  width: 100%;
 }
 #forget_pw form {
   display: flex;
@@ -265,7 +265,7 @@ body {
   outline: none;
   background-color: #545454;
   padding: 0.2rem 0;
-  width: 60%;
+  width: 100%;
   height: 38px;
   font-size: 18px;
   display: flex;
@@ -275,6 +275,26 @@ body {
 }
 #forget_pw form button span {
   color: #FFFFFF;
+}
+
+#password_form {
+  width: 100%;
+  height: 28px;
+  background: #FaFaFa 0% 0% no-repeat padding-box;
+  border: 1px solid #989898;
+  border-radius: 2px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#pawwword_form input {
+  border: none;
+  outline: none;
+  background: #FaFaFa 0% 0% padding-box;
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  width: 162px;
 }
 
 /* 頁尾區*/
