@@ -71,6 +71,12 @@ section {
       font-size: $text_size-18px;
       transition: all 0.5s;
       cursor: pointer;
+      transition: all .5s;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.459);
+      }
     }
 
     .novice_btn {
