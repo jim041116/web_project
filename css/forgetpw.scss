@@ -72,6 +72,26 @@ body {
   }
 }
 
+#password_form{
+        width: 100%;
+        height: 28px;
+        background: #FaFaFa 0% 0% no-repeat padding-box;
+        border: 1px solid #989898;
+        border-radius: 2px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+}
+#pawwword_form input{
+  border: none;
+  outline: none;
+  background: #FaFaFa 0% 0%  padding-box;
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  width: 162px;
+}
+
+
 /* 頁尾區*/
 footer {
   text-align: center;

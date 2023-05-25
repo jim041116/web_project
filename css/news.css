@@ -235,6 +235,11 @@ footer .logo .copyright {
   font-size: 18px;
   transition: all 0.5s;
   cursor: pointer;
+  transition: all 0.5s;
+}
+#news_section .news_type_btn .btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.473);
 }
 #news_section .news_type_btn .all_btn {
   background-color: #377491;

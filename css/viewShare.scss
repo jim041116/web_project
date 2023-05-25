@@ -4,6 +4,21 @@ $green_block: green;
 $red_block: red;
 $gray_block: gray;
 
+@mixin bor_style {
+  border-top: thick double $text_color_g;
+  border-left: thick double $text_color_g;
+}
+
+@mixin bgc_col {
+  background-color: $text_color_g;
+  color: $text_color_w;
+}
+
+p,
+span {
+  color: $text_color_g;
+}
+
 body {
   background-color: $web_bg;
 }
@@ -13,30 +28,31 @@ main {
       align-items: center;
       margin: auto;
       display: flex;
-      width: 70vw;
+      width: 80vw;
       justify-content: center;
       flex-wrap: wrap;
       .ins_box {
-        width: 590px;
+        width: 580px;
         height: 400px;
         display: flex;
-        margin: 1rem;
+        margin: 1.5rem 3.5rem;
         .left_img {
-          display: flex;
-          justify-content: center;
-          width: 50%;
+          width: 55%;
+          height: 100%;
           overflow: hidden;
           border-radius: 0 0 0 100px;
+          @include bor_style();
           img {
+            width: 100%;
             height: 100%;
-            transition: 1.2s ease-out;
+            transition: 1.2s ease-in-out;
             &:hover {
               transform: scale(1.2, 1.2);
             }
           }
         }
         .right_info {
-          width: 53%;
+          width: 48%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -49,40 +65,33 @@ main {
               font-size: $text_size-18px;
               text-align: center;
               line-height: 3rem;
-              color: $text_color_g;
             }
           }
           .right_info_content {
             padding: 0 1.5rem;
-            p {
-              color: $text_color_g;
-            }
           }
           .right_info_footer {
-            padding: 0.2rem 0.3rem;
+            padding: 0rem;
             .footer_info_a,
             .footer_info_b,
             .footer_info_c {
-              margin: 1rem 0.8rem;
+              margin: 1rem 0.5rem;
               .info_title {
-                background-color: $text_color_g;
-                color: $text_color_w;
+                @include bgc_col();
               }
               .green {
+                @include bgc_col();
                 background-color: $green_block;
-                color: $text_color_w;
               }
               .gray {
+                @include bgc_col();
                 background-color: $gray_block;
-                color: $text_color_w;
               }
               span {
                 border: 2px solid $text_color_g;
                 margin-right: 0.2rem;
                 border-radius: 5px;
-                padding: 0.1rem 0.2rem;
-                color: $text_color_g;
-                padding: 0.3rem;
+                padding: 0.2rem;
               }
             }
             .footer_info_b hr {
