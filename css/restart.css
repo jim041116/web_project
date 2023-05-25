@@ -279,6 +279,7 @@ main section .place_item .item .place_info .text .tag a {
   background-color: #289DD2;
 }
 main section .place_item .item .place_info .text .tag a:hover {
+  transform: translateY(-5px);
   transition: linear 0.3s;
   color: #545454;
   background-color: #F5F5F5;

@@ -99,6 +99,7 @@ main {
                 @include raduis15px();
                 @include btn_bg();
                 &:hover {
+                  transform: translateY(-5px);
                   transition: linear 0.3s;
                   color: $text_color_g;
                   background-color: $web_bg;
