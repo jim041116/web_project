@@ -278,6 +278,12 @@ main section .place_item .item .place_info .text .tag a {
   border-radius: 15px;
   background-color: #289DD2;
 }
+main section .place_item .item .place_info .text .tag a:hover {
+  transition: linear 0.3s;
+  color: #545454;
+  background-color: #F5F5F5;
+  font-weight: bolder;
+}
 main section .place_item .item .move2 {
   left: 5%;
 }
