@@ -131,6 +131,117 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
   background-color: #289DD2;
 }
+header .hamburger_box {
+  position: fixed;
+  right: 1rem;
+  text-align: center;
+  display: none;
+  z-index: 99;
+}
+@media (max-width: 992px) {
+  header .hamburger_box {
+    display: block;
+  }
+}
+header .hamburger .line {
+  width: 35px;
+  height: 3px;
+  background-color: #545454;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+header .hamburger:hover {
+  cursor: pointer;
+}
+header #hamburger-item {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+header #hamburger-item.is-active {
+  transform: rotate(45deg);
+}
+header #hamburger-item:before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+header #hamburger-item.is-active:before {
+  border: 3px solid #545454;
+}
+header #hamburger-item.is-active .line {
+  width: 35px;
+}
+header #hamburger-item.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+header #hamburger-item.is-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+header #hamburger-item.is-active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(90deg);
+}
+header .hamburger_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9254901961);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70vh;
+  z-index: 50;
+  transform: translateY(-100vh);
+  transition: all 0.5s;
+  display: none;
+}
+header .hamburger_nav .hamburger_nav_item {
+  margin: 8rem 1rem 0rem 1rem;
+  text-align: center;
+}
+header .hamburger_nav .hamburger_nav_item .hamburger_nav_title {
+  font-size: 18px;
+  border-bottom: 2px solid #545454;
+  color: #545454;
+}
+header .hamburger_nav .hamburger_nav_item li {
+  margin: 0.2rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #545454;
+  transition: all 0.5s;
+}
+header .hamburger_nav .hamburger_nav_item a li:hover {
+  background-color: #289DD2;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  header .hamburger_nav {
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  header .hamburger_nav {
+    height: 100vh;
+    align-content: start;
+  }
+  header .hamburger_nav .hamburger_nav_item {
+    margin-top: 5rem;
+  }
+  header .hamburger_nav .hamburger_nav_item .hamburger_nav_title {
+    font-size: 16px;
+  }
+  header a li {
+    font-size: 14px;
+    margin: 0rem;
+  }
+}
 
 footer {
   background-color: #545454;
@@ -208,4 +319,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=reseration.css.map */
+}/*# sourceMappingURL=reservation.css.map */

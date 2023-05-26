@@ -94,7 +94,6 @@ h3 {
 }
 /*--- list-circle ---*/
 .silde-section .owl-theme.custom-carousel .owl-dots {
-  border: 3px solid black;
   /* margin: 0px 2rem; */
   position: relative;
   z-index: 5;
@@ -196,5 +195,10 @@ h3 {
     padding: 0 14px 5px;
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+@media screen and (max-width: 576px) {
+  .silde-section .owl-theme.custom-carousel .owl-dots {
+    margin-top: -50vh;
   }
 }
