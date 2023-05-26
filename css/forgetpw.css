@@ -202,8 +202,8 @@ body {
 
 #forget_pw {
   width: 100%;
-  height: 770px;
-  background-image: url(/img/forget_password.jpg);
+  height: 82.5vh;
+  background-image: url(../img/forget_password.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -211,18 +211,18 @@ body {
   align-items: center;
 }
 #forget_pw .form_outs {
-  flex-wrap: wrap;
-  width: 400px;
-  height: 370px;
-  background-color: #fff;
+  width: 415px;
+  height: 390px;
+  background-color: #FFFFFF;
   border-radius: 50px;
+  opacity: 0.9;
 }
-#forget_pw .form_title {
+#forget_pw .form_outs .form_title {
   margin: 1.5rem;
   display: flex;
   justify-content: center;
 }
-#forget_pw .form_title .tittle {
+#forget_pw .form_outs .form_title .tittle {
   color: #545454;
   font-size: 40px;
   margin: 0;
@@ -230,10 +230,10 @@ body {
   position: relative;
   font-size: 32px;
 }
-#forget_pw .form_title .tittle div {
+#forget_pw .form_outs .form_title .tittle div {
   font-weight: 700;
 }
-#forget_pw .form_title .tittle .tittle_ball {
+#forget_pw .form_outs .form_title .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289DD2;
@@ -244,57 +244,48 @@ body {
   left: -15px;
   z-index: -1;
 }
-#forget_pw #forget_form input {
+#forget_pw .form_outs #forget_form {
+  width: 70%;
+  margin: 2.5rem auto;
+}
+#forget_pw .form_outs #forget_form .br_mail,
+#forget_pw .form_outs #forget_form .br_pass,
+#forget_pw .form_outs #forget_form .br_chepass {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2rem 0;
+}
+#forget_pw .form_outs #forget_form .br_mail label,
+#forget_pw .form_outs #forget_form .br_pass label,
+#forget_pw .form_outs #forget_form .br_chepass label {
+  font-size: 18px;
+}
+#forget_pw .form_outs #forget_form .br_mail input,
+#forget_pw .form_outs #forget_form .br_pass input,
+#forget_pw .form_outs #forget_form .br_chepass input {
   border-radius: 40px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  height: 28px;
-  width: 100%;
+  height: 30px;
+  padding-left: 1.5rem;
 }
-#forget_pw form {
-  display: flex;
-  flex-direction: column;
-  padding: 0 5rem;
-  color: #545454;
-}
-#forget_pw form button {
-  margin-top: 2rem;
-  border-radius: 50px;
-  outline: none;
-  background-color: #545454;
-  padding: 0.2rem 0;
-  width: 100%;
-  height: 38px;
+#forget_pw .form_outs .btn_login {
+  display: block;
+  padding: 0.2rem 2rem;
   font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-}
-#forget_pw form button span {
-  color: #FFFFFF;
-}
-
-#password_form {
-  width: 100%;
-  height: 28px;
-  background: #FaFaFa 0% 0% no-repeat padding-box;
-  border: 1px solid #989898;
-  border-radius: 2px;
-  padding: 0px;
-  display: flex;
-  align-items: center;
-}
-
-#pawwword_form input {
+  margin: 4rem auto;
+  border-radius: 15px;
   border: none;
-  outline: none;
-  background: #FaFaFa 0% 0% padding-box;
-  margin: 0px 0px 0px 10px;
-  padding: 0px;
-  width: 162px;
+  background-color: #289dd2;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#forget_pw .form_outs .btn_login:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
 }
 
 /* 頁尾區*/
@@ -303,12 +294,61 @@ footer {
   background-color: #F5F5F5;
   color: #545454;
 }
+footer p {
+  font-weight: 500;
+}
 
-/* #forget_form {
-    width: 35%;
-    display: block;
-	width: 400;
-	box-sizing: border-box;
-	border-radius: 40px;
-} */
-/*提示文字顏色,沒指定階層是改整個網頁*//*# sourceMappingURL=forgetpw.css.map */
+/* #forget_form input {
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(84, 84, 84, 0.3);
+    backdrop-filter: blur(5px);
+    height: 28px;
+    width: 100%;
+    border: 3px solid black;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    color: $text_color_g;
+    button {
+      margin-top: 2rem;
+      border-radius: 50px;
+      outline: none;
+      background-color: $text_color_g;
+      padding: 0.2rem 0;
+      width: 100%;
+      height: 38px;
+      font-size: $text_size-18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    button span {
+      color: $text_color_w;
+    }
+  }
+}
+
+#password_form {
+  width: 100%;
+  height: 28px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+  border: 1px solid #989898;
+  border-radius: 2px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+}
+#pawwword_form input {
+  border: none;
+  outline: none;
+  background: #fafafa 0% 0% padding-box;
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+  width: 162px;
+}
+ *//*# sourceMappingURL=forgetpw.css.map */
