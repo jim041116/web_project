@@ -197,8 +197,3 @@ h3 {
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
-@media screen and (max-width: 576px) {
-  .silde-section .owl-theme.custom-carousel .owl-dots {
-    margin-top: -50vh;
-  }
-}

@@ -7,34 +7,66 @@ main {
   width: 65%;
   margin: 0 auto;
   .banner {
-    margin: 2rem;
+    margin-top: 1.5rem;
     display: flex;
     height: 400px;
     .left_info {
-      flex: 0.8;
-      border-radius: 0 0 0 150px;
-      background-color: black;
-      .text {
-        text-align: center;
-        h1 {
-          font-size: $text_size-48px;
-          margin: 6.5rem 0 3rem 0;
-          color: $text_color_w;
-        }
-        p {
+      display: flex;
+      width: 90%;
+      height: 360px;
+      opacity: 0.9;
+      margin: 0 auto;
+      @include pad() {
+        background-image: url(../img/badouzi.jpg);
+        border-bottom-left-radius: 150px;
+        border-top-right-radius: 50px;
+        background-position: center;
+      }
+      @include phone() {
+        background-image: url(../img/badouzi.jpg);
+        border-radius: 15px;
+        background-position: center;
+        height: 330px;
+      }
+    }
+    .text {
+      width: 330px;
+      text-align: center;
+      background-color: hsla(0, 0, 0, 0.9);
+      border-bottom-left-radius: 150px;
+      @include pad() {
+        background-color: #545454a2;
+      }
+      @include phone() {
+        border-radius: 15px 0 0 15px;
+      }
+      h1 {
+        font-size: $text_size-48px;
+        margin: 6.5rem 0 3rem 0;
+        color: $text_color_w;
+        @include pad() {
           font-size: $text_size-32px;
-          color: $text_color_w;
+        }
+      }
+      p {
+        font-size: $text_size-32px;
+        color: $text_color_w;
+        @include pad() {
+          font-size: $text_size-18px;
         }
       }
     }
-
-    // 幻燈片
-    .background-img {
-      flex: 1.5;
-      background-image: url("../img/badouzi.jpg");
+    .back-img {
+      background-image: url(../img/badouzi.jpg);
+      width: 100%;
+      background-position: cneter;
       background-size: cover;
-      background-position: center;
-      transition: ease-in-out 2s;
+      @include pad() {
+        background-image: none;
+      }
+      @include phone() {
+        background-image: none;
+      }
     }
   }
 }
