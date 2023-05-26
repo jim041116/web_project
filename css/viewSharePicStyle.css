@@ -109,6 +109,7 @@ button:focus {
 .cardList__btn.btn--right {
   right: -30%;
 }
+
 .cardList__btn .icon {
   width: 100%;
   height: 100%;
@@ -189,7 +190,6 @@ button:focus {
   --card-scale-offset: 1.1;
   --opacity: 0.4;
 }
-
 .infoList {
   position: absolute;
   width: calc(3 * var(--card-width));
