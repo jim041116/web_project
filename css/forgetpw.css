@@ -246,14 +246,14 @@ body {
 }
 #forget_pw .form_outs #forget_form {
   width: 70%;
-  margin: 2.5rem auto;
+  margin: 2rem auto;
 }
 #forget_pw .form_outs #forget_form .br_mail,
 #forget_pw .form_outs #forget_form .br_pass,
 #forget_pw .form_outs #forget_form .br_chepass {
   display: flex;
   justify-content: space-between;
-  margin: 1.2rem 0;
+  margin: 2rem 0;
 }
 #forget_pw .form_outs #forget_form .br_mail label,
 #forget_pw .form_outs #forget_form .br_pass label,
