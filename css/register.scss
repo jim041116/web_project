@@ -28,14 +28,13 @@ body {
         color: $text_color_g;
         @include tittle();
         font-size: $text_size-32px;
-        //沒帶入規範
         .tittle_ball {
           @include title_ball();
         }
       }
     }
     #register_form {
-      width: 66%;
+      width: 68%;
       margin: 0.5rem auto 0;
       .name,
       .sex_select,
