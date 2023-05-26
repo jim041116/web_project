@@ -67,36 +67,57 @@
         </ul>
       </div>
     </header>
-    
+    <!-- bg-PIC -->
     <section id="forget_pw">
       <div class="form_outs">
-      <!-- From title -->
-      <div class="form_title">
-        <div class="tittle">
+        <!-- From title -->
+        <div class="form_title">
+          <div class="tittle">
             <div>忘記密碼</div>
             <div class="tittle_ball"></div>
+          </div>
         </div>
-      </div>
-      <!-- From title -->
+        <!-- From title -->
 
         <form name="forget_form" id="forget_form" method="post">
-          <label for="email">會員信箱:</label>
-          <input type="email"  name="email" id="email" title="請輸入註冊信箱" placeholder="輸入信箱" required />
-          <br>
-          <label for="password">密碼:</label>
-          <input type="password" name="password" id="password"  title="請輸入新密碼"  placeholder="輸入密碼" required/>
-          <br>
-          <label for="password_1">確認新密碼:</label>
-          <input type="password"  name="password"  id="password_1"  title="請再次輸入密碼"  placeholder="再次輸入密碼" required />
-                
-          <button>
-                  <span>發送驗證信</span>
+          <div class="br_mail">
+            <label for="email">會員信箱:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              title="請輸入註冊信箱"
+              placeholder="輸入信箱"
+              required
+            />
+          </div>
 
-          </button>
-           
-      
+          <div class="br_pass">
+            <label for="password">密碼:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              title="請輸入新密碼"
+              placeholder="輸入密碼"
+              required
+            />
+          </div>
+
+          <div class="br_chepass">
+            <label for="password_1">確認新密碼:</label>
+            <input
+              type="password"
+              name="password"
+              id="password_1"
+              title="請再次輸入密碼"
+              placeholder="再次輸入密碼"
+              required
+            />
+          </div>
         </form>
 
+        <button class="btn_login">發送認證信</button>
       </div>
     </section>
     <footer>

@@ -6,57 +6,108 @@ body {
 }
 #forget_pw {
   width: 100%;
-  height: 770px;
-  background-image: url(/img/forget_password.jpg);
+  height: 82.5vh;
+  background-image: url(../img/forget_password.jpg);
   background-size: cover;
   background-position: center;
-  //   background-attachment: fixed;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   .form_outs {
-    flex-wrap: wrap;
-    width: 400px;
-    height: 370px;
-    background-color: #fff;
+    width: 415px;
+    height: 390px;
+    background-color: $text_color_w;
     border-radius: 50px;
-  }
-  .form_title {
-    margin: 1.5rem;
-    display: flex;
-    justify-content: center;
-    .tittle {
-      color: $text_color_g;
-      @include tittle();
-      font-size: $text_size-32px;
-      //沒帶入規範
-      .tittle_ball {
-        @include title_ball();
+    // border: 5px solid blue;
+    opacity: 0.9;
+    .form_title {
+      margin: 1.5rem;
+      display: flex;
+      justify-content: center;
+      .tittle {
+        color: $text_color_g;
+        @include tittle();
+        font-size: $text_size-32px;
+        .tittle_ball {
+          @include title_ball();
+        }
+      }
+    }
+
+    #forget_form {
+      // border: 1px solid red;
+      width: 70%;
+      margin: 2rem auto;
+      .br_mail,
+      .br_pass,
+      .br_chepass {
+        // border: 3px solid forestgreen;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+        label {
+          font-size: 18px;
+          // border: 2px solid red;
+        }
+        input {
+          border-radius: 40px;
+          border: none;
+          background-color: rgba(84, 84, 84, 0.3);
+          backdrop-filter: blur(5px);
+          height: 30px;
+          padding-left: 1.5rem;
+        }
+      }
+    }
+
+    .btn_login {
+      display: block;
+      padding: 0.2rem 2rem;
+      font-size: $text_size-18px;
+      cursor: pointer;
+      margin: 4rem auto;
+      border-radius: 15px;
+      border: none;
+      background-color: #289dd2;
+      color: white;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
       }
     }
   }
-  #forget_form input{
+}
+
+/* 頁尾區*/
+footer {
+  text-align: center;
+  background-color: $web_bg;
+  color: $text_color_g;
+  p {
+    font-weight: 500;
+  }
+}
+/* #forget_form input {
     border-radius: 40px;
     border: none;
     background-color: rgba(84, 84, 84, 0.3);
     backdrop-filter: blur(5px);
     height: 28px;
     width: 100%;
-    }
+    border: 3px solid black;
+  }
 
-  
   form {
     display: flex;
     flex-direction: column;
     padding: 0 5rem;
-    color:$text_color_g;
+    color: $text_color_g;
     button {
       margin-top: 2rem;
       border-radius: 50px;
       outline: none;
-      background-color:$text_color_g;
+      background-color: $text_color_g;
       padding: 0.2rem 0;
       width: 100%;
       height: 38px;
@@ -66,50 +117,28 @@ body {
       align-items: center;
       cursor: pointer;
     }
-    button span{
+    button span {
       color: $text_color_w;
     }
   }
 }
 
-#password_form{
-        width: 100%;
-        height: 28px;
-        background: #FaFaFa 0% 0% no-repeat padding-box;
-        border: 1px solid #989898;
-        border-radius: 2px;
-        padding: 0px;
-        display: flex;
-        align-items: center;
+#password_form {
+  width: 100%;
+  height: 28px;
+  background: #fafafa 0% 0% no-repeat padding-box;
+  border: 1px solid #989898;
+  border-radius: 2px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
 }
-#pawwword_form input{
+#pawwword_form input {
   border: none;
   outline: none;
-  background: #FaFaFa 0% 0%  padding-box;
+  background: #fafafa 0% 0% padding-box;
   margin: 0px 0px 0px 10px;
   padding: 0px;
   width: 162px;
 }
-
-
-/* 頁尾區*/
-footer {
-  text-align: center;
-  background-color:$web_bg;
-  color:$text_color_g;
-}
-
-/* #forget_form {
-    width: 35%;
-    display: block;
-	width: 400;
-	box-sizing: border-box;
-	border-radius: 40px;
-} */
-
-/*提示文字顏色,沒指定階層是改整個網頁*/
-// ::placeholder {
-// 	color: rgb(216, 129, 85);
-// 	font-size: .8rem;
-// }
-// }
+ */
