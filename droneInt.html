@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/droneInt.css">
 
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -27,7 +28,7 @@
                             <a href="#">景點推薦</a>
                         </li>
                         <li class="drop_nav_bar_item">
-                            <a href="#">景點分享</a>
+                            <a href="./viewShare.html">景點分享</a>
                         </li>
                     </ul>
                 </li>
@@ -59,12 +60,67 @@
                 <li class="nav_bar_item">登入會員
                     <ul class="drop_nav_bar">
                         <li class="drop_nav_bar_item">
-                            <a href="#">登入頁面</a>
+                            <a href="./login.html">登入頁面</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
+        <!-- 漢堡 -->
+        <div class="hamburger_box">
+            <div class="hamburger" id="hamburger-item">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <!-- 漢堡nav -->
+        <div class="hamburger_nav">
+            <ul class="hamburger_nav_item">
+                <li class="hamburger_nav_title">空拍景點</li>
+                <a href="#">
+                    <li>景點推薦</li>
+                </a>
+                <a href="./viewShare.html">
+                    <li>景點分享</li>
+                </a>
+            </ul>
+            <ul class="hamburger_nav_item">
+                <li class="hamburger_nav_title">認識空拍機</li>
+                <a href="./droneInt.html">
+                    <li>空拍機介紹</li>
+                </a>
+                <a href="./droneOperate.html">
+                    <li>基礎操作</li>
+                </a>
+                <a href="./droneType.html">
+                    <li>機型介紹</li>
+                </a>
+                <a href="./law.html">
+                    <li>空拍法規</li>
+                </a>
+                <a href="./appCom.html">
+                    <li>APP推薦</li>
+                </a>
+            </ul>
+            <ul class="hamburger_nav_item">
+                <a href="#">
+                    <li class="hamburger_nav_title">預約專區</li>
+                </a>
+            </ul>
+            <ul class="hamburger_nav_item">
+                <a href="./news.html">
+                    <li class="hamburger_nav_title">最新消息</li>
+                </a>
+            </ul>
+            <ul class="hamburger_nav_item">
+                <li class="hamburger_nav_title">登入會員</li>
+                <a href="./login.html">
+                    <li>登入頁面</li>
+                </a>
+            </ul>
+        </div>
+        <!-- 漢堡結束 -->
     </header>
     <div id="droneInt_bn">
         <div class="text_box">
@@ -77,7 +133,8 @@
         </div>
     </div>
     <div class="bn_text">
-        <p>空拍機雖然都是在空中拍攝，但會根據消費者不同的需求推出不同類型的空拍機，像是一般常見的消費級空拍機，還有針對專業拍攝用於電影上的商用級空拍機，也有人喜歡追求速度感進而產生了以速度及操控為主軸的穿越機。<br>以下將簡單介紹最常見的消費級空拍機及穿越機的特點。</p>
+        <p>空拍機雖然都是在空中拍攝，但會根據消費者不同的需求推出不同類型的空拍機，像是一般常見的消費級空拍機，還有針對專業拍攝用於電影上的商用級空拍機，也有人喜歡追求速度感進而產生了以速度及操控為主軸的穿越機。<br>以下將簡單介紹最常見的消費級空拍機及穿越機的特點。
+        </p>
     </div>
     <section id="drone_ifo">
         <div class="drone_item">
@@ -93,7 +150,7 @@
                     電池續航力：● ● ● ~ ● ● ● ● ●<br>
                     價格：● ● ~ ● ● ● ● ●<br>
                 </div>
-                <a href="./droneType.html" class="btnMore" onmouseover="go()"  onmouseout="more()">More</a>
+                <a href="./droneType.html" class="btnMore" onmouseover="go()" onmouseout="more()">More</a>
             </div>
             <video src="./img/F19_WM2605_Webclips_banner_PC-M_V1_2400x1440_AfterCodecs.mp4" autoplay loop muted></video>
         </div>
@@ -111,7 +168,7 @@
                     電池續航力：● ● ○ ○ ○<br>
                     價格：● ● ● ○ ○<br>
                 </div>
-                <a href="./droneType.html" class="btnMore1" onmouseover="go1()"  onmouseout="more1()">More</a>
+                <a href="./droneType.html" class="btnMore1" onmouseover="go1()" onmouseout="more1()">More</a>
             </div>
         </div>
 
@@ -192,7 +249,7 @@
                 <a href="#">
                     <li>景點推薦</li>
                 </a>
-                <a href="#">
+                <a href="./viewShare.html">
                     <li>景點分享</li>
                 </a>
             </ul>
@@ -226,7 +283,7 @@
             </ul>
             <ul class="web_map_item">
                 <li class="web_map_title">登入會員</li>
-                <a href="#">
+                <a href="./login.html">
                     <li>登入頁面</li>
                 </a>
             </ul>
@@ -258,7 +315,7 @@
 
                 if (curScrollTop > showTop) {
                     fixedTop.fadeIn('false');
-                }else {
+                } else {
                     fixedTop.fadeOut('false');
                 }
             });
@@ -277,6 +334,27 @@
         let more1 = () => {
             document.querySelector('.btnMore1').innerHTML = 'More'
         }
+
+        // 漢堡
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(this).toggleClass("is-active");
+            });
+        });
+
+        // 漢堡nav
+        let hb = document.querySelector('.hamburger_box');
+        let hn = document.querySelector('.hamburger_nav');
+
+        hb.onclick = () => {
+            if (hn.style.transform == 'translateY(0vh)') {
+                hn.style.transform = 'translateY(-100vh)';
+            } else {
+                hn.style.transform = 'translateY(0vh)';
+            }
+        }
+        // 漢堡結束
     </script>
 </body>
+
 </html>
