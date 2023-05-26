@@ -38,6 +38,8 @@ body {
       .la_in {
         margin: 2rem 0;
         padding: 0 1rem;
+        display: flex;
+        align-items: center;
         label {
           font-size: 18px;
         }
@@ -50,6 +52,12 @@ body {
           height: 30px;
           padding-left: 1.5rem;
           margin: 3px;
+        }
+        .fa-eye-slash {
+          font-size: 19px;
+        }
+        .fa-eye {
+          font-size: 19px;
         }
       }
     }
@@ -76,7 +84,7 @@ body {
       width: 84%;
       margin: 2.5rem auto;
       span {
-        padding-top: 5px;
+        margin: auto 0;
       }
       .login,
       .forget {

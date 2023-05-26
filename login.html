@@ -8,15 +8,13 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/login.css" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-    /> -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -109,21 +107,11 @@
                 placeholder="請輸入密碼"
                 required
               />
+              <!-- 閉眼 -->
+              <i id="eyeClose" class="fa-solid fa-eye-slash"></i>
             </div>
-
-            <!-- <div class="password_form"> -->
-            <!-- <i id="checkEye" class="fas fa-eye"></i> -->
-            <!-- </div> -->
-            <!-- <div class="btn">
-              <ul>
-                <li><a href="#">忘記密碼</a></li>
-                <li><a href="#">註冊會員</a></li>
-              </ul>
-            </div> -->
           </form>
-
           <button class="btn_login">登入</button>
-
           <div class="login_forget">
             <div class="login">
               <a href="#">註冊會員</a>
@@ -150,6 +138,23 @@
           $("#floatingPassword").attr("type", "password");
         }
         $(this).toggleClass("fa-eye").toggleClass("fa-eye-slash");
+      });
+    </script>
+    <!-- 開眼/閉眼 -->
+    <script>
+      let eyeClose = document.querySelector("#eyeClose");
+      let password = document.querySelector("#floatingPassword");
+
+      eyeClose.addEventListener("click", (e) => {
+        if (e.target.classList.contains("fa-eye-slash")) {
+          e.target.classList.remove("fa-eye-slash");
+          e.target.classList.add("fa-eye");
+          password.setAttribute("type", "text");
+        } else {
+          e.target.classList.remove("fa-eye");
+          e.target.classList.add("fa-eye-slash");
+          password.setAttribute("type", "password");
+        }
       });
     </script>
   </body>

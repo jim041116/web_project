@@ -251,6 +251,8 @@ body {
 #login .form_outs #login_form .la_in {
   margin: 2rem 0;
   padding: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 #login .form_outs #login_form .la_in label {
   font-size: 18px;
@@ -264,6 +266,12 @@ body {
   height: 30px;
   padding-left: 1.5rem;
   margin: 3px;
+}
+#login .form_outs #login_form .la_in .fa-eye-slash {
+  font-size: 19px;
+}
+#login .form_outs #login_form .la_in .fa-eye {
+  font-size: 19px;
 }
 #login .form_outs .btn_login {
   display: block;
@@ -288,7 +296,7 @@ body {
   margin: 2.5rem auto;
 }
 #login .form_outs .login_forget span {
-  padding-top: 5px;
+  margin: auto 0;
 }
 #login .form_outs .login_forget .login,
 #login .form_outs .login_forget .forget {
