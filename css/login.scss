@@ -15,12 +15,12 @@ body {
   align-items: center;
   .form_outs {
     width: 376px;
-    height: 500px;
+    height: 450px;
     background-color: $text_color_w;
     opacity: 0.9;
     border-radius: 50px;
     .form_title {
-      margin: 3.5rem auto;
+      margin: 3rem auto;
       display: flex;
       justify-content: center;
       .tittle {
@@ -34,10 +34,12 @@ body {
     }
     #login_form {
       width: 80%;
-      margin: 4rem auto;
+      margin: 3rem auto;
       .la_in {
         margin: 2rem 0;
         padding: 0 1rem;
+        display: flex;
+        align-items: center;
         label {
           font-size: 18px;
         }
@@ -51,6 +53,12 @@ body {
           padding-left: 1.5rem;
           margin: 3px;
         }
+        .fa-eye-slash {
+          font-size: 19px;
+        }
+        .fa-eye {
+          font-size: 19px;
+        }
       }
     }
     // 登入按鈕
@@ -59,7 +67,7 @@ body {
       padding: 0.2rem 2rem;
       font-size: $text_size-18px;
       cursor: pointer;
-      margin: 2rem auto;
+      margin: 5rem auto 0;
       border-radius: 15px;
       border: none;
       background-color: #289dd2;
@@ -70,13 +78,15 @@ body {
         box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
       }
     }
+
     .login_forget {
       display: flex;
       justify-content: space-between;
       width: 84%;
-      margin: 2.5rem auto;
+      margin: 1.5rem auto 0;
+      // border: 3px solid black;
       span {
-        padding-top: 5px;
+        margin: auto 0;
       }
       .login,
       .forget {
@@ -99,7 +109,7 @@ footer {
   background-color: $web_bg;
   color: $text_color_g;
   p {
-    padding: 0.9rem;
+    // padding: 0.9rem;
     font-weight: 500;
   }
 }

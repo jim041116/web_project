@@ -132,6 +132,117 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
   background-color: #289DD2;
 }
+header .hamburger_box {
+  position: fixed;
+  right: 1rem;
+  text-align: center;
+  display: none;
+  z-index: 99;
+}
+@media (max-width: 992px) {
+  header .hamburger_box {
+    display: block;
+  }
+}
+header .hamburger .line {
+  width: 35px;
+  height: 3px;
+  background-color: #545454;
+  display: block;
+  margin: 8px auto;
+  transition: all 0.3s ease-in-out;
+}
+header .hamburger:hover {
+  cursor: pointer;
+}
+header #hamburger-item {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+header #hamburger-item.is-active {
+  transform: rotate(45deg);
+}
+header #hamburger-item:before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 5px solid transparent;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+header #hamburger-item.is-active:before {
+  border: 3px solid #545454;
+}
+header #hamburger-item.is-active .line {
+  width: 35px;
+}
+header #hamburger-item.is-active .line:nth-child(2) {
+  opacity: 0;
+}
+header #hamburger-item.is-active .line:nth-child(1) {
+  transform: translateY(12px);
+}
+header #hamburger-item.is-active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(90deg);
+}
+header .hamburger_nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9254901961);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70vh;
+  z-index: 50;
+  transform: translateY(-100vh);
+  transition: all 0.5s;
+  display: none;
+}
+header .hamburger_nav .hamburger_nav_item {
+  margin: 8rem 1rem 0rem 1rem;
+  text-align: center;
+}
+header .hamburger_nav .hamburger_nav_item .hamburger_nav_title {
+  font-size: 18px;
+  border-bottom: 2px solid #545454;
+  color: #545454;
+}
+header .hamburger_nav .hamburger_nav_item li {
+  margin: 0.2rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  color: #545454;
+  transition: all 0.5s;
+}
+header .hamburger_nav .hamburger_nav_item a li:hover {
+  background-color: #289DD2;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  header .hamburger_nav {
+    display: flex;
+  }
+}
+@media (max-width: 576px) {
+  header .hamburger_nav {
+    height: 100vh;
+    align-content: start;
+  }
+  header .hamburger_nav .hamburger_nav_item {
+    margin-top: 5rem;
+  }
+  header .hamburger_nav .hamburger_nav_item .hamburger_nav_title {
+    font-size: 16px;
+  }
+  header a li {
+    font-size: 14px;
+    margin: 0rem;
+  }
+}
 
 footer {
   background-color: #545454;
@@ -202,8 +313,8 @@ body {
 
 #register_member {
   width: 100%;
-  height: 770px;
-  background-image: url(/img/register.jpg);
+  height: 82.5vh;
+  background-image: url(../img/register.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -211,18 +322,18 @@ body {
   align-items: center;
 }
 #register_member .form_outs {
-  flex-wrap: wrap;
-  width: 376px;
-  height: 520px;
+  width: 400px;
+  height: 530px;
   background-color: #F5F5F5;
-  border-radius: 50px;
+  border-radius: 40px;
+  opacity: 0.9;
 }
-#register_member .form_title {
-  margin: 1.5rem;
+#register_member .form_outs .form_title {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
-#register_member .form_title .tittle {
+#register_member .form_outs .form_title .tittle {
   color: #545454;
   font-size: 40px;
   margin: 0;
@@ -230,10 +341,10 @@ body {
   position: relative;
   font-size: 32px;
 }
-#register_member .form_title .tittle div {
+#register_member .form_outs .form_title .tittle div {
   font-weight: 700;
 }
-#register_member .form_title .tittle .tittle_ball {
+#register_member .form_outs .form_title .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289DD2;
@@ -244,49 +355,66 @@ body {
   left: -15px;
   z-index: -1;
 }
-#register_member #register_form input {
+#register_member .form_outs #register_form {
+  width: 68%;
+  margin: 0.5rem auto 0;
+}
+#register_member .form_outs #register_form .name,
+#register_member .form_outs #register_form .sex_select,
+#register_member .form_outs #register_form .email,
+#register_member .form_outs #register_form .password,
+#register_member .form_outs #register_form .ch_pass {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#register_member .form_outs #register_form .name label,
+#register_member .form_outs #register_form .name span,
+#register_member .form_outs #register_form .sex_select label,
+#register_member .form_outs #register_form .sex_select span,
+#register_member .form_outs #register_form .email label,
+#register_member .form_outs #register_form .email span,
+#register_member .form_outs #register_form .password label,
+#register_member .form_outs #register_form .password span,
+#register_member .form_outs #register_form .ch_pass label,
+#register_member .form_outs #register_form .ch_pass span {
+  font-size: 18px;
+}
+#register_member .form_outs #register_form .name input,
+#register_member .form_outs #register_form .sex_select input,
+#register_member .form_outs #register_form .email input,
+#register_member .form_outs #register_form .password input,
+#register_member .form_outs #register_form .ch_pass input {
   border-radius: 40px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  height: 28px;
-  width: 100%;
-  padding: 12px;
-  margin: 3px;
+  height: 30px;
+  padding-left: 1.5rem;
 }
-#register_member #register_form label {
-  width: 40%;
-}
-#register_member form {
-  display: flex;
-  flex-direction: column;
-  padding: 0 5rem;
-  color: #545454;
-}
-#register_member button {
-  margin-top: 2rem;
-  border-radius: 50px;
-  outline: none;
-  background-color: #545454;
-  padding: 0.2rem 0;
-  width: 100%;
-  height: 38px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
+#register_member .form_outs #register_form .sex_select {
   align-items: center;
-  cursor: pointer;
 }
-#register_member .sex_select {
+#register_member .form_outs #register_form .sex_select .radio {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  -moz-column-break-before: always;
-       break-before: always;
+  align-items: center;
 }
-#register_member button span {
-  color: #FFFFFF;
+#register_member .btn_login {
+  display: block;
+  padding: 0.2rem 2rem;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 3.8rem auto;
+  border-radius: 15px;
+  border: none;
+  background-color: #289dd2;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#register_member .btn_login:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
 }
 
 /* 頁尾區*/
@@ -295,12 +423,50 @@ footer {
   background-color: #F5F5F5;
   color: #545454;
 }
+footer p {
+  font-weight: 500;
+}
 
-/* #forget_form {
-    width: 35%;
-    display: block;
-    width: 400;
-    box-sizing: border-box;
-    border-radius: 40px;
-} */
-/*提示文字顏色,沒指定階層是改整個網頁*//*# sourceMappingURL=register.css.map */
+/******************/
+/*   #register_form input {
+      border-radius: 40px;
+      border: none;
+      background-color: rgba(84, 84, 84, 0.3);
+      backdrop-filter: blur(5px);
+      height: 28px;
+      width: 100%;
+      padding: 12px;
+      margin: 3px;
+    } */
+/*  #register_form label {
+      width: 40%;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5rem;
+      color: $text_color_g;
+    }
+    button {
+      margin-top: 2rem;
+      border-radius: 50px;
+      outline: none;
+      background-color: $text_color_g;
+      padding: 0.2rem 0;
+      width: 100%;
+      height: 38px;
+      font-size: $text_size-18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .sex_select {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      break-before: always;
+    }
+    button span {
+      color: $text_color_w;
+    } *//*# sourceMappingURL=register.css.map */

@@ -8,15 +8,13 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/login.css" />
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script> -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
-    /> -->
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -74,6 +72,62 @@
           </li>
         </ul>
       </div>
+
+      <!-- 漢堡 -->
+      <div class="hamburger_box">
+        <div class="hamburger" id="hamburger-item">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <!-- 漢堡nav -->
+      <div class="hamburger_nav">
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">空拍景點</li>
+          <a href="#">
+            <li>景點推薦</li>
+          </a>
+          <a href="./viewShare.html">
+            <li>景點分享</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">認識空拍機</li>
+          <a href="./droneInt.html">
+            <li>空拍機介紹</li>
+          </a>
+          <a href="./droneOperate.html">
+            <li>基礎操作</li>
+          </a>
+          <a href="./droneType.html">
+            <li>機型介紹</li>
+          </a>
+          <a href="./law.html">
+            <li>空拍法規</li>
+          </a>
+          <a href="./appCom.html">
+            <li>APP推薦</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <a href="#">
+            <li class="hamburger_nav_title">預約專區</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <a href="./news.html">
+            <li class="hamburger_nav_title">最新消息</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">登入會員</li>
+          <a href="./login.html">
+            <li>登入頁面</li>
+          </a>
+        </ul>
+      </div>
+      <!-- 漢堡結束 -->
     </header>
 
     <!-- content -->
@@ -109,21 +163,11 @@
                 placeholder="請輸入密碼"
                 required
               />
+              <!-- 閉眼 -->
+              <i id="eyeClose" class="fa-solid fa-eye-slash"></i>
             </div>
-
-            <!-- <div class="password_form"> -->
-            <!-- <i id="checkEye" class="fas fa-eye"></i> -->
-            <!-- </div> -->
-            <!-- <div class="btn">
-              <ul>
-                <li><a href="#">忘記密碼</a></li>
-                <li><a href="#">註冊會員</a></li>
-              </ul>
-            </div> -->
           </form>
-
           <button class="btn_login">登入</button>
-
           <div class="login_forget">
             <div class="login">
               <a href="#">註冊會員</a>
@@ -150,6 +194,36 @@
           $("#floatingPassword").attr("type", "password");
         }
         $(this).toggleClass("fa-eye").toggleClass("fa-eye-slash");
+      });
+
+      // 漢堡nav
+      let hb = document.querySelector(".hamburger_box");
+      let hn = document.querySelector(".hamburger_nav");
+
+      hb.onclick = () => {
+        if (hn.style.transform == "translateY(0vh)") {
+          hn.style.transform = "translateY(-100vh)";
+        } else {
+          hn.style.transform = "translateY(0vh)";
+        }
+      };
+      // 漢堡結束
+    </script>
+    <!-- 開眼/閉眼 -->
+    <script>
+      let eyeClose = document.querySelector("#eyeClose");
+      let password = document.querySelector("#floatingPassword");
+
+      eyeClose.addEventListener("click", (e) => {
+        if (e.target.classList.contains("fa-eye-slash")) {
+          e.target.classList.remove("fa-eye-slash");
+          e.target.classList.add("fa-eye");
+          password.setAttribute("type", "text");
+        } else {
+          e.target.classList.remove("fa-eye");
+          e.target.classList.add("fa-eye-slash");
+          password.setAttribute("type", "password");
+        }
       });
     </script>
   </body>
