@@ -1,30 +1,27 @@
 @import "./public.scss";
 
 body {
-    width: 100%;
-    height: 100vh;
-  }
-  #register_member {
-    width: 100%;
-    height: 770px;
-    background-image: url(/img/register.jpg);
-    background-size: cover;
-    background-position: center;
-    //   background-attachment: fixed;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    .form_outs {
-      flex-wrap: wrap;
-      width:376px;
-      height: 520px;
-      background-color: $web_bg;
-      border-radius: 50px;
-    }
+  width: 100%;
+  height: 100vh;
+}
+#register_member {
+  width: 100%;
+  height: 82.5vh;
+  background-image: url(../img/register.jpg);
+  background-size: cover;
+  background-position: center;
+  //   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .form_outs {
+    width: 400px;
+    height: 530px;
+    background-color: $web_bg;
+    border-radius: 40px;
+    opacity: 0.9;
     .form_title {
-      margin: 1.5rem;
+      margin-top: 2rem;
       display: flex;
       justify-content: center;
       .tittle {
@@ -37,8 +34,70 @@ body {
         }
       }
     }
+    #register_form {
+      width: 66%;
+      margin: 0.5rem auto 0;
+      .name,
+      .sex_select,
+      .email,
+      .password,
+      .ch_pass {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        label,
+        span {
+          font-size: 18px;
+        }
+        input {
+          border-radius: 40px;
+          border: none;
+          background-color: rgba(84, 84, 84, 0.3);
+          backdrop-filter: blur(5px);
+          height: 30px;
+          padding-left: 1.5rem;
+        }
+      }
+      .sex_select {
+        align-items: center;
+        .radio {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
 
-    #register_form input{
+  .btn_login {
+    display: block;
+    padding: 0.2rem 2rem;
+    font-size: $text_size-18px;
+    cursor: pointer;
+    margin: 3.8rem auto;
+    border-radius: 15px;
+    border: none;
+    background-color: #289dd2;
+    color: white;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
+    }
+  }
+}
+/* 頁尾區*/
+footer {
+  text-align: center;
+  background-color: $web_bg;
+  color: $text_color_g;
+  p {
+    // padding: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+/******************/
+/*   #register_form input {
       border-radius: 40px;
       border: none;
       background-color: rgba(84, 84, 84, 0.3);
@@ -47,75 +106,36 @@ body {
       width: 100%;
       padding: 12px;
       margin: 3px;
-    
-    
-      }
-      #register_form label{
-        width: 40%;
-      }
-
-  
-    
+    } */
+/*  #register_form label {
+      width: 40%;
+    }
     form {
       display: flex;
       flex-direction: column;
       padding: 0 5rem;
-      color:$text_color_g;
-        }
-      
-      
-
-      button {
-        margin-top: 2rem;
-        border-radius: 50px;
-        outline: none;
-        background-color:$text_color_g;
-        padding: 0.2rem 0;
-        width: 100%;
-        height: 38px;
-        font-size: $text_size-18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-       
-      }
-      .sex_select{
-        display: flex;
-	      flex-direction: row;
-	      justify-content: flex-start;
-	      break-before: always;
-      }  
-      button span{
-        color: $text_color_w;
-     
-        
-      }
-    
-    
+      color: $text_color_g;
     }
-  
-  
-  
-  /* 頁尾區*/
-  footer {
-    text-align: center;
-    background-color:$web_bg;
-    color:$text_color_g;
-  }
-  
-  /* #forget_form {
-      width: 35%;
-      display: block;
-      width: 400;
-      box-sizing: border-box;
-      border-radius: 40px;
-  } */
-  
-  /*提示文字顏色,沒指定階層是改整個網頁*/
-  // ::placeholder {
-  // 	color: rgb(216, 129, 85);
-  // 	font-size: .8rem;
-  // }
-  // }
-  
+    button {
+      margin-top: 2rem;
+      border-radius: 50px;
+      outline: none;
+      background-color: $text_color_g;
+      padding: 0.2rem 0;
+      width: 100%;
+      height: 38px;
+      font-size: $text_size-18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .sex_select {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      break-before: always;
+    }
+    button span {
+      color: $text_color_w;
+    } */
