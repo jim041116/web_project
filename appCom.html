@@ -8,10 +8,11 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/appCom.css" />
-    <link rel="stylesheet" href="./css/appComSlide.css" />
-    <!-- 輪播 -->
-    <script src="./js/jquery-1.11.3.min.js"></script>
-    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <!-- silde -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -20,13 +21,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="./css/appstyle.css" />
   </head>
   <body>
     <header>
@@ -143,6 +138,7 @@
     </header>
     <!-- content內容區 -->
     <main>
+      <!-- banner -->
       <section>
         <div class="banner">
           <div class="left_info">
@@ -150,53 +146,175 @@
               <h1>APP推薦</h1>
               <p>常用APP簡介</p>
             </div>
+
+            <div class="back-img"></div>
           </div>
-          <div class="background-img"></div>
         </div>
       </section>
-      <!-- 左右滾動 -->
-      <section class="silde-section">
+
+      <!-- slide -->
+      <section class="app-section">
+        <h2 class="line-title">Mobile App</h2>
+        <!-- content -->
         <div class="owl-carousel custom-carousel owl-theme">
+          <!-- DJI FLY -->
           <div
             class="item active"
-            style="background-image: url(./img/lightCut.png)"
+            style="background-image: url(./img/app相關-dji.png)"
           >
+            <div class="qrcode">
+              <img src="./img/DJI-QR.png" alt="" />
+            </div>
             <div class="item-desc">
-              <h3>LightCut</h3>
-              <p>content</p>
+              <h3>DJI FLY</h3>
+              <p>
+                DJI
+                FLY是直觀且易於使用的飛行控制應用程式，提供精準的飛行控制和攝影功能。使用者可以輕鬆操控無人機。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/us/app/dji-fly/id1479649251"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <!-- <a class="google_down" href="#"><img src="./img/google-download.png" alt=""></a> -->
+              </div>
             </div>
           </div>
-          <div class="item" style="background-image: url(./img/windy.png)">
-            <div class="item-desc">
-              <h3>Windy</h3>
-              <p>content</p>
-            </div>
-          </div>
-          <div class="item" style="background-image: url(./img/DJI-FLY.png)">
-            <div class="item-desc">
-              <h3>Dji Fly</h3>
-              <p>content</p>
-            </div>
-          </div>
+          <!-- LIGHT CUT -->
           <div
             class="item"
-            style="background-image: url(./img/UAV-foreacst.png)"
+            style="background-image: url(./img/app相關-lightCut.png)"
           >
-            <!-- box_content -->
+            <div class="qrcode">
+              <img src="./img/LightCut-QR.png" alt="" />
+            </div>
             <div class="item-desc">
-              <h3>Uav Foreacst</h3>
-              <p>content</p>
+              <h3>LIGHT CUT</h3>
+              <p>
+                LIGHT CUT
+                是一種影像處理技術，用於調整亮度和對比度，增強影像的清晰度和細節，創造更好的視覺效果。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/lightcut-video-editor/id1575860488"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.lightcut.videoeditor&hl=zh_TW&gl=US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
-          <div class="item" style="background-image: url(./img/無人機行動.png)">
+          <!-- DRONE MAP-->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-無人機.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/DroneMap-QR.png" alt="" />
+            </div>
             <div class="item-desc">
-              <h3>無人機行動服務</h3>
-              <p>content</p>
+              <h3>DRONE MAP</h3>
+              <p>
+                無人機空域查詢是一種工具或應用程式，用於查詢和確認特定地區的無人機飛行限制區域和相關規定。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/drone-map-%E7%84%A1%E4%BA%BA%E6%A9%9F%E7%A9%BA%E5%9F%9F%E6%9F%A5%E8%A9%A2/id1498896499"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.tradevan.drone_map&hl=zh_TW&gl=US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
             </div>
           </div>
+          <!-- UAV FORECAST -->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-UAV.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/UAVforecast-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>UAV FORECAST</h3>
+              <p>
+                UAV
+                Forecast是一個提供無人機飛行預報和條件評估的應用程式，包括天氣狀況、風速、日出日落等資訊，幫助無人機飛行者做出安全的飛行決策。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/uav-forecast/id1050023752"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.uavforecast&hl=en_US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- WINDY -->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-windy.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/Windy-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>WINDY</h3>
+              <p>
+                Windy.com是一個網站和應用程式，提供全球即時的天氣預報和風速資訊，可用於無人機飛行者做飛行前的天氣檢查和路線規劃。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/windy-com-weather-radar/id1161387262"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.windyty.android&hl=zh_TW&gl=US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="item" style="background-image: url(#)">
+            <div class="item-desc">
+              <h3>Far Cry 5</h3>
+              <p>
+                Far Cry 5 is a 2018 first-person shooter game developed by
+                Ubisoft. which was a community-created mod for Blizzard
+                Entertainment's Warcraft III.
+              </p>
+            </div>
+          </div> -->
         </div>
       </section>
     </main>
+
     <footer>
       <div class="footer_web_map">
         <ul class="web_map_item">
@@ -252,10 +370,6 @@
         <div class="copyright">copyright © TravelDrone 版權所有</div>
       </div>
     </footer>
-    <!-- 輪播 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./js/appComSlide.js"></script>
 
     <!-- GO-top -->
     <script>
@@ -299,5 +413,10 @@
       };
       // 漢堡結束
     </script>
+
+    <!-- slide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/appscript.js"></script>
   </body>
 </html>

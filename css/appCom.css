@@ -305,6 +305,10 @@ footer .logo .copyright {
   padding-bottom: 1rem;
 }
 
+header {
+  flex-wrap: nowrap;
+}
+
 body {
   background-color: #F5F5F5;
 }
@@ -314,31 +318,81 @@ main {
   margin: 0 auto;
 }
 main .banner {
-  margin: 2rem;
+  margin-top: 5rem;
   display: flex;
   height: 400px;
 }
 main .banner .left_info {
-  flex: 0.8;
-  border-radius: 0 0 0 150px;
-  background-color: black;
+  display: flex;
+  width: 90%;
+  height: 360px;
+  opacity: 0.9;
+  margin: 0 auto;
 }
-main .banner .left_info .text {
+@media (max-width: 992px) {
+  main .banner .left_info {
+    background-image: url(../img/badouzi.jpg);
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 50px;
+    background-position: center;
+  }
+}
+@media (max-width: 576px) {
+  main .banner .left_info {
+    background-image: url(../img/badouzi.jpg);
+    border-radius: 15px;
+    background-position: center;
+    height: 330px;
+  }
+}
+main .banner .text {
+  width: 330px;
   text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.9);
+  border-bottom-left-radius: 150px;
 }
-main .banner .left_info .text h1 {
+@media (max-width: 992px) {
+  main .banner .text {
+    background-color: rgba(84, 84, 84, 0.6352941176);
+  }
+}
+@media (max-width: 576px) {
+  main .banner .text {
+    border-radius: 15px 0 0 15px;
+  }
+}
+main .banner .text h1 {
   font-size: 48px;
   margin: 6.5rem 0 3rem 0;
   color: #FFFFFF;
 }
-main .banner .left_info .text p {
+@media (max-width: 992px) {
+  main .banner .text h1 {
+    font-size: 32px;
+  }
+}
+main .banner .text p {
   font-size: 32px;
   color: #FFFFFF;
 }
-main .banner .background-img {
-  flex: 1.5;
-  background-image: url("../img/badouzi.jpg");
+@media (max-width: 992px) {
+  main .banner .text p {
+    font-size: 18px;
+  }
+}
+main .banner .back-img {
+  background-image: url(../img/badouzi.jpg);
+  width: 100%;
+  background-position: cneter;
   background-size: cover;
-  background-position: center;
-  transition: ease-in-out 2s;
+}
+@media (max-width: 992px) {
+  main .banner .back-img {
+    background-image: none;
+  }
+}
+@media (max-width: 576px) {
+  main .banner .back-img {
+    background-image: none;
+  }
 }/*# sourceMappingURL=appCom.css.map */

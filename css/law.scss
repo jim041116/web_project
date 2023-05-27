@@ -46,6 +46,11 @@ section {
       background-image: url(../img/伯朗.jpg);
       @include background();
       border-radius: $raduis;
+      @include pc() {
+        .incul {
+          font-size: 18px;
+        }
+      }
       .incul {
         @include abs-wid();
         line-height: 25px;
@@ -59,7 +64,7 @@ section {
 //------ 易觸犯規範 ------//
 section {
   .law_title_mix {
-    margin-top: 40vh;
+    margin-top: 37vh;
     display: flex;
     justify-content: center;
     .tittle {
@@ -74,16 +79,23 @@ section {
   // 大外框
   .box_touch {
     height: 70vh;
-    width: 50%;
+    width: 48%;
     display: flex;
     margin: 3rem auto;
     position: relative;
+    @include pc() {
+      height: 55vh;
+      width: 52%;
+    }
     // 照片
     .box_img {
-      height: 100%;
       img {
         width: 600px;
         height: 100%;
+        @include pc() {
+          width: 450px;
+          height: 98.5%;
+        }
       }
     }
     // 移動列
@@ -142,6 +154,7 @@ section {
     .left_box {
       margin-top: 5rem;
       width: 57%;
+      position: relative;
       // title
       .tittle {
         @include tittle();
@@ -150,11 +163,24 @@ section {
           @include title_ball();
         }
       }
-      // 限高照片
-      img {
-        width: 800px;
-        height: 350px;
-        margin-top: 3rem;
+      .text_box {
+        position: relative;
+        margin-top: 4rem;
+        p {
+          position: absolute;
+          color: white;
+          padding: 3em;
+          line-height: 2rem;
+          margin-top: 3rem;
+        }
+        // 限高照片
+        img {
+          width: 800px;
+          height: 350px;
+          @include pc() {
+            width: 525px;
+          }
+        }
       }
     }
     // 右邊img &shadow
@@ -166,6 +192,10 @@ section {
         background-image: url(../img/law_infoVague.png);
         width: 420px;
         height: 420px;
+        @include pc() {
+          z-index: -1;
+          margin-left: -2rem;
+        }
       }
       img {
         position: absolute;
@@ -195,6 +225,10 @@ section {
     height: 45vh;
     margin: 2rem auto;
     position: relative;
+    // border: 3px solid rgb(245, 0, 0);
+    @include pc() {
+      height: 40vh;
+    }
     .pic_text {
       width: 600px;
       height: 228px;
@@ -202,8 +236,14 @@ section {
       border-radius: 15px;
       display: flex;
       align-items: center;
+      @include pc() {
+        width: 460px;
+      }
       .text {
         padding: 3rem;
+        @include pc() {
+          padding: 2rem;
+        }
         p {
           margin-bottom: 1.5rem;
           color: $text_color_w;
@@ -214,6 +254,16 @@ section {
       position: absolute;
       right: 0;
       bottom: 0;
+      img {
+        border-radius: 15px;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+          7px 7px 20px 0px rgba(0, 0, 0, 0.3),
+          4px 4px 7px 0px rgba(0, 0, 0, 0.3);
+        @include pc() {
+          width: 450px;
+          height: 230px;
+        }
+      }
     }
   }
 }
@@ -240,7 +290,10 @@ section {
     background-image: url(../img/操作證-模糊.png);
     background-position: top right;
     background-repeat: no-repeat;
-
+    @include pc() {
+      width: 70%;
+      height: 77vh;
+    }
     .mix_left {
       .mix_text {
         width: 600px;
@@ -254,7 +307,8 @@ section {
         .mix_word {
           padding: 2rem;
           p {
-            margin-bottom: 1.5rem;
+            font-size: $text_size-16px;
+            margin-bottom: 1rem;
             color: $text_color_w;
           }
         }
@@ -278,6 +332,9 @@ section {
         height: 550px;
         bottom: 1.5rem;
         left: -8rem;
+        @include pc() {
+          bottom: 3.8rem;
+        }
       }
     }
   }
@@ -285,12 +342,12 @@ section {
 
 //------ 安全飛行準則 ------//
 section {
-  .fly-allow {
+  .fly-img {
     width: 100%;
-    height: 650px;
-    overflow: hidden;
+    height: 500px;
     img {
       width: 100%;
+      height: 500px;
     }
   }
 }

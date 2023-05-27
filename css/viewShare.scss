@@ -26,16 +26,27 @@ main {
   section {
     .container_info {
       align-items: center;
-      margin: auto;
+      margin: 2rem auto;
       display: flex;
-      width: 80vw;
+      width: 100vw;
       justify-content: center;
       flex-wrap: wrap;
+      @include pc() {
+        width: 90%;
+        margin: 2rem auto;
+      }
       .ins_box {
         width: 580px;
         height: 400px;
         display: flex;
-        margin: 1.5rem 3.5rem;
+        margin: 1rem 3.5rem;
+        @include pc() {
+          margin: 1rem;
+        }
+        @include phone() {
+          min-height: 350px;
+          min-width: 500px;
+        }
         .left_img {
           width: 55%;
           height: 100%;
@@ -57,6 +68,7 @@ main {
           flex-direction: column;
           justify-content: space-between;
           font-size: $text_size-16px;
+          border-bottom: 2px solid #545454;
           .right_info_title {
             border: 3px solid $text_color_g;
             border-radius: 0 15px 0 0;
@@ -76,6 +88,9 @@ main {
             .footer_info_b,
             .footer_info_c {
               margin: 1rem 0.5rem;
+              @include phone() {
+                display: none;
+              }
               .info_title {
                 @include bgc_col();
               }
