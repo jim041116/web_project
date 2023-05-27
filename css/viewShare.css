@@ -341,8 +341,8 @@ main section .container_info .ins_box {
 }
 @media (max-width: 576px) {
   main section .container_info .ins_box {
-    height: 350px;
-    width: 500px;
+    min-height: 350px;
+    min-width: 500px;
   }
 }
 main section .container_info .ins_box .left_img {

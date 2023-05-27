@@ -44,8 +44,8 @@ main {
           margin: 1rem;
         }
         @include phone() {
-          height: 350px;
-          width: 500px;
+          min-height: 350px;
+          min-width: 500px;
         }
         .left_img {
           width: 55%;

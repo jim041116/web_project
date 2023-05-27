@@ -263,7 +263,7 @@ button:focus {
 }
 @media screen and (max-width: 576px) {
   .banner {
-    height: 40vh;
+    min-height: 40vh;
   }
   .cardList__btn.btn--left {
     left: 23%;
@@ -273,9 +273,6 @@ button:focus {
   }
   .info {
     margin-left: calc(var(--card-width) / 1.05);
-  }
-  .banner {
-    height: 45vh;
   }
 }
 .info .text {
