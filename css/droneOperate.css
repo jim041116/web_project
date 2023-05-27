@@ -363,6 +363,7 @@ main section .banner .text_word {
   top: 19rem;
   left: 10%;
   background-image: url(../img/南子.jpg);
+  opacity: 0.9;
   background-size: cover;
   background-position: center;
 }
@@ -373,6 +374,18 @@ main section .banner .text_word p {
   position: absolute;
   top: 30%;
   left: 10%;
+}
+@media (max-width: 1440px) {
+  main section .banner .text_word p {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  main section .banner .text_word p {
+    margin-top: -3rem;
+    line-height: 2rem;
+  }
 }
 main section .operate {
   background-color: #F5F5F5;
@@ -414,6 +427,17 @@ main section .video {
 }
 main section .video iframe {
   margin-top: 5rem;
+}
+@media (max-width: 1440px) {
+  main section .video iframe {
+    width: 900px;
+  }
+}
+@media (max-width: 576px) {
+  main section .video iframe {
+    width: 500px;
+    height: 45vh;
+  }
 }
 main section .box1 {
   margin-top: 40rem;

@@ -59,6 +59,7 @@ main {
         top: 19rem;
         left: 10%;
         background-image: url(../img/南子.jpg);
+        opacity: 0.9;
         @include backPo();
         p {
           width: 80%;
@@ -67,6 +68,14 @@ main {
           position: absolute;
           top: 30%;
           left: 10%;
+          @include pc() {
+            font-size: 18px;
+            line-height: 2rem;
+          }
+          @include phone() {
+            margin-top: -3rem;
+            line-height: 2rem;
+          }
         }
       }
     }
@@ -108,6 +117,13 @@ main {
       align-items: center;
       iframe {
         margin-top: 5rem;
+        @include pc() {
+          width: 900px;
+        }
+        @include phone() {
+          width: 500px;
+          height: 45vh;
+        }
       }
     }
     .box1 {
