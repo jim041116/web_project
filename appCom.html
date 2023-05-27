@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP推薦</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/public.css" />
+    <link rel="stylesheet" href="./css/appCom.css" />
+    <!-- silde -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" href="./css/appstyle.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <a href="index.html">
+          <img src="./img/logo_g.png" alt="logo" width="250px" />
+        </a>
+      </div>
+      <div id="nav_bar">
+        <ul>
+          <li class="nav_bar_item">
+            空拍景點
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">景點推薦</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">景點分享</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            認識空拍機
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">空拍機介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">基礎操作</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">機型介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">空拍法規</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="#">APP推薦</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">預約專區</a>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">最新消息</a>
+          </li>
+          <li class="nav_bar_item">
+            登入會員
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">登入頁面</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 漢堡 -->
+      <div class="hamburger_box">
+        <div class="hamburger" id="hamburger-item">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </div>
+      <!-- 漢堡nav -->
+      <div class="hamburger_nav">
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">空拍景點</li>
+          <a href="#">
+            <li>景點推薦</li>
+          </a>
+          <a href="./viewShare.html">
+            <li>景點分享</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">認識空拍機</li>
+          <a href="./droneInt.html">
+            <li>空拍機介紹</li>
+          </a>
+          <a href="./droneOperate.html">
+            <li>基礎操作</li>
+          </a>
+          <a href="./droneType.html">
+            <li>機型介紹</li>
+          </a>
+          <a href="./law.html">
+            <li>空拍法規</li>
+          </a>
+          <a href="./appCom.html">
+            <li>APP推薦</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <a href="#">
+            <li class="hamburger_nav_title">預約專區</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <a href="./news.html">
+            <li class="hamburger_nav_title">最新消息</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">登入會員</li>
+          <a href="./login.html">
+            <li>登入頁面</li>
+          </a>
+        </ul>
+      </div>
+      <!-- 漢堡結束 -->
+    </header>
+    <!-- content內容區 -->
+    <main>
+      <!-- banner -->
+      <section>
+        <div class="banner">
+          <div class="left_info">
+            <div class="text">
+              <h1>APP推薦</h1>
+              <p>常用APP簡介</p>
+            </div>
+
+            <div class="back-img"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- slide -->
+      <section class="app-section">
+        <h2 class="line-title">Mobile App</h2>
+        <!-- content -->
+        <div class="owl-carousel custom-carousel owl-theme">
+          <!-- DJI FLY -->
+          <div
+            class="item active"
+            style="background-image: url(./img/app相關-dji.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/DJI-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>DJI FLY</h3>
+              <p>
+                DJI
+                FLY是直觀且易於使用的飛行控制應用程式，提供精準的飛行控制和攝影功能。使用者可以輕鬆操控無人機。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/us/app/dji-fly/id1479649251"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <!-- <a class="google_down" href="#"><img src="./img/google-download.png" alt=""></a> -->
+              </div>
+            </div>
+          </div>
+          <!-- LIGHT CUT -->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-lightCut.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/LightCut-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>LIGHT CUT</h3>
+              <p>
+                LIGHT CUT
+                是一種影像處理技術，用於調整亮度和對比度，增強影像的清晰度和細節，創造更好的視覺效果。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/lightcut-video-editor/id1575860488"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.lightcut.videoeditor&hl=zh_TW&gl=US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- DRONE MAP-->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-無人機.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/DroneMap-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>DRONE MAP</h3>
+              <p>
+                無人機空域查詢是一種工具或應用程式，用於查詢和確認特定地區的無人機飛行限制區域和相關規定。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/drone-map-%E7%84%A1%E4%BA%BA%E6%A9%9F%E7%A9%BA%E5%9F%9F%E6%9F%A5%E8%A9%A2/id1498896499"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.tradevan.drone_map&hl=zh_TW&gl=US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- UAV FORECAST -->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-UAV.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/UAVforecast-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>UAV FORECAST</h3>
+              <p>
+                UAV
+                Forecast是一個提供無人機飛行預報和條件評估的應用程式，包括天氣狀況、風速、日出日落等資訊，幫助無人機飛行者做出安全的飛行決策。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/uav-forecast/id1050023752"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.uavforecast&hl=en_US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <!-- WINDY -->
+          <div
+            class="item"
+            style="background-image: url(./img/app相關-windy.png)"
+          >
+            <div class="qrcode">
+              <img src="./img/Windy-QR.png" alt="" />
+            </div>
+            <div class="item-desc">
+              <h3>WINDY</h3>
+              <p>
+                Windy.com是一個網站和應用程式，提供全球即時的天氣預報和風速資訊，可用於無人機飛行者做飛行前的天氣檢查和路線規劃。
+              </p>
+              <div class="app_down">
+                <a
+                  class="apple_down"
+                  href="https://apps.apple.com/tw/app/windy-com-weather-radar/id1161387262"
+                  title="前往AppStore"
+                  ><img src="./img/apple-download.png" alt=""
+                /></a>
+                <a
+                  class="google_down"
+                  href="https://play.google.com/store/apps/details?id=com.windyty.android&hl=zh_TW&gl=US"
+                  title="前往GooglePlay"
+                  ><img src="./img/google-download.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="item" style="background-image: url(#)">
+            <div class="item-desc">
+              <h3>Far Cry 5</h3>
+              <p>
+                Far Cry 5 is a 2018 first-person shooter game developed by
+                Ubisoft. which was a community-created mod for Blizzard
+                Entertainment's Warcraft III.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_web_map">
+        <ul class="web_map_item">
+          <li class="web_map_title">空拍景點</li>
+          <a href="#">
+            <li>景點推薦</li>
+          </a>
+          <a href="#">
+            <li>景點分享</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <li class="web_map_title">認識空拍機</li>
+          <a href="#">
+            <li>空拍機介紹</li>
+          </a>
+          <a href="#">
+            <li>基礎操作</li>
+          </a>
+          <a href="#">
+            <li>機型介紹</li>
+          </a>
+          <a href="#">
+            <li>空拍法規</li>
+          </a>
+          <a href="#">
+            <li>APP推薦</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <a href="#">
+            <li class="web_map_title">預約專區</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <a href="#">
+            <li class="web_map_title">最新消息</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <li class="web_map_title">登入會員</li>
+          <a href="#">
+            <li>登入頁面</li>
+          </a>
+        </ul>
+      </div>
+      <div class="logo">
+        <div>
+          <a href="index.html">
+            <img src="./img/logo_w.png" alt="logo" width="250px" />
+          </a>
+        </div>
+        <div class="copyright">copyright © TravelDrone 版權所有</div>
+      </div>
+    </footer>
+
+    <!-- GO-top -->
+    <script>
+      $(function () {
+        $("body").append(
+          '<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>'
+        );
+        let fixedTop = $("#fixedTop");
+        fixedTop.on("click", function () {
+          $("html, body").animate({ scrollTop: "0" }, 1000);
+        });
+        $(window).on("load scroll resize", function () {
+          let showTop = 100;
+          let curScrollTop = $(window).scrollTop();
+
+          if (curScrollTop > showTop) {
+            fixedTop.fadeIn("false");
+          } else {
+            fixedTop.fadeOut("false");
+          }
+        });
+      });
+
+      // 漢堡
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("is-active");
+        });
+      });
+
+      // 漢堡nav
+      let hb = document.querySelector(".hamburger_box");
+      let hn = document.querySelector(".hamburger_nav");
+
+      hb.onclick = () => {
+        if (hn.style.transform == "translateY(0vh)") {
+          hn.style.transform = "translateY(-100vh)";
+        } else {
+          hn.style.transform = "translateY(0vh)";
+        }
+      };
+      // 漢堡結束
+    </script>
+
+    <!-- slide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/appscript.js"></script>
+  </body>
+</html>
