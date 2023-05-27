@@ -346,6 +346,11 @@ section .big_c .middle_text {
   height: 40vh;
   border-radius: 15px;
 }
+@media (max-width: 1440px) {
+  section .big_c .middle_text .incul {
+    font-size: 18px;
+  }
+}
 section .big_c .middle_text .incul {
   position: absolute;
   width: 80%;
@@ -356,7 +361,7 @@ section .big_c .middle_text .incul {
 }
 
 section .law_title_mix {
-  margin-top: 40vh;
+  margin-top: 37vh;
   display: flex;
   justify-content: center;
 }
@@ -383,17 +388,26 @@ section .law_title_mix .tittle .tittle_ball {
 }
 section .box_touch {
   height: 70vh;
-  width: 50%;
+  width: 48%;
   display: flex;
   margin: 3rem auto;
   position: relative;
 }
-section .box_touch .box_img {
-  height: 100%;
+@media (max-width: 1440px) {
+  section .box_touch {
+    height: 55vh;
+    width: 52%;
+  }
 }
 section .box_touch .box_img img {
   width: 600px;
   height: 100%;
+}
+@media (max-width: 1440px) {
+  section .box_touch .box_img img {
+    width: 450px;
+    height: 98.5%;
+  }
 }
 section .box_touch .col-box {
   display: flex;
@@ -446,6 +460,7 @@ section .limit_h {
 section .limit_h .left_box {
   margin-top: 5rem;
   width: 57%;
+  position: relative;
 }
 section .limit_h .left_box .tittle {
   font-size: 40px;
@@ -468,10 +483,25 @@ section .limit_h .left_box .tittle .tittle_ball {
   left: -15px;
   z-index: -1;
 }
-section .limit_h .left_box img {
+section .limit_h .left_box .text_box {
+  position: relative;
+  margin-top: 4rem;
+}
+section .limit_h .left_box .text_box p {
+  position: absolute;
+  color: white;
+  padding: 3em;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+section .limit_h .left_box .text_box img {
   width: 800px;
   height: 350px;
-  margin-top: 3rem;
+}
+@media (max-width: 1440px) {
+  section .limit_h .left_box .text_box img {
+    width: 525px;
+  }
 }
 section .limit_h .shadow_pic {
   width: 550px;
@@ -482,6 +512,12 @@ section .limit_h .shadow_pic .shadow {
   background-image: url(../img/law_infoVague.png);
   width: 420px;
   height: 420px;
+}
+@media (max-width: 1440px) {
+  section .limit_h .shadow_pic .shadow {
+    z-index: -1;
+    margin-left: -2rem;
+  }
 }
 section .limit_h .shadow_pic img {
   position: absolute;
@@ -521,6 +557,11 @@ section .pic_mix {
   margin: 2rem auto;
   position: relative;
 }
+@media (max-width: 1440px) {
+  section .pic_mix {
+    height: 40vh;
+  }
+}
 section .pic_mix .pic_text {
   width: 600px;
   height: 228px;
@@ -529,8 +570,18 @@ section .pic_mix .pic_text {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1440px) {
+  section .pic_mix .pic_text {
+    width: 460px;
+  }
+}
 section .pic_mix .pic_text .text {
   padding: 3rem;
+}
+@media (max-width: 1440px) {
+  section .pic_mix .pic_text .text {
+    padding: 2rem;
+  }
 }
 section .pic_mix .pic_text .text p {
   margin-bottom: 1.5rem;
@@ -540,6 +591,16 @@ section .pic_mix .pic_p {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+section .pic_mix .pic_p img {
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.3), 4px 4px 7px 0px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1440px) {
+  section .pic_mix .pic_p img {
+    width: 450px;
+    height: 230px;
+  }
 }
 
 section .law_test {
@@ -575,6 +636,12 @@ section .law_pic_mix {
   background-position: top right;
   background-repeat: no-repeat;
 }
+@media (max-width: 1440px) {
+  section .law_pic_mix {
+    width: 70%;
+    height: 77vh;
+  }
+}
 section .law_pic_mix .mix_left .mix_text {
   width: 600px;
   height: 228px;
@@ -589,7 +656,8 @@ section .law_pic_mix .mix_left .mix_text .mix_word {
   padding: 2rem;
 }
 section .law_pic_mix .mix_left .mix_text .mix_word p {
-  margin-bottom: 1.5rem;
+  font-size: 16px;
+  margin-bottom: 1rem;
   color: #FFFFFF;
 }
 section .law_pic_mix .mix_left .difference {
@@ -612,12 +680,17 @@ section .law_pic_mix .operate img {
   bottom: 1.5rem;
   left: -8rem;
 }
-
-section .fly-allow {
-  width: 100%;
-  height: 650px;
-  overflow: hidden;
+@media (max-width: 1440px) {
+  section .law_pic_mix .operate img {
+    bottom: 3.8rem;
+  }
 }
-section .fly-allow img {
+
+section .fly-img {
   width: 100%;
+  height: 500px;
+}
+section .fly-img img {
+  width: 100%;
+  height: 500px;
 }/*# sourceMappingURL=law.css.map */
