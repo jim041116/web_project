@@ -138,6 +138,9 @@ header .hamburger_box {
   text-align: center;
   display: none;
   z-index: 99;
+  background-color: #F5F5F5;
+  padding: 0.5rem;
+  border-radius: 15px;
 }
 @media (max-width: 992px) {
   header .hamburger_box {
@@ -199,8 +202,8 @@ header .hamburger_nav {
   width: 100vw;
   height: 70vh;
   z-index: 50;
-  transform: translateY(-100vh);
-  transition: all 0.5s;
+  transform: translateY(-1500px);
+  transition: all 0.8s;
   display: none;
 }
 header .hamburger_nav .hamburger_nav_item {
@@ -328,6 +331,7 @@ main .mask {
 }
 main section {
   position: relative;
+  z-index: -1;
 }
 main section .banner {
   background-image: url(../img/operatePic.png);
@@ -379,6 +383,11 @@ main section .banner .text_word p {
   main section .banner .text_word p {
     font-size: 18px;
     line-height: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  main section .banner .text_word p {
+    margin-top: -2rem;
   }
 }
 @media (max-width: 576px) {
@@ -433,6 +442,11 @@ main section .video iframe {
     width: 900px;
   }
 }
+@media (max-width: 768px) {
+  main section .video iframe {
+    width: 700px;
+  }
+}
 @media (max-width: 576px) {
   main section .video iframe {
     width: 500px;
@@ -451,6 +465,21 @@ main section .box1 .tittle {
   color: #FFFFFF;
   position: absolute;
   top: 10vh;
+}
+@media (max-width: 992px) {
+  main section .box1 .tittle {
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 768px) {
+  main section .box1 .tittle {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  main section .box1 .tittle {
+    margin-top: 2rem;
+  }
 }
 main section .box1 .tittle div {
   font-weight: 700;
@@ -477,6 +506,21 @@ main section .box2 .tittle {
   color: #FFFFFF;
   position: absolute;
   top: 90vh;
+}
+@media (max-width: 992px) {
+  main section .box2 .tittle {
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 768px) {
+  main section .box2 .tittle {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  main section .box2 .tittle {
+    margin-top: 2rem;
+  }
 }
 main section .box2 .tittle div {
   font-weight: 700;

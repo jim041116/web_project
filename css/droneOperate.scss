@@ -27,6 +27,7 @@ main {
   }
   section {
     position: relative;
+    z-index: -1;
     .banner {
       background-image: url(../img/operatePic.png);
       background-repeat: no-repeat;
@@ -71,6 +72,9 @@ main {
           @include pc() {
             font-size: 18px;
             line-height: 2rem;
+          }
+          @include pad() {
+            margin-top: -2rem;
           }
           @include phone() {
             margin-top: -3rem;
@@ -120,6 +124,9 @@ main {
         @include pc() {
           width: 900px;
         }
+        @include pad2() {
+          width: 700px;
+        }
         @include phone() {
           width: 500px;
           height: 45vh;
@@ -130,6 +137,15 @@ main {
       margin-top: 40rem;
       background-image: url(../img/南子.jpg);
       .tittle {
+        @include pad() {
+          margin-top: -2rem;
+        }
+        @include pad2() {
+          margin-left: 1rem;
+        }
+        @include phone() {
+          margin-top: 2rem;
+        }
         @include tittle();
         color: $text_color_w;
         position: absolute;
@@ -142,6 +158,15 @@ main {
     .box2 {
       background-image: url(../img/太魯閣.jpg);
       .tittle {
+        @include pad() {
+          margin-top: -2rem;
+        }
+        @include pad2() {
+          margin-left: 1rem;
+        }
+        @include phone() {
+          margin-top: 2rem;
+        }
         @include tittle();
         color: $text_color_w;
         position: absolute;
