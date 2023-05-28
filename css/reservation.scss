@@ -74,11 +74,11 @@ body {
 
 
 
-#content p {
-  display: flex;
-  justify-content: left;
+// #content p {
+//   display: flex;
+//   justify-content: left;
  
-}
+// }
 
 
 #custumized {
@@ -110,19 +110,18 @@ body {
       }
       
     }
-    
 
- 
 }
 #custumized_form {
   width: 811px;
   height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ 
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   border-radius: 15px;
   background-color: rgb(27, 26, 26,0.6);
-  }
+  } 
   .content_text{
     color: $text_color_w;
     font-size: $text_size-28px;

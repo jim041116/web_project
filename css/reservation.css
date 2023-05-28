@@ -137,6 +137,9 @@ header .hamburger_box {
   text-align: center;
   display: none;
   z-index: 99;
+  background-color: #F5F5F5;
+  padding: 0.5rem;
+  border-radius: 15px;
 }
 @media (max-width: 992px) {
   header .hamburger_box {
@@ -198,8 +201,8 @@ header .hamburger_nav {
   width: 100vw;
   height: 70vh;
   z-index: 50;
-  transform: translateY(-100vh);
-  transition: all 0.5s;
+  transform: translateY(-1500px);
+  transition: all 0.8s;
   display: none;
 }
 header .hamburger_nav .hamburger_nav_item {
@@ -387,11 +390,6 @@ body {
   color: rgb(236, 118, 134);
 }
 
-#content p {
-  display: flex;
-  justify-content: left;
-}
-
 #custumized {
   width: 100%;
   height: 498px;
@@ -437,9 +435,6 @@ body {
 #custumized_form {
   width: 811px;
   height: 420px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 15px;
   background-color: rgba(27, 26, 26, 0.6);
 }

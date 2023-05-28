@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
 *,
 *::after,
@@ -309,156 +308,34 @@ footer .logo .copyright {
   padding-bottom: 1rem;
 }
 
-main {
-  position: relative;
-}
-main img.fixed-image {
-  position: fixed;
-  z-index: -99;
+body {
   width: 100%;
-  min-height: 100vh;
-  bottom: 0;
-  left: 0;
+  height: 100vh;
 }
-main .mask {
-  background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
+
+#form {
   width: 100%;
-  height: 100%;
-  z-index: -3;
-  left: 0;
-  top: 0;
-}
-main section {
-  position: relative;
-}
-main section .banner {
-  background-image: url(../img/operatePic.png);
-  background-repeat: no-repeat;
+  height: 1034px;
+  background-image: url(../img/register.jpg);
   background-size: cover;
-  background-position: center;
-  height: 40vh;
+}
+#form .form_title {
+  margin-top: 2rem;
   display: flex;
+  justify-content: center;
 }
-main section .banner .title {
-  position: absolute;
-  top: 7vh;
-  left: 7%;
-}
-main section .banner .title h1,
-main section .banner .title p {
+#form .form_title .tittle {
   color: #FFFFFF;
-  line-height: 1rem;
-}
-main section .banner .title h1 {
-  font-size: 48px;
-}
-main section .banner .title p {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
   font-size: 32px;
 }
-main section .banner .text_word {
-  position: absolute;
-  width: 80%;
-  height: 40vh;
-  color: #FFFFFF;
-  font-size: 18px;
-  border-radius: 15px;
-  top: 19rem;
-  left: 10%;
-  background-image: url(../img/南子.jpg);
-  opacity: 0.9;
-  background-size: cover;
-  background-position: center;
-}
-main section .banner .text_word p {
-  width: 80%;
-  line-height: 25px;
-  color: #FFFFFF;
-  position: absolute;
-  top: 30%;
-  left: 10%;
-}
-@media (max-width: 1440px) {
-  main section .banner .text_word p {
-    font-size: 18px;
-    line-height: 2rem;
-  }
-}
-@media (max-width: 576px) {
-  main section .banner .text_word p {
-    margin-top: -3rem;
-    line-height: 2rem;
-  }
-}
-main section .operate {
-  background-color: #F5F5F5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-main section .operate .operate_box {
-  margin: 20rem 0 5rem 0;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-main section .operate .operate_box .operate_info {
-  margin-top: 3rem;
-  width: 405px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-main section .operate .operate_box .operate_info h1 {
-  font-size: 28px;
-}
-main section .operate .operate_box .operate_info p {
-  padding: 0.5rem;
-  font-size: 16px;
-}
-main section {
-  position: relative;
-}
-main section .video {
-  display: flex;
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  justify-content: center;
-  align-items: center;
-}
-main section .video iframe {
-  margin-top: 5rem;
-}
-@media (max-width: 1440px) {
-  main section .video iframe {
-    width: 900px;
-  }
-}
-@media (max-width: 576px) {
-  main section .video iframe {
-    width: 500px;
-    height: 45vh;
-  }
-}
-main section .box1 {
-  margin-top: 40rem;
-  background-image: url(../img/南子.jpg);
-}
-main section .box1 .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  color: #FFFFFF;
-  position: absolute;
-  top: 10vh;
-}
-main section .box1 .tittle div {
+#form .form_title .tittle div {
   font-weight: 700;
 }
-main section .box1 .tittle .tittle_ball {
+#form .form_title .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289DD2;
@@ -468,30 +345,4 @@ main section .box1 .tittle .tittle_ball {
   top: -3px;
   left: -15px;
   z-index: -1;
-}
-main section .box2 {
-  background-image: url(../img/太魯閣.jpg);
-}
-main section .box2 .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  color: #FFFFFF;
-  position: absolute;
-  top: 90vh;
-}
-main section .box2 .tittle div {
-  font-weight: 700;
-}
-main section .box2 .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289DD2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
-}/*# sourceMappingURL=droneOperate.css.map */
+}/*# sourceMappingURL=expWeb.css.map */
