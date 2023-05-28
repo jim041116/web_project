@@ -237,6 +237,9 @@ header {
         text-align: center;
         display: none;
         z-index: 99;
+        background-color: $web_bg;
+        padding: 0.5rem;
+        border-radius: 15px;
     }
 
     @media (max-width :992px) {
@@ -310,8 +313,8 @@ header {
         width: 100vw;
         height: 70vh;
         z-index: 50;
-        transform: translateY(-100vh);
-        transition: all .5s;
+        transform: translateY(-1500px);
+        transition: all .8s;
         display: none;
 
         .hamburger_nav_item {
