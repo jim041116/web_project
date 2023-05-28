@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>APP推薦</title>
+    <title>TravelDrone</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/appCom.css" />
@@ -23,6 +23,7 @@
     />
     <link rel="stylesheet" href="./css/appstyle.css" />
   </head>
+
   <body>
     <header>
       <div id="logo">
@@ -39,7 +40,7 @@
                 <a href="#">景點推薦</a>
               </li>
               <li class="drop_nav_bar_item">
-                <a href="#">景點分享</a>
+                <a href="./viewShare.html">景點分享</a>
               </li>
             </ul>
           </li>
@@ -47,19 +48,19 @@
             認識空拍機
             <ul class="drop_nav_bar">
               <li class="drop_nav_bar_item">
-                <a href="#">空拍機介紹</a>
+                <a href="./droneInt.html">空拍機介紹</a>
               </li>
               <li class="drop_nav_bar_item">
-                <a href="#">基礎操作</a>
+                <a href="./droneOperate.html">基礎操作</a>
               </li>
               <li class="drop_nav_bar_item">
-                <a href="#">機型介紹</a>
+                <a href="./droneType.html">機型介紹</a>
               </li>
               <li class="drop_nav_bar_item">
-                <a href="#">空拍法規</a>
+                <a href="./law.html">空拍法規</a>
               </li>
               <li class="drop_nav_bar_item">
-                <a href="#">APP推薦</a>
+                <a href="./appCom.html">APP推薦</a>
               </li>
             </ul>
           </li>
@@ -67,19 +68,18 @@
             <a href="#">預約專區</a>
           </li>
           <li class="nav_bar_item">
-            <a href="#">最新消息</a>
+            <a href="./news.html">最新消息</a>
           </li>
           <li class="nav_bar_item">
             登入會員
             <ul class="drop_nav_bar">
               <li class="drop_nav_bar_item">
-                <a href="#">登入頁面</a>
+                <a href="./login.html">登入頁面</a>
               </li>
             </ul>
           </li>
         </ul>
       </div>
-
       <!-- 漢堡 -->
       <div class="hamburger_box">
         <div class="hamburger" id="hamburger-item">
@@ -136,6 +136,7 @@
       </div>
       <!-- 漢堡結束 -->
     </header>
+
     <!-- content內容區 -->
     <main>
       <!-- banner -->
@@ -302,15 +303,15 @@
           </div>
 
           <!-- <div class="item" style="background-image: url(#)">
-            <div class="item-desc">
-              <h3>Far Cry 5</h3>
-              <p>
-                Far Cry 5 is a 2018 first-person shooter game developed by
-                Ubisoft. which was a community-created mod for Blizzard
-                Entertainment's Warcraft III.
-              </p>
-            </div>
-          </div> -->
+              <div class="item-desc">
+                <h3>Far Cry 5</h3>
+                <p>
+                  Far Cry 5 is a 2018 first-person shooter game developed by
+                  Ubisoft. which was a community-created mod for Blizzard
+                  Entertainment's Warcraft III.
+                </p>
+              </div>
+            </div> -->
         </div>
       </section>
     </main>
@@ -322,25 +323,25 @@
           <a href="#">
             <li>景點推薦</li>
           </a>
-          <a href="#">
+          <a href="./viewShare.html">
             <li>景點分享</li>
           </a>
         </ul>
         <ul class="web_map_item">
           <li class="web_map_title">認識空拍機</li>
-          <a href="#">
+          <a href="./droneInt.html">
             <li>空拍機介紹</li>
           </a>
-          <a href="#">
+          <a href="./droneOperate.html">
             <li>基礎操作</li>
           </a>
-          <a href="#">
+          <a href="./droneType.html">
             <li>機型介紹</li>
           </a>
-          <a href="#">
+          <a href="./law.html">
             <li>空拍法規</li>
           </a>
-          <a href="#">
+          <a href="./appCom.html">
             <li>APP推薦</li>
           </a>
         </ul>
@@ -350,13 +351,13 @@
           </a>
         </ul>
         <ul class="web_map_item">
-          <a href="#">
+          <a href="./news.html">
             <li class="web_map_title">最新消息</li>
           </a>
         </ul>
         <ul class="web_map_item">
           <li class="web_map_title">登入會員</li>
-          <a href="#">
+          <a href="./login.html">
             <li>登入頁面</li>
           </a>
         </ul>
@@ -371,8 +372,12 @@
       </div>
     </footer>
 
-    <!-- GO-top -->
-
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <!-- slide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/appscript.js"></script>
+    <!-- go-top -->
     <script>
       $(function () {
         $("body").append(
@@ -407,16 +412,12 @@
 
       hb.onclick = () => {
         if (hn.style.transform == "translateY(0px)") {
-          hn.style.transform = "translateY(-100vh)";
+          hn.style.transform = "translateY(-1500px)";
         } else {
           hn.style.transform = "translateY(0px)";
         }
       };
       // 漢堡結束
     </script>
-    <!-- slide -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="./js/appscript.js"></script>
   </body>
 </html>
