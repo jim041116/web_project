@@ -315,7 +315,6 @@ main {
 
 section {
   position: relative;
-  z-index: -1;
 }
 section .banner {
   width: 100%;

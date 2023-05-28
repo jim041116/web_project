@@ -331,7 +331,6 @@ main .mask {
 }
 main section {
   position: relative;
-  z-index: -1;
 }
 main section .banner {
   background-image: url(../img/operatePic.png);
