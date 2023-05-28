@@ -314,43 +314,31 @@ section {
 }
 
 #video_section {
-  position: relative;
-  height: 100vh;
+  padding-top: 3rem;
+  height: calc(100vh - 110px);
   z-index: -1;
 }
 @media (max-width: 992px) {
   #video_section {
-    height: 60vh;
-  }
-}
-@media (max-width: 576px) {
-  #video_section {
-    height: 40vh;
+    padding-top: 0;
   }
 }
 #video_section video {
-  height: 80vh;
-  position: absolute;
-  top: 8%;
-  right: 2%;
+  width: 70%;
+  position: relative;
+  top: 0;
+  right: -28%;
   z-index: -1;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
-  #video_section video {
-    height: 70vh;
-  }
-}
 @media (max-width: 992px) {
   #video_section video {
-    width: 90%;
-    top: -15%;
-    right: 5%;
-  }
-}
-@media (max-width: 576px) {
-  #video_section video {
-    top: -40%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+    width: 100%;
+    height: calc(100vh - 110px);
+    object-fit: cover;
   }
 }
 #video_section .g_box {
@@ -358,7 +346,7 @@ section {
   height: 30%;
   background-color: rgba(84, 84, 84, 0.75);
   position: absolute;
-  top: 62%;
+  top: 68%;
   left: 12%;
   z-index: -2;
 }
@@ -366,7 +354,7 @@ section {
   #video_section .g_box {
     width: 40%;
     height: 20%;
-    top: 65%;
+    top: 55%;
     left: 12%;
   }
 }
@@ -407,28 +395,16 @@ section {
 @media (max-width: 576px) {
   #video_section .video_section_text_1,
   #video_section .video_section_text_2 {
-    font-size: 18px;
+    font-size: 32px;
   }
 }
 #video_section .video_section_text_1 {
-  top: 15%;
+  top: 25%;
   left: 15%;
 }
-@media (max-width: 1440px) {
-  #video_section .video_section_text_1 {
-    top: 15%;
-    left: 10%;
-  }
-}
 #video_section .video_section_text_2 {
-  top: 25%;
+  top: 35%;
   left: 19.5%;
-}
-@media (max-width: 1440px) {
-  #video_section .video_section_text_2 {
-    top: 25%;
-    left: 15%;
-  }
 }
 
 #about_me {
@@ -478,7 +454,7 @@ section {
 }
 @media (max-width: 576px) {
   #about_me .about_me_text .tittle {
-    font-size: 18px;
+    font-size: 28px;
   }
 }
 #about_me .about_me_text .tittle .tittle_ball {
@@ -621,20 +597,20 @@ section {
   margin: 0;
   z-index: 1;
   position: relative;
-  margin-left: -80%;
+  margin-left: -70%;
 }
 #attractions .tittle div {
   font-weight: 700;
 }
 @media (max-width: 992px) {
   #attractions .tittle {
-    margin-left: -70%;
+    margin-left: -55%;
   }
 }
 @media (max-width: 576px) {
   #attractions .tittle {
-    font-size: 18px;
-    margin-left: -60%;
+    font-size: 28px;
+    margin-left: -50%;
   }
 }
 #attractions .tittle .tittle_ball {
@@ -809,15 +785,15 @@ section {
 #news .tittle div {
   font-weight: 700;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   #news .tittle {
-    margin: 1.5rem 0 1.5rem -40rem;
+    margin: 1.5rem 0 1.5rem -10rem;
   }
 }
 @media (max-width: 576px) {
   #news .tittle {
-    font-size: 18px;
-    margin: 1.5rem 0 1.5rem -10rem;
+    font-size: 28px;
+    margin: 1.5rem 0 1.5rem -15rem;
   }
 }
 #news .tittle .tittle_ball {
@@ -849,19 +825,29 @@ section {
   margin: 0;
   z-index: 1;
   position: relative;
-  margin: 1.5rem 0 1.5rem -65rem;
+  margin: 1.5rem 0 1.5rem -68rem;
 }
 #reserve .tittle div {
   font-weight: 700;
+}
+@media (max-width: 1440px) {
+  #reserve .tittle {
+    margin: 1.5rem 0 1.5rem -55rem;
+  }
 }
 @media (max-width: 992px) {
   #reserve .tittle {
     margin: 1.5rem 0 1.5rem -40rem;
   }
 }
+@media (max-width: 768px) {
+  #reserve .tittle {
+    margin: 1.5rem 0 1.5rem -20rem;
+  }
+}
 @media (max-width: 576px) {
   #reserve .tittle {
-    font-size: 18px;
+    font-size: 28px;
     margin: 1.5rem 0 1.5rem -10rem;
   }
 }

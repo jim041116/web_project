@@ -10,38 +10,29 @@ section {
 }
 
 #video_section {
-    position: relative;
-    height: 100vh;
+    padding-top: 3rem;
+    height: calc(100vh - 110px);
     z-index: -1;
 
     @include pad() {
-        height: 60vh;
-    }
-
-    @include phone() {
-        height: 40vh;
+        padding-top: 0;
     }
 
     video {
-        height: 80vh;
-        position: absolute;
-        top: 8%;
-        right: 2%;
+        width: 70%;
+        position: relative;
+        top: 0;
+        right: -28%;
         z-index: -1;
         border-radius: 15px;
 
-        @include pc() {
-            height: 70vh;
-        }
-
         @include pad() {
-            width: 90%;
-            top: -15%;
-            right: 5%;
-        }
-
-        @include phone() {
-            top: -40%;
+            top: 0;
+            left: 0;
+            border-radius: 0;
+            width: 100%;
+            height: calc(100vh - 110px);
+            object-fit: cover;
         }
     }
 
@@ -50,14 +41,14 @@ section {
         height: 30%;
         background-color: rgba(84, 84, 84, 0.75);
         position: absolute;
-        top: 62%;
+        top: 68%;
         left: 12%;
         z-index: -2;
 
         @include pc() {
             width: 40%;
             height: 20%;
-            top: 65%;
+            top: 55%;
             left: 12%;
         }
 
@@ -95,7 +86,7 @@ section {
         }
 
         @include phone() {
-            font-size: $text_size-18px;
+            font-size: $text_size-32px;
         }
 
         color: $text_color_w;
@@ -103,23 +94,13 @@ section {
     }
 
     .video_section_text_1 {
-        top: 15%;
+        top: 25%;
         left: 15%;
-
-        @include pc() {
-            top: 15%;
-            left: 10%;
-        }
     }
 
     .video_section_text_2 {
-        top: 25%;
+        top: 35%;
         left: 19.5%;
-
-        @include pc() {
-            top: 25%;
-            left: 15%;
-        }
     }
 }
 
@@ -159,7 +140,7 @@ section {
             @include tittle();
 
             @include phone() {
-                font-size: $text_size-18px;
+                font-size: $text_size-28px;
             }
 
             .tittle_ball {
@@ -290,15 +271,15 @@ section {
 
     .tittle {
         @include tittle();
-        margin-left: -80%;
+        margin-left: -70%;
 
         @include pad() {
-            margin-left: -70%;
+            margin-left: -55%;
         }
 
         @include phone() {
-            font-size: $text_size-18px;
-            margin-left: -60%;
+            font-size: $text_size-28px;
+            margin-left: -50%;
         }
 
         .tittle_ball {
@@ -461,13 +442,13 @@ section {
         transform: translateX(300px);
         width: 300px;
 
-        @include pad() {
-            margin: 1.5rem 0 1.5rem -40rem;
+        @include pc() {
+            margin: 1.5rem 0 1.5rem -10rem;
         }
 
         @include phone() {
-            font-size: $text_size-18px;
-            margin: 1.5rem 0 1.5rem -10rem;
+            font-size: $text_size-28px;
+            margin: 1.5rem 0 1.5rem -15rem;
         }
 
         .tittle_ball {
@@ -489,14 +470,22 @@ section {
 
     .tittle {
         @include tittle();
-        margin: 1.5rem 0 1.5rem -65rem;
+        margin: 1.5rem 0 1.5rem -68rem;
+
+        @include pc() {
+            margin: 1.5rem 0 1.5rem -55rem;
+        }
 
         @include pad() {
             margin: 1.5rem 0 1.5rem -40rem;
         }
 
+        @include pad2() {
+            margin: 1.5rem 0 1.5rem -20rem;
+        }
+
         @include phone() {
-            font-size: $text_size-18px;
+            font-size: $text_size-28px;
             margin: 1.5rem 0 1.5rem -10rem;
         }
 
