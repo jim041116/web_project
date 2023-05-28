@@ -384,10 +384,87 @@ body {
   color: #545454;
 }
 #free .content:hover {
-  color: rgb(219, 100, 120);
+  color: rgb(236, 118, 134);
 }
 
 #content p {
   display: flex;
   justify-content: left;
+}
+
+#custumized {
+  width: 100%;
+  height: 498px;
+  background-image: url(../img/sky.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#custumized .custumized_section {
+  margin: 1.5rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+#custumized .custumized_section .tittle {
+  color: #FFFFFF;
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  margin-left: -50%;
+  margin-top: -70%;
+  padding: 10px;
+  font-size: 32px;
+}
+#custumized .custumized_section .tittle div {
+  font-weight: 700;
+}
+#custumized .custumized_section .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+
+#custumized_form {
+  width: 811px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: rgba(27, 26, 26, 0.6);
+}
+
+.content_text {
+  color: #FFFFFF;
+  font-size: 28px;
+}
+
+.btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: -50%;
+  padding: 0.2rem 2rem;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 3.8rem auto;
+  border-radius: 15px;
+  border: none;
+  background-color: #289dd2;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
 }/*# sourceMappingURL=reservation.css.map */
