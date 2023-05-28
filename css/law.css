@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
 *,
 *::after,
@@ -308,41 +309,76 @@ footer .logo .copyright {
   padding-bottom: 1rem;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
+section .big_c {
+  position: relative;
 }
-
-#free {
-  width: 100%;
-  height: 940px;
-  background-image: url(../img/grass.jpg);
+section .big_c .banner {
+  position: relative;
+  z-index: -1;
+  background-image: url(../img/law-bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 40vh;
+  width: 100%;
+}
+section .big_c .banner .law_title_top {
+  padding: 5rem 7rem;
+  line-height: 2rem;
+}
+section .big_c .banner .law_title_top h1,
+section .big_c .banner .law_title_top p {
+  color: #FFFFFF;
+}
+section .big_c .banner .law_title_top h1 {
+  font-size: 48px;
+}
+section .big_c .banner .law_title_top p {
+  margin-top: 2rem;
+  font-size: 32px;
+}
+section .big_c .middle_text {
+  position: absolute;
+  width: 80%;
+  top: 18rem;
+  left: 10%;
+  background-image: url(../img/伯朗.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  border-radius: 15px;
+}
+@media (max-width: 1440px) {
+  section .big_c .middle_text .incul {
+    font-size: 18px;
+  }
+}
+section .big_c .middle_text .incul {
+  position: absolute;
+  width: 80%;
+  line-height: 25px;
+  color: #FFFFFF;
+  top: 30%;
+  left: 10%;
+}
+
+section .law_title_mix {
+  margin-top: 37vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-#free .free_section {
-  margin: 1.5rem;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-}
-#free .free_section .tittle {
-  color: #FFFFFF;
+section .law_title_mix .tittle {
   font-size: 40px;
   margin: 0;
   z-index: 1;
   position: relative;
-  margin-left: -80%;
-  padding: 10px;
-  font-size: 32px;
+  font-size: 40px;
 }
-#free .free_section .tittle div {
+section .law_title_mix .tittle div {
   font-weight: 700;
 }
-#free .free_section .tittle .tittle_ball {
+section .law_title_mix .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289DD2;
@@ -353,113 +389,311 @@ body {
   left: -15px;
   z-index: -1;
 }
-#free a {
-  width: 881;
-  height: 152px;
+section .box_touch {
+  height: 70vh;
+  width: 48%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: web_bg;
-}
-#free a:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
-}
-#free .free_form_1, #free .free_form_2, #free .free_form_3 {
-  width: 865px;
-  height: 152px;
-  border-radius: 15px;
-  background-color: white;
-  border-bottom: 5rem;
-}
-#free .reserve_img img {
-  width: 130px;
-  height: 130px;
-  border-radius: 15px;
-}
-#free .content hr {
-  border: none;
-  height: 1px;
-  background: #545454;
-  background: repeating-linear-gradient(90deg, #545454, #545454 6px, transparent 6px, transparent 12px);
-}
-#free .content {
-  color: #545454;
-}
-#free .content:hover {
-  color: rgb(236, 118, 134);
-}
-
-#custumized {
-  width: 100%;
-  height: 498px;
-  background-image: url(../img/sky.jpg);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#custumized .custumized_section {
-  margin: 1.5rem;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-}
-#custumized .custumized_section .tittle {
-  color: #FFFFFF;
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
+  margin: 3rem auto;
   position: relative;
-  margin-left: -50%;
-  margin-top: -70%;
-  padding: 10px;
-  font-size: 32px;
 }
-#custumized .custumized_section .tittle div {
-  font-weight: 700;
+@media (max-width: 1440px) {
+  section .box_touch {
+    height: 55vh;
+    width: 52%;
+  }
 }
-#custumized .custumized_section .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289DD2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
+section .box_touch .box_img img {
+  width: 600px;
+  height: 100%;
 }
-
-#custumized_form {
-  width: 811px;
-  height: 420px;
-  border-radius: 15px;
-  background-color: rgba(27, 26, 26, 0.6);
+@media (max-width: 1440px) {
+  section .box_touch .box_img img {
+    width: 450px;
+    height: 98.5%;
+  }
 }
-
-.content_text {
-  color: #FFFFFF;
-  font-size: 28px;
-}
-
-.btn {
-  display: block;
-  justify-content: center;
+section .box_touch .col-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
-  margin-left: -50%;
-  padding: 0.2rem 2rem;
-  font-size: 18px;
+}
+section .box_touch .col-box .box-silde {
+  position: relative;
+  width: 250px;
+  height: 100px;
+  transition: ease-in-out 1.2s;
+  background-color: #289DD2;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 100px;
+  color: #FFFFFF;
+  margin: auto 0;
+  box-shadow: inset 0 0 7px black;
+}
+section .box_touch .col-box .box-silde .box-word {
+  position: absolute;
+  background-color: hsla(0, 0%, 0%, 0.39);
+  width: 400px;
+  height: 90px;
+  z-index: -1;
+  top: 3px;
+  left: -10px;
+  transition: ease-in-out 1.2s;
+  line-height: 1.35rem;
+  padding: 1rem;
+  text-align: left;
+  display: none;
+}
+section .box_touch .col-box .box-silde:hover {
   cursor: pointer;
-  margin: 3.8rem auto;
-  border-radius: 15px;
-  border: none;
-  background-color: #289dd2;
-  color: white;
-  transition: 0.3s ease-in-out;
+  transform: translateX(-100px);
 }
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
-}/*# sourceMappingURL=reservation.css.map */
+section .box_touch .col-box .box-silde:hover .box-word {
+  display: block;
+  transform: translateX(280px);
+}
+
+section .limit_h {
+  width: 70%;
+  margin: 5rem auto;
+  display: flex;
+}
+section .limit_h .left_box {
+  margin-top: 5rem;
+  width: 57%;
+  position: relative;
+}
+section .limit_h .left_box .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  font-size: 40px;
+}
+section .limit_h .left_box .tittle div {
+  font-weight: 700;
+}
+section .limit_h .left_box .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .limit_h .left_box .text_box {
+  position: relative;
+  margin-top: 4rem;
+}
+section .limit_h .left_box .text_box p {
+  position: absolute;
+  color: white;
+  padding: 3em;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+section .limit_h .left_box .text_box img {
+  width: 800px;
+  height: 350px;
+}
+@media (max-width: 1440px) {
+  section .limit_h .left_box .text_box img {
+    width: 525px;
+  }
+}
+section .limit_h .shadow_pic {
+  width: 550px;
+  height: 540px;
+  position: relative;
+}
+section .limit_h .shadow_pic .shadow {
+  background-image: url(../img/law_infoVague.png);
+  width: 420px;
+  height: 420px;
+}
+@media (max-width: 1440px) {
+  section .limit_h .shadow_pic .shadow {
+    z-index: -1;
+    margin-left: -2rem;
+  }
+}
+section .limit_h .shadow_pic img {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  right: 0;
+  bottom: 0;
+}
+
+section .law_login {
+  width: 60%;
+  margin: 0 auto;
+}
+section .law_login .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+section .law_login .tittle div {
+  font-weight: 700;
+}
+section .law_login .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .pic_mix {
+  width: 60%;
+  height: 45vh;
+  margin: 2rem auto;
+  position: relative;
+}
+@media (max-width: 1440px) {
+  section .pic_mix {
+    height: 40vh;
+  }
+}
+section .pic_mix .pic_text {
+  width: 600px;
+  height: 228px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  section .pic_mix .pic_text {
+    width: 460px;
+  }
+}
+section .pic_mix .pic_text .text {
+  padding: 3rem;
+}
+@media (max-width: 1440px) {
+  section .pic_mix .pic_text .text {
+    padding: 2rem;
+  }
+}
+section .pic_mix .pic_text .text p {
+  margin-bottom: 1.5rem;
+  color: #FFFFFF;
+}
+section .pic_mix .pic_p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+section .pic_mix .pic_p img {
+  border-radius: 15px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.3), 4px 4px 7px 0px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1440px) {
+  section .pic_mix .pic_p img {
+    width: 450px;
+    height: 230px;
+  }
+}
+
+section .law_test {
+  width: 60%;
+  margin: 4rem auto 0;
+}
+section .law_test .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+}
+section .law_test .tittle div {
+  font-weight: 700;
+}
+section .law_test .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+section .law_pic_mix {
+  width: 60%;
+  height: 86vh;
+  margin: 2rem auto 4rem;
+  display: flex;
+  background-image: url(../img/操作證-模糊.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1440px) {
+  section .law_pic_mix {
+    width: 70%;
+    height: 77vh;
+  }
+}
+section .law_pic_mix .mix_left .mix_text {
+  width: 600px;
+  height: 228px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 3rem 5rem;
+  border-radius: 15px;
+}
+section .law_pic_mix .mix_left .mix_text .mix_word {
+  padding: 2rem;
+}
+section .law_pic_mix .mix_left .mix_text .mix_word p {
+  font-size: 16px;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+section .law_pic_mix .mix_left .difference {
+  overflow: hidden;
+  width: 480px;
+  height: 480px;
+  margin-left: 2rem;
+}
+section .law_pic_mix .mix_left .difference img {
+  width: 100%;
+}
+section .law_pic_mix .operate {
+  position: relative;
+  width: 100%;
+}
+section .law_pic_mix .operate img {
+  position: absolute;
+  width: 405px;
+  height: 550px;
+  bottom: 1.5rem;
+  left: -8rem;
+}
+@media (max-width: 1440px) {
+  section .law_pic_mix .operate img {
+    bottom: 3.8rem;
+  }
+}
+
+section .fly-img {
+  width: 100%;
+  height: 500px;
+}
+section .fly-img img {
+  width: 100%;
+  height: 500px;
+}/*# sourceMappingURL=law.css.map */
