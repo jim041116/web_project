@@ -173,6 +173,7 @@ header {
         ul {
             display: flex;
             margin-right: 1.5rem;
+            z-index: 1;
 
             .nav_bar_item {
                 position: relative;
