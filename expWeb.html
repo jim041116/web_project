@@ -1,250 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>預約體驗</title>
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/expWeb.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="./img/logo_g.png" alt="logo" width="250px">
-            </a>
+      <div id="logo">
+        <a href="index.html">
+          <img src="./img/logo_g.png" alt="logo" width="250px" />
+        </a>
+      </div>
+      <div id="nav_bar">
+        <ul>
+          <li class="nav_bar_item">
+            空拍景點
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="#">景點推薦</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="./viewShare.html">景點分享</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            認識空拍機
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="./droneInt.html">空拍機介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="./droneOperate.html">基礎操作</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="./droneType.html">機型介紹</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="./law.html">空拍法規</a>
+              </li>
+              <li class="drop_nav_bar_item">
+                <a href="./appCom.html">APP推薦</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav_bar_item">
+            <a href="#">預約專區</a>
+          </li>
+          <li class="nav_bar_item">
+            <a href="./news.html">最新消息</a>
+          </li>
+          <li class="nav_bar_item">
+            登入會員
+            <ul class="drop_nav_bar">
+              <li class="drop_nav_bar_item">
+                <a href="./login.html">登入頁面</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- 漢堡 -->
+      <div class="hamburger_box">
+        <div class="hamburger" id="hamburger-item">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </div>
-        <div id="nav_bar">
-            <ul>
-                <li class="nav_bar_item">空拍景點
-                    <ul class="drop_nav_bar">
-                        <li class="drop_nav_bar_item">
-                            <a href="#">景點推薦</a>
-                        </li>
-                        <li class="drop_nav_bar_item">
-                            <a href="./viewShare.html">景點分享</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav_bar_item">認識空拍機
-                    <ul class="drop_nav_bar">
-                        <li class="drop_nav_bar_item">
-                            <a href="./droneInt.html">空拍機介紹</a>
-                        </li>
-                        <li class="drop_nav_bar_item">
-                            <a href="./droneOperate.html">基礎操作</a>
-                        </li>
-                        <li class="drop_nav_bar_item">
-                            <a href="./droneType.html">機型介紹</a>
-                        </li>
-                        <li class="drop_nav_bar_item">
-                            <a href="./law.html">空拍法規</a>
-                        </li>
-                        <li class="drop_nav_bar_item">
-                            <a href="./appCom.html">APP推薦</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav_bar_item">
-                    <a href="#">預約專區</a>
-                </li>
-                <li class="nav_bar_item">
-                    <a href="./news.html">最新消息</a>
-                </li>
-                <li class="nav_bar_item">登入會員
-                    <ul class="drop_nav_bar">
-                        <li class="drop_nav_bar_item">
-                            <a href="./login.html">登入頁面</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- 漢堡 -->
-        <div class="hamburger_box">
-            <div class="hamburger" id="hamburger-item">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </div>
-        </div>
-        <!-- 漢堡nav -->
-        <div class="hamburger_nav">
-            <ul class="hamburger_nav_item">
-                <li class="hamburger_nav_title">空拍景點</li>
-                <a href="#">
-                    <li>景點推薦</li>
-                </a>
-                <a href="./viewShare.html">
-                    <li>景點分享</li>
-                </a>
-            </ul>
-            <ul class="hamburger_nav_item">
-                <li class="hamburger_nav_title">認識空拍機</li>
-                <a href="./droneInt.html">
-                    <li>空拍機介紹</li>
-                </a>
-                <a href="./droneOperate.html">
-                    <li>基礎操作</li>
-                </a>
-                <a href="./droneType.html">
-                    <li>機型介紹</li>
-                </a>
-                <a href="./law.html">
-                    <li>空拍法規</li>
-                </a>
-                <a href="./appCom.html">
-                    <li>APP推薦</li>
-                </a>
-            </ul>
-            <ul class="hamburger_nav_item">
-                <a href="#">
-                    <li class="hamburger_nav_title">預約專區</li>
-                </a>
-            </ul>
-            <ul class="hamburger_nav_item">
-                <a href="./news.html">
-                    <li class="hamburger_nav_title">最新消息</li>
-                </a>
-            </ul>
-            <ul class="hamburger_nav_item">
-                <li class="hamburger_nav_title">登入會員</li>
-                <a href="./login.html">
-                    <li>登入頁面</li>
-                </a>
-            </ul>
-        </div>
-        <!-- 漢堡結束 -->
+      </div>
+      <!-- 漢堡nav -->
+      <div class="hamburger_nav">
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">空拍景點</li>
+          <a href="#">
+            <li>景點推薦</li>
+          </a>
+          <a href="./viewShare.html">
+            <li>景點分享</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">認識空拍機</li>
+          <a href="./droneInt.html">
+            <li>空拍機介紹</li>
+          </a>
+          <a href="./droneOperate.html">
+            <li>基礎操作</li>
+          </a>
+          <a href="./droneType.html">
+            <li>機型介紹</li>
+          </a>
+          <a href="./law.html">
+            <li>空拍法規</li>
+          </a>
+          <a href="./appCom.html">
+            <li>APP推薦</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <a href="#">
+            <li class="hamburger_nav_title">預約專區</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <a href="./news.html">
+            <li class="hamburger_nav_title">最新消息</li>
+          </a>
+        </ul>
+        <ul class="hamburger_nav_item">
+          <li class="hamburger_nav_title">登入會員</li>
+          <a href="./login.html">
+            <li>登入頁面</li>
+          </a>
+        </ul>
+      </div>
+      <!-- 漢堡結束 -->
     </header>
     <section id="form">
-        <div class="form_outs">
-            <div class="form_title">
-                <div class="tittle">
-                    <div>預約體驗</div>
-                    <div class="tittle_ball"></div>
-                </div>
+      <div class="form_outs">
+        <div class="form_title">
+          <div class="tittle">
+            <div>預約體驗</div>
+            <div class="tittle_ball"></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="left">
+            <div clss="content_up">
+              <p>日期:2023/7/22 星期六</p>
+              <p>時間:上午9點</p>
+              <p>體驗時間:3小時</p>
+              <p>費用:免費</p>
+              <p>集合地點:台北場 - 福德坑環保復育公園停車場</p>
+              <p>交通方式:捷運木柵站 - 轉乘251區間車搭至富德里站</p>
+              <p>-步行20分鐘(1.3公里) 自行開車前往：免費停車</p>
             </div>
-                    <div class="content">
-                        <div clss="content_up">
-                            <p>日期:2023/7/22 星期六</p>
-                            <p>時間:上午9點</p>
-                            <P>體驗時間:3小時</P>
-                            <p>費用:免費</p>
-                            <p>集合地點:台北場 - 福德坑環保復育公園停車場</p>
-                            <p>交通方式:捷運木柵站 - 轉乘251區間車搭至富德里站
-                                - 步行20分鐘(1.3公里)
-                               自行開車前往：免費停車</p>
-                        </div>
-                        <div class="content_down">
-                            <ul>
-                                <li>報名成功將以簡訊通知~</li>
-                                <li>我們不會以任何名義(電話、簡訊或email等方式)
-                                    向您索取或核對任何金融帳戶、信用卡及訂單資料。</li>
-                                <li>請您提高警覺，反詐騙諮詢專線165。</li>
-                            </ul>
-                        
-                    </div>
-                </div>
-                <div calss="signup">
-                    <form name="member_mod_form" id="member_mod_form" action="" method="post">
-                        <label for="username">姓名</label>
-                        <input type="text" name="username" id="username" required>
-                        <br>
-                        <label for="tel">手機</label>
-                        <input type="tel" name="tel" id="tel">
-                        <br>
-                        <label for="email">信箱</label>
-                        <input type="email" name="email" id="email">
-                        <br>
-                        <label for="number">人數</label>
-                        <input type="text" name="numberofapplicants" id="numberofapplicants">
-
-
-                    </form>
-                </div>
+            <div class="content_down">
+              <ul>
+                <li>報名成功將以簡訊通知~</li>
+                <li>我們不會以任何名義(電話、簡訊或email等方式)
+                    <br>
+                  向您索取或核對任何金融帳戶、信用卡及訂單資料。
+                </li>
+                <li>請您提高警覺，反詐騙諮詢專線165。</li>
+              </ul>
             </div>
+          </div>
+       
+        <div calss="signup">
+          <form name="signup_form" id="signup_form" action="" method="post">
+            <label for="username">姓名</label>
+            <br>
+            <input type="text" name="username" id="username" required>
+            <br>
+            <label for="tel">手機</label>
+            <br>
+            <input type="tel" name="tel" id="tel">
+            <br>
+            <label for="email">信箱</label>
+            <br>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="number">人數</label>
+            <br>
+            <input
+              type="text"
+              name="numberofapplicants"
+              id="numberofapplicants"
+            >
+          </form>
+          <button class="btn_signup">立即預約</button>
+        </div>
+      </div>
+    </div>
     </section>
 
     <footer>
-        <div class="footer_web_map">
-            <ul class="web_map_item">
-                <li class="web_map_title">空拍景點</li>
-                <a href="#">
-                    <li>景點推薦</li>
-                </a>
-                <a href="./viewShare.html">
-                    <li>景點分享</li>
-                </a>
-            </ul>
-            <ul class="web_map_item">
-                <li class="web_map_title">認識空拍機</li>
-                <a href="./droneInt.html">
-                    <li>空拍機介紹</li>
-                </a>
-                <a href="./droneOperate.html">
-                    <li>基礎操作</li>
-                </a>
-                <a href="./droneType.html">
-                    <li>機型介紹</li>
-                </a>
-                <a href="./law.html">
-                    <li>空拍法規</li>
-                </a>
-                <a href="./appCom.html">
-                    <li>APP推薦</li>
-                </a>
-            </ul>
-            <ul class="web_map_item">
-                <a href="#">
-                    <li class="web_map_title">預約專區</li>
-                </a>
-            </ul>
-            <ul class="web_map_item">
-                <a href="./news.html">
-                    <li class="web_map_title">最新消息</li>
-                </a>
-            </ul>
-            <ul class="web_map_item">
-                <li class="web_map_title">登入會員</li>
-                <a href="./login.html">
-                    <li>登入頁面</li>
-                </a>
-            </ul>
+      <div class="footer_web_map">
+        <ul class="web_map_item">
+          <li class="web_map_title">空拍景點</li>
+          <a href="#">
+            <li>景點推薦</li>
+          </a>
+          <a href="./viewShare.html">
+            <li>景點分享</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <li class="web_map_title">認識空拍機</li>
+          <a href="./droneInt.html">
+            <li>空拍機介紹</li>
+          </a>
+          <a href="./droneOperate.html">
+            <li>基礎操作</li>
+          </a>
+          <a href="./droneType.html">
+            <li>機型介紹</li>
+          </a>
+          <a href="./law.html">
+            <li>空拍法規</li>
+          </a>
+          <a href="./appCom.html">
+            <li>APP推薦</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <a href="#">
+            <li class="web_map_title">預約專區</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <a href="./news.html">
+            <li class="web_map_title">最新消息</li>
+          </a>
+        </ul>
+        <ul class="web_map_item">
+          <li class="web_map_title">登入會員</li>
+          <a href="./login.html">
+            <li>登入頁面</li>
+          </a>
+        </ul>
+      </div>
+      <div class="logo">
+        <div>
+          <a href="index.html">
+            <img src="./img/logo_w.png" alt="logo" width="250px" />
+          </a>
         </div>
-        <div class="logo">
-            <div>
-                <a href="index.html">
-                    <img src="./img/logo_w.png" alt="logo" width="250px">
-                </a>
-            </div>
-            <div class="copyright">copyright © TravelDrone 版權所有</div>
-        </div>
+        <div class="copyright">copyright © TravelDrone 版權所有</div>
+      </div>
     </footer>
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script>
-        // 漢堡
-        $(document).ready(function () {
-            $(".hamburger").click(function () {
-                $(this).toggleClass("is-active");
-            });
+      // 漢堡
+      $(document).ready(function () {
+        $(".hamburger").click(function () {
+          $(this).toggleClass("is-active");
         });
+      });
 
-        // 漢堡nav
-        let hb = document.querySelector('.hamburger_box');
-        let hn = document.querySelector('.hamburger_nav');
+      // 漢堡nav
+      let hb = document.querySelector(".hamburger_box");
+      let hn = document.querySelector(".hamburger_nav");
 
-        hb.onclick = () => {
-            if (hn.style.transform == 'translateY(0px)') {
-                hn.style.transform = 'translateY(-1500px)';
-            } else {
-                hn.style.transform = 'translateY(0px)';
-            }
+      hb.onclick = () => {
+        if (hn.style.transform == "translateY(0px)") {
+          hn.style.transform = "translateY(-1500px)";
+        } else {
+          hn.style.transform = "translateY(0px)";
         }
-        // 漢堡結束
+      };
+      // 漢堡結束
     </script>
-</body>
-
+  </body>
 </html>
