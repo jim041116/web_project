@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/expWeb.css" />
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -118,14 +120,52 @@
         <!-- 漢堡結束 -->
     </header>
     <section id="form">
-        <!-- <div class="form_title"></div> -->
-        <div class="form_title"> 
-            <div class="tittle">
-            <div>預約體驗</div>
-            <div class="tittle_ball"></div>
-          </div>
-          <div class="content"></div>
-          <div calss="signup"></div>
+        <div class="form_outs">
+            <div class="form_title">
+                <div class="tittle">
+                    <div>預約體驗</div>
+                    <div class="tittle_ball"></div>
+                </div>
+            </div>
+                    <div class="content">
+                        <div clss="content_up">
+                            <p>日期:2023/7/22 星期六</p>
+                            <p>時間:上午9點</p>
+                            <P>體驗時間:3小時</P>
+                            <p>費用:免費</p>
+                            <p>集合地點:台北場 - 福德坑環保復育公園停車場</p>
+                            <p>交通方式:捷運木柵站 - 轉乘251區間車搭至富德里站
+                                - 步行20分鐘(1.3公里)
+                               自行開車前往：免費停車</p>
+                        </div>
+                        <div class="content_down">
+                            <ul>
+                                <li>報名成功將以簡訊通知~</li>
+                                <li>我們不會以任何名義(電話、簡訊或email等方式)
+                                    向您索取或核對任何金融帳戶、信用卡及訂單資料。</li>
+                                <li>請您提高警覺，反詐騙諮詢專線165。</li>
+                            </ul>
+                        
+                    </div>
+                </div>
+                <div calss="signup">
+                    <form name="member_mod_form" id="member_mod_form" action="" method="post">
+                        <label for="username">姓名</label>
+                        <input type="text" name="username" id="username" required>
+                        <br>
+                        <label for="tel">手機</label>
+                        <input type="tel" name="tel" id="tel">
+                        <br>
+                        <label for="email">信箱</label>
+                        <input type="email" name="email" id="email">
+                        <br>
+                        <label for="number">人數</label>
+                        <input type="text" name="numberofapplicants" id="numberofapplicants">
+
+
+                    </form>
+                </div>
+            </div>
     </section>
 
     <footer>
@@ -185,7 +225,7 @@
     </footer>
     <script src="./js/jquery-1.11.3.min.js"></script>
     <script>
-    // 漢堡
+        // 漢堡
         $(document).ready(function () {
             $(".hamburger").click(function () {
                 $(this).toggleClass("is-active");
@@ -206,4 +246,5 @@
         // 漢堡結束
     </script>
 </body>
+
 </html>

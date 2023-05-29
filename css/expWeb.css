@@ -85,6 +85,7 @@ header #logo {
 header #nav_bar ul {
   display: flex;
   margin-right: 1.5rem;
+  z-index: 1;
 }
 header #nav_bar ul .nav_bar_item {
   position: relative;
@@ -316,8 +317,12 @@ body {
 #form {
   width: 100%;
   height: 1034px;
-  background-image: url(../img/register.jpg);
+  background-image: url(../img/exppic.jpg);
   background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #form .form_title {
   margin-top: 2rem;
@@ -325,7 +330,7 @@ body {
   justify-content: center;
 }
 #form .form_title .tittle {
-  color: #FFFFFF;
+  color: #545454;
   font-size: 40px;
   margin: 0;
   z-index: 1;
@@ -345,4 +350,21 @@ body {
   top: -3px;
   left: -15px;
   z-index: -1;
+}
+
+#form .form_outs {
+  width: 1000px;
+  height: 808px;
+  background-color: #F5F5F5;
+  border-radius: 40px;
+  opacity: 0.9;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content_up p {
+  font-size: 16px;
+  color: #545454;
 }/*# sourceMappingURL=expWeb.css.map */

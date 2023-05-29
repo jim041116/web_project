@@ -1,26 +1,54 @@
 @import "./public.scss";
+
 body {
-    width: 100%;
-    height: 100vh;
-  }
+  width: 100%;
+  height: 100vh;
+}
 
 #form {
-    width: 100%;
-    height: 1034px;
-    background-image: url(../img/register.jpg);
-    background-size: cover;
+  width: 100%;
+  height: 1034px;
+  background-image: url(../img/exppic.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+   
 
     .form_title {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        .tittle {
-          color: $text_color_w;
-          @include tittle();
-          font-size: $text_size-32px;
-          .tittle_ball {
-            @include title_ball();
-          }
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+
+      .tittle {
+        color: $text_color_g;
+        @include tittle();
+        font-size: $text_size-32px;
+
+        .tittle_ball {
+          @include title_ball();
         }
+      }
+    }
   }
-}
+
+  #form{
+  .form_outs {
+    width: 1000px;
+    height: 808px;
+    background-color: $web_bg;
+   border-radius: 40px;
+    opacity: 0.9;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+  #content_up p{
+      font-size: $text_size-16px;
+      color: $text_color_g;
+    
+  }
