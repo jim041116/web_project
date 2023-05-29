@@ -706,9 +706,99 @@ section .text p {
   }
 }
 
+.left_box {
+  margin-top: 5rem;
+  width: 57%;
+  position: relative;
+  border: 3px solid black;
+}
+@media (max-width: 992px) {
+  .left_box {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .left_box {
+    width: 80%;
+  }
+}
+.left_box .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  font-size: 40px;
+}
+.left_box .tittle div {
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  .left_box .tittle {
+    font-size: 28px;
+  }
+}
+.left_box .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289DD2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  .left_box .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+  }
+}
+.left_box .text_box {
+  position: relative;
+  margin-top: 4rem;
+}
+.left_box .text_box p {
+  position: absolute;
+  color: white;
+  padding: 3em;
+  line-height: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 992px) {
+  .left_box .text_box p {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .left_box .text_box p {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .left_box .text_box p {
+    display: block;
+  }
+}
+.left_box .text_box img {
+  width: 105%;
+  height: 350px;
+  border-radius: 15px;
+}
+@media (max-width: 1440px) {
+  .left_box .text_box img {
+    width: 525px;
+  }
+}
+@media (max-width: 576px) {
+  .left_box .text_box img {
+    display: none;
+  }
+}
+
 #limit {
   height: 82vh;
-  border: 3px solid black;
 }
 @media (max-width: 992px) {
   #limit {
@@ -723,102 +813,6 @@ section .text p {
 @media (max-width: 992px) {
   #limit .limit_h {
     margin-top: 0;
-  }
-}
-#limit .limit_h .left_box {
-  margin-top: 5rem;
-  width: 57%;
-  position: relative;
-}
-@media (max-width: 992px) {
-  #limit .limit_h .left_box {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 576px) {
-  #limit .limit_h .left_box {
-    margin-top: 5vh;
-  }
-}
-#limit .limit_h .left_box .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  font-size: 40px;
-}
-@media (max-width: 576px) {
-  #limit .limit_h .left_box .tittle {
-    margin-top: 3.5vh;
-  }
-}
-#limit .limit_h .left_box .tittle div {
-  font-weight: 700;
-}
-@media (max-width: 576px) {
-  #limit .limit_h .left_box .tittle {
-    font-size: 28px;
-  }
-}
-#limit .limit_h .left_box .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289DD2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
-}
-@media (max-width: 576px) {
-  #limit .limit_h .left_box .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
-}
-#limit .limit_h .left_box .text_box {
-  position: relative;
-  margin-top: 4rem;
-}
-#limit .limit_h .left_box .text_box p {
-  position: absolute;
-  color: white;
-  padding: 3em;
-  line-height: 2rem;
-  margin-top: 3rem;
-}
-@media (max-width: 992px) {
-  #limit .limit_h .left_box .text_box p {
-    margin: 0;
-  }
-}
-@media (max-width: 768px) {
-  #limit .limit_h .left_box .text_box p {
-    padding: 1rem 2rem;
-  }
-}
-@media (max-width: 576px) {
-  #limit .limit_h .left_box .text_box p {
-    display: none;
-  }
-}
-#limit .limit_h .left_box .text_box img {
-  width: 800px;
-  height: 350px;
-  border-radius: 15px;
-}
-@media (max-width: 1440px) {
-  #limit .limit_h .left_box .text_box img {
-    width: 525px;
-  }
-}
-@media (max-width: 576px) {
-  #limit .limit_h .left_box .text_box img {
-    width: 300px;
-    opacity: 0.7;
-    margin-left: -10%;
   }
 }
 #limit .limit_h .shadow_pic {
@@ -875,8 +869,7 @@ section .text p {
 }
 @media (max-width: 576px) {
   #limit .limit_h .shadow_pic img {
-    right: 10%;
-    bottom: 7.5%;
+    margin: 0;
     border-radius: 15px;
   }
 }
@@ -902,14 +895,12 @@ section .text p {
 
 #register {
   height: 70vh;
-  border: 5px solid black;
 }
 #register .register_t {
   width: 70%;
   margin: 2rem auto;
 }
 #register .register_t .tittle {
-  border: 3px solid black;
   font-size: 40px;
   margin: 0;
   z-index: 1;
@@ -972,6 +963,7 @@ section .text p {
   #register .text_pic .text_bor {
     width: 300px;
     background-color: #289dd2;
+    display: none;
   }
 }
 #register .text_pic .text_bor .text_ins {
@@ -1128,6 +1120,7 @@ section .text p {
   #license .container .dif {
     margin-left: -18px;
     margin-top: 15px;
+    display: none;
   }
 }
 #license .container .oper {
@@ -1161,6 +1154,7 @@ section .text p {
     margin-top: 60px;
     height: 350px;
     width: 350px;
+    display: none;
   }
 }
 

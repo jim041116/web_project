@@ -41,7 +41,7 @@ a:hover {
 h2 {
   margin-bottom: 48px;
   padding-bottom: 16px;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 28px;
   font-weight: 700;
   position: relative;
@@ -276,5 +276,14 @@ button {
     padding: 0 14px 5px;
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 576px) {
+  .line-title::after {
+    width: 45%;
+  }
+  h2 {
+    font-size: 18px;
   }
 }

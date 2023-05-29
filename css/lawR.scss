@@ -104,7 +104,6 @@ section {
   height: 60vh;
   margin: 4rem auto;
   width: 40%;
-  // border: 3px solid black;
   @include pc() {
     width: 46%;
   }
@@ -323,10 +322,68 @@ section {
   }
 }
 
+.left_box {
+  margin-top: 5rem;
+  width: 57%;
+  position: relative;
+  border: 3px solid black;
+  @include pad() {
+    margin-top: 2rem;
+  }
+  @include phone() {
+    width: 80%;
+  }
+  .tittle {
+    @include tittle();
+    font-size: $text_size-40px;
+    @include phone() {
+      font-size: 28px;
+    }
+    .tittle_ball {
+      @include title_ball();
+      @include phone() {
+        width: 20px;
+        height: 20px;
+        left: -10px;
+      }
+    }
+  }
+  .text_box {
+    position: relative;
+    margin-top: 4rem;
+    p {
+      position: absolute;
+      color: white;
+      padding: 3em;
+      line-height: 2rem;
+      margin-top: 3rem;
+      @include pad() {
+        margin: 0;
+      }
+      @include pad2() {
+        padding: 1rem 2rem;
+      }
+      @include phone() {
+        display: block;
+      }
+    }
+    // 限高照片
+    img {
+      width: 105%;
+      height: 350px;
+      border-radius: 15px;
+      @include pc() {
+        width: 525px;
+      }
+      @include phone() {
+        display: none;
+      }
+    }
+  }
+}
 //限高區域
 #limit {
   height: 82vh;
-  border: 3px solid black;
   @include pad() {
     height: 70vh;
   }
@@ -338,70 +395,6 @@ section {
       margin-top: 0;
     }
     // 左邊img & title
-    .left_box {
-      margin-top: 5rem;
-      width: 57%;
-      position: relative;
-      @include pad() {
-        margin-top: 2rem;
-      }
-      @include phone() {
-        margin-top: 5vh;
-      }
-      // title
-      .tittle {
-        @include phone() {
-          margin-top: 3.5vh;
-        }
-        @include tittle();
-        font-size: $text_size-40px;
-        @include phone() {
-          font-size: 28px;
-        }
-        .tittle_ball {
-          @include title_ball();
-          @include phone() {
-            width: 20px;
-            height: 20px;
-            left: -10px;
-          }
-        }
-      }
-      .text_box {
-        position: relative;
-        margin-top: 4rem;
-        p {
-          position: absolute;
-          color: white;
-          padding: 3em;
-          line-height: 2rem;
-          margin-top: 3rem;
-          @include pad() {
-            margin: 0;
-          }
-          @include pad2() {
-            padding: 1rem 2rem;
-          }
-          @include phone() {
-            display: none;
-          }
-        }
-        // 限高照片
-        img {
-          width: 800px;
-          height: 350px;
-          border-radius: 15px;
-          @include pc() {
-            width: 525px;
-          }
-          @include phone() {
-            width: 300px;
-            opacity: 0.7;
-            margin-left: -10%;
-          }
-        }
-      }
-    }
     // 右邊img &shadow
     .shadow_pic {
       width: 550px;
@@ -411,7 +404,6 @@ section {
         background-image: url(../img/law_infoVague.png);
         width: 420px;
         height: 420px;
-
         @include pc() {
           z-index: -1;
           margin-left: -2rem;
@@ -448,8 +440,8 @@ section {
           margin-top: -2rem;
         }
         @include phone() {
-          right: 10%;
-          bottom: 7.5%;
+          margin: 0;
+          // bottom: 7.5%;
           border-radius: 15px;
         }
       }
@@ -474,12 +466,10 @@ section {
 //註冊
 #register {
   height: 70vh;
-  border: 5px solid black;
   .register_t {
     width: 70%;
     margin: 2rem auto;
     .tittle {
-      border: 3px solid black;
       @include tittle();
       @include phone() {
         font-size: 32px;
@@ -520,6 +510,7 @@ section {
       @include phone() {
         width: 300px;
         background-color: #289dd2;
+        display: none;
       }
 
       .text_ins {
@@ -643,6 +634,7 @@ section {
       @include phone() {
         margin-left: -18px;
         margin-top: 15px;
+        display: none;
       }
     }
     .oper {
@@ -668,6 +660,7 @@ section {
         margin-top: 60px;
         height: 350px;
         width: 350px;
+        display: none;
       }
     }
   }
