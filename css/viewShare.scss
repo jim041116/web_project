@@ -31,9 +31,26 @@ main {
       width: 100vw;
       justify-content: center;
       flex-wrap: wrap;
+
+      //1440
       @include pc() {
         width: 90%;
         margin: 2rem auto;
+      }
+      //992
+      @include pad() {
+        margin: 0 auto;
+        width: 80%;
+      }
+      //768
+      @include pad2() {
+        margin: 0 auto;
+        width: 60%;
+      }
+      //576
+      @include phone() {
+        margin: 0 auto;
+        width: 100%;
       }
       .ins_box {
         width: 580px;
@@ -43,9 +60,12 @@ main {
         @include pc() {
           margin: 1rem;
         }
+        @include pad2() {
+          height: 340px;
+        }
         @include phone() {
-          min-height: 350px;
-          min-width: 500px;
+          width: 100%;
+          height: 260px;
         }
         .left_img {
           width: 55%;
@@ -81,38 +101,53 @@ main {
           }
           .right_info_content {
             padding: 0 1.5rem;
-          }
-          .right_info_footer {
-            padding: 0rem;
-            .footer_info_a,
-            .footer_info_b,
-            .footer_info_c {
-              margin: 1rem 0.5rem;
+            @include phone() {
+              padding: 0rem 0.6rem;
+              margin-top: -0.2rem;
+            }
+            p {
               @include phone() {
-                display: none;
-              }
-              .info_title {
-                @include bgc_col();
-              }
-              .green {
-                @include bgc_col();
-                background-color: $green_block;
-              }
-              .gray {
-                @include bgc_col();
-                background-color: $gray_block;
-              }
-              span {
-                border: 2px solid $text_color_g;
-                margin-right: 0.2rem;
-                border-radius: 5px;
-                padding: 0.2rem;
+                font-size: 16px;
               }
             }
-            .footer_info_b hr {
-              margin-top: 1rem;
-              border: 1px solid $text_color_g;
+          }
+        }
+        .right_info_footer {
+          padding: 0rem;
+          .footer_info_a,
+          .footer_info_b,
+          .footer_info_c {
+            margin: 1rem 0.5rem;
+            @include phone() {
+              display: none;
             }
+            .info_title {
+              @include bgc_col();
+            }
+            .green {
+              @include bgc_col();
+              background-color: $green_block;
+            }
+          }
+          .gray {
+            @include bgc_col();
+            background-color: $gray_block;
+          }
+          span {
+            border: 2px solid $text_color_g;
+            margin-right: 0.2rem;
+            border-radius: 5px;
+            padding: 0.2rem;
+          }
+        }
+        .footer_info_b hr {
+          margin-top: 1rem;
+          border: 1px solid $text_color_g;
+        }
+        .footer_info_b,
+        .footer_info_c {
+          @include pad2() {
+            display: none;
           }
         }
       }
