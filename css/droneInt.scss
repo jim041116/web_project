@@ -20,12 +20,20 @@ section {
                 size: $text_size-48px;
                 weight: $text_weight-b;
             }
+
+            @include phone() {
+                font-size: $text_size-32px;
+            }
         }
 
         .text_2 {
             font: {
                 size: $text_size-32px;
                 weight: $text_weight-b;
+            }
+
+            @include phone() {
+                font-size: $text_size-18px;
             }
         }
     }
@@ -43,6 +51,10 @@ section {
     top: -150px;
     background-attachment: fixed;
 
+    @include phone() {
+        height: 50vh;
+    }
+
     p {
         width: 80%;
         line-height: 25px;
@@ -50,6 +62,10 @@ section {
         position: absolute;
         top: 30%;
         left: 10%;
+
+        @include phone() {
+            top: 15%;
+        }
     }
 }
 
@@ -59,16 +75,46 @@ section {
         justify-content: end;
         align-items: center;
 
+        @include phone() {
+            flex-direction: column;
+        }
+
+        &:nth-child(2) {
+            @include phone() {
+                flex-direction: column-reverse;
+            }
+        }
+
         .drone_text {
             width: 50%;
             margin-left: 10rem;
+
+            @include pad() {
+                margin-left: 2rem;
+                padding: 1rem;
+            }
+
+            @include phone() {
+                width: 90%;
+                margin-left: 0;
+            }
 
             .tittle {
                 @include tittle();
                 color: $text_color_g;
 
+                @include phone() {
+                    font-size: $text_size-28px;
+                }
+
                 .tittle_ball {
                     @include title_ball();
+
+                    @include phone() {
+                        width: 20px;
+                        height: 20px;
+                        left: -10px;
+                    }
                 }
             }
 
@@ -86,9 +132,15 @@ section {
                 background-color: $btn_bg;
                 color: $text_color_w;
                 animation: btn_mre 1.5s infinite alternate;
+
                 @keyframes btn_mre {
-                    from {background-color: $btn_bg;}
-                    to {background-color: #1d7299;}
+                    from {
+                        background-color: $btn_bg;
+                    }
+
+                    to {
+                        background-color: #1d7299;
+                    }
                 }
 
                 &:hover {
@@ -101,14 +153,26 @@ section {
         video {
             border-radius: 15px 0 0 15px;
             width: 50%;
+
+            @include phone() {
+                width: 100%;
+                border-radius: 0;
+                margin: 1rem 0;
+            }
         }
 
         .fpv {
             border-radius: 0 15px 15px 0;
             width: 50%;
+            @include phone() {
+                width: 100%;
+                border-radius: 0;
+                margin: 1rem 0;
+            }
         }
     }
 }
+
 #drone_use {
     margin-top: 10rem;
 
@@ -129,12 +193,23 @@ section {
             position: absolute;
             top: 15%;
             left: 10rem;
-    
+
+            @include phone() {
+                font-size: $text_size-28px;
+                left: 3rem;
+            }
+
             .tittle_ball {
                 @include title_ball();
+
+                @include phone() {
+                    width: 20px;
+                    height: 20px;
+                    left: -10px;
+                }
             }
         }
-    
+
         p {
             width: 80%;
             line-height: 25px;
@@ -142,6 +217,10 @@ section {
             position: absolute;
             top: 45%;
             left: 10%;
+
+            @include phone() {
+                top: 30%;
+            }
         }
     }
 }
