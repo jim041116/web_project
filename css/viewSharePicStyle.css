@@ -242,10 +242,10 @@ button:focus {
     height: 40vh;
   }
   .cardList__btn.btn--left {
-    left: 7%;
+    left: 13%;
   }
   .cardList__btn.btn--right {
-    right: 7%;
+    right: 13%;
   }
   .card.previous--card {
     --card-translateX-offset: calc(-1 * var(--card-width) * 1.25);
@@ -262,7 +262,8 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .banner {
-    height: 50vh;
+    height: 40vh;
+    margin: auto;
   }
   .cardList__btn.btn--left {
     left: 18%;
@@ -274,17 +275,47 @@ button:focus {
 @media screen and (max-width: 576px) {
   .banner {
     min-height: 40vh;
+    margin: 0 auto;
   }
   .cardList__btn.btn--left {
-    left: 23%;
+    left: 22%;
   }
   .cardList__btn.btn--right {
-    right: 23%;
+    right: 22%;
   }
   .info {
     margin-left: calc(var(--card-width) / 1.05);
   }
 }
+@media screen and (max-width: 414px) {
+  .banner {
+    height: 30vh;
+    width: 350px;
+    margin: 0 auto;
+  }
+  .cardList__btn.btn--left {
+    left: 22%;
+  }
+  .cardList__btn.btn--right {
+    right: 22%;
+  }
+  .card.current--card {
+    --card-scale-offset: 0.85;
+  }
+  .card.previous--card {
+    --card-translateX-offset: calc(-1 * var(--card-width) * 1.4);
+  }
+  .card.next--card {
+    --card-translateX-offset: calc(var(--card-width) * 1.4);
+  }
+  .info {
+    margin-left: calc(var(--card-width) / 1.025);
+  }
+  .cardList__btn {
+    --btn-size: 32px;
+  }
+}
+
 .info .text {
   position: relative;
   font-size: calc(var(--card-width) * var(--text-size-offset, 0.2));

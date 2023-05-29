@@ -310,10 +310,6 @@ footer .logo .copyright {
   padding-bottom: 1rem;
 }
 
-main {
-  width: 100%;
-}
-
 section {
   position: relative;
 }
@@ -325,47 +321,20 @@ section .banner {
   background-size: cover;
   background-position: center;
 }
-@media (max-width: 576px) {
-  section .banner {
-    height: 400px;
-  }
-}
 section .banner .law_title {
   padding: 5rem 7rem;
   line-height: 2rem;
-}
-@media (max-width: 576px) {
-  section .banner .law_title {
-    padding: 28% 0 0 17%;
-    line-height: 1rem;
-  }
 }
 section .banner .law_title h1,
 section .banner .law_title p {
   color: #FFFFFF;
 }
-@media (max-width: 576px) {
-  section .banner .law_title h1,
-  section .banner .law_title p {
-    color: #545454;
-  }
-}
 section .banner .law_title h1 {
   font-size: 48px;
-}
-@media (max-width: 576px) {
-  section .banner .law_title h1 {
-    font-size: 32px;
-  }
 }
 section .banner .law_title p {
   margin-top: 2rem;
   font-size: 32px;
-}
-@media (max-width: 576px) {
-  section .banner .law_title p {
-    font-size: 18px;
-  }
 }
 section .text {
   position: absolute;
@@ -377,34 +346,16 @@ section .text {
   height: 350px;
   border-radius: 15px;
 }
-@media (max-width: 576px) {
-  section .text {
-    top: 19rem;
-  }
-}
 section .text p {
   color: #FFFFFF;
   padding: 5rem;
   line-height: 2rem;
   font-size: 16px;
 }
-@media (max-width: 576px) {
-  section .text p {
-    margin-top: 1.2rem;
-    padding: 2rem;
-  }
-}
 
 .text_t {
   width: 210px;
   margin: 20rem auto -1.5rem;
-}
-@media (max-width: 576px) {
-  .text_t {
-    display: flex;
-    justify-content: center;
-    margin-top: 78%;
-  }
 }
 .text_t .tittle {
   font-size: 40px;
@@ -415,11 +366,6 @@ section .text p {
 }
 .text_t .tittle div {
   font-weight: 700;
-}
-@media (max-width: 576px) {
-  .text_t .tittle {
-    font-size: 28px;
-  }
 }
 .text_t .tittle .tittle_ball {
   width: 35px;
@@ -432,34 +378,11 @@ section .text p {
   left: -15px;
   z-index: -1;
 }
-@media (max-width: 576px) {
-  .text_t .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
-}
 
 #contain {
   height: 60vh;
   margin: 4rem auto;
   width: 40%;
-}
-@media (max-width: 1440px) {
-  #contain {
-    width: 46%;
-  }
-}
-@media (max-width: 992px) {
-  #contain {
-    width: 65%;
-    height: 50vh;
-  }
-}
-@media (max-width: 576px) {
-  #contain {
-    width: 50%;
-  }
 }
 #contain .effect_box {
   height: 100%;
@@ -472,12 +395,6 @@ section .text p {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-@media (max-width: 576px) {
-  #contain .effect_box .move {
-    width: 40%;
-    margin-left: 8px;
-  }
 }
 #contain .effect_box .move .move_box1,
 #contain .effect_box .move .move_box2,
@@ -510,35 +427,6 @@ section .text p {
 #contain .effect_box .move .move_box5 span {
   color: #fff;
 }
-@media (max-width: 1440px) {
-  #contain .effect_box .move .move_box1,
-  #contain .effect_box .move .move_box2,
-  #contain .effect_box .move .move_box3,
-  #contain .effect_box .move .move_box4,
-  #contain .effect_box .move .move_box5 {
-    height: 80px;
-    line-height: 80px;
-  }
-}
-@media (max-width: 768px) {
-  #contain .effect_box .move .move_box1,
-  #contain .effect_box .move .move_box2,
-  #contain .effect_box .move .move_box3,
-  #contain .effect_box .move .move_box4,
-  #contain .effect_box .move .move_box5 {
-    left: 10px;
-    width: 150px;
-  }
-}
-@media (max-width: 576px) {
-  #contain .effect_box .move .move_box1,
-  #contain .effect_box .move .move_box2,
-  #contain .effect_box .move .move_box3,
-  #contain .effect_box .move .move_box4,
-  #contain .effect_box .move .move_box5 {
-    margin: 1.5px auto 0;
-  }
-}
 #contain .move_box1:hover ::after {
   content: "飛航高度超過限高區200呎(60公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過60公尺";
   position: absolute;
@@ -552,19 +440,6 @@ section .text p {
   text-align: left;
   padding: 0.7rem 2.3rem;
   border-radius: 15px;
-}
-@media (max-width: 1440px) {
-  #contain .move_box1:hover ::after {
-    width: 350px;
-    height: 80px;
-    top: -3px;
-    text-align: justify;
-  }
-}
-@media (max-width: 576px) {
-  #contain .move_box1:hover ::after {
-    display: none;
-  }
 }
 #contain .move_box2:hover ::after {
   content: "飛航高度超過限高區400呎(120公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過120公尺";
@@ -580,19 +455,6 @@ section .text p {
   padding: 0.7rem 2.3rem;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
-  #contain .move_box2:hover ::after {
-    width: 350px;
-    height: 80px;
-    top: -3px;
-    text-align: justify;
-  }
-}
-@media (max-width: 576px) {
-  #contain .move_box2:hover ::after {
-    display: none;
-  }
-}
 #contain .move_box3:hover ::after {
   content: "人群及集會上方操作空拍機:6萬，在人群及集會遊行上方等場所，未申請操作空拍機將開罰。";
   position: absolute;
@@ -606,19 +468,6 @@ section .text p {
   text-align: left;
   padding: 0.7rem 2.3rem;
   border-radius: 15px;
-}
-@media (max-width: 1440px) {
-  #contain .move_box3:hover ::after {
-    width: 350px;
-    height: 80px;
-    top: -3px;
-    text-align: justify;
-  }
-}
-@media (max-width: 576px) {
-  #contain .move_box3:hover ::after {
-    display: none;
-  }
 }
 #contain .move_box4:hover ::after {
   content: "無人機沒註冊：3~15 萬，250g以上無人機都需要至民航局網站註冊，立即註冊立即使用。";
@@ -634,19 +483,6 @@ section .text p {
   padding: 0.7rem 2.3rem;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
-  #contain .move_box4:hover ::after {
-    width: 350px;
-    height: 80px;
-    top: -3px;
-    text-align: justify;
-  }
-}
-@media (max-width: 576px) {
-  #contain .move_box4:hover ::after {
-    display: none;
-  }
-}
 #contain .move_box5:hover ::after {
   content: "在非規定時間飛行：6萬，未經申請在日落後及日出前進行空拍活動將開罰。";
   position: absolute;
@@ -661,19 +497,6 @@ section .text p {
   padding: 1.4rem 2.3rem;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
-  #contain .move_box5:hover ::after {
-    width: 350px;
-    height: 80px;
-    top: -3px;
-    text-align: justify;
-  }
-}
-@media (max-width: 576px) {
-  #contain .move_box5:hover ::after {
-    display: none;
-  }
-}
 #contain .img_bg {
   width: 58vh;
   height: 100%;
@@ -683,44 +506,11 @@ section .text p {
   background-position: center;
   left: 210px;
 }
-@media (max-width: 1440px) {
-  #contain .img_bg {
-    left: 175px;
-  }
-}
-@media (max-width: 992px) {
-  #contain .img_bg {
-    width: 450px;
-    left: 250px;
-  }
-}
-@media (max-width: 768px) {
-  #contain .img_bg {
-    width: 300px;
-    margin-left: 37px;
-  }
-}
-@media (max-width: 576px) {
-  #contain .img_bg {
-    display: none;
-  }
-}
 
 .left_box {
   margin-top: 5rem;
   width: 57%;
   position: relative;
-  border: 3px solid black;
-}
-@media (max-width: 992px) {
-  .left_box {
-    margin-top: 2rem;
-  }
-}
-@media (max-width: 576px) {
-  .left_box {
-    width: 80%;
-  }
 }
 .left_box .tittle {
   font-size: 40px;
@@ -731,11 +521,6 @@ section .text p {
 }
 .left_box .tittle div {
   font-weight: 700;
-}
-@media (max-width: 576px) {
-  .left_box .tittle {
-    font-size: 28px;
-  }
 }
 .left_box .tittle .tittle_ball {
   width: 35px;
@@ -748,13 +533,6 @@ section .text p {
   left: -15px;
   z-index: -1;
 }
-@media (max-width: 576px) {
-  .left_box .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
-}
 .left_box .text_box {
   position: relative;
   margin-top: 4rem;
@@ -766,54 +544,19 @@ section .text p {
   line-height: 2rem;
   margin-top: 3rem;
 }
-@media (max-width: 992px) {
-  .left_box .text_box p {
-    margin: 0;
-  }
-}
-@media (max-width: 768px) {
-  .left_box .text_box p {
-    padding: 1rem 2rem;
-  }
-}
-@media (max-width: 576px) {
-  .left_box .text_box p {
-    display: block;
-  }
-}
 .left_box .text_box img {
   width: 105%;
   height: 350px;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
-  .left_box .text_box img {
-    width: 525px;
-  }
-}
-@media (max-width: 576px) {
-  .left_box .text_box img {
-    display: none;
-  }
-}
 
 #limit {
   height: 82vh;
-}
-@media (max-width: 992px) {
-  #limit {
-    height: 70vh;
-  }
 }
 #limit .limit_h {
   width: 70%;
   margin: 3.5vh auto;
   display: flex;
-}
-@media (max-width: 992px) {
-  #limit .limit_h {
-    margin-top: 0;
-  }
 }
 #limit .limit_h .shadow_pic {
   width: 550px;
@@ -825,25 +568,6 @@ section .text p {
   width: 420px;
   height: 420px;
 }
-@media (max-width: 1440px) {
-  #limit .limit_h .shadow_pic .shadow {
-    z-index: -1;
-    margin-left: -2rem;
-  }
-}
-@media (max-width: 992px) {
-  #limit .limit_h .shadow_pic .shadow {
-    width: 350px;
-    height: 350px;
-    margin-top: 8rem;
-    opacity: 0.8;
-  }
-}
-@media (max-width: 768px) {
-  #limit .limit_h .shadow_pic .shadow {
-    display: none;
-  }
-}
 #limit .limit_h .shadow_pic img {
   position: absolute;
   width: 450px;
@@ -852,45 +576,9 @@ section .text p {
   bottom: 0;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.3), 4px 4px 7px 0px rgba(0, 0, 0, 0.3);
 }
-@media (max-width: 992px) {
-  #limit .limit_h .shadow_pic img {
-    width: 350px;
-    height: 350px;
-    bottom: 30px;
-    right: -25px;
-  }
-}
-@media (max-width: 768px) {
-  #limit .limit_h .shadow_pic img {
-    width: 250px;
-    height: 300px;
-    margin-top: -2rem;
-  }
-}
-@media (max-width: 576px) {
-  #limit .limit_h .shadow_pic img {
-    margin: 0;
-    border-radius: 15px;
-  }
-}
 
 #block {
   margin-top: -10rem;
-}
-@media (max-width: 1440px) {
-  #block {
-    margin-top: -7rem;
-  }
-}
-@media (max-width: 992px) {
-  #block {
-    margin-top: -5rem;
-  }
-}
-@media (max-width: 576px) {
-  #block {
-    margin-top: 3.5vh;
-  }
 }
 
 #register {
@@ -909,12 +597,6 @@ section .text p {
 #register .register_t .tittle div {
   font-weight: 700;
 }
-@media (max-width: 576px) {
-  #register .register_t .tittle {
-    font-size: 32px;
-    margin-left: -5%;
-  }
-}
 #register .register_t .tittle .tittle_ball {
   width: 35px;
   height: 35px;
@@ -925,12 +607,6 @@ section .text p {
   top: -3px;
   left: -15px;
   z-index: -1;
-}
-@media (max-width: 576px) {
-  #register .register_t .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-  }
 }
 #register .text_pic {
   width: 55%;
@@ -948,24 +624,6 @@ section .text p {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-@media (max-width: 1440px) {
-  #register .text_pic .text_bor {
-    margin-left: -8rem;
-  }
-}
-@media (max-width: 992px) {
-  #register .text_pic .text_bor {
-    width: 450px;
-    margin-top: 3rem;
-  }
-}
-@media (max-width: 576px) {
-  #register .text_pic .text_bor {
-    width: 300px;
-    background-color: #289dd2;
-    display: none;
-  }
-}
 #register .text_pic .text_bor .text_ins {
   padding: 3rem;
 }
@@ -979,33 +637,11 @@ section .text p {
   bottom: 0;
   z-index: -1;
 }
-@media (max-width: 992px) {
-  #register .text_pic .pic_p {
-    bottom: 35px;
-  }
-}
 #register .text_pic .pic_p img {
   height: 300px;
   width: 600px;
   border-radius: 15px;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.3), 4px 4px 7px 0px rgba(0, 0, 0, 0.3);
-}
-@media (max-width: 1440px) {
-  #register .text_pic .pic_p img {
-    margin-right: -120px;
-  }
-}
-@media (max-width: 992px) {
-  #register .text_pic .pic_p img {
-    width: 450px;
-    height: 250px;
-    margin-right: -120px;
-  }
-}
-@media (max-width: 576px) {
-  #register .text_pic .pic_p img {
-    display: none;
-  }
 }
 
 #license {
@@ -1016,34 +652,6 @@ section .text p {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50%;
-}
-@media (max-width: 1440px) {
-  #license {
-    margin-top: 1.2rem;
-    background-size: 56%;
-  }
-}
-@media (max-width: 992px) {
-  #license {
-    background-image: none;
-    height: 90vh;
-  }
-}
-@media (max-width: 768px) {
-  #license {
-    height: 110vh;
-  }
-}
-@media (max-width: 576px) {
-  #license {
-    height: 100vh;
-    margin-top: -9rem;
-  }
-}
-@media (max-width: 576px) {
-  #license .license_t {
-    margin-top: 30px;
-  }
 }
 #license .license_t .tittle {
   font-size: 40px;
@@ -1077,17 +685,6 @@ section .text p {
   border-radius: 15px;
   margin-left: 9rem;
 }
-@media (max-width: 1440px) {
-  #license .container .con_border {
-    width: 500px;
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  #license .container .con_border {
-    display: none;
-  }
-}
 #license .container .con_border h4,
 #license .container .con_border p {
   font-size: 16px;
@@ -1098,64 +695,12 @@ section .text p {
   width: 500px;
   margin: 3rem 0 0 4rem;
 }
-@media (max-width: 1440px) {
-  #license .container .dif {
-    margin-left: -5rem;
-    width: 450px;
-  }
-}
-@media (max-width: 992px) {
-  #license .container .dif {
-    width: 350px;
-    margin-top: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  #license .container .dif {
-    margin-left: 40px;
-    margin-top: -20px;
-  }
-}
-@media (max-width: 576px) {
-  #license .container .dif {
-    margin-left: -18px;
-    margin-top: 15px;
-    display: none;
-  }
-}
 #license .container .oper {
   position: absolute;
   z-index: 2;
   margin: -3rem 0 0 2rem;
   height: 580px;
   border-radius: 15px;
-}
-@media (max-width: 1440px) {
-  #license .container .oper {
-    margin-left: 1rem;
-    height: 550px;
-  }
-}
-@media (max-width: 992px) {
-  #license .container .oper {
-    width: 400px;
-    height: 450px;
-  }
-}
-@media (max-width: 768px) {
-  #license .container .oper {
-    margin-top: 350px;
-    margin-left: -370px;
-  }
-}
-@media (max-width: 576px) {
-  #license .container .oper {
-    margin-left: -15px;
-    margin-top: 60px;
-    height: 350px;
-    width: 350px;
-    display: none;
-  }
 }
 
 .fly_pic {
@@ -1166,29 +711,4 @@ section .text p {
 .fly_pic img {
   height: 500px;
   width: 100%;
-}
-@media (max-width: 992px) {
-  .fly_pic img {
-    height: 400px;
-  }
-}
-@media (max-width: 576px) {
-  .fly_pic img {
-    height: 320px;
-    margin-top: 100px;
-  }
-}
-
-@media (max-width: 992px) {
-  footer {
-    margin-top: -100px;
-  }
-}
-@media (max-width: 576px) {
-  footer {
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }/*# sourceMappingURL=lawR.css.map */

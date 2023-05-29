@@ -332,6 +332,24 @@ main section .container_info {
     margin: 2rem auto;
   }
 }
+@media (max-width: 992px) {
+  main section .container_info {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  main section .container_info {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+@media (max-width: 576px) {
+  main section .container_info {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 main section .container_info .ins_box {
   width: 580px;
   height: 400px;
@@ -343,10 +361,15 @@ main section .container_info .ins_box {
     margin: 1rem;
   }
 }
+@media (max-width: 768px) {
+  main section .container_info .ins_box {
+    height: 340px;
+  }
+}
 @media (max-width: 576px) {
   main section .container_info .ins_box {
-    min-height: 350px;
-    min-width: 500px;
+    width: 100%;
+    height: 260px;
   }
 }
 main section .container_info .ins_box .left_img {
@@ -386,50 +409,63 @@ main section .container_info .ins_box .right_info .right_info_title p {
 main section .container_info .ins_box .right_info .right_info_content {
   padding: 0 1.5rem;
 }
-main section .container_info .ins_box .right_info .right_info_footer {
+@media (max-width: 576px) {
+  main section .container_info .ins_box .right_info .right_info_content {
+    padding: 0rem 0.6rem;
+    margin-top: -0.2rem;
+  }
+}
+@media (max-width: 576px) {
+  main section .container_info .ins_box .right_info .right_info_content p {
+    font-size: 16px;
+  }
+}
+main section .container_info .ins_box .right_info_footer {
   padding: 0rem;
 }
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_a,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_b,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_c {
+main section .container_info .ins_box .right_info_footer .footer_info_a,
+main section .container_info .ins_box .right_info_footer .footer_info_b,
+main section .container_info .ins_box .right_info_footer .footer_info_c {
   margin: 1rem 0.5rem;
 }
 @media (max-width: 576px) {
-  main section .container_info .ins_box .right_info .right_info_footer .footer_info_a,
-  main section .container_info .ins_box .right_info .right_info_footer .footer_info_b,
-  main section .container_info .ins_box .right_info .right_info_footer .footer_info_c {
+  main section .container_info .ins_box .right_info_footer .footer_info_a,
+  main section .container_info .ins_box .right_info_footer .footer_info_b,
+  main section .container_info .ins_box .right_info_footer .footer_info_c {
     display: none;
   }
 }
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_a .info_title,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_b .info_title,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_c .info_title {
+main section .container_info .ins_box .right_info_footer .footer_info_a .info_title,
+main section .container_info .ins_box .right_info_footer .footer_info_b .info_title,
+main section .container_info .ins_box .right_info_footer .footer_info_c .info_title {
   background-color: #545454;
   color: #FFFFFF;
 }
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_a .green,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_b .green,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_c .green {
+main section .container_info .ins_box .right_info_footer .footer_info_a .green,
+main section .container_info .ins_box .right_info_footer .footer_info_b .green,
+main section .container_info .ins_box .right_info_footer .footer_info_c .green {
   background-color: #545454;
   color: #FFFFFF;
   background-color: green;
 }
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_a .gray,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_b .gray,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_c .gray {
+main section .container_info .ins_box .right_info_footer .gray {
   background-color: #545454;
   color: #FFFFFF;
   background-color: gray;
 }
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_a span,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_b span,
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_c span {
+main section .container_info .ins_box .right_info_footer span {
   border: 2px solid #545454;
   margin-right: 0.2rem;
   border-radius: 5px;
   padding: 0.2rem;
 }
-main section .container_info .ins_box .right_info .right_info_footer .footer_info_b hr {
+main section .container_info .ins_box .footer_info_b hr {
   margin-top: 1rem;
   border: 1px solid #545454;
+}
+@media (max-width: 768px) {
+  main section .container_info .ins_box .footer_info_b,
+  main section .container_info .ins_box .footer_info_c {
+    display: none;
+  }
 }/*# sourceMappingURL=viewShare.css.map */
