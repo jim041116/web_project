@@ -15,20 +15,36 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include phone() {
+      height: 400px;
+    }
 
     .law_title {
       padding: 5rem 7rem;
       line-height: 2rem;
+      @include phone() {
+        padding: 28% 0 0 17%;
+        line-height: 1rem;
+      }
       h1,
       p {
         color: $text_color_w;
+        @include phone() {
+          color: #545454;
+        }
       }
       h1 {
         font-size: $text_size-48px;
+        @include phone() {
+          font-size: 32px;
+        }
       }
       p {
         margin-top: 2rem;
         font-size: $text_size-32px;
+        @include phone() {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -51,7 +67,8 @@ section {
       line-height: 2rem;
       font-size: 16px;
       @include phone() {
-        padding-top: 3.5rem;
+        margin-top: 1.2rem;
+        padding: 2rem;
       }
     }
   }
@@ -61,11 +78,24 @@ section {
 .text_t {
   width: 210px;
   margin: 20rem auto -1.5rem;
+  @include phone() {
+    display: flex;
+    justify-content: center;
+    margin-top: 78%;
+  }
   .tittle {
     @include tittle();
     font-size: $text_size-40px;
+    @include phone() {
+      font-size: 28px;
+    }
     .tittle_ball {
       @include title_ball();
+      @include phone() {
+        width: 20px;
+        height: 20px;
+        left: -10px;
+      }
     }
   }
 }
@@ -74,6 +104,7 @@ section {
   height: 60vh;
   margin: 4rem auto;
   width: 40%;
+  // border: 3px solid black;
   @include pc() {
     width: 46%;
   }
@@ -100,6 +131,10 @@ section {
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      @include phone() {
+        width: 40%;
+        margin-left: 8px;
+      }
       .move_box1,
       .move_box2,
       .move_box3,
@@ -116,10 +151,13 @@ section {
         left: 0;
         transition: 0.5s ease-out;
         background-color: #289dd2;
-        color: #fff;
+        // border: 3px solid black;
         &:hover {
           cursor: pointer;
           transform: translateX(-40px);
+        }
+        span {
+          color: #fff;
         }
         // 1440
         @include pc() {
@@ -132,7 +170,7 @@ section {
           width: 150px;
         }
         @include phone() {
-          margin-left: 165px;
+          margin: 1.5px auto 0;
         }
       }
     }
@@ -288,13 +326,13 @@ section {
 //限高區域
 #limit {
   height: 82vh;
-  // border: 3px solid black;
+  border: 3px solid black;
   @include pad() {
     height: 70vh;
   }
   .limit_h {
     width: 70%;
-    margin: 3.5rem auto;
+    margin: 3.5vh auto;
     display: flex;
     @include pad() {
       margin-top: 0;
@@ -307,12 +345,26 @@ section {
       @include pad() {
         margin-top: 2rem;
       }
+      @include phone() {
+        margin-top: 5vh;
+      }
       // title
       .tittle {
+        @include phone() {
+          margin-top: 3.5vh;
+        }
         @include tittle();
         font-size: $text_size-40px;
+        @include phone() {
+          font-size: 28px;
+        }
         .tittle_ball {
           @include title_ball();
+          @include phone() {
+            width: 20px;
+            height: 20px;
+            left: -10px;
+          }
         }
       }
       .text_box {
@@ -343,8 +395,9 @@ section {
             width: 525px;
           }
           @include phone() {
-            width: 400px;
+            width: 300px;
             opacity: 0.7;
+            margin-left: -10%;
           }
         }
       }
@@ -395,8 +448,8 @@ section {
           margin-top: -2rem;
         }
         @include phone() {
-          right: 76px;
-          bottom: 60px;
+          right: 10%;
+          bottom: 7.5%;
           border-radius: 15px;
         }
       }
@@ -413,19 +466,31 @@ section {
   @include pad() {
     margin-top: -5rem;
   }
+  @include phone() {
+    margin-top: 3.5vh;
+  }
 }
 
 //註冊
 #register {
   height: 70vh;
-  //   border: 5px solid black;
+  border: 5px solid black;
   .register_t {
     width: 70%;
     margin: 2rem auto;
     .tittle {
+      border: 3px solid black;
       @include tittle();
+      @include phone() {
+        font-size: 32px;
+        margin-left: -5%;
+      }
       .tittle_ball {
         @include title_ball();
+        @include phone() {
+          width: 20px;
+          height: 20px;
+        }
       }
     }
   }
@@ -453,7 +518,7 @@ section {
         margin-top: 3rem;
       }
       @include phone() {
-        margin-left: -65px;
+        width: 300px;
         background-color: #289dd2;
       }
 

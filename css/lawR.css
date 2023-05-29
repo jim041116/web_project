@@ -325,20 +325,47 @@ section .banner {
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 576px) {
+  section .banner {
+    height: 400px;
+  }
+}
 section .banner .law_title {
   padding: 5rem 7rem;
   line-height: 2rem;
+}
+@media (max-width: 576px) {
+  section .banner .law_title {
+    padding: 28% 0 0 17%;
+    line-height: 1rem;
+  }
 }
 section .banner .law_title h1,
 section .banner .law_title p {
   color: #FFFFFF;
 }
+@media (max-width: 576px) {
+  section .banner .law_title h1,
+  section .banner .law_title p {
+    color: #545454;
+  }
+}
 section .banner .law_title h1 {
   font-size: 48px;
+}
+@media (max-width: 576px) {
+  section .banner .law_title h1 {
+    font-size: 32px;
+  }
 }
 section .banner .law_title p {
   margin-top: 2rem;
   font-size: 32px;
+}
+@media (max-width: 576px) {
+  section .banner .law_title p {
+    font-size: 18px;
+  }
 }
 section .text {
   position: absolute;
@@ -363,13 +390,21 @@ section .text p {
 }
 @media (max-width: 576px) {
   section .text p {
-    padding-top: 3.5rem;
+    margin-top: 1.2rem;
+    padding: 2rem;
   }
 }
 
 .text_t {
   width: 210px;
   margin: 20rem auto -1.5rem;
+}
+@media (max-width: 576px) {
+  .text_t {
+    display: flex;
+    justify-content: center;
+    margin-top: 78%;
+  }
 }
 .text_t .tittle {
   font-size: 40px;
@@ -381,6 +416,11 @@ section .text p {
 .text_t .tittle div {
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .text_t .tittle {
+    font-size: 28px;
+  }
+}
 .text_t .tittle .tittle_ball {
   width: 35px;
   height: 35px;
@@ -391,6 +431,13 @@ section .text p {
   top: -3px;
   left: -15px;
   z-index: -1;
+}
+@media (max-width: 576px) {
+  .text_t .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+  }
 }
 
 #contain {
@@ -426,6 +473,12 @@ section .text p {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 576px) {
+  #contain .effect_box .move {
+    width: 40%;
+    margin-left: 8px;
+  }
+}
 #contain .effect_box .move .move_box1,
 #contain .effect_box .move .move_box2,
 #contain .effect_box .move .move_box3,
@@ -441,7 +494,6 @@ section .text p {
   left: 0;
   transition: 0.5s ease-out;
   background-color: #289dd2;
-  color: #fff;
 }
 #contain .effect_box .move .move_box1:hover,
 #contain .effect_box .move .move_box2:hover,
@@ -450,6 +502,13 @@ section .text p {
 #contain .effect_box .move .move_box5:hover {
   cursor: pointer;
   transform: translateX(-40px);
+}
+#contain .effect_box .move .move_box1 span,
+#contain .effect_box .move .move_box2 span,
+#contain .effect_box .move .move_box3 span,
+#contain .effect_box .move .move_box4 span,
+#contain .effect_box .move .move_box5 span {
+  color: #fff;
 }
 @media (max-width: 1440px) {
   #contain .effect_box .move .move_box1,
@@ -477,7 +536,7 @@ section .text p {
   #contain .effect_box .move .move_box3,
   #contain .effect_box .move .move_box4,
   #contain .effect_box .move .move_box5 {
-    margin-left: 165px;
+    margin: 1.5px auto 0;
   }
 }
 #contain .move_box1:hover ::after {
@@ -649,6 +708,7 @@ section .text p {
 
 #limit {
   height: 82vh;
+  border: 3px solid black;
 }
 @media (max-width: 992px) {
   #limit {
@@ -657,7 +717,7 @@ section .text p {
 }
 #limit .limit_h {
   width: 70%;
-  margin: 3.5rem auto;
+  margin: 3.5vh auto;
   display: flex;
 }
 @media (max-width: 992px) {
@@ -675,6 +735,11 @@ section .text p {
     margin-top: 2rem;
   }
 }
+@media (max-width: 576px) {
+  #limit .limit_h .left_box {
+    margin-top: 5vh;
+  }
+}
 #limit .limit_h .left_box .tittle {
   font-size: 40px;
   margin: 0;
@@ -682,8 +747,18 @@ section .text p {
   position: relative;
   font-size: 40px;
 }
+@media (max-width: 576px) {
+  #limit .limit_h .left_box .tittle {
+    margin-top: 3.5vh;
+  }
+}
 #limit .limit_h .left_box .tittle div {
   font-weight: 700;
+}
+@media (max-width: 576px) {
+  #limit .limit_h .left_box .tittle {
+    font-size: 28px;
+  }
 }
 #limit .limit_h .left_box .tittle .tittle_ball {
   width: 35px;
@@ -695,6 +770,13 @@ section .text p {
   top: -3px;
   left: -15px;
   z-index: -1;
+}
+@media (max-width: 576px) {
+  #limit .limit_h .left_box .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+  }
 }
 #limit .limit_h .left_box .text_box {
   position: relative;
@@ -734,8 +816,9 @@ section .text p {
 }
 @media (max-width: 576px) {
   #limit .limit_h .left_box .text_box img {
-    width: 400px;
+    width: 300px;
     opacity: 0.7;
+    margin-left: -10%;
   }
 }
 #limit .limit_h .shadow_pic {
@@ -792,8 +875,8 @@ section .text p {
 }
 @media (max-width: 576px) {
   #limit .limit_h .shadow_pic img {
-    right: 76px;
-    bottom: 60px;
+    right: 10%;
+    bottom: 7.5%;
     border-radius: 15px;
   }
 }
@@ -811,15 +894,22 @@ section .text p {
     margin-top: -5rem;
   }
 }
+@media (max-width: 576px) {
+  #block {
+    margin-top: 3.5vh;
+  }
+}
 
 #register {
   height: 70vh;
+  border: 5px solid black;
 }
 #register .register_t {
   width: 70%;
   margin: 2rem auto;
 }
 #register .register_t .tittle {
+  border: 3px solid black;
   font-size: 40px;
   margin: 0;
   z-index: 1;
@@ -827,6 +917,12 @@ section .text p {
 }
 #register .register_t .tittle div {
   font-weight: 700;
+}
+@media (max-width: 576px) {
+  #register .register_t .tittle {
+    font-size: 32px;
+    margin-left: -5%;
+  }
 }
 #register .register_t .tittle .tittle_ball {
   width: 35px;
@@ -838,6 +934,12 @@ section .text p {
   top: -3px;
   left: -15px;
   z-index: -1;
+}
+@media (max-width: 576px) {
+  #register .register_t .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+  }
 }
 #register .text_pic {
   width: 55%;
@@ -852,7 +954,8 @@ section .text p {
   border-radius: 15px;
   display: flex;
   align-items: center;
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 @media (max-width: 1440px) {
   #register .text_pic .text_bor {
@@ -867,7 +970,7 @@ section .text p {
 }
 @media (max-width: 576px) {
   #register .text_pic .text_bor {
-    margin-left: -65px;
+    width: 300px;
     background-color: #289dd2;
   }
 }
