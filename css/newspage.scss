@@ -7,6 +7,10 @@
 section {
     margin-top: 5rem;
 
+    @include phone(){
+        margin-top: 3rem;
+    }
+
     .text_box {
         margin-left: 20rem;
         & > * {
@@ -25,6 +29,17 @@ section {
         .news_title {
             font-size: $text_size-28px;
             font-weight: $text_weight-b;
+
+            @include phone(){
+                font-size: $text_size-18px;
+            }
+        }
+
+        @include pad(){
+            margin-left: 6rem;
+        }
+        @include phone(){
+            margin-left: 3rem;
         }
     }
 
@@ -39,6 +54,10 @@ section {
         filter: blur(2.5px);
         position: relative;
         z-index: -1;
+
+        @include pad(){
+            min-width: 0;
+        }
     }
 
     .news_1 {
@@ -68,6 +87,11 @@ section {
         background-color: white;
         margin: -35rem auto 0rem auto;
 
+        @include phone(){
+            min-width: 0;
+            width: 80%;
+        }
+
         .news_item_box_text {
             line-height: 25px;
 
@@ -89,6 +113,10 @@ section {
             transition: all .5s;
             display: block;
 
+            @include phone(){
+                margin: 1.2rem auto;
+            }
+
             &:hover {
                 transform: translateY(-5px);
                 box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
@@ -101,6 +129,10 @@ section {
             
             img {
                 border-radius: 15px;
+
+                @include phone(){
+                    width: 100%;
+                }
             }
         }
     }
