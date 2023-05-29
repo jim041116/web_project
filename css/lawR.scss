@@ -1,9 +1,5 @@
 @import "./public.scss";
-
 $raduis: 15px;
-main {
-  width: 100%;
-}
 
 // banner
 section {
@@ -15,36 +11,20 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    @include phone() {
-      height: 400px;
-    }
 
     .law_title {
       padding: 5rem 7rem;
       line-height: 2rem;
-      @include phone() {
-        padding: 28% 0 0 17%;
-        line-height: 1rem;
-      }
       h1,
       p {
         color: $text_color_w;
-        @include phone() {
-          color: #545454;
-        }
       }
       h1 {
         font-size: $text_size-48px;
-        @include phone() {
-          font-size: 32px;
-        }
       }
       p {
         margin-top: 2rem;
         font-size: $text_size-32px;
-        @include phone() {
-          font-size: 18px;
-        }
       }
     }
   }
@@ -58,18 +38,12 @@ section {
     background-image: url(../img/伯朗.jpg);
     height: 350px;
     border-radius: 15px;
-    @include phone() {
-      top: 19rem;
-    }
+
     p {
       color: $text_color_w;
       padding: 5rem;
       line-height: 2rem;
       font-size: 16px;
-      @include phone() {
-        margin-top: 1.2rem;
-        padding: 2rem;
-      }
     }
   }
 }
@@ -78,24 +52,13 @@ section {
 .text_t {
   width: 210px;
   margin: 20rem auto -1.5rem;
-  @include phone() {
-    display: flex;
-    justify-content: center;
-    margin-top: 78%;
-  }
+
   .tittle {
     @include tittle();
     font-size: $text_size-40px;
-    @include phone() {
-      font-size: 28px;
-    }
+
     .tittle_ball {
       @include title_ball();
-      @include phone() {
-        width: 20px;
-        height: 20px;
-        left: -10px;
-      }
     }
   }
 }
@@ -104,42 +67,23 @@ section {
   height: 60vh;
   margin: 4rem auto;
   width: 40%;
-  @include pc() {
-    width: 46%;
-  }
-  //992
-  @include pad() {
-    width: 65%;
-    height: 50vh;
-  }
-  //576
-  @include phone() {
-    width: 50%;
-  }
 
   .effect_box {
-    // border: 5px solid rgb(241, 72, 72);
     height: 100%;
     display: flex;
     //移動列
     .move {
       width: 30%;
       height: 100%;
-      //   border: 2px solid rgb(132, 133, 229);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      @include phone() {
-        width: 40%;
-        margin-left: 8px;
-      }
       .move_box1,
       .move_box2,
       .move_box3,
       .move_box4,
       .move_box5 {
-        // border: 3px solid #54545483;
         width: 170px;
         height: 100px;
         text-align: center;
@@ -150,26 +94,12 @@ section {
         left: 0;
         transition: 0.5s ease-out;
         background-color: #289dd2;
-        // border: 3px solid black;
         &:hover {
           cursor: pointer;
           transform: translateX(-40px);
         }
         span {
           color: #fff;
-        }
-        // 1440
-        @include pc() {
-          height: 80px;
-          line-height: 80px;
-        }
-        // 768
-        @include pad2() {
-          left: 10px;
-          width: 150px;
-        }
-        @include phone() {
-          margin: 1.5px auto 0;
         }
       }
     }
@@ -189,15 +119,6 @@ section {
     text-align: left;
     padding: 0.7rem 2.3rem;
     border-radius: 15px;
-    @include pc() {
-      width: 350px;
-      height: 80px;
-      top: -3px;
-      text-align: justify;
-    }
-    @include phone() {
-      display: none;
-    }
   }
   .move_box2:hover ::after {
     content: "飛航高度超過限高區400呎(120公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過120公尺";
@@ -212,15 +133,6 @@ section {
     text-align: left;
     padding: 0.7rem 2.3rem;
     border-radius: 15px;
-    @include pc() {
-      width: 350px;
-      height: 80px;
-      top: -3px;
-      text-align: justify;
-    }
-    @include phone() {
-      display: none;
-    }
   }
   .move_box3:hover ::after {
     content: "人群及集會上方操作空拍機:6萬，在人群及集會遊行上方等場所，未申請操作空拍機將開罰。";
@@ -235,15 +147,6 @@ section {
     text-align: left;
     padding: 0.7rem 2.3rem;
     border-radius: 15px;
-    @include pc() {
-      width: 350px;
-      height: 80px;
-      top: -3px;
-      text-align: justify;
-    }
-    @include phone() {
-      display: none;
-    }
   }
   .move_box4:hover ::after {
     content: "無人機沒註冊：3~15 萬，250g以上無人機都需要至民航局網站註冊，立即註冊立即使用。";
@@ -258,15 +161,6 @@ section {
     text-align: left;
     padding: 0.7rem 2.3rem;
     border-radius: 15px;
-    @include pc() {
-      width: 350px;
-      height: 80px;
-      top: -3px;
-      text-align: justify;
-    }
-    @include phone() {
-      display: none;
-    }
   }
   .move_box5:hover ::after {
     content: "在非規定時間飛行：6萬，未經申請在日落後及日出前進行空拍活動將開罰。";
@@ -281,15 +175,6 @@ section {
     text-align: left;
     padding: 1.4rem 2.3rem;
     border-radius: 15px;
-    @include pc() {
-      width: 350px;
-      height: 80px;
-      top: -3px;
-      text-align: justify;
-    }
-    @include phone() {
-      display: none;
-    }
   }
   //圖片
   .img_bg {
@@ -301,24 +186,6 @@ section {
     background-size: cover;
     background-position: center;
     left: 210px;
-
-    //1440
-    @include pc() {
-      left: 175px;
-    }
-    //992
-    @include pad() {
-      width: 450px;
-      left: 250px;
-    }
-    @include pad2() {
-      width: 300px;
-      margin-left: 37px;
-    }
-    //576
-    @include phone() {
-      display: none;
-    }
   }
 }
 
@@ -326,26 +193,12 @@ section {
   margin-top: 5rem;
   width: 57%;
   position: relative;
-  border: 3px solid black;
-  @include pad() {
-    margin-top: 2rem;
-  }
-  @include phone() {
-    width: 80%;
-  }
   .tittle {
     @include tittle();
     font-size: $text_size-40px;
-    @include phone() {
-      font-size: 28px;
-    }
+
     .tittle_ball {
       @include title_ball();
-      @include phone() {
-        width: 20px;
-        height: 20px;
-        left: -10px;
-      }
     }
   }
   .text_box {
@@ -357,43 +210,23 @@ section {
       padding: 3em;
       line-height: 2rem;
       margin-top: 3rem;
-      @include pad() {
-        margin: 0;
-      }
-      @include pad2() {
-        padding: 1rem 2rem;
-      }
-      @include phone() {
-        display: block;
-      }
     }
     // 限高照片
     img {
       width: 105%;
       height: 350px;
       border-radius: 15px;
-      @include pc() {
-        width: 525px;
-      }
-      @include phone() {
-        display: none;
-      }
     }
   }
 }
 //限高區域
 #limit {
   height: 82vh;
-  @include pad() {
-    height: 70vh;
-  }
   .limit_h {
     width: 70%;
     margin: 3.5vh auto;
     display: flex;
-    @include pad() {
-      margin-top: 0;
-    }
+
     // 左邊img & title
     // 右邊img &shadow
     .shadow_pic {
@@ -404,19 +237,6 @@ section {
         background-image: url(../img/law_infoVague.png);
         width: 420px;
         height: 420px;
-        @include pc() {
-          z-index: -1;
-          margin-left: -2rem;
-        }
-        @include pad() {
-          width: 350px;
-          height: 350px;
-          margin-top: 8rem;
-          opacity: 0.8;
-        }
-        @include pad2() {
-          display: none;
-        }
       }
       // info
       img {
@@ -428,22 +248,6 @@ section {
         box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
           7px 7px 20px 0px rgba(0, 0, 0, 0.3),
           4px 4px 7px 0px rgba(0, 0, 0, 0.3);
-        @include pad() {
-          width: 350px;
-          height: 350px;
-          bottom: 30px;
-          right: -25px;
-        }
-        @include pad2() {
-          width: 250px;
-          height: 300px;
-          margin-top: -2rem;
-        }
-        @include phone() {
-          margin: 0;
-          // bottom: 7.5%;
-          border-radius: 15px;
-        }
       }
     }
   }
@@ -452,15 +256,6 @@ section {
 // 綠黃紅灰區
 #block {
   margin-top: -10rem;
-  @include pc() {
-    margin-top: -7rem;
-  }
-  @include pad() {
-    margin-top: -5rem;
-  }
-  @include phone() {
-    margin-top: 3.5vh;
-  }
 }
 
 //註冊
@@ -471,16 +266,8 @@ section {
     margin: 2rem auto;
     .tittle {
       @include tittle();
-      @include phone() {
-        font-size: 32px;
-        margin-left: -5%;
-      }
       .tittle_ball {
         @include title_ball();
-        @include phone() {
-          width: 20px;
-          height: 20px;
-        }
       }
     }
   }
@@ -499,20 +286,6 @@ section {
       display: flex;
       align-items: center;
       backdrop-filter: blur(10px);
-      //1440
-      @include pc() {
-        margin-left: -8rem;
-      }
-      @include pad() {
-        width: 450px;
-        margin-top: 3rem;
-      }
-      @include phone() {
-        width: 300px;
-        background-color: #289dd2;
-        display: none;
-      }
-
       .text_ins {
         padding: 3rem;
         p {
@@ -527,10 +300,6 @@ section {
       right: 0;
       bottom: 0;
       z-index: -1;
-      //992
-      @include pad() {
-        bottom: 35px;
-      }
       img {
         height: 300px;
         width: 600px;
@@ -538,17 +307,6 @@ section {
         box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
           7px 7px 20px 0px rgba(0, 0, 0, 0.3),
           4px 4px 7px 0px rgba(0, 0, 0, 0.3);
-        @include pc() {
-          margin-right: -120px;
-        }
-        @include pad() {
-          width: 450px;
-          height: 250px;
-          margin-right: -120px;
-        }
-        @include phone() {
-          display: none;
-        }
       }
     }
   }
@@ -559,30 +317,12 @@ section {
   height: 102vh;
   width: 70%;
   margin: 0 auto;
-  @include pc() {
-    margin-top: 1.2rem;
-    background-size: 56%;
-  }
-  @include pad() {
-    background-image: none;
-    height: 90vh;
-  }
-  @include pad2() {
-    height: 110vh;
-  }
-  @include phone() {
-    height: 100vh;
-    margin-top: -9rem;
-  }
   background-image: url(../img/操作證-模糊.png);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 50%;
   //   title
   .license_t {
-    @include phone() {
-      margin-top: 30px;
-    }
     .tittle {
       @include tittle();
       .tittle_ball {
@@ -602,13 +342,6 @@ section {
       padding: 3rem;
       border-radius: 15px;
       margin-left: 9rem;
-      @include pc() {
-        width: 500px;
-        margin-left: 1rem;
-      }
-      @include pad2() {
-        display: none;
-      }
       h4,
       p {
         font-size: 16px;
@@ -619,23 +352,6 @@ section {
     .dif {
       width: 500px;
       margin: 3rem 0 0 4rem;
-      @include pc() {
-        margin-left: -5rem;
-        width: 450px;
-      }
-      @include pad() {
-        width: 350px;
-        margin-top: 1rem;
-      }
-      @include pad2() {
-        margin-left: 40px;
-        margin-top: -20px;
-      }
-      @include phone() {
-        margin-left: -18px;
-        margin-top: 15px;
-        display: none;
-      }
     }
     .oper {
       position: absolute;
@@ -643,25 +359,6 @@ section {
       margin: -3rem 0 0 2rem;
       height: 580px;
       border-radius: 15px;
-      @include pc() {
-        margin-left: 1rem;
-        height: 550px;
-      }
-      @include pad() {
-        width: 400px;
-        height: 450px;
-      }
-      @include pad2() {
-        margin-top: 350px;
-        margin-left: -370px;
-      }
-      @include phone() {
-        margin-left: -15px;
-        margin-top: 60px;
-        height: 350px;
-        width: 350px;
-        display: none;
-      }
     }
   }
 }
@@ -674,24 +371,5 @@ section {
   img {
     height: 500px;
     width: 100%;
-    @include pad() {
-      height: 400px;
-    }
-    @include phone() {
-      height: 320px;
-      margin-top: 100px;
-    }
-  }
-}
-
-footer {
-  @include pad() {
-    margin-top: -100px;
-  }
-  @include phone() {
-    height: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
