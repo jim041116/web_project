@@ -365,7 +365,7 @@ section {
 @media (max-width: 576px) {
   .bn_text {
     width: 90%;
-    height: 70vh;
+    height: 400px;
   }
 }
 .bn_text p {
@@ -384,6 +384,7 @@ section {
 @media (max-width: 576px) {
   .bn_text p {
     width: 90%;
+    top: 5%;
     left: 5%;
   }
 }
@@ -393,6 +394,11 @@ section {
   display: flex;
   justify-content: space-around;
   width: 80%;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_type_btn {
+    width: 100%;
+  }
 }
 #drone_type .drone_type_btn .btn {
   width: 150px;
@@ -410,6 +416,15 @@ section {
 #drone_type .drone_type_btn .btn:hover {
   transform: translateY(-10px);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.459);
+}
+@media (max-width: 576px) {
+  #drone_type .drone_type_btn .btn {
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
 }
 #drone_type .drone_type_btn .novice_btn {
   background-color: #377491;
@@ -435,6 +450,12 @@ section {
     height: 350px;
   }
 }
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item {
+    margin-top: 325px;
+    height: 150px;
+  }
+}
 #drone_type .drone_section .drone_type_item .img_mini2_se {
   background-image: url(../img/mini2se.jpg);
   background-position: center;
@@ -449,12 +470,22 @@ section {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_mini2 {
+    background-image: url(../img/mini2_m.jpg);
+  }
+}
 #drone_type .drone_section .drone_type_item .img_mini3 {
   background-image: url(../img/mini3.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_mini3 {
+    background-image: url(../img/mini3.webp);
+  }
 }
 #drone_type .drone_section .drone_type_item .img_mini3_pro {
   background-image: url(../img/mini3pro.jpg);
@@ -470,6 +501,11 @@ section {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_air2s {
+    background-image: url(../img/air2s_m.jpg);
+  }
+}
 #drone_type .drone_section .drone_type_item .img_m3c {
   background-image: url(../img/m3c.jpg);
   background-position: center;
@@ -483,6 +519,11 @@ section {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_mv3p {
+    background-image: url(../img/mav3pro_m.jpg);
+  }
 }
 #drone_type .drone_section .drone_type_item .img_fpv {
   background-image: url(../img/fpv.jpg);
@@ -498,12 +539,22 @@ section {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_avata {
+    background-image: url(../img/avata_m.jpg);
+  }
+}
 #drone_type .drone_section .drone_type_item .box_2 {
   display: flex;
   position: absolute;
   top: 0px;
   left: 0;
   width: 100%;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .box_2 {
+    display: none;
+  }
 }
 #drone_type .drone_section .drone_type_item .box_2 .box_3 {
   width: 25%;
@@ -528,7 +579,7 @@ section {
 }
 #drone_type .drone_section .drone_type_item .drone_text {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 35%;
   padding: 1rem;
@@ -542,6 +593,12 @@ section {
 @media (max-width: 992px) {
   #drone_type .drone_section .drone_type_item .drone_text {
     margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .drone_text {
+    top: -325px;
+    width: 100%;
   }
 }
 #drone_type .drone_section .drone_type_item .drone_text .type_title {
@@ -592,6 +649,13 @@ section {
   padding: 2rem;
   transform: translateY(-550px);
   transition: all 0.5s;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .more_text div {
+    line-height: 30px;
+    padding: 1rem;
+    font-size: 16px;
+  }
 }
 
 footer {
