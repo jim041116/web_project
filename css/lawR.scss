@@ -1,9 +1,7 @@
 @import "./public.scss";
 $raduis: 15px;
 
-// banner
 section {
-  position: relative;
   .banner {
     width: 100%;
     height: 450px;
@@ -11,20 +9,42 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    @include phone() {
+      height: 330px;
+    }
+    // 空拍法規title
     .law_title {
       padding: 5rem 7rem;
       line-height: 2rem;
+      @include pc() {
+        padding: 9% 0 0 3.5%;
+      }
+      @include pad() {
+        padding: 15% 0 0 10%;
+      }
+      @include phone() {
+        padding: 20% 0 0 12%;
+      }
       h1,
       p {
         color: $text_color_w;
+        @include pad() {
+          color: #545454;
+        }
       }
       h1 {
         font-size: $text_size-48px;
+        @include phone() {
+          font-size: 32px;
+        }
       }
       p {
         margin-top: 2rem;
         font-size: $text_size-32px;
+        @include phone() {
+          font-size: 18px;
+          margin-top: 1rem;
+        }
       }
     }
   }
@@ -38,36 +58,88 @@ section {
     background-image: url(../img/伯朗.jpg);
     height: 350px;
     border-radius: 15px;
-
+    @include pc() {
+      top: 55%;
+    }
+    @include pad() {
+      top: 40%;
+    }
+    @include phone() {
+      top: 45%;
+      height: 300px;
+    }
     p {
       color: $text_color_w;
-      padding: 5rem;
+      padding: 7rem;
       line-height: 2rem;
-      font-size: 16px;
+      font-size: 18px;
+      @include pc() {
+        padding: 8rem;
+      }
+      @include pad() {
+        padding: 5rem;
+        line-height: 2rem;
+      }
+      @include pad2() {
+        padding: 4rem;
+        line-height: 3rem;
+      }
+      @include phone() {
+        font-size: 16px;
+        line-height: 1.5rem;
+        padding: 3rem;
+      }
     }
   }
 }
 
-// title
+// 易觸犯title
 .text_t {
   width: 210px;
-  margin: 20rem auto -1.5rem;
-
+  margin: 16rem auto -1.5rem;
+  @include pc() {
+    margin-top: 20%;
+  }
+  @include pad() {
+    margin-top: 38%;
+  }
+  @include phone() {
+    margin-top: 68%;
+    display: flex;
+    justify-content: center;
+  }
   .tittle {
     @include tittle();
     font-size: $text_size-40px;
-
+    @include phone() {
+      font-size: 32px;
+    }
     .tittle_ball {
       @include title_ball();
+      @include phone() {
+        width: 20px;
+        height: 20px;
+        left: -10px;
+      }
     }
   }
 }
-// 易觸犯規範外框
+
+// 易觸犯規範content
 #contain {
   height: 60vh;
   margin: 4rem auto;
   width: 40%;
-
+  @include pc() {
+    width: 45%;
+  }
+  @include pad() {
+    width: 80%;
+  }
+  @include phone() {
+    width: 80%;
+    height: 54vh;
+  }
   .effect_box {
     height: 100%;
     display: flex;
@@ -94,12 +166,28 @@ section {
         left: 0;
         transition: 0.5s ease-out;
         background-color: #289dd2;
+        @include pc() {
+          height: 90px;
+        }
+        @include phone() {
+          width: 120px;
+          height: 70px;
+        }
+        @include phone() {
+          width: 100px;
+        }
         &:hover {
           cursor: pointer;
           transform: translateX(-40px);
         }
         span {
           color: #fff;
+          @include phone() {
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }
@@ -145,7 +233,7 @@ section {
     color: #fff;
     line-height: 1.2rem;
     text-align: left;
-    padding: 0.7rem 2.3rem;
+    padding: 0.8rem 2.5rem;
     border-radius: 15px;
   }
   .move_box4:hover ::after {
@@ -159,7 +247,7 @@ section {
     color: #fff;
     line-height: 1.2rem;
     text-align: left;
-    padding: 0.7rem 2.3rem;
+    padding: 1.2rem 2.3rem;
     border-radius: 15px;
   }
   .move_box5:hover ::after {
@@ -178,7 +266,6 @@ section {
   }
   //圖片
   .img_bg {
-    // border: 5px solid rgb(220, 161, 243);
     width: 58vh;
     height: 100%;
     background-image: url(../img/law_glass.png);
@@ -186,127 +273,252 @@ section {
     background-size: cover;
     background-position: center;
     left: 210px;
-  }
-}
-
-.left_box {
-  margin-top: 5rem;
-  width: 57%;
-  position: relative;
-  .tittle {
-    @include tittle();
-    font-size: $text_size-40px;
-
-    .tittle_ball {
-      @include title_ball();
-    }
-  }
-  .text_box {
-    position: relative;
-    margin-top: 4rem;
-    p {
-      position: absolute;
-      color: white;
-      padding: 3em;
-      line-height: 2rem;
-      margin-top: 3rem;
-    }
-    // 限高照片
-    img {
-      width: 105%;
-      height: 350px;
-      border-radius: 15px;
+    border-radius: 15px;
+    @include pad() {
+      width: 65%;
+      margin-left: 2rem;
     }
   }
 }
-//限高區域
+
+//限高區
 #limit {
-  height: 82vh;
-  .limit_h {
-    width: 70%;
-    margin: 3.5vh auto;
-    display: flex;
+  display: flex;
+  width: 80%;
+  margin: 8% auto;
 
-    // 左邊img & title
-    // 右邊img &shadow
-    .shadow_pic {
-      width: 550px;
-      height: 540px;
-      position: relative;
-      .shadow {
-        background-image: url(../img/law_infoVague.png);
-        width: 420px;
-        height: 420px;
-      }
-      // info
-      img {
-        position: absolute;
-        width: 450px;
-        height: 450px;
-        right: 0;
-        bottom: 0;
-        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-          7px 7px 20px 0px rgba(0, 0, 0, 0.3),
-          4px 4px 7px 0px rgba(0, 0, 0, 0.3);
-      }
+  .box {
+    width: 50%;
+    margin-left: 10%;
+    @include pad() {
+      margin-top: 10%;
+      margin-left: 0;
+      width: 50%;
     }
-  }
-}
-
-// 綠黃紅灰區
-#block {
-  margin-top: -10rem;
-}
-
-//註冊
-#register {
-  height: 70vh;
-  .register_t {
-    width: 70%;
-    margin: 2rem auto;
-    .tittle {
-      @include tittle();
-      .tittle_ball {
-        @include title_ball();
-      }
+    @include phone() {
+      width: 60%;
     }
-  }
-
-  .text_pic {
-    width: 55%;
-    height: 470px;
-    margin: 2rem auto;
-    position: relative;
-
-    .text_bor {
-      width: 600px;
-      height: 250px;
-      background-color: hsla(0, 0%, 0%, 0.5);
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      backdrop-filter: blur(10px);
-      .text_ins {
-        padding: 3rem;
-        p {
-          margin-bottom: 1.5rem;
-          color: $text_color_w;
+    .limit_t {
+      .tittle {
+        margin: 0 auto;
+        @include tittle();
+        font-size: $text_size-40px;
+        @include phone() {
+          font-size: 32px;
+        }
+        .tittle_ball {
+          @include title_ball();
+          @include phone() {
+            width: 20px;
+            height: 20px;
+            left: -10px;
+          }
         }
       }
     }
 
-    .pic_p {
-      position: absolute;
-      right: 0;
-      bottom: 0;
+    .limit_text {
+      height: 40vh;
+      background-image: url(../img/law_limit_place.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-top: 2rem;
+      border-radius: 15px;
+      position: relative;
       z-index: -1;
-      img {
-        height: 300px;
-        width: 600px;
-        border-radius: 15px;
-        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
-          7px 7px 20px 0px rgba(0, 0, 0, 0.3),
-          4px 4px 7px 0px rgba(0, 0, 0, 0.3);
+      @include pad() {
+        height: 30vh;
+        border-radius: 15px 0 0 15px;
+      }
+      @include phone() {
+        display: none;
+      }
+      p {
+        color: white;
+        padding: 6rem;
+        line-height: 2rem;
+        @include pc() {
+          padding: 3rem 7rem 3rem 5rem;
+        }
+        @include pad() {
+          text-align: left;
+          padding: 1.5rem;
+        }
+        @include phone() {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .box-right {
+    margin-left: 3rem;
+    position: relative;
+    @include pad() {
+      width: 50%;
+      margin: 0;
+    }
+    @include phone() {
+      z-index: 1;
+      display: flex;
+      height: 300px;
+      margin-top: 6.5rem;
+      left: -150px;
+    }
+    img {
+      @include pad() {
+        z-index: 0;
+        width: 100%;
+        height: 80%;
+        margin-top: 3.5rem;
+        border-radius: 15px 15px 15px 0;
+      }
+      @include phone() {
+        height: 100%;
+        margin: 0;
+        width: 300px;
+      }
+    }
+
+    .bg_img {
+      width: 420px;
+      height: 420px;
+      background-image: url(../img/law_infoVague.png);
+      position: absolute;
+      z-index: -1;
+      left: -7rem;
+      top: -3rem;
+      @include pad() {
+        display: none;
+      }
+    }
+  }
+}
+
+// 註冊title
+.register_t {
+  width: 65%;
+  margin: 5rem auto 0;
+  .tittle {
+    @include tittle();
+    @include phone() {
+      font-size: 32px;
+    }
+    .tittle_ball {
+      @include title_ball();
+      @include phone() {
+        width: 20px;
+        height: 20px;
+        left: -10px;
+      }
+    }
+  }
+}
+//註冊
+#register {
+  height: 50vh;
+  width: 65%;
+  margin: 2rem auto;
+  position: relative;
+  @include pad() {
+    height: 20vh;
+  }
+  .text_content {
+    width: 50%;
+    height: 230px;
+    border-radius: 15px;
+    background-color: hsla(0, 0, 0, 0.5);
+    padding: 2.5rem 4rem;
+    backdrop-filter: blur(10px);
+    @include pc() {
+      padding: 2rem 4.5rem;
+    }
+    @include pad() {
+      width: 80%;
+      padding: 2rem;
+      margin: 20% 0 0 0;
+      backdrop-filter: blur(5px);
+    }
+    @include phone() {
+      width: 100%;
+      align-items: center;
+      height: 25vh;
+    }
+    @include phone2() {
+      height: 39vh;
+    }
+    p {
+      color: #fff;
+      line-height: 1.5rem;
+      margin-top: 1rem;
+      @include pad() {
+        line-height: 2rem;
+        margin-top: 0;
+      }
+      @include pad2() {
+        font-size: 14px;
+      }
+      @include phone2() {
+        font-size: 14px;
+        line-height: 1.8rem;
+        margin-top: -0.5rem;
+      }
+    }
+  }
+}
+.pic_p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+  @include pc() {
+    //1440
+    right: -4rem;
+    bottom: 2rem;
+  }
+  @include pad() {
+    //992
+    top: -14%;
+    right: -27%;
+  }
+
+  img {
+    border-radius: 15px;
+    height: 35vh;
+    box-shadow: inset 2px 2px 2px 20px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 3px rgba(0, 0, 0, 0.2), 4px 4px 5px 3px rgba(0, 0, 0, 0.3);
+    @include pad() {
+      width: 70%;
+      height: 20vh;
+    }
+    @include phone() {
+      display: none;
+    }
+  }
+}
+
+// 考照title
+.license_t {
+  width: 65%;
+  margin: 7rem auto 0;
+  @include pad2() {
+    margin: 12rem auto 0;
+  }
+  @include phone2() {
+    margin-top: 15rem;
+  }
+  .tittle {
+    @include tittle();
+    @include phone() {
+      font-size: 32px;
+    }
+    .tittle_ball {
+      @include title_ball();
+      @include phone() {
+        width: 20px;
+        height: 20px;
+        left: -10px;
       }
     }
   }
@@ -314,62 +526,140 @@ section {
 
 //考照相關
 #license {
-  height: 102vh;
-  width: 70%;
+  height: 95vh;
+  width: 50%;
   margin: 0 auto;
   background-image: url(../img/操作證-模糊.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 50%;
-  //   title
-  .license_t {
-    .tittle {
-      @include tittle();
-      .tittle_ball {
-        @include title_ball();
-      }
-    }
-  }
+  background-size: 60%;
 
+  @include pc() {
+    width: 65%;
+    height: 105vh;
+  }
+  @include pad() {
+    background-image: none;
+  }
+  @include phone() {
+    background-image: none;
+  }
   .container {
     width: 80%;
-    // border: 3px solid red;
     margin: 3rem auto 0;
     .con_border {
-      width: 50%;
+      width: 60%;
       height: 228px;
       background-color: hsla(0, 0%, 0%, 0.6);
       padding: 3rem;
       border-radius: 15px;
-      margin-left: 9rem;
+      @include pc() {
+        padding: 3rem 2.5rem;
+      }
+      @include pad() {
+        width: 100%;
+        height: 250px;
+        margin-left: -2%;
+        padding: 2.5rem;
+      }
+      @include phone() {
+        width: 80vw;
+        margin-left: -27%;
+        padding: 1rem 2rem;
+      }
+      @include phone2() {
+        margin-top: 3rem;
+      }
       h4,
       p {
         font-size: 16px;
         color: white;
         line-height: 2rem;
+        @include phone() {
+          font-size: 14px;
+        }
       }
     }
     .dif {
       width: 500px;
-      margin: 3rem 0 0 4rem;
+      margin: 1.5rem 0 0 -7rem;
+      @include pc() {
+        width: 60%;
+        margin-left: -5rem;
+      }
+      @include pad() {
+        width: 40vw;
+        margin-left: -8rem;
+      }
+      @include phone() {
+        width: 80vw;
+        margin: 4rem 0 0 -27%;
+      }
+      @include phone2() {
+        margin-top: 4rem;
+      }
     }
     .oper {
       position: absolute;
       z-index: 2;
-      margin: -3rem 0 0 2rem;
+      margin: -3rem 0 0 1rem;
       height: 580px;
       border-radius: 15px;
+      @include pc() {
+        height: 80%;
+      }
+      @include pad() {
+        height: 450px;
+      }
+      @include phone() {
+        height: 45vh;
+        width: 80vw;
+        margin: 13% 0 0 -27%;
+      }
+      @include phone2() {
+        margin-top: 13%;
+      }
     }
   }
 }
 
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 //安全飛行
 .fly_pic {
-  height: 500px;
   width: 100%;
-  margin-top: 2rem;
-  img {
+  height: 580px;
+  @include pad() {
+    margin-top: -60%;
     height: 500px;
+  }
+  @include pad2() {
+    margin-top: -50%;
+    height: 420px;
+  }
+  @include phone() {
+    margin-top: 30%;
+    height: 300px;
+  }
+  @include phone2() {
+    margin-top: 55%;
+    height: 230px;
+  }
+  img {
+    height: 100%;
     width: 100%;
+    @include phone() {
+      height: 90%;
+      margin-top: -2rem;
+    }
+    @include phone2() {
+      height: 95%;
+      margin-top: 3rem;
+    }
+  }
+}
+
+footer {
+  @include phone2() {
+    margin-top: 2.2rem;
   }
 }
