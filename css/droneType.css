@@ -470,6 +470,11 @@ section {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_mini2 {
+    background-image: url(../img/mini2_m.jpg);
+  }
+}
 #drone_type .drone_section .drone_type_item .img_mini3 {
   background-image: url(../img/mini3.jpg);
   background-position: center;
@@ -495,6 +500,11 @@ section {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_air2s {
+    background-image: url(../img/air2s_m.jpg);
+  }
 }
 #drone_type .drone_section .drone_type_item .img_m3c {
   background-image: url(../img/m3c.jpg);
@@ -528,6 +538,11 @@ section {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 576px) {
+  #drone_type .drone_section .drone_type_item .img_avata {
+    background-image: url(../img/avata_m.jpg);
+  }
 }
 #drone_type .drone_section .drone_type_item .box_2 {
   display: flex;

@@ -164,6 +164,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/mini2_m.jpg);
+        }
       }
 
       .img_mini3 {
@@ -192,6 +196,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/air2s_m.jpg);
+        }
       }
 
       .img_m3c {
@@ -228,6 +236,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/avata_m.jpg);
+        }
       }
 
       .box_2 {
