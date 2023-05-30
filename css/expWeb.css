@@ -316,7 +316,7 @@ body {
 
 #form {
   width: 100%;
-  height: 1034px;
+  height: 960px;
   background-image: url(../img/exppic.jpg);
   background-size: cover;
   background-position: center;
@@ -326,8 +326,8 @@ body {
 }
 #form .form_title {
   display: flex;
-  margin-top: -20%;
-  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
 }
 #form .form_title .tittle {
   color: #545454;
@@ -369,13 +369,11 @@ body {
   opacity: 0.9;
   flex-direction: column;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
 }
 
-#signup {
-  display: flex;
-  margin-left: 20px;
+#content {
+  margin-top: 0;
 }
 
 #signup_form input {
@@ -385,12 +383,13 @@ body {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   height: 30px;
+  color: #1d6e94;
+  margin: 10px 0 0 0;
 }
 
 #signup_form label {
   font-size: 18px;
   color: #545454;
-  margin: 10px;
 }
 
 .btn_signup {
