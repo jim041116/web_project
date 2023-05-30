@@ -407,32 +407,30 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-#custumized_section {
-  margin: 1.5rem;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+#custumized #custumized_form {
   width: 811px;
   height: 420px;
+  display: flex;
+  justify-content: center;
   border-radius: 15px;
-  background-color: rgba(27, 26, 26, 0.6);
+  opacity: 0.9;
+  background-color: black;
 }
-#custumized_section .tittle {
+#custumized .tittle {
   color: #FFFFFF;
   font-size: 40px;
   margin: 0;
   z-index: 1;
   position: relative;
   margin-left: -50%;
-  margin-top: -70%;
+  margin-top: 5%;
   padding: 10px;
   font-size: 32px;
 }
-#custumized_section .tittle div {
+#custumized .tittle div {
   font-weight: 700;
 }
-#custumized_section .tittle .tittle_ball {
+#custumized .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289DD2;

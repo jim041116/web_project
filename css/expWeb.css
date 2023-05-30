@@ -374,6 +374,7 @@ body {
 
 #content {
   margin-top: 0;
+  height: 550px;
 }
 
 #signup_form input {
