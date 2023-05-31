@@ -21,7 +21,7 @@ section {
         weight: $text_weight-b;
       }
 
-      @include phone(){
+      @include phone() {
         font-size: $text_size-32px;
         color: $text_color_w;
       }
@@ -33,7 +33,7 @@ section {
         weight: $text_weight-b;
       }
 
-      @include phone(){
+      @include phone() {
         font-size: $text_size-18px;
         color: $text_color_w;
       }
@@ -53,12 +53,13 @@ section {
   top: -150px;
   background-attachment: fixed;
 
-  @include pad(){
+  @include pad() {
     margin: 3rem auto 0 auto;
   }
-  @include phone(){
+
+  @include phone() {
     width: 90%;
-    height: 70vh;
+    height: 400px;
   }
 
   p {
@@ -69,11 +70,13 @@ section {
     top: 30%;
     left: 10%;
 
-    @include pad2(){
+    @include pad2() {
       top: 15%;
     }
-    @include phone(){
+
+    @include phone() {
       width: 90%;
+      top: 5%;
       left: 5%;
     }
   }
@@ -85,6 +88,10 @@ section {
     display: flex;
     justify-content: space-around;
     width: 80%;
+
+    @include phone() {
+      width: 100%;
+    }
 
     .btn {
       width: 150px;
@@ -102,6 +109,14 @@ section {
       &:hover {
         transform: translateY(-10px);
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.459);
+      }
+
+      @include phone() {
+        width: 100px;
+        height: 33px;
+        line-height: 33px;
+        border-radius: 10px;
+        font-size: $text_size-16px;
       }
     }
 
@@ -125,9 +140,14 @@ section {
       position: relative;
       transition: all 0.5s;
 
-      @include pad(){
+      @include pad() {
         width: 100%;
         height: 350px;
+      }
+
+      @include phone() {
+        margin-top: 325px;
+        height: 150px;
       }
 
       .img_mini2_se {
@@ -144,6 +164,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/mini2_m.jpg);
+        }
       }
 
       .img_mini3 {
@@ -152,6 +176,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/mini3.webp);
+        }
       }
 
       .img_mini3_pro {
@@ -168,6 +196,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/air2s_m.jpg);
+        }
       }
 
       .img_m3c {
@@ -184,6 +216,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/mav3pro_m.jpg);
+        }
       }
 
       .img_fpv {
@@ -200,6 +236,10 @@ section {
         background-size: cover;
         width: 100%;
         height: 100%;
+
+        @include phone(){
+          background-image: url(../img/avata_m.jpg);
+        }
       }
 
       .box_2 {
@@ -209,12 +249,16 @@ section {
         left: 0;
         width: 100%;
 
+        @include phone() {
+          display: none;
+        }
+
         .box_3 {
           width: 25%;
           height: 300px;
           background-color: #f5f5f5;
 
-          @include pad(){
+          @include pad() {
             height: 350px;
           }
         }
@@ -225,7 +269,7 @@ section {
           border-top: 300px solid #96161600;
           border-left: 300px solid #f5f5f5;
 
-          @include pad(){
+          @include pad() {
             border-top: 350px solid #96161600;
           }
         }
@@ -233,17 +277,23 @@ section {
 
       .drone_text {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: 0;
         width: 35%;
         padding: 1rem;
         margin-top: 1.5rem;
 
-        @include pc(){
+        @include pc() {
           width: 38%;
         }
-        @include pad(){
+
+        @include pad() {
           margin-top: 0;
+        }
+
+        @include phone() {
+          top: -325px;
+          width: 100%;
         }
 
         .type_title {
@@ -252,16 +302,16 @@ section {
             weight: $text_weight-b;
           }
 
-          @include pad(){
-          font-size: $text_size-28px;
-        }
+          @include pad() {
+            font-size: $text_size-28px;
+          }
         }
 
         p {
           color: $text_color_g;
           margin: 0.5rem 0;
 
-          @include pad(){
+          @include pad() {
             margin: 0.8rem 0;
           }
         }
@@ -271,7 +321,7 @@ section {
           align-items: center;
           justify-content: space-around;
 
-          @include pad(){
+          @include pad() {
             flex-direction: column-reverse;
             align-items: start;
           }
@@ -299,6 +349,12 @@ section {
         padding: 2rem;
         transform: translateY(-550px);
         transition: all 0.5s;
+
+        @include phone() {
+          line-height: 30px;
+          padding: 1rem;
+          font-size: $text_size-16px;
+        }
       }
     }
   }

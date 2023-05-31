@@ -372,9 +372,13 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+<<<<<<< HEAD
 #free .free_form_1,
 #free .free_form_2,
 #free .free_form_3 {
+=======
+#free .free_form_1, #free .free_form_2, #free .free_form_3 {
+>>>>>>> main
   width: 865px;
   height: 152px;
   border-radius: 15px;
@@ -409,6 +413,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
 #custumized .custumized_form {
   border-radius: 15px;
   background-color: hsla(0, 0%, 0%, 0.5);
@@ -427,17 +432,41 @@ body {
   justify-content: center;
 }
 #custumized .custumized_form .border_for_space .cust_title .tittle {
+=======
+#custumized #custumized_form {
+  width: 811px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  opacity: 0.9;
+  background-color: black;
+}
+#custumized .tittle {
+>>>>>>> main
   color: #FFFFFF;
   font-size: 40px;
   margin: 0;
   z-index: 1;
   position: relative;
+<<<<<<< HEAD
   font-size: 32px;
 }
 #custumized .custumized_form .border_for_space .cust_title .tittle div {
   font-weight: 700;
 }
 #custumized .custumized_form .border_for_space .cust_title .tittle .tittle_ball {
+=======
+  margin-left: -50%;
+  margin-top: 5%;
+  padding: 10px;
+  font-size: 32px;
+}
+#custumized .tittle div {
+  font-weight: 700;
+}
+#custumized .tittle .tittle_ball {
+>>>>>>> main
   width: 35px;
   height: 35px;
   background-color: #289DD2;
@@ -448,7 +477,12 @@ body {
   left: -15px;
   z-index: -1;
 }
+<<<<<<< HEAD
 #custumized .custumized_form .border_for_space .content_text {
+=======
+
+.content_text {
+>>>>>>> main
   color: #FFFFFF;
   font-size: 28px;
   text-align: center;
