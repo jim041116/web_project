@@ -14,7 +14,7 @@ section {
     }
     // 空拍法規title
     .law_title {
-      padding: 5rem 7rem;
+      padding: 6rem 7rem;
       line-height: 2rem;
       @include pc() {
         padding: 9% 0 0 3.5%;
@@ -51,21 +51,25 @@ section {
 
   .text {
     position: absolute;
-    top: 22rem;
+    top: 24rem;
     left: 10%;
     width: 80%;
     margin: 0 auto;
     background-image: url(../img/伯朗.jpg);
     height: 350px;
     border-radius: 15px;
+
     @include pc() {
       top: 55%;
     }
     @include pad() {
-      top: 40%;
+      top: 30rem;
+    }
+    @include pad2() {
+      top: 42%;
     }
     @include phone() {
-      top: 45%;
+      top: 20rem;
       height: 300px;
     }
     p {
@@ -104,7 +108,7 @@ section {
     margin-top: 38%;
   }
   @include phone() {
-    margin-top: 68%;
+    margin-top: 50%;
     display: flex;
     justify-content: center;
   }
@@ -295,10 +299,11 @@ section {
       margin-left: 0;
       width: 50%;
     }
-    @include phone() {
-      width: 60%;
-    }
+
     .limit_t {
+      @include phone() {
+        margin-left: 2rem;
+      }
       .tittle {
         margin: 0 auto;
         @include tittle();
@@ -343,7 +348,7 @@ section {
         }
         @include pad() {
           text-align: left;
-          padding: 1.5rem;
+          padding: 1rem;
         }
         @include phone() {
           display: none;
@@ -399,9 +404,9 @@ section {
 // 註冊title
 .register_t {
   width: 65%;
-  margin: 5rem auto 0;
-  @include phone2() {
-    margin-top: -3rem;
+  margin: 7rem auto 0;
+  @include phone() {
+    margin-left: 18%;
   }
   .tittle {
     @include tittle();
@@ -416,6 +421,9 @@ section {
         left: -10px;
       }
     }
+  }
+  @include phone2() {
+    margin-top: -2rem;
   }
 }
 //註冊
@@ -434,28 +442,27 @@ section {
     background-color: hsla(0, 0%, 0, 0.5);
     padding: 2.5rem 4rem;
     backdrop-filter: blur(10px);
-
-    // border: 3px solid black;
     @include pc() {
-      padding: 2rem 4.5rem;
+      padding: 2rem;
     }
     @include pad() {
-      width: 80%;
+      width: 545px;
       padding: 2rem;
-      margin: 20% 0 0 0;
+      margin-top: 20%;
       backdrop-filter: blur(5px);
     }
-    //576
-    @include phone() {
-      width: 300px;
-      height: 250px;
-      margin-left: -6%;
+    @include pad2() {
+      width: 510px;
     }
-    //390
+    @include phone() {
+      width: 350px;
+      height: 260px;
+      margin-left: -15%;
+    }
     @include phone2() {
-      height: 30vh;
-      margin-left: -11%;
-      margin-top: -1rem;
+      margin-left: -3rem;
+      height: 250px;
+      width: 340px;
     }
     p {
       color: #fff;
@@ -464,9 +471,6 @@ section {
       @include pad() {
         line-height: 2rem;
         margin-top: 0;
-      }
-      @include pad2() {
-        font-size: 14px;
       }
       @include phone() {
         margin-top: -10px;
@@ -486,13 +490,11 @@ section {
   bottom: 0;
   z-index: -5;
   @include pc() {
-    //1440
     right: -4rem;
     bottom: 2rem;
   }
   @include pad() {
-    //992
-    top: -14%;
+    top: -27%;
     right: -27%;
   }
 
@@ -502,8 +504,8 @@ section {
     box-shadow: inset 2px 2px 2px 20px rgba(255, 255, 255, 0.5),
       7px 7px 20px 3px rgba(0, 0, 0, 0.2), 4px 4px 5px 3px rgba(0, 0, 0, 0.3);
     @include pad() {
-      width: 70%;
-      height: 20vh;
+      width: 80%;
+      height: 30vh;
     }
     @include phone() {
       display: none;
@@ -515,14 +517,19 @@ section {
 .license_t {
   width: 65%;
   margin: 7rem auto 0;
+  @include pad() {
+    margin-top: 17%;
+  }
   @include pad2() {
     margin: 10rem auto 0;
   }
-  //390
   @include phone2() {
-    margin-top: 12rem;
+    margin-top: 10rem;
   }
   .tittle {
+    @include phone() {
+      margin-top: 2rem;
+    }
     @include tittle();
     @include phone() {
       font-size: 32px;
@@ -552,59 +559,52 @@ section {
     width: 65%;
     height: 105vh;
   }
-  //992
+  @include pad2() {
+    width: 80%;
+    margin-left: 13%;
+  }
   @include pad() {
     background-image: none;
   }
-  //576
   @include phone() {
     background-image: none;
   }
   .container {
     width: 80%;
     margin: 3rem auto 0;
+    flex-wrap: wrap;
     .con_border {
       width: 60%;
       height: 228px;
       background-color: hsla(0, 0, 0, 0.5);
-      padding: 2.5rem 4rem;
+      padding: 2rem;
       border-radius: 15px;
       @include pc() {
-        padding: 3rem 2.5rem;
+        padding: 2rem;
       }
       @include pad() {
-        width: 100%;
+        width: 500px;
         height: 250px;
-        margin-left: -2%;
         padding: 2.5rem;
       }
       @include pad2() {
         margin-top: -30px;
       }
-
-      //576
       @include phone() {
-        width: 300px;
-        height: 300px;
-        margin-left: -20%;
+        display: none;
       }
-      //390
       @include phone2() {
-        width: 70vw;
-        margin-left: -18%;
-        height: 280px;
-        margin-top: 1rem;
+        width: 340px;
+        margin-left: -4rem;
+        height: 250px;
       }
-      h4,
       p {
         font-size: 16px;
         color: white;
         line-height: 2rem;
-        //576
         @include phone() {
           font-size: 14px;
         }
-        //390
         @include phone2() {
           font-size: 14px;
           padding: 0;
@@ -624,12 +624,14 @@ section {
         margin-left: -8rem;
       }
       @include phone() {
-        width: 70vw;
-        margin: 4rem 0 0 -17%;
+        width: 350px;
+        margin-left: -3.5rem;
+        margin-top: 3rem;
       }
-      //390
       @include phone2() {
-        margin-top: 10%;
+        width: 350px;
+        margin-top: 3rem;
+        margin-left: -4rem;
       }
     }
     .oper {
@@ -638,28 +640,20 @@ section {
       margin: -3rem 0 0 1rem;
       height: 580px;
       border-radius: 15px;
-      //1440
       @include pc() {
         height: 80%;
       }
-      //992
       @include pad() {
         height: 450px;
       }
-      //768{
       @include pad2() {
         margin-top: 1%;
       }
-      //576
       @include phone() {
-        height: 400px;
-        width: 70vw;
-        margin: 1rem 0 0 -17%;
+        display: none;
       }
-      //390
       @include phone2() {
-        height: 270px;
-        margin-top: 10%;
+        display: none;
       }
     }
   }
@@ -670,43 +664,32 @@ section {
 .fly_pic {
   width: 100%;
   height: 580px;
-  //992
   @include pad() {
-    margin-top: -60%;
-    height: 500px;
+    margin-top: -5rem;
+    height: 380px;
   }
-  //768
   @include pad2() {
-    margin-top: -40%;
     height: 420px;
-  }
-  //576
-  @include phone() {
-    margin-top: 30vh;
-    height: 250px;
-  }
-  //390
-  @include phone2() {
-    margin-top: 10%;
-    height: 200px;
   }
   img {
     height: 100%;
     width: 100%;
-    //576
-    @include phone() {
-      height: 100%;
+    @include pad2() {
+      margin-top: 8rem;
     }
-    //390
-    @include phone2() {
-      height: 100%;
+    @include phone() {
+      margin-top: 10rem;
+      height: 300px;
     }
   }
 }
 
 footer {
-  @include phone2() {
-    margin-top: -1em;
+  @include pad2() {
+    margin-top: 8rem;
+  }
+  @include phone() {
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 375px) {
@@ -715,13 +698,20 @@ footer {
   }
   .fly_pic {
     img {
-      margin-top: 8rem;
+      margin-top: 14rem;
+      height: 250px;
+      width: 375px;
     }
   }
   #license .container .con_border {
     margin-top: -1.5rem;
   }
   footer {
-    margin-top: 8rem;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 820px) {
+  .fly_pic {
+    margin-top: -30rem;
   }
 }
