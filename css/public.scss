@@ -3,7 +3,7 @@
 
 // 共同變數-開始
 $web_bg: #F5F5F5;
-$btn_bg: #289DD2;
+$btn_bg: linear-gradient(45deg, #289DD2  0%, #38ecce 100%);
 $text_color_w: #FFFFFF;
 $text_color_g: #545454;
 $text_size-48px: 48px;
@@ -64,6 +64,12 @@ $transition_5ms: all .5s;
 
 @mixin phone() {
     @media (max-width:576px) {
+        @content;
+    }
+}
+
+@mixin phone2() {
+    @media (max-width:414px) {
         @content;
     }
 }

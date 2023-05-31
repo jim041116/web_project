@@ -170,7 +170,7 @@ section {
         .more {
             width: 75px;
             height: 25px;
-            background-color: $btn_bg;
+            background-image: $btn_bg;
             color: $text_color_w;
             text-align: center;
             line-height: 25px;
@@ -605,7 +605,7 @@ section {
                             div {
                                 width: 170px;
                                 height: 40px;
-                                background-color: $btn_bg;
+                                background-image: $btn_bg;
                                 border-radius: 15px;
                                 text-align: center;
                                 line-height: 40px;

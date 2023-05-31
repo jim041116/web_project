@@ -33,7 +33,7 @@ ol {
   transition: 0.3s;
 }
 .go_top:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 .go_top:active {
   transform: translateY(-10px);
@@ -130,7 +130,7 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
   color: #FFFFFF;
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 header .hamburger_box {
   position: fixed;
@@ -222,7 +222,7 @@ header .hamburger_nav .hamburger_nav_item li {
   transition: all 0.5s;
 }
 header .hamburger_nav .hamburger_nav_item a li:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
 }
 @media (max-width: 992px) {
@@ -281,7 +281,7 @@ footer .footer_web_map .web_map_item li {
   transition: all 0.5s;
 }
 footer .footer_web_map .web_map_item a:hover li {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 footer .logo {
   text-align: end;
@@ -342,8 +342,7 @@ section {
     border-radius: 0;
     width: 100%;
     height: calc(100vh - 110px);
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 #video_section .g_box {
@@ -465,7 +464,7 @@ section {
 #about_me .about_me_text .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -496,7 +495,7 @@ section {
 #about_me .about_me_text .more {
   width: 75px;
   height: 25px;
-  background-color: #289DD2;
+  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
   text-align: center;
   line-height: 25px;
@@ -621,7 +620,7 @@ section {
 #attractions .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -804,7 +803,7 @@ section {
 #news .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -859,7 +858,7 @@ section {
 #reserve .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -977,7 +976,7 @@ section {
 #reserve .reserve_section .reserve_box .reserve_item a .reserve_item_box .reserve_item_btn div {
   width: 170px;
   height: 40px;
-  background-color: #289DD2;
+  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 15px;
   text-align: center;
   line-height: 40px;

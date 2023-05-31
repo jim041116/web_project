@@ -33,7 +33,7 @@ ol {
   transition: 0.3s;
 }
 .go_top:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 .go_top:active {
   transform: translateY(-10px);
@@ -130,7 +130,7 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
   color: #FFFFFF;
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 header .hamburger_box {
   position: fixed;
@@ -222,7 +222,7 @@ header .hamburger_nav .hamburger_nav_item li {
   transition: all 0.5s;
 }
 header .hamburger_nav .hamburger_nav_item a li:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
 }
 @media (max-width: 992px) {
@@ -281,7 +281,7 @@ footer .footer_web_map .web_map_item li {
   transition: all 0.5s;
 }
 footer .footer_web_map .web_map_item a:hover li {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 footer .logo {
   text-align: end;
@@ -414,8 +414,7 @@ footer .logo .copyright {
 .blog-slider__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
   opacity: 0;
   border-radius: 20px;
@@ -478,7 +477,7 @@ footer .logo .copyright {
 }
 .blog-slider__button {
   display: inline-flex;
-  background-image: linear-gradient(147deg, #94d8f8 0%, #289DD2 74%);
+  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;

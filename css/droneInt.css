@@ -33,7 +33,7 @@ ol {
   transition: 0.3s;
 }
 .go_top:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 .go_top:active {
   transform: translateY(-10px);
@@ -130,7 +130,7 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
   color: #FFFFFF;
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 header .hamburger_box {
   position: fixed;
@@ -222,7 +222,7 @@ header .hamburger_nav .hamburger_nav_item li {
   transition: all 0.5s;
 }
 header .hamburger_nav .hamburger_nav_item a li:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
 }
 @media (max-width: 992px) {
@@ -281,7 +281,7 @@ footer .footer_web_map .web_map_item li {
   transition: all 0.5s;
 }
 footer .footer_web_map .web_map_item a:hover li {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 footer .logo {
   text-align: end;
@@ -423,7 +423,7 @@ section {
 #drone_ifo .drone_item .drone_text .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -448,21 +448,30 @@ section {
   width: 25%;
   padding: 0.5rem 0;
   display: block;
-  background-color: #289DD2;
+  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
-  animation: btn_mre 1.5s infinite alternate;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 0;
 }
-@keyframes btn_mre {
-  from {
-    background-color: #289DD2;
-  }
-  to {
-    background-color: #1d7299;
-  }
+#drone_ifo .drone_item .drone_text a::before {
+  content: "";
+  position: absolute;
+  background-color: #f5f5f5;
+  top: 2px;
+  right: 2px;
+  border-radius: 12px;
+  width: 97.5%;
+  height: 31px;
+  transform: scale(0);
+  transition: all 0.3s;
+  z-index: -1;
+}
+#drone_ifo .drone_item .drone_text a:hover::before {
+  transform: scale(1);
 }
 #drone_ifo .drone_item .drone_text a:hover {
-  animation-play-state: paused;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+  color: #289DD2;
 }
 #drone_ifo .drone_item video {
   border-radius: 15px 0 0 15px;
@@ -522,7 +531,7 @@ section {
 #drone_use .drone_use_text .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
