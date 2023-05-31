@@ -121,17 +121,24 @@
       </div>
       <!-- 漢堡結束 -->
     </header>
+
+    <!-- 背底 -->
     <section id="form">
+      <!-- 表單外框 -->
       <div class="form_outs">
-        <div class="form_title">
-          <div class="tittle">
-            <div>預約體驗</div>
-            <div class="tittle_ball"></div>
-          </div>
-        </div>
+        <!-- 表單內容 -->
         <div class="content">
+          <!-- 左表單 -->
           <div class="left">
-            <div clss="content_up">
+            <!-- 預約體驗title -->
+            <div class="form_title">
+              <div class="tittle">
+                <div>預約體驗</div>
+                <div class="tittle_ball"></div>
+              </div>
+            </div>
+
+            <div class="content_up">
               <p>日期:2023/7/22 星期六</p>
               <p>時間:上午9點</p>
               <p>體驗時間:3小時</p>
@@ -140,44 +147,56 @@
               <p>交通方式:捷運木柵站 - 轉乘251區間車搭至富德里站</p>
               <p>-步行20分鐘(1.3公里) 自行開車前往：免費停車</p>
             </div>
+
             <div class="content_down">
-              <ul>
-                <li>報名成功將以簡訊通知~</li>
-                <li>我們不會以任何名義(電話、簡訊或email等方式)
-                    <br>
-                  向您索取或核對任何金融帳戶、信用卡及訂單資料。
-                </li>
-                <li>請您提高警覺，反詐騙諮詢專線165。</li>
-              </ul>
+              <p>報名成功將以簡訊通知~</p>
+              <p>我們不會以任何名義(電話、簡訊或email等方式)</p>
+              <p>向您索取或核對任何金融帳戶、信用卡及訂單資料。</p>
+              <p>請您提高警覺，反詐騙諮詢專線165。</p>
             </div>
           </div>
-       
-        <div calss="signup">
-          <form name="signup_form" id="signup_form" action="" method="post">
-            <label for="username">姓名</label>
-            <br>
-            <input type="text" name="username" id="username" required>
-            <br>
-            <label for="tel">手機</label>
-            <br>
-            <input type="tel" name="tel" id="tel">
-            <br>
-            <label for="email">信箱</label>
-            <br>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="number">人數</label>
-            <br>
-            <input
-              type="text"
-              name="numberofapplicants"
-              id="numberofapplicants"
-            >
-          </form>
-          <button class="btn_signup">立即預約</button>
+
+          <!-- 右表單 -->
+          <div class="signup">
+            <p>報名資料</p>
+            <form name="signup_form" id="signup_form" action="" method="post">
+              <label for="username">姓名</label>
+
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="請輸入姓名"
+                required
+              />
+
+              <label for="tel">手機</label>
+
+              <input type="tel" name="tel" id="tel" placeholder="請輸入手機" />
+
+              <label for="email">信箱</label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="請輸入Eamil"
+              />
+
+              <label for="number">人數</label>
+              <input
+                type="text"
+                name="numberofapplicants"
+                id="numberofapplicants"
+                placeholder="請輸入預約人數"
+              />
+            </form>
+            <button class="btn_signup">立即預約</button>
+          </div>
         </div>
+        <!-- 表單結束 -->
       </div>
-    </div>
+      <!-- 表單結束 -->
     </section>
 
     <footer>
