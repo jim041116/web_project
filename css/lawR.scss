@@ -400,6 +400,9 @@ section {
 .register_t {
   width: 65%;
   margin: 5rem auto 0;
+  @include phone2() {
+    margin-top: -3rem;
+  }
   .tittle {
     @include tittle();
     @include phone() {
@@ -428,9 +431,11 @@ section {
     width: 50%;
     height: 230px;
     border-radius: 15px;
-    background-color: hsla(0, 0, 0, 0.5);
+    background-color: hsla(0, 0%, 0, 0.5);
     padding: 2.5rem 4rem;
     backdrop-filter: blur(10px);
+
+    // border: 3px solid black;
     @include pc() {
       padding: 2rem 4.5rem;
     }
@@ -440,13 +445,17 @@ section {
       margin: 20% 0 0 0;
       backdrop-filter: blur(5px);
     }
+    //576
     @include phone() {
-      width: 100%;
-      align-items: center;
-      height: 25vh;
+      width: 300px;
+      height: 250px;
+      margin-left: -6%;
     }
+    //390
     @include phone2() {
-      height: 39vh;
+      height: 30vh;
+      margin-left: -11%;
+      margin-top: -1rem;
     }
     p {
       color: #fff;
@@ -459,6 +468,9 @@ section {
       @include pad2() {
         font-size: 14px;
       }
+      @include phone() {
+        margin-top: -10px;
+      }
       @include phone2() {
         font-size: 14px;
         line-height: 1.8rem;
@@ -467,6 +479,7 @@ section {
     }
   }
 }
+
 .pic_p {
   position: absolute;
   right: 0;
@@ -503,10 +516,11 @@ section {
   width: 65%;
   margin: 7rem auto 0;
   @include pad2() {
-    margin: 12rem auto 0;
+    margin: 10rem auto 0;
   }
+  //390
   @include phone2() {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
   .tittle {
     @include tittle();
@@ -538,9 +552,11 @@ section {
     width: 65%;
     height: 105vh;
   }
+  //992
   @include pad() {
     background-image: none;
   }
+  //576
   @include phone() {
     background-image: none;
   }
@@ -550,8 +566,8 @@ section {
     .con_border {
       width: 60%;
       height: 228px;
-      background-color: hsla(0, 0%, 0%, 0.6);
-      padding: 3rem;
+      background-color: hsla(0, 0, 0, 0.5);
+      padding: 2.5rem 4rem;
       border-radius: 15px;
       @include pc() {
         padding: 3rem 2.5rem;
@@ -562,21 +578,37 @@ section {
         margin-left: -2%;
         padding: 2.5rem;
       }
-      @include phone() {
-        width: 80vw;
-        margin-left: -27%;
-        padding: 1rem 2rem;
+      @include pad2() {
+        margin-top: -30px;
       }
+
+      //576
+      @include phone() {
+        width: 300px;
+        height: 300px;
+        margin-left: -20%;
+      }
+      //390
       @include phone2() {
-        margin-top: 3rem;
+        width: 70vw;
+        margin-left: -18%;
+        height: 280px;
+        margin-top: 1rem;
       }
       h4,
       p {
         font-size: 16px;
         color: white;
         line-height: 2rem;
+        //576
         @include phone() {
           font-size: 14px;
+        }
+        //390
+        @include phone2() {
+          font-size: 14px;
+          padding: 0;
+          margin-top: -1rem;
         }
       }
     }
@@ -592,11 +624,12 @@ section {
         margin-left: -8rem;
       }
       @include phone() {
-        width: 80vw;
-        margin: 4rem 0 0 -27%;
+        width: 70vw;
+        margin: 4rem 0 0 -17%;
       }
+      //390
       @include phone2() {
-        margin-top: 4rem;
+        margin-top: 10%;
       }
     }
     .oper {
@@ -605,19 +638,28 @@ section {
       margin: -3rem 0 0 1rem;
       height: 580px;
       border-radius: 15px;
+      //1440
       @include pc() {
         height: 80%;
       }
+      //992
       @include pad() {
         height: 450px;
       }
-      @include phone() {
-        height: 45vh;
-        width: 80vw;
-        margin: 13% 0 0 -27%;
+      //768{
+      @include pad2() {
+        margin-top: 1%;
       }
+      //576
+      @include phone() {
+        height: 400px;
+        width: 70vw;
+        margin: 1rem 0 0 -17%;
+      }
+      //390
       @include phone2() {
-        margin-top: 13%;
+        height: 270px;
+        margin-top: 10%;
       }
     }
   }
@@ -628,38 +670,58 @@ section {
 .fly_pic {
   width: 100%;
   height: 580px;
+  //992
   @include pad() {
     margin-top: -60%;
     height: 500px;
   }
+  //768
   @include pad2() {
-    margin-top: -50%;
+    margin-top: -40%;
     height: 420px;
   }
+  //576
   @include phone() {
-    margin-top: 30%;
-    height: 300px;
+    margin-top: 30vh;
+    height: 250px;
   }
+  //390
   @include phone2() {
-    margin-top: 55%;
-    height: 230px;
+    margin-top: 10%;
+    height: 200px;
   }
   img {
     height: 100%;
     width: 100%;
+    //576
     @include phone() {
-      height: 90%;
-      margin-top: -2rem;
+      height: 100%;
     }
+    //390
     @include phone2() {
-      height: 95%;
-      margin-top: 3rem;
+      height: 100%;
     }
   }
 }
 
 footer {
   @include phone2() {
-    margin-top: 2.2rem;
+    margin-top: -1em;
+  }
+}
+@media screen and (max-width: 375px) {
+  #register .text_content {
+    height: 33vh;
+  }
+  .fly_pic {
+    img {
+      margin-top: 8rem;
+    }
+  }
+  #license .container .con_border {
+    margin-top: -1.5rem;
+  }
+  footer {
+    margin-top: 8rem;
   }
 }
