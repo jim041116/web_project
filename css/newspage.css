@@ -33,7 +33,7 @@ ol {
   transition: 0.3s;
 }
 .go_top:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 .go_top:active {
   transform: translateY(-10px);
@@ -130,7 +130,7 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
   color: #FFFFFF;
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 header .hamburger_box {
   position: fixed;
@@ -222,7 +222,7 @@ header .hamburger_nav .hamburger_nav_item li {
   transition: all 0.5s;
 }
 header .hamburger_nav .hamburger_nav_item a li:hover {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
 }
 @media (max-width: 992px) {
@@ -281,7 +281,7 @@ footer .footer_web_map .web_map_item li {
   transition: all 0.5s;
 }
 footer .footer_web_map .web_map_item a:hover li {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
 }
 footer .logo {
   text-align: end;
@@ -328,7 +328,7 @@ section .text_box > * {
   margin-bottom: 1rem;
 }
 section .text_box .news_type {
-  background-color: #289DD2;
+  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
   width: 120px;
   height: 30px;
@@ -417,20 +417,37 @@ section .news_item_box .link {
   text-align: center;
   line-height: 40px;
   margin: auto;
-  background-color: #289DD2;
+  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   color: #FFFFFF;
   border-radius: 15px;
   transition: all 0.5s;
+  position: relative;
+  z-index: 0;
   display: block;
+}
+section .news_item_box .link::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  top: 2px;
+  left: 2px;
+  border-radius: 12px;
+  width: 96px;
+  height: 36px;
+  transform: scale(0);
+  transition: all 0.3s;
+  z-index: -1;
+}
+section .news_item_box .link:hover::before {
+  transform: scale(1);
+}
+section .news_item_box .link:hover {
+  color: #289DD2;
 }
 @media (max-width: 576px) {
   section .news_item_box .link {
     margin: 1.2rem auto;
   }
-}
-section .news_item_box .link:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
 }
 section .news_item_box .img {
   margin-top: 3rem;
@@ -450,7 +467,7 @@ section .to_news {
   line-height: 40px;
   width: 150px;
   height: 40px;
-  background-color: #289DD2;
+  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
   border-radius: 15px;
   cursor: pointer;
 }

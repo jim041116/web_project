@@ -70,7 +70,7 @@ $transition_5ms: all .5s;
 }
 
 @mixin phone2() {
-    @media (max-width:414px) {
+    @media (max-width:390px) {
         @content;
     }
 }
