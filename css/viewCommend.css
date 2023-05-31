@@ -314,14 +314,26 @@ main section .banner {
   position: relative;
   z-index: -5;
 }
+@media (max-width: 576px) {
+  main section .banner {
+    height: 40vh;
+  }
+}
 main section .banner img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 main section .banner .banner_title {
   position: absolute;
   top: 11rem;
   left: 4.5rem;
+}
+@media (max-width: 576px) {
+  main section .banner .banner_title {
+    top: 3rem;
+    left: 1rem;
+  }
 }
 main section .banner .banner_title h1,
 main section .banner .banner_title p {
@@ -330,16 +342,25 @@ main section .banner .banner_title p {
 }
 main section .banner .banner_title h1 {
   font-size: 48px;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  main section .banner .banner_title h1 {
+    font-size: 32px;
+  }
 }
 main section .banner .banner_title p {
   font-size: 32px;
+  font-weight: bold;
 }
-main section .place_item {
-  height: 205vh;
+@media (max-width: 576px) {
+  main section .banner .banner_title p {
+    font-size: 18px;
+  }
 }
 main section .place_item .item {
   width: 90%;
-  height: 350px;
+  height: 400px;
   margin: 2rem auto;
   overflow: hidden;
   border-radius: 15px;
@@ -349,20 +370,33 @@ main section .place_item .item img {
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transition: 1.2s ease-in-out;
   transform: scale(1.3, 1.3);
 }
-main section .place_item .item img:hover {
-  transform: scale(1, 1);
+@media (max-width: 992px) {
+  main section .place_item .item img {
+    transform: scale(1, 1);
+  }
+}
+@media (min-width: 992px) {
+  main section .place_item .item img:hover {
+    transform: scale(1, 1);
+  }
 }
 main section .place_item .item .place_info {
   width: 570px;
-  height: 350px;
+  height: 400px;
   position: absolute;
   z-index: 1;
   right: 5%;
   background-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 15px;
+}
+@media (max-width: 992px) {
+  main section .place_item .item .place_info {
+    width: 90%;
+  }
 }
 main section .place_item .item .place_info .text {
   width: 100%;
@@ -372,7 +406,14 @@ main section .place_item .item .place_info .text h5,
 main section .place_item .item .place_info .text p,
 main section .place_item .item .place_info .text a {
   color: #FFFFFF;
-  margin: 2rem;
+  margin: 3rem 2rem;
+}
+@media (max-width: 576px) {
+  main section .place_item .item .place_info .text h5,
+  main section .place_item .item .place_info .text p,
+  main section .place_item .item .place_info .text a {
+    margin: 2rem 1rem;
+  }
 }
 main section .place_item .item .place_info .text h5 {
   font-size: 28px;
