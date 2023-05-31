@@ -13,92 +13,144 @@
 }
 
 main {
+
   //------ banner ------//
   section {
     .banner {
       height: 450px;
       position: relative;
       z-index: -5;
+
+      @include phone() {
+        height: 40vh;
+      }
+
       img {
         width: 100%;
         height: 100%;
+        object-fit: cover;
       }
+
       .banner_title {
         position: absolute;
         top: 11rem;
         left: 4.5rem;
+
+        @include phone() {
+          top: 3rem;
+          left: 1rem;
+        }
+
         h1,
         p {
           @include col-white();
           line-height: 2rem;
         }
+
         h1 {
           font-size: $text_size-48px;
+          font-weight: bold;
+
+          @include phone() {
+            font-size: $text_size-32px;
+          }
         }
+
         p {
           font-size: $text_size-32px;
+          font-weight: bold;
+
+          @include phone() {
+            font-size: $text_size-18px;
+          }
         }
       }
     }
   }
+
   //------ content ------//
   section {
     .place_item {
-      height: 205vh;
+
+      // height: 205vh;
       //   border: 3px solid rgb(231, 147, 147);
       .item {
         width: 90%;
-        height: 350px;
+        height: 400px;
         margin: 2rem auto;
         overflow: hidden;
         @include raduis15px();
+
         img {
           top: 0;
           left: 0;
           width: 100%;
           height: 100%;
+          object-fit: cover;
           transition: 1.2s ease-in-out;
           transform: scale(1.3, 1.3);
-          &:hover {
+
+          @include pad() {
             transform: scale(1, 1);
           }
+
+          @media (min-width: 992px) {
+            &:hover {
+              transform: scale(1, 1);
+            }
+          }
         }
+
         .place_info {
           width: 570px;
-          height: 350px;
+          height: 400px;
           position: absolute;
           z-index: 1;
           right: 5%;
           background-color: hsla(0, 0, 0, 0.5);
           @include raduis15px();
 
+          @include pad() {
+            width: 90%;
+          }
+
           .text {
             width: 100%;
             height: 100%;
+
             h5,
             p,
             a {
               @include col-white();
-              margin: 2rem;
+              margin: 3rem 2rem;
+
+              @include phone(){
+                margin: 2rem 1rem;
+              }
             }
+
             h5 {
               font-size: $text_size-28px;
               margin-top: 2.2rem;
               padding: 0.5rem;
             }
+
             p {
               font-size: text_size-16px;
               margin-top: 2.5rem;
               padding: 0.5rem;
             }
+
             .tag {
               margin-top: -2rem;
               display: flex;
               justify-content: flex-end;
+
               a {
                 padding: 0.5rem;
                 @include raduis15px();
                 @include btn_bg();
+
                 &:hover {
                   transform: translateY(-5px);
                   transition: linear 0.3s;
@@ -110,12 +162,14 @@ main {
             }
           }
         }
+
         .move2 {
           left: 5%;
         }
       }
     }
   }
+
   //------- API -------//
   section {
     .API {
