@@ -1,103 +1,525 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>景點分享</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./css/public.css" />
-    <link rel="stylesheet" href="./css/viewShare.css" />
-    <!-- light box -->
-    <link rel="stylesheet" href="./css/lightbox.css" />
-    <script src="./js/lightbox-plus-jquery.min.js"></script>
-    <script src="./js/lightbox.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
-    />
-    <!-- viewSharePic -->
-    <link rel="stylesheet" href="./css/viewSharePicStyle.css" />
-    <script src="./js/jquery-1.11.3.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="logo">
-        <a href="index.html">
-          <img src="./img/logo_g.png" alt="logo" width="250px" />
-        </a>
-      </div>
-      <div id="nav_bar">
-        <ul>
-          <li class="nav_bar_item">
-            空拍景點
-            <ul class="drop_nav_bar">
-              <li class="drop_nav_bar_item">
-                <a href="./viewCommend.html">景點推薦</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./viewShare.html">景點分享</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav_bar_item">
-            認識空拍機
-            <ul class="drop_nav_bar">
-              <li class="drop_nav_bar_item">
-                <a href="./droneInt.html">空拍機介紹</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./droneOperate.html">基礎操作</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./droneType.html">機型介紹</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./lawR.html">空拍法規</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./appCom.html">APP推薦</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav_bar_item">
-            <a href="#">預約專區</a>
-          </li>
-          <li class="nav_bar_item">
-            <a href="./news.html">最新消息</a>
-          </li>
-          <li class="nav_bar_item">
-            登入會員
-            <ul class="drop_nav_bar">
-              <li class="drop_nav_bar_item">
-                <a href="./login.html">登入頁面</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
 
-      <!-- 漢堡 -->
-      <div class="hamburger_box">
-        <div class="hamburger" id="hamburger-item">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>景點分享</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/public.css" />
+  <link rel="stylesheet" href="./css/viewShare.css" />
+  <!-- light box -->
+  <link rel="stylesheet" href="./css/lightbox.css" />
+  <script src="./js/lightbox-plus-jquery.min.js"></script>
+  <script src="./js/lightbox.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
+  <!-- viewSharePic -->
+  <link rel="stylesheet" href="./css/viewSharePicStyle.css" />
+  <script src="./js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="./img/logo_g.png" alt="logo" width="250px">
+      </a>
+    </div>
+    <div id="nav_bar">
+      <ul>
+        <li class="nav_bar_item">空拍景點
+          <ul class="drop_nav_bar">
+            <li class="drop_nav_bar_item">
+              <a href="./viewCommend.html">景點推薦</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./viewShare.html">景點分享</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav_bar_item">認識空拍機
+          <ul class="drop_nav_bar">
+            <li class="drop_nav_bar_item">
+              <a href="./droneInt.html">空拍機介紹</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./droneOperate.html">基礎操作</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./droneType.html">機型介紹</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./lawR.html">空拍法規</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./appCom.html">APP推薦</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav_bar_item">
+          <a href="./reservation.html">預約專區</a>
+        </li>
+        <li class="nav_bar_item">
+          <a href="./news.html">最新消息</a>
+        </li>
+        <li class="nav_bar_item">登入會員
+          <ul class="drop_nav_bar">
+            <li class="drop_nav_bar_item">
+              <a href="./login.html">登入頁面</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- 漢堡 -->
+    <div class="hamburger_box">
+      <div class="hamburger" id="hamburger-item">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <!-- 漢堡nav -->
+    <div class="hamburger_nav">
+      <ul class="hamburger_nav_item">
+        <li class="hamburger_nav_title">空拍景點</li>
+        <a href="./viewCommend.html">
+          <li>景點推薦</li>
+        </a>
+        <a href="./viewShare.html">
+          <li>景點分享</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <li class="hamburger_nav_title">認識空拍機</li>
+        <a href="./droneInt.html">
+          <li>空拍機介紹</li>
+        </a>
+        <a href="./droneOperate.html">
+          <li>基礎操作</li>
+        </a>
+        <a href="./droneType.html">
+          <li>機型介紹</li>
+        </a>
+        <a href="./lawR.html">
+          <li>空拍法規</li>
+        </a>
+        <a href="./appCom.html">
+          <li>APP推薦</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <a href="./reservation.html">
+          <li class="hamburger_nav_title">預約專區</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <a href="./news.html">
+          <li class="hamburger_nav_title">最新消息</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <li class="hamburger_nav_title">登入會員</li>
+        <a href="./login.html">
+          <li>登入頁面</li>
+        </a>
+      </ul>
+    </div>
+    <!-- 漢堡結束 -->
+  </header>
+  <!-- content內容區 -->
+  <main>
+    <section>
+      <!------------ 照片輪播外框 ------------>
+      <div class="banner">
+        <div class="app">
+          <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-left"></use>
+                </svg>
+              </div>
+            </button>
+            <!-------- cards_bg ----------->
+            <div class="cards__wrapper">
+              <div class="card current--card">
+                <div class="card__image">
+                  <img src="./img/照片輪播1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="card next--card">
+                <div class="card__image">
+                  <img src="./img/照片輪播2.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="card previous--card">
+                <div class="card__image">
+                  <img src="./img/照片輪播3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!----------  End ------------->
+            <button class="cardList__btn btn btn--right">
+              <div class="icon">
+                <svg>
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <div class="infoList">
+            <div class="info__wrapper">
+              <div class="info current--info">
+                <h1 class="text name">北海岸</h1>
+                <h4 class="text location">North Coast</h4>
+                <p class="text description">適合親子旅遊</p>
+              </div>
+
+              <div class="info next--info">
+                <h1 class="text name">岩石</h1>
+                <h4 class="text location">Rock</h4>
+                <p class="text description">適合看岩石</p>
+              </div>
+
+              <div class="info previous--info">
+                <h1 class="text name">森林</h1>
+                <h4 class="text location">Taiwan Forest</h4>
+                <p class="text description">適合看森林</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="app__bg">
+            <div class="app__bg__image current--image">
+              <img src="./img/照片輪播1.jpg" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+              <img src="./img/照片輪播2.jpg" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+              <img src="./img/照片輪播3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="loading__wrapper">
+          <div class="loader--text">Loading...</div>
+          <div class="loader">
+            <span></span>
+          </div>
+        </div>
+
+        <svg class="icons" style="display: none">
+          <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polyline points="328 112 184 256 328 400" style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 150px;
+                " />
+          </symbol>
+          <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polyline points="184 112 328 256 184 400" style="
+                  fill: none;
+                  stroke: #fff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 150px;
+                " />
+          </symbol>
+        </svg>
+      </div>
+    </section>
+    <!-- ---- 裝各景點info的最外層框---- -->
+    <section>
+      <div class="container_info">
+        <!-- -------- 景點info外框-------- -->
+        <!-- 1 -->
+        <div class="ins_box">
+          <!-- info左照片 -->
+          <div class="left_img">
+            <a class="example-image" href="./img/照片輪播1.jpg" data-lightbox="roadtrip1" data-title="地點：台灣　　拍攝者：A先生"
+              active><img class="example-image" src="./img/照片輪播1.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/照片輪播2.jpg" data-lightbox="roadtrip1"
+              data-title="地點：台灣　　拍攝者：B先生"><img class="example-image" src="./img/照片輪播2.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/照片輪播3.jpg" data-lightbox="roadtrip1"
+              data-title="地點：台灣　　拍攝者：C先生"><img class="example-image" src="./img/照片輪播3.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/照片輪播4.jpg" data-lightbox="roadtrip1"
+              data-title="地點：台灣　　拍攝者：D先生"><img class="example-image" src="./img/照片輪播4.jpg" alt="" /></a>
+          </div>
+          <!-- info右介紹(分:上中下div) -->
+          <div class="right_info">
+            <div class="right_info_title">
+              <p>鋸齒稜</p>
+            </div>
+            <div class="right_info_content">
+              <p>
+                攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
+              </p>
+            </div>
+            <!-- info右介紹(下:分3個info) -->
+            <div class="right_info_footer">
+              <div class="footer_info_a">
+                <span class="info_title">空拍資訊</span>
+                <span class="info_title">MINI 2</span>
+              </div>
+              <div class="footer_info_b">
+                <span class="green">綠區</span>
+                <span>120公尺</span>
+                <span>不須申請</span>
+                <hr />
+              </div>
+              <div class="footer_info_c">
+                <span>#鋸齒稜</span>
+                <span>#金瓜石</span>
+                <span>#東北角</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="ins_box">
+          <!-- info左照片 -->
+          <div class="left_img">
+            <a class="example-image-link" href="./img/城市.jpg" data-lightbox="roadtrip2" data-title="地點：台灣　　拍攝者：A先生"
+              active><img class="example-image" src="./img/城市.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/安平.jpg" data-lightbox="roadtrip2" data-title="地點：台灣　　拍攝者：B先生"><img
+                class="example-image" src="./img/安平.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/grass.jpg" data-lightbox="roadtrip2"
+              data-title="地點：台灣　　拍攝者：C先生"><img class="example-image" src="./img/grass.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/DJI_0054.jpg" data-lightbox="roadtrip2"
+              data-title="地點：台灣　　拍攝者：D先生"><img class="example-image" src="./img/DJI_0054.jpg" alt="" /></a>
+          </div>
+          <!-- info右介紹(分:上中下div) -->
+          <div class="right_info">
+            <div class="right_info_title">
+              <p>伯朗大道</p>
+            </div>
+            <div class="right_info_content">
+              <p>
+                攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
+              </p>
+            </div>
+            <!-- info右介紹(下:分3個info) -->
+            <div class="right_info_footer">
+              <div class="footer_info_a">
+                <span class="info_title">空拍資訊</span>
+                <span class="info_title">AIR 2S</span>
+              </div>
+              <div class="footer_info_b">
+                <span class="green">綠區</span>
+                <span>120公尺</span>
+                <span>不須申請</span>
+                <hr />
+              </div>
+              <div class="footer_info_c">
+                <span>#伯朗咖啡</span>
+                <span>#金城武</span>
+                <span>#大自然</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="ins_box">
+          <!-- info左照片 -->
+          <div class="left_img">
+            <a class="example-image-link" href="./img/0042a681f6a88953425198b366794b57.jpg" data-lightbox="roadtrip3"
+              data-title="地點：台灣　　拍攝者：A先生" active><img class="example-image"
+                src="./img/0042a681f6a88953425198b366794b57.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg" data-lightbox="roadtrip3"
+              data-title="地點：台灣　　拍攝者：B先生"><img class="example-image" src="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
+                alt="" /></a>
+            <a class="example-image-link" href="./img/forget_password.jpg" data-lightbox="roadtrip3"
+              data-title="地點：台灣　　拍攝者：C先生"><img class="example-image" src="./img/forget_password.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/news_DJI_0219.jpg" data-lightbox="roadtrip3"
+              data-title="地點：台灣　　拍攝者：D先生"><img class="example-image" src="./img/news_DJI_0219.jpg" alt="" /></a>
+          </div>
+          <!-- info右介紹(分:上中下div) -->
+          <div class="right_info">
+            <div class="right_info_title">
+              <p>八斗子海濱公園</p>
+            </div>
+            <div class="right_info_content">
+              <p>
+                攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
+              </p>
+            </div>
+            <!-- info右介紹(下:分3個info) -->
+            <div class="right_info_footer">
+              <div class="footer_info_a">
+                <span class="info_title">空拍資訊</span>
+                <span class="info_title">MINI 3 Pro</span>
+              </div>
+              <div class="footer_info_b">
+                <span class="green">綠區</span>
+                <span>120公尺</span>
+                <span>不須申請</span>
+                <hr />
+              </div>
+              <div class="footer_info_c">
+                <span>#北海岸</span>
+                <span>#基隆市</span>
+                <span>#岬角</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="ins_box">
+          <!-- info左照片 -->
+          <div class="left_img">
+            <a class="example-image-link" href="./img/安平.jpg" data-lightbox="roadtrip4" data-title="地點：台灣　　拍攝者：A先生"
+              active><img class="example-image" src="./img/安平.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/DJI_0279.jpg" data-lightbox="roadtrip4"
+              data-title="地點：台灣　　拍攝者：B先生"><img class="example-image" src="./img/DJI_0279.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/forget_password.jpg" data-lightbox="roadtrip4"
+              data-title="地點：台灣　　拍攝者：C先生"><img class="example-image" src="./img/forget_password.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/news_DJI_0219.jpg" data-lightbox="roadtrip4"
+              data-title="地點：台灣　　拍攝者：D先生"><img class="example-image" src="./img/news_DJI_0219.jpg" alt="" /></a>
+          </div>
+          <!-- info右介紹(分:上中下div) -->
+          <div class="right_info">
+            <div class="right_info_title">
+              <p>安平軍艦港</p>
+            </div>
+            <div class="right_info_content">
+              <p>
+                攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
+              </p>
+            </div>
+            <!-- info右介紹(下:分3個info) -->
+            <div class="right_info_footer">
+              <div class="footer_info_a">
+                <span class="info_title">空拍資訊</span>
+                <span class="info_title">MINI 2</span>
+              </div>
+              <div class="footer_info_b">
+                <span class="green">綠區</span>
+                <span>120公尺</span>
+                <span>不須申請</span>
+                <hr />
+              </div>
+              <div class="footer_info_c">
+                <span>#軍艦</span>
+                <span>#台南</span>
+                <span>#付費參觀</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="ins_box">
+          <!-- info左照片 -->
+          <div class="left_img">
+            <a class="example-image-link" href="./img/1.png" data-lightbox="roadtrip5" data-title="地點：台灣　　拍攝者：A先生"
+              active><img class="example-image" src="./img/1.png" alt="" /></a>
+            <a class="example-image-link" href="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg" data-lightbox="roadtrip5"
+              data-title="地點：台灣　　拍攝者：B先生"><img class="example-image" src="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
+                alt="" /></a>
+            <a class="example-image-link" href="./img/forget_password.jpg" data-lightbox="roadtrip5"
+              data-title="地點：台灣　　拍攝者：C先生"><img class="example-image" src="./img/forget_password.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/news_DJI_0219.jpg" data-lightbox="roadtrip5"
+              data-title="地點：台灣　　拍攝者：D先生"><img class="example-image" src="./img/news_DJI_0219.jpg" alt="" /></a>
+          </div>
+          <!-- info右介紹(分:上中下div) -->
+          <div class="right_info">
+            <div class="right_info_title">
+              <p>南子吝步道</p>
+            </div>
+            <div class="right_info_content">
+              <p>
+                攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
+              </p>
+            </div>
+            <!-- info右介紹(下:分3個info) -->
+            <div class="right_info_footer">
+              <div class="footer_info_a">
+                <span class="info_title">空拍資訊</span>
+                <span class="info_title">MINI 3 Pro</span>
+              </div>
+              <div class="footer_info_b">
+                <span class="green">綠區</span>
+                <span>120公尺</span>
+                <span>不須申請</span>
+                <hr />
+              </div>
+              <div class="footer_info_c">
+                <span>#全年開放</span>
+                <span>#新北市</span>
+                <span>#免費參觀</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="ins_box">
+          <!-- info左照片 -->
+          <div class="left_img">
+            <a class="example-image-link" href="./img/DJI_0323.jpg" data-lightbox="roadtrip6"
+              data-title="地點：台灣　　拍攝者：A先生" active><img class="example-image" src="./img/DJI_0323.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/news_DJI_0330.jpg" data-lightbox="roadtrip6"
+              data-title="地點：台灣　　拍攝者：B先生"><img class="example-image" src="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
+                alt="" /></a>
+            <a class="example-image-link" href="./img/news_DJI_0330.jpg" data-lightbox="roadtrip6"
+              data-title="地點：台灣　　拍攝者：C先生"><img class="example-image" src="./img/forget_password.jpg" alt="" /></a>
+            <a class="example-image-link" href="./img/news_DJI_0219.jpg" data-lightbox="roadtrip6"
+              data-title="地點：台灣　　拍攝者：D先生"><img class="example-image" src="./img/news_DJI_0219.jpg" alt="" /></a>
+          </div>
+          <!-- info右介紹(分:上中下div) -->
+          <div class="right_info">
+            <div class="right_info_title">
+              <p>太魯閣國家公園</p>
+            </div>
+            <div class="right_info_content">
+              <p>
+                攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
+              </p>
+            </div>
+            <!-- info右介紹(下:分3個info) -->
+            <div class="right_info_footer">
+              <div class="footer_info_a">
+                <span class="info_title">空拍資訊</span>
+                <span class="info_title">MAVIC 3</span>
+              </div>
+              <div class="footer_info_b">
+                <span class="gray">灰區</span>
+                <span>120公尺</span>
+                <span>須申請</span>
+                <hr />
+              </div>
+              <div class="footer_info_c">
+                <span>#全年開放</span>
+                <span>#立霧溪</span>
+                <span>#大理岩峽</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- 漢堡nav -->
-      <div class="hamburger_nav">
-        <ul class="hamburger_nav_item">
-          <li class="hamburger_nav_title">空拍景點</li>
-          <a href="#">
+    </section>
+  </main>
+  <footer>
+    <div class="footer_section">
+      <img class="footer_img" src="./img/001.png" alt="drone" width="700px">
+      <div class="footer_web_map">
+        <ul class="web_map_item">
+          <li class="web_map_title">空拍景點</li>
+          <a href="./viewCommend.html">
             <li>景點推薦</li>
           </a>
           <a href="./viewShare.html">
             <li>景點分享</li>
           </a>
         </ul>
-        <ul class="hamburger_nav_item">
-          <li class="hamburger_nav_title">認識空拍機</li>
+        <ul class="web_map_item">
+          <li class="web_map_title">認識空拍機</li>
           <a href="./droneInt.html">
             <li>空拍機介紹</li>
           </a>
@@ -107,681 +529,84 @@
           <a href="./droneType.html">
             <li>機型介紹</li>
           </a>
-          <a href="./law.html">
+          <a href="./lawR.html">
             <li>空拍法規</li>
           </a>
           <a href="./appCom.html">
             <li>APP推薦</li>
           </a>
         </ul>
-        <ul class="hamburger_nav_item">
-          <a href="#">
-            <li class="hamburger_nav_title">預約專區</li>
-          </a>
-        </ul>
-        <ul class="hamburger_nav_item">
-          <a href="./news.html">
-            <li class="hamburger_nav_title">最新消息</li>
-          </a>
-        </ul>
-        <ul class="hamburger_nav_item">
-          <li class="hamburger_nav_title">登入會員</li>
-          <a href="./login.html">
-            <li>登入頁面</li>
-          </a>
-        </ul>
-      </div>
-      <!-- 漢堡結束 -->
-    </header>
-    <!-- content內容區 -->
-    <main>
-      <section>
-        <!------------ 照片輪播外框 ------------>
-        <div class="banner">
-          <div class="app">
-            <div class="cardList">
-              <button class="cardList__btn btn btn--left">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="#arrow-left"></use>
-                  </svg>
-                </div>
-              </button>
-              <!-------- cards_bg ----------->
-              <div class="cards__wrapper">
-                <div class="card current--card">
-                  <div class="card__image">
-                    <img src="./img/照片輪播1.jpg" alt="" />
-                  </div>
-                </div>
-
-                <div class="card next--card">
-                  <div class="card__image">
-                    <img src="./img/照片輪播2.jpg" alt="" />
-                  </div>
-                </div>
-
-                <div class="card previous--card">
-                  <div class="card__image">
-                    <img src="./img/照片輪播3.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!----------  End ------------->
-              <button class="cardList__btn btn btn--right">
-                <div class="icon">
-                  <svg>
-                    <use xlink:href="#arrow-right"></use>
-                  </svg>
-                </div>
-              </button>
-            </div>
-
-            <div class="infoList">
-              <div class="info__wrapper">
-                <div class="info current--info">
-                  <h1 class="text name">北海岸</h1>
-                  <h4 class="text location">North Coast</h4>
-                  <p class="text description">適合親子旅遊</p>
-                </div>
-
-                <div class="info next--info">
-                  <h1 class="text name">岩石</h1>
-                  <h4 class="text location">Rock</h4>
-                  <p class="text description">適合看岩石</p>
-                </div>
-
-                <div class="info previous--info">
-                  <h1 class="text name">森林</h1>
-                  <h4 class="text location">Taiwan Forest</h4>
-                  <p class="text description">適合看森林</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="app__bg">
-              <div class="app__bg__image current--image">
-                <img src="./img/照片輪播1.jpg" alt="" />
-              </div>
-              <div class="app__bg__image next--image">
-                <img src="./img/照片輪播2.jpg" alt="" />
-              </div>
-              <div class="app__bg__image previous--image">
-                <img src="./img/照片輪播3.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="loading__wrapper">
-            <div class="loader--text">Loading...</div>
-            <div class="loader">
-              <span></span>
-            </div>
-          </div>
-
-          <svg class="icons" style="display: none">
-            <symbol
-              id="arrow-left"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <polyline
-                points="328 112 184 256 328 400"
-                style="
-                  fill: none;
-                  stroke: #fff;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-width: 150px;
-                "
-              />
-            </symbol>
-            <symbol
-              id="arrow-right"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <polyline
-                points="184 112 328 256 184 400"
-                style="
-                  fill: none;
-                  stroke: #fff;
-                  stroke-linecap: round;
-                  stroke-linejoin: round;
-                  stroke-width: 150px;
-                "
-              />
-            </symbol>
-          </svg>
-        </div>
-      </section>
-      <!-- ---- 裝各景點info的最外層框---- -->
-      <section>
-        <div class="container_info">
-          <!-- -------- 景點info外框-------- -->
-          <!-- 1 -->
-          <div class="ins_box">
-            <!-- info左照片 -->
-            <div class="left_img">
-              <a
-                class="example-image"
-                href="./img/照片輪播1.jpg"
-                data-lightbox="roadtrip1"
-                data-title="地點：台灣　　拍攝者：A先生"
-                active
-                ><img class="example-image" src="./img/照片輪播1.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/照片輪播2.jpg"
-                data-lightbox="roadtrip1"
-                data-title="地點：台灣　　拍攝者：B先生"
-                ><img class="example-image" src="./img/照片輪播2.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/照片輪播3.jpg"
-                data-lightbox="roadtrip1"
-                data-title="地點：台灣　　拍攝者：C先生"
-                ><img class="example-image" src="./img/照片輪播3.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/照片輪播4.jpg"
-                data-lightbox="roadtrip1"
-                data-title="地點：台灣　　拍攝者：D先生"
-                ><img class="example-image" src="./img/照片輪播4.jpg" alt=""
-              /></a>
-            </div>
-            <!-- info右介紹(分:上中下div) -->
-            <div class="right_info">
-              <div class="right_info_title">
-                <p>鋸齒稜</p>
-              </div>
-              <div class="right_info_content">
-                <p>
-                  攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
-                </p>
-              </div>
-              <!-- info右介紹(下:分3個info) -->
-              <div class="right_info_footer">
-                <div class="footer_info_a">
-                  <span class="info_title">空拍資訊</span>
-                  <span class="info_title">MINI 2</span>
-                </div>
-                <div class="footer_info_b">
-                  <span class="green">綠區</span>
-                  <span>120公尺</span>
-                  <span>不須申請</span>
-                  <hr />
-                </div>
-                <div class="footer_info_c">
-                  <span>#鋸齒稜</span>
-                  <span>#金瓜石</span>
-                  <span>#東北角</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 2 -->
-          <div class="ins_box">
-            <!-- info左照片 -->
-            <div class="left_img">
-              <a
-                class="example-image-link"
-                href="./img/城市.jpg"
-                data-lightbox="roadtrip2"
-                data-title="地點：台灣　　拍攝者：A先生"
-                active
-                ><img class="example-image" src="./img/城市.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/安平.jpg"
-                data-lightbox="roadtrip2"
-                data-title="地點：台灣　　拍攝者：B先生"
-                ><img class="example-image" src="./img/安平.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/grass.jpg"
-                data-lightbox="roadtrip2"
-                data-title="地點：台灣　　拍攝者：C先生"
-                ><img class="example-image" src="./img/grass.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/DJI_0054.jpg"
-                data-lightbox="roadtrip2"
-                data-title="地點：台灣　　拍攝者：D先生"
-                ><img class="example-image" src="./img/DJI_0054.jpg" alt=""
-              /></a>
-            </div>
-            <!-- info右介紹(分:上中下div) -->
-            <div class="right_info">
-              <div class="right_info_title">
-                <p>伯朗大道</p>
-              </div>
-              <div class="right_info_content">
-                <p>
-                  攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
-                </p>
-              </div>
-              <!-- info右介紹(下:分3個info) -->
-              <div class="right_info_footer">
-                <div class="footer_info_a">
-                  <span class="info_title">空拍資訊</span>
-                  <span class="info_title">AIR 2S</span>
-                </div>
-                <div class="footer_info_b">
-                  <span class="green">綠區</span>
-                  <span>120公尺</span>
-                  <span>不須申請</span>
-                  <hr />
-                </div>
-                <div class="footer_info_c">
-                  <span>#伯朗咖啡</span>
-                  <span>#金城武</span>
-                  <span>#大自然</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="ins_box">
-            <!-- info左照片 -->
-            <div class="left_img">
-              <a
-                class="example-image-link"
-                href="./img/0042a681f6a88953425198b366794b57.jpg"
-                data-lightbox="roadtrip3"
-                data-title="地點：台灣　　拍攝者：A先生"
-                active
-                ><img
-                  class="example-image"
-                  src="./img/0042a681f6a88953425198b366794b57.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
-                data-lightbox="roadtrip3"
-                data-title="地點：台灣　　拍攝者：B先生"
-                ><img
-                  class="example-image"
-                  src="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/forget_password.jpg"
-                data-lightbox="roadtrip3"
-                data-title="地點：台灣　　拍攝者：C先生"
-                ><img
-                  class="example-image"
-                  src="./img/forget_password.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/news_DJI_0219.jpg"
-                data-lightbox="roadtrip3"
-                data-title="地點：台灣　　拍攝者：D先生"
-                ><img
-                  class="example-image"
-                  src="./img/news_DJI_0219.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <!-- info右介紹(分:上中下div) -->
-            <div class="right_info">
-              <div class="right_info_title">
-                <p>八斗子海濱公園</p>
-              </div>
-              <div class="right_info_content">
-                <p>
-                  攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
-                </p>
-              </div>
-              <!-- info右介紹(下:分3個info) -->
-              <div class="right_info_footer">
-                <div class="footer_info_a">
-                  <span class="info_title">空拍資訊</span>
-                  <span class="info_title">MINI 3 Pro</span>
-                </div>
-                <div class="footer_info_b">
-                  <span class="green">綠區</span>
-                  <span>120公尺</span>
-                  <span>不須申請</span>
-                  <hr />
-                </div>
-                <div class="footer_info_c">
-                  <span>#北海岸</span>
-                  <span>#基隆市</span>
-                  <span>#岬角</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="ins_box">
-            <!-- info左照片 -->
-            <div class="left_img">
-              <a
-                class="example-image-link"
-                href="./img/安平.jpg"
-                data-lightbox="roadtrip4"
-                data-title="地點：台灣　　拍攝者：A先生"
-                active
-                ><img class="example-image" src="./img/安平.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/DJI_0279.jpg"
-                data-lightbox="roadtrip4"
-                data-title="地點：台灣　　拍攝者：B先生"
-                ><img class="example-image" src="./img/DJI_0279.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/forget_password.jpg"
-                data-lightbox="roadtrip4"
-                data-title="地點：台灣　　拍攝者：C先生"
-                ><img
-                  class="example-image"
-                  src="./img/forget_password.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/news_DJI_0219.jpg"
-                data-lightbox="roadtrip4"
-                data-title="地點：台灣　　拍攝者：D先生"
-                ><img
-                  class="example-image"
-                  src="./img/news_DJI_0219.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <!-- info右介紹(分:上中下div) -->
-            <div class="right_info">
-              <div class="right_info_title">
-                <p>安平軍艦港</p>
-              </div>
-              <div class="right_info_content">
-                <p>
-                  攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
-                </p>
-              </div>
-              <!-- info右介紹(下:分3個info) -->
-              <div class="right_info_footer">
-                <div class="footer_info_a">
-                  <span class="info_title">空拍資訊</span>
-                  <span class="info_title">MINI 2</span>
-                </div>
-                <div class="footer_info_b">
-                  <span class="green">綠區</span>
-                  <span>120公尺</span>
-                  <span>不須申請</span>
-                  <hr />
-                </div>
-                <div class="footer_info_c">
-                  <span>#軍艦</span>
-                  <span>#台南</span>
-                  <span>#付費參觀</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="ins_box">
-            <!-- info左照片 -->
-            <div class="left_img">
-              <a
-                class="example-image-link"
-                href="./img/1.png"
-                data-lightbox="roadtrip5"
-                data-title="地點：台灣　　拍攝者：A先生"
-                active
-                ><img class="example-image" src="./img/1.png" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
-                data-lightbox="roadtrip5"
-                data-title="地點：台灣　　拍攝者：B先生"
-                ><img
-                  class="example-image"
-                  src="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/forget_password.jpg"
-                data-lightbox="roadtrip5"
-                data-title="地點：台灣　　拍攝者：C先生"
-                ><img
-                  class="example-image"
-                  src="./img/forget_password.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/news_DJI_0219.jpg"
-                data-lightbox="roadtrip5"
-                data-title="地點：台灣　　拍攝者：D先生"
-                ><img
-                  class="example-image"
-                  src="./img/news_DJI_0219.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <!-- info右介紹(分:上中下div) -->
-            <div class="right_info">
-              <div class="right_info_title">
-                <p>南子吝步道</p>
-              </div>
-              <div class="right_info_content">
-                <p>
-                  攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
-                </p>
-              </div>
-              <!-- info右介紹(下:分3個info) -->
-              <div class="right_info_footer">
-                <div class="footer_info_a">
-                  <span class="info_title">空拍資訊</span>
-                  <span class="info_title">MINI 3 Pro</span>
-                </div>
-                <div class="footer_info_b">
-                  <span class="green">綠區</span>
-                  <span>120公尺</span>
-                  <span>不須申請</span>
-                  <hr />
-                </div>
-                <div class="footer_info_c">
-                  <span>#全年開放</span>
-                  <span>#新北市</span>
-                  <span>#免費參觀</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="ins_box">
-            <!-- info左照片 -->
-            <div class="left_img">
-              <a
-                class="example-image-link"
-                href="./img/DJI_0323.jpg"
-                data-lightbox="roadtrip6"
-                data-title="地點：台灣　　拍攝者：A先生"
-                active
-                ><img class="example-image" src="./img/DJI_0323.jpg" alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/news_DJI_0330.jpg"
-                data-lightbox="roadtrip6"
-                data-title="地點：台灣　　拍攝者：B先生"
-                ><img
-                  class="example-image"
-                  src="./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/news_DJI_0330.jpg"
-                data-lightbox="roadtrip6"
-                data-title="地點：台灣　　拍攝者：C先生"
-                ><img
-                  class="example-image"
-                  src="./img/forget_password.jpg"
-                  alt=""
-              /></a>
-              <a
-                class="example-image-link"
-                href="./img/news_DJI_0219.jpg"
-                data-lightbox="roadtrip6"
-                data-title="地點：台灣　　拍攝者：D先生"
-                ><img
-                  class="example-image"
-                  src="./img/news_DJI_0219.jpg"
-                  alt=""
-              /></a>
-            </div>
-            <!-- info右介紹(分:上中下div) -->
-            <div class="right_info">
-              <div class="right_info_title">
-                <p>太魯閣國家公園</p>
-              </div>
-              <div class="right_info_content">
-                <p>
-                  攀爬是勇氣和毅力的體現，需要克服困難和危險，體驗挑戰和成就感，突破自我，感受潛能和勇氣。
-                </p>
-              </div>
-              <!-- info右介紹(下:分3個info) -->
-              <div class="right_info_footer">
-                <div class="footer_info_a">
-                  <span class="info_title">空拍資訊</span>
-                  <span class="info_title">MAVIC 3</span>
-                </div>
-                <div class="footer_info_b">
-                  <span class="gray">灰區</span>
-                  <span>120公尺</span>
-                  <span>須申請</span>
-                  <hr />
-                </div>
-                <div class="footer_info_c">
-                  <span>#全年開放</span>
-                  <span>#立霧溪</span>
-                  <span>#大理岩峽</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer_web_map">
         <ul class="web_map_item">
-          <li class="web_map_title">空拍景點</li>
-          <a href="#">
-            <li>景點推薦</li>
-          </a>
-          <a href="#">
-            <li>景點分享</li>
-          </a>
-        </ul>
-        <ul class="web_map_item">
-          <li class="web_map_title">認識空拍機</li>
-          <a href="#">
-            <li>空拍機介紹</li>
-          </a>
-          <a href="#">
-            <li>基礎操作</li>
-          </a>
-          <a href="#">
-            <li>機型介紹</li>
-          </a>
-          <a href="#">
-            <li>空拍法規</li>
-          </a>
-          <a href="#">
-            <li>APP推薦</li>
-          </a>
-        </ul>
-        <ul class="web_map_item">
-          <a href="#">
+          <a href="./reservation.html">
             <li class="web_map_title">預約專區</li>
           </a>
         </ul>
         <ul class="web_map_item">
-          <a href="#">
+          <a href="./news.html">
             <li class="web_map_title">最新消息</li>
           </a>
         </ul>
         <ul class="web_map_item">
           <li class="web_map_title">登入會員</li>
-          <a href="#">
+          <a href="./login.html">
             <li>登入頁面</li>
           </a>
         </ul>
       </div>
-      <div class="logo">
-        <div>
-          <a href="index.html">
-            <img src="./img/logo_w.png" alt="logo" width="250px" />
-          </a>
-        </div>
-        <div class="copyright">copyright © TravelDrone 版權所有</div>
-      </div>
-    </footer>
-    <!------------------------- js --------------------->
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
-    <script src="./js/ViewSharePicScript.js"></script>
-    <!-- GO-top -->
-    <script>
-      $(function () {
-        $("body").append(
-          '<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>'
-        );
-        let fixedTop = $("#fixedTop");
-        fixedTop.on("click", function () {
-          $("html, body").animate({ scrollTop: "0" }, 1000);
-        });
-        $(window).on("load scroll resize", function () {
-          let showTop = 100;
-          let curScrollTop = $(window).scrollTop();
-
-          if (curScrollTop > showTop) {
-            fixedTop.fadeIn("false");
-          } else {
-            fixedTop.fadeOut("false");
-          }
-        });
+    </div>
+    <div class="copyright_section">
+      <div>copyright © TravelDrone 版權所有</div>
+      <a href="index.html" class="footer_logo">
+        <img src="./img/logo_w.png" alt="logo" width="150px">
+      </a>
+    </div>
+  </footer>
+  <!------------------------- js --------------------->
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+  <script src="./js/ViewSharePicScript.js"></script>
+  <!-- GO-top -->
+  <script>
+    $(function () {
+      $("body").append(
+        '<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>'
+      );
+      let fixedTop = $("#fixedTop");
+      fixedTop.on("click", function () {
+        $("html, body").animate({ scrollTop: "0" }, 1000);
       });
+      $(window).on("load scroll resize", function () {
+        let showTop = 100;
+        let curScrollTop = $(window).scrollTop();
 
-      // 漢堡
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("is-active");
-        });
-      });
-
-      // 漢堡nav
-      let hb = document.querySelector(".hamburger_box");
-      let hn = document.querySelector(".hamburger_nav");
-
-      hb.onclick = () => {
-        if (hn.style.transform == "translateY(0px)") {
-          hn.style.transform = "translateY(-1500px)";
+        if (curScrollTop > showTop) {
+          fixedTop.fadeIn("false");
         } else {
-          hn.style.transform = "translateY(0px)";
+          fixedTop.fadeOut("false");
         }
-      };
+      });
+    });
+
+    // 漢堡
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+
+    // 漢堡nav
+    let hb = document.querySelector(".hamburger_box");
+    let hn = document.querySelector(".hamburger_nav");
+
+    hb.onclick = () => {
+      if (hn.style.transform == "translateY(0px)") {
+        hn.style.transform = "translateY(-1500px)";
+      } else {
+        hn.style.transform = "translateY(0px)";
+      }
+    };
       // 漢堡結束
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
