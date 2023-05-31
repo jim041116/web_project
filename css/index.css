@@ -464,7 +464,7 @@ section {
 #about_me .about_me_text .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
+  background-color: #289DD2;
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -620,7 +620,7 @@ section {
 #attractions .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
+  background-color: #289DD2;
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -803,7 +803,7 @@ section {
 #news .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
+  background-color: #289DD2;
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;
@@ -858,7 +858,7 @@ section {
 #reserve .tittle .tittle_ball {
   width: 35px;
   height: 35px;
-  background-color: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
+  background-color: #289DD2;
   border-radius: 30px;
   opacity: 0.8;
   position: absolute;

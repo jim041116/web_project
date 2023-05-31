@@ -47,9 +47,10 @@
         justify-content: space-around;
         width: 80%;
 
-        @include pad(){
+        @include pad() {
             width: 100%;
         }
+
         @include phone() {
             flex-wrap: wrap;
             margin: 3rem auto;
@@ -58,7 +59,7 @@
         .btn {
             width: 150px;
             height: 50px;
-            background-color: $btn_bg;
+            background-image: $btn_bg;
             color: $text_color_w;
             text-align: center;
             line-height: 50px;
@@ -67,20 +68,39 @@
             transition: all 0.5s;
             cursor: pointer;
             transition: all .5s;
+            position: relative;
+            z-index: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-color: #f5f5f5;
+                top: 2px;
+                left: 2px;
+                border-radius: 12px;
+                width: 146px;
+                height: 46px;
+                transform: scale(0);
+                transition: all .3s;
+                z-index: -1;
+            }
+
+            &:hover::before {
+                transform: scale(1);
+            }
+
+            &:hover {
+                color: #289DD2;
+            }
 
             @include phone() {
                 font-size: $text_size-16px;
                 margin: 1rem 0;
             }
-
-            &:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 5px 5px rgba(0, 0, 0, 0.473);
-            }
         }
 
         .all_btn {
-            background-color: #377491;
+            background-image: linear-gradient(45deg, #193ee0 0%, #35bcfa 100%);
         }
     }
 
@@ -156,7 +176,7 @@
         transition: color .5s ease;
         margin-bottom: .5rem;
 
-        @include phone(){
+        @include phone() {
             font-size: $text_size-18px;
         }
     }

@@ -136,11 +136,18 @@ section {
         line-height: 33px;
         border-radius: 10px;
         font-size: $text_size-16px;
+
+        &::before {
+          content: '';
+          border-radius: 7px;
+          width: 96px;
+          height: 29px;
+        }
       }
     }
 
     .novice_btn {
-      background-color: #377491;
+      background-image: linear-gradient(45deg, #193ee0  0%, #35bcfa 100%);
     }
   }
 
