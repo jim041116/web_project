@@ -466,6 +466,7 @@ body {
 #register_member .form_outs #register_form .ch_pass label,
 #register_member .form_outs #register_form .ch_pass span {
   font-size: 18px;
+  color: #545454;
 }
 #register_member .form_outs #register_form .name input,
 #register_member .form_outs #register_form .sex_select input,

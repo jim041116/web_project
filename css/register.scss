@@ -67,7 +67,8 @@ body {
         justify-content: space-between;
         label,
         span {
-          font-size: 18px;
+          font-size: $text_size-18px;
+          color: $text_color_g;
         }
         input {
           border-radius: 40px;
