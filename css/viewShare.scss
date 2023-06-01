@@ -23,12 +23,15 @@ body {
   background-color: $web_bg;
 }
 main {
+  .banner {
+    margin-top: 4.5rem;
+  }
   section {
     .container_info {
       align-items: center;
-      margin: 2rem auto;
+      margin: 5rem auto;
       display: flex;
-      width: 100vw;
+      width: 70vw;
       justify-content: center;
       flex-wrap: wrap;
 
@@ -53,10 +56,10 @@ main {
         width: 100%;
       }
       .ins_box {
-        width: 580px;
-        height: 400px;
+        width: 530px;
+        height: 355px;
         display: flex;
-        margin: 1rem 3.5rem;
+        margin: 1rem 1.5rem;
         @include pc() {
           margin: 1rem;
         }
@@ -138,6 +141,7 @@ main {
             margin-right: 0.2rem;
             border-radius: 5px;
             padding: 0.2rem;
+            font-size: 14px;
           }
         }
         .footer_info_b hr {

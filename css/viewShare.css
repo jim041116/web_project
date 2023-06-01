@@ -380,11 +380,14 @@ body {
   background-color: #f5f5f5;
 }
 
+main .banner {
+  margin-top: 4.5rem;
+}
 main section .container_info {
   align-items: center;
-  margin: 2rem auto;
+  margin: 5rem auto;
   display: flex;
-  width: 100vw;
+  width: 70vw;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -413,10 +416,10 @@ main section .container_info {
   }
 }
 main section .container_info .ins_box {
-  width: 580px;
-  height: 400px;
+  width: 530px;
+  height: 355px;
   display: flex;
-  margin: 1rem 3.5rem;
+  margin: 1rem 1.5rem;
 }
 @media (max-width: 1440px) {
   main section .container_info .ins_box {
@@ -520,6 +523,7 @@ main section .container_info .ins_box .right_info_footer span {
   margin-right: 0.2rem;
   border-radius: 5px;
   padding: 0.2rem;
+  font-size: 14px;
 }
 main section .container_info .ins_box .footer_info_b hr {
   margin-top: 1rem;
