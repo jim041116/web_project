@@ -410,6 +410,27 @@ body {
 #login .form_outs .form_title .tittle div {
   font-weight: 700;
 }
+#login .form_outs .form_title .tittle .move {
+  display: inline-flex;
+}
+#login .form_outs .form_title .tittle .move .move_m {
+  animation: move 1s infinite;
+}
+#login .form_outs .form_title .tittle .move .move_m:nth-child(0) {
+  animation-delay: 0s;
+}
+#login .form_outs .form_title .tittle .move .move_m:nth-child(1) {
+  animation-delay: 0.15s;
+}
+#login .form_outs .form_title .tittle .move .move_m:nth-child(2) {
+  animation-delay: 0.3s;
+}
+#login .form_outs .form_title .tittle .move .move_m:nth-child(3) {
+  animation-delay: 0.45s;
+}
+#login .form_outs .form_title .tittle .move .move_m:nth-child(4) {
+  animation-delay: 0.6s;
+}
 #login .form_outs .form_title .tittle_ball {
   width: 35px;
   height: 35px;
@@ -515,6 +536,14 @@ footer .copyright_section {
   display: none;
 }
 
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(7px);
+  }
+}
 /*!!!!!!!!!!!!!!!!!!!*/
 /* .login_form {
   position: relative;
