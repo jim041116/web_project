@@ -1,0 +1,139 @@
+@import "./public.scss";
+body {
+  width: 100%;
+  height: 100vh;
+}
+#form {
+    width: 100%;
+    height: 1034px;
+    background-image: url(../img/sea.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form_outs {
+        width: 1000px;
+        height: 1000px;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsla(255, 255, 255, 0.6);
+       
+    }
+    //表單內容
+    .content {
+        height: 85%;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        p,
+        li {
+          font-size: $text_size-18px;
+          color: $text_color_g;
+        }
+        //左表單
+        .left {
+          flex: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          //預約體驗title
+          .form_title {
+            // margin-top: -20%;
+            .tittle {
+              color: $text_color_g;
+              @include tittle();
+              font-size: $text_size-32px;
+              .tittle_ball {
+                @include title_ball();
+              }
+            }
+        }
+}
+    }
+    .content_up {
+        margin-top: -5rem;
+        margin-left: 1rem;
+      }
+      .content_down {
+        line-height: 1rem;
+        margin-left: 1rem;
+      }
+    }
+
+     //右表單
+     .signup {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .detail {
+            font-size: $text_size-28px;
+            color: $text_color_g;
+            font: weight 3px;
+          }
+        #signup_form {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          input,select {
+            border-radius: 20px;
+            border: none;
+            background-color: rgba(84, 84, 84, 0.3);
+            backdrop-filter: blur(5px);
+            height: 35px;
+            padding-left: 1rem;
+            margin-top: 0.5rem;
+            letter-spacing: 2px;
+            font-size: $text_size-16px;
+            color: #325ac9;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+              7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+              4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+          textarea{
+            border-radius: 20px;
+            border: none;
+            background-color: rgba(84, 84, 84, 0.3);
+            backdrop-filter: blur(5px);
+            padding-left: 1rem;
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+            letter-spacing: 2px;
+            font-size: $text_size-16px;
+            color: #325ac9;
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+              7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+              4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+
+          label {
+            font-size: $text_size-18px;
+            color: $text_color_g;
+            margin-top: 1rem;
+          }
+        }
+        .btn_signup {
+            display: block;
+            padding: 0.2rem 2rem;
+            font-size: $text_size-18px;
+            cursor: pointer;
+            margin: 3.8rem auto;
+            border-radius: 15px;
+            border: none;
+            background-color: #289dd2;
+            color: white;
+            transition: 0.3s ease-in-out;
+            &:hover {
+              transform: translateY(-3px);
+              box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
+            }
+          }
+          
+    }

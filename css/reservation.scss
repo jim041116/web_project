@@ -134,20 +134,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        .btn_signup{
         width: 200px;
         height: 40px;
-        border: 2px solid green;
         margin: 0 auto;
-
         cursor: pointer;
         border-radius: 15px;
-        background-color: #289dd2;
         color: white;
-
-        transition: 0.3s ease-in-out;
-        p {
-          padding-right: 1rem;
+        background-color: #289dd2;
         }
+        transition: 0.3s ease-in-out;
         &:hover {
           transform: translateY(-3px);
           box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);

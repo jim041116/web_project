@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本表單欄位</title>
+    <style>
+        #member_mod_form>* {
+            display: block;
+        }
+
+        #member_mod_form label {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="search_form" id="search_form" action="" method="post">
+        <label for="search">搜尋：</label>
+        <input type="search" name="search" id="search" style="width: 150px;">
+        <input type="submit" value="搜尋">
+    </form>
+
+    <hr>
+    <h2>會員資料修改</h2>
+    <form name="member_mod_form" id="member_mod_form" action="" method="post">
+        <label for="username">*姓名：</label>
+        <input type="text" name="username" id="username" title="請輸入姓名" placeholder="王大明" required autocomplete="on"
+            autofocus>
+
+        <label for="account">帳號：(禁用)</label>
+        <input type="text" name="account" id="account" value="ritadesign" disabled>
+
+        <label for="password">密碼：</label>
+        <input type="password" name="password" id="password" title="請設定密碼" placeholder="請設定密碼">
+
+        <label for="password_1">確認密碼：</label>
+        <input type="password" name="password" id="password_1" title="再次輸入密碼" placeholder="再次輸入密碼">
+
+        <label for="idnumber">身份証號：(只讀)</label>
+        <input type="text" name="idnumber" id="idnumber" maxlength="10" value="A123456789" readonly>
+
+        <label for="email">*Email：</label>
+        <input type="email" name="email" id="email" title="請輸入Email" placeholder="yourid@email.com" required
+            autocomplete="on">
+
+        <label for="tel">聯絡電話：</label>
+        <input type="tel" name="tel" id="tel" title="請輸入電話" placeholder="02-3456789" autocomplete="on">
+
+        <label for="birthday">生日：</label>
+        <input type="date" name="birthday" id="birthday" title="請選擇生日日期">
+
+        <label for="sex">性別：</label>
+        <select name="sex" id="sex">
+            <option>請選擇</option>
+            <option value="生理男">生理男</option>
+            <option value="生理女">生理女</option>
+            <option value="其他">其他</option>
+        </select>
+
+        <fieldset style="width: 30%; margin-top: 30px;">
+            <legend>會員類型：(單選)</legend>
+
+            <input type="radio" name="member" id="member1" value="一般會員">
+            <label for="member1">一般會員</label>
+
+            <input type="radio" name="member" id="member2" value="終身會員" checked>
+            <label for="member2">終身會員</label>
+        </fieldset>
+
+        <fieldset style="width: 35%; margin-top: 30px;">
+            <legend>訂閱內容：(複選)</legend>
+
+            <input type="checkbox" name="order" id="order1" value="社會">
+            <label for="order1">社會</label>
+
+            <input type="checkbox" name="order" id="order2" value="政治">
+            <label for="order2">政治</label>
+
+            <input type="checkbox" name="order" id="order3" value="體育">
+            <label for="order3">體育</label>
+
+            <input type="checkbox" name="order" id="order4" value="娛樂">
+            <label for="order4">娛樂</label>
+
+            <input type="checkbox" name="order" id="orde5" value="生活">
+            <label for="order5">生活</label>
+
+            <input type="checkbox" name="order" id="orde6" value="健康">
+            <label for="order6">健康</label>
+        </fieldset>
+
+        <label for="file">上傳檔案：</label>
+        <input type="file" name="file" id="file" title="請上傳檔案" multiple>
+
+        <label for="message">留言：</label>
+        <textarea name="message" id="message" cols="30" rows="10" title="請填寫這個欄位"></textarea>
+        <p>
+            <input type="submit" value="送出">
+            <input type="reset" value="重填">
+        </p>
+        <small>(表單僅示意，不會對外蒐集資料。/此表單僅為展示用，無蒐集資料功能。)</small>
+    </form>
+</body>
+
+</html>
