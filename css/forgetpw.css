@@ -410,6 +410,27 @@ body {
 #forget_pw .form_outs .form_title .tittle div {
   font-weight: 700;
 }
+#forget_pw .form_outs .form_title .tittle .move {
+  display: inline-flex;
+}
+#forget_pw .form_outs .form_title .tittle .move .move_m {
+  animation: move 1s infinite;
+}
+#forget_pw .form_outs .form_title .tittle .move .move_m:nth-child(0) {
+  animation-delay: 0s;
+}
+#forget_pw .form_outs .form_title .tittle .move .move_m:nth-child(1) {
+  animation-delay: 0.15s;
+}
+#forget_pw .form_outs .form_title .tittle .move .move_m:nth-child(2) {
+  animation-delay: 0.3s;
+}
+#forget_pw .form_outs .form_title .tittle .move .move_m:nth-child(3) {
+  animation-delay: 0.45s;
+}
+#forget_pw .form_outs .form_title .tittle .move .move_m:nth-child(4) {
+  animation-delay: 0.6s;
+}
 #forget_pw .form_outs .form_title .tittle .tittle_ball {
   width: 35px;
   height: 35px;
@@ -469,14 +490,34 @@ body {
 
 /* 頁尾區*/
 footer {
+  border-radius: 0;
   text-align: center;
   background-color: #f5f5f5;
   color: #545454;
+  margin-top: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
 }
 footer p {
   font-weight: 500;
+  text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
+}
+footer .footer_section {
+  display: none;
+}
+footer .copyright_section {
+  display: none;
 }
 
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(7px);
+  }
+}
 /* #forget_form input {
     border-radius: 40px;
     border: none;
