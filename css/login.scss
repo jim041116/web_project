@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   .form_outs {
     width: 376px;
     height: 450px;
@@ -27,9 +28,9 @@ body {
         color: $text_color_g;
         @include tittle();
         font-size: $text_size-32px;
-        .tittle_ball {
-          @include title_ball();
-        }
+      }
+      .tittle_ball {
+        @include title_ball();
       }
     }
     #login_form {
@@ -107,12 +108,25 @@ body {
 }
 /* 頁尾區*/
 footer {
+  border-radius: 0;
   text-align: center;
   background-color: $web_bg;
   color: $text_color_g;
-
+  border: 1px solid gray;
+  margin-top: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
   p {
     font-weight: 500;
+    text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
+  }
+
+  .footer_section {
+    display: none;
+  }
+  .copyright_section {
+    display: none;
   }
 }
 
