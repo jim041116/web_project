@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 a {
@@ -27,13 +27,13 @@ ol {
 }
 
 .go_top {
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
   transition: 0.3s;
 }
 .go_top:hover {
-  background-color: #289DD2;
+  background-color: #289dd2;
 }
 .go_top:active {
   transform: translateY(-10px);
@@ -63,7 +63,7 @@ ol {
 header {
   width: 100%;
   height: 110px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,10 +127,10 @@ header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item {
   transition: all 0.3s;
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 header #nav_bar ul .nav_bar_item .drop_nav_bar .drop_nav_bar_item:hover {
-  background-color: #289DD2;
+  background-color: #289dd2;
 }
 header .hamburger_box {
   position: fixed;
@@ -138,7 +138,7 @@ header .hamburger_box {
   text-align: center;
   display: none;
   z-index: 99;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   padding: 0.5rem;
   border-radius: 15px;
 }
@@ -222,8 +222,8 @@ header .hamburger_nav .hamburger_nav_item li {
   transition: all 0.5s;
 }
 header .hamburger_nav .hamburger_nav_item a li:hover {
-  background-color: #289DD2;
-  color: #FFFFFF;
+  background-color: #289dd2;
+  color: #ffffff;
 }
 @media (max-width: 992px) {
   header .hamburger_nav {
@@ -266,7 +266,7 @@ footer .footer_section {
   justify-content: space-around;
   align-items: center;
   height: 350px;
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
   background-image: url(../img/respic.jpg);
   border-radius: 300px 0 0 0;
 }
@@ -325,7 +325,7 @@ footer .footer_section .footer_web_map .web_map_item .web_map_title::before {
   position: absolute;
   width: 15px;
   height: 15px;
-  background-color: #289DD2;
+  background-color: #289dd2;
   top: 7px;
   left: 5px;
   border-radius: 20px;
@@ -333,12 +333,12 @@ footer .footer_section .footer_web_map .web_map_item .web_map_title::before {
 }
 footer .footer_section .footer_web_map .web_map_item li {
   padding: 0.5rem 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: all 0.5s;
   font-size: 16px;
 }
 footer .footer_section .footer_web_map .web_map_item a:hover li {
-  background-color: #289DD2;
+  background-color: #289dd2;
 }
 footer .footer_section .footer_logo {
   margin-bottom: -19rem;
@@ -361,7 +361,7 @@ footer .copyright_section {
   }
 }
 footer .copyright_section div {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-right: 3rem;
 }
 @media (max-width: 576px) {
@@ -393,7 +393,7 @@ section {
 @media (max-width: 576px) {
   #droneType_bn .text_box .text_1 {
     font-size: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 #droneType_bn .text_box .text_2 {
@@ -403,7 +403,7 @@ section {
 @media (max-width: 576px) {
   #droneType_bn .text_box .text_2 {
     font-size: 18px;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
@@ -433,7 +433,7 @@ section {
 .bn_text p {
   width: 80%;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   top: 30%;
   left: 10%;
@@ -465,8 +465,8 @@ section {
 #drone_type .drone_type_btn .btn {
   width: 150px;
   height: 50px;
-  background-image: linear-gradient(45deg, #289DD2 0%, #38ecce 100%);
-  color: #FFFFFF;
+  background-image: linear-gradient(45deg, #289dd2 0%, #38ecce 100%);
+  color: #ffffff;
   text-align: center;
   line-height: 50px;
   border-radius: 15px;
@@ -717,7 +717,7 @@ section {
 }
 #drone_type .drone_section .drone_type_item .drone_text .more_btn div {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 15px;
   cursor: pointer;
@@ -729,7 +729,7 @@ section {
   width: 100%;
   height: 450px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 40px;
   padding: 2rem;
   transform: translateY(-550px);
