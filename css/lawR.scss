@@ -598,9 +598,10 @@ section {
         margin-left: -4rem;
         height: 250px;
       }
+      h4,
       p {
-        font-size: 16px;
         color: white;
+        font-size: 16px;
         line-height: 2rem;
         @include phone() {
           font-size: 14px;

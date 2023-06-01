@@ -1176,17 +1176,20 @@ section .text p {
     height: 250px;
   }
 }
+#license .container .con_border h4,
 #license .container .con_border p {
-  font-size: 16px;
   color: white;
+  font-size: 16px;
   line-height: 2rem;
 }
 @media (max-width: 576px) {
+  #license .container .con_border h4,
   #license .container .con_border p {
     font-size: 14px;
   }
 }
 @media (max-width: 390px) {
+  #license .container .con_border h4,
   #license .container .con_border p {
     font-size: 14px;
     padding: 0;
