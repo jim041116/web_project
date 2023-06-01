@@ -5,7 +5,7 @@ body {
 }
 #free {
   width: 100%;
-  height: 940px;
+  height: 730px;
   background-image: url(../img/grass.jpg);
   background-size: cover;
   background-position: center;
@@ -79,7 +79,7 @@ body {
   .content {
     color: #545454;
     &:hover {
-      color: rgb(236, 118, 134);
+      color: rgb(240, 50, 91);
     }
   }
 }
@@ -142,6 +142,7 @@ body {
         border-radius: 15px;
         color: white;
         background-color: #289dd2;
+        font-size: $text_size-18px;
         }
         transition: 0.3s ease-in-out;
         &:hover {
@@ -151,6 +152,9 @@ body {
       }
     }
   }
+}
+.btn_signup{
+  color: white;
 }
 
 footer {

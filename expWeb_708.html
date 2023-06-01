@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>預約專區</title>
+    <title>預約體驗</title>
     <link rel="stylesheet" href="./css/public.css" />
-    <link rel="stylesheet" href="./css/reservation.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/expWeb.css" />
   </head>
 
   <body>
@@ -120,103 +119,87 @@
       <!-- 漢堡結束 -->
   </header>
 
-    <!-- content -->
-    <section id="free">
-      <div class="free_section">
-        <div class="tittle">
-          <div>預約體驗</div>
-          <div class="tittle_ball"></div>
-        </div>
 
-        <div class="form_box">
-          <div class="free_form_1">
-            <a href="./expWeb_729.html">
-              <div class="reserve_img">
-                <img
-                  src="./img/respic.jpg"
-                  alt=""
-                  width="150px"
-                  height="150px"
-                />
+    <!-- 背底 -->
+    <section id="form">
+      <!-- 表單外框 -->
+      <div class="form_outs">
+        <!-- 表單內容 -->
+        <div class="content">
+          <!-- 左表單 -->
+          <div class="left">
+            <!-- 預約體驗title -->
+            <div class="form_title">
+              <div class="tittle">
+                <div>預約體驗</div>
+                <div class="tittle_ball"></div>
               </div>
-              <div class="content">
-                <h2>台北 福德坑環保復育公園 |2023/7/29(六) 上午 9:00</h2>
-                <hr class="dashed-2" />
-                <p>
-                    以往平視角度眺望，隨著空拍的盛行，產生了新視角，從不同角度看台灣，發現台灣不同的美。
-                </p>
-              </div>
-            </a>
-          </div>
+            </div>
 
-          <div class="free_form_2">
-            <a href="./expWeb_708.html">
-              <div class="reserve_img">
-                <img
-                  src="./img/respic.jpg"
-                  alt=""
-                  width="150px"
-                  height="150px"
-                />
-              </div>
-              <div class="content">
-                <h2>台北 福德坑環保復育公園 |2023/7/8(六) 上午 9:00</h2>
-                <hr class="dashed-2" />
-                <p>
-                    以往平視角度眺望，隨著空拍的盛行，產生了新視角，從不同角度看台灣，發現台灣不同的美。
-                </p>
-              </div>
-            </a>
-          </div>
+            <div class="content_up">
+              <p>日期:2023/7/08 星期六</p>
+              <p>時間:上午9點</p>
+              <p>體驗時間:3小時</p>
+              <p>費用:免費</p>
+              <p>集合地點:台北場 - 福德坑環保復育公園停車場</p>
+              <p>交通方式:捷運木柵站 - 轉乘251區間車搭至富德里站</p>
+              <p>-步行20分鐘(1.3公里) 自行開車前往：免費停車</p>
+            </div>
 
-          <div class="free_form_3">
-            <a href="./expWeb_625.html">
-              <div class="reserve_img">
-                <img
-                  src="./img/respic.jpg"
-                  alt=""
-                  width="150px"
-                  height="150px"
-                />
-              </div>
-              <div class="content">
-                <h2>台北 福德坑環保復育公園 | 2023/6/25(日) 上午 9:00</h2>
-                <hr class="dashed-2" />
-                <p>
-                    以往平視角度眺望，隨著空拍的盛行，產生了新視角，從不同角度看台灣，發現台灣不同的美。
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <!-- free -->
-    </section>
-    <!-- 底圖 -->
-    <section id="custumized">
-      <!-- 陰影底 -->
-      <div class="custumized_form">
-        <!-- ----------------------------- -->
-        <div class="border_for_space">
-          <!-- 客製化預約title -->
-          <div class="cust_title">
-            <div class="tittle">
-              <div>客製化預約拍攝</div>
-              <div class="tittle_ball"></div>
+            <div class="content_down">
+              <p>報名成功將以簡訊通知~</p>
+              <p>我們不會以任何名義(電話、簡訊或email等方式)</p>
+              <p>向您索取或核對任何金融帳戶、信用卡及訂單資料。</p>
+              <p>請您提高警覺，反詐騙諮詢專線165。</p>
             </div>
           </div>
-          <div class="content_text">詳情請填寫表單與我們聯絡~</div>
-          <!-- 按鈕 -->
-          <div class="btn_svg">
-            <a href="./custumized.html">
-            <button class="btn_signup">了解更多 <i class="fa-regular fa-file-lines" style="color: #ffffff;"></i></button>
-               
-            </a>
+
+          <!-- 右表單 -->
+          <div class="signup">
+            <p>報名資料</p>
+            <form name="signup_form" id="signup_form" action="" method="post">
+              <label for="username">姓名</label>
+
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="請輸入姓名"
+                required
+              />
+
+              <label for="tel">手機</label>
+
+              <input type="tel" name="tel" id="tel" placeholder="請輸入手機" />
+
+              <label for="email">信箱</label>
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="請輸入Eamil"
+              />
+
+              <label for="number">人數</label>
+              <input
+                type="text"
+                name="numberofapplicants"
+                id="numberofapplicants"
+                placeholder="請輸入預約人數"
+              />
+            </form>
+            <button class="btn_signup">立即預約
+            </button>
+            <small>(此表單僅為展示用，無蒐集資料功能。)</small>
           </div>
         </div>
-        <!-- ----------------------------- -->
+        <!-- 表單結束 -->
       </div>
+      <!-- 表單結束 -->
     </section>
 
+     
     <footer>
       <div class="footer_section">
           <img class="footer_img" src="./img/001.png" alt="drone" width="700px">
