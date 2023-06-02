@@ -28,30 +28,14 @@ body {
         color: $text_color_g;
         @include tittle();
         font-size: $text_size-32px;
-        .move {
-          display: inline-flex;
-          .move_m {
-            animation: move 1s infinite;
-            &:nth-child(0) {
-              animation-delay: 0s;
-            }
-            &:nth-child(1) {
-              animation-delay: 0.15s;
-            }
-            &:nth-child(2) {
-              animation-delay: 0.3s;
-            }
-            &:nth-child(3) {
-              animation-delay: 0.45s;
-            }
-            &:nth-child(4) {
-              animation-delay: 0.6s;
-            }
-          }
-        }
       }
       .tittle_ball {
         @include title_ball();
+        animation: ballmove 2.8s linear;
+        width: 25px;
+        height: 25px;
+        top: 2px;
+        left: -10px;
       }
     }
     #login_form {
@@ -77,11 +61,10 @@ body {
           margin: 3px;
           color: #325ac9;
         }
-        .fa-eye-slash {
-          font-size: 19px;
-        }
+        .fa-eye-slash,
         .fa-eye {
           font-size: 19px;
+          cursor: pointer;
         }
       }
     }
@@ -95,7 +78,7 @@ body {
       border-radius: 15px;
       border: none;
       background-color: #289dd2;
-      color: white;
+      color: $text_color_w;
       transition: 0.3s ease-in-out;
       &:hover {
         transform: translateY(-5px);
@@ -149,90 +132,32 @@ footer {
     display: none;
   }
 }
-
-@keyframes move {
+@keyframes ballmove {
   0% {
     transform: translateY(0px);
   }
+  15% {
+    transform: translate(3px, 32px);
+  }
   25% {
-    transform: translateY(7px);
+    transform: translate(15px, 6px);
+  }
+  40% {
+    transform: translate(20px, 32px);
+  }
+  55% {
+    transform: translate(28px, 15px);
+  }
+
+  61% {
+    transform: translate(34px, 32px);
+    visibility: hidden;
+  }
+  74% {
+    transform: translateY(0px);
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
   }
 }
-/*!!!!!!!!!!!!!!!!!!!*/
-
-/* .login_form {
-  position: relative;
-  .password_btn {
-    width: 32px;
-    height: 32px;
-    position: absolute;
-  }
-} */
-// #checkEye {
-//   position: absolute;
-//   top: 41.5%;
-//   right: 44%;
-//   transform: translateY(-50%);
-// }
-//   .btn {
-//     border: 2px solid black;
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-/* #password_btn {
-  取消<button>預設樣式
-  background-color: rgba(84, 84, 84, 0.3);
-  border: none;
-  自訂樣式
-  width: 32px;
-  height: 32px;
-  絕對定位
-  position: absolute;
-  top: 40%;
-  right: 35%;
-} */
-
-// #icon {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   display: flex;
-//   justify-items: center;
-//   margin-right: 8px;
-// }
-
-// .btn {
-//   margin-top: 2rem;
-//   border-radius: none;
-//   outline: none;
-//   background-color: none;
-// padding: 0.2rem 0;
-// width: 30%;
-// height: 38px;
-// font-size: $text_size-18px;
-// display: flex;
-// justify-content: center;
-// align-items: center;
-// cursor: pointer;
-
-// form {
-//   display: flex;
-//   flex-direction: column;
-//   padding: 0 5rem;
-//   color: $text_color_g;
-// }
-// button {
-//   margin-top: 2rem;
-//   border-radius: 50px;
-//   outline: none;
-//   background-color: $text_color_g;
-//   padding: 0.2rem 0;
-//   width: 100%;
-//   height: 38px;
-//   font-size: $text_size-18px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   cursor: pointer;
-// }
