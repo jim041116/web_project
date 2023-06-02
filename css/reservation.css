@@ -443,6 +443,13 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 5rem;
 }
+@media (max-width: 576px) {
+  #free .free_form_1,
+  #free .free_form_2,
+  #free .free_form_3 {
+    transform: scale(1, 1);
+  }
+}
 #free .reserve_img img {
   width: 130px;
   height: 130px;
