@@ -653,7 +653,7 @@ section {
       h4,
       p {
         color: $text_color_w;
-        font-size:$text_size-16px;
+        font-size: $text_size-16px;
         line-height: 2rem;
         @include phone() {
           font-size: 14px;
@@ -698,7 +698,7 @@ section {
         @include phone() {
           width: 350px;
           margin-left: -3.5rem;
-          margin-top: 3rem;
+          margin-top: 1.8rem;
         }
         @include phone2() {
           width: 350px;

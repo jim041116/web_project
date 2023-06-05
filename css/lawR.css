@@ -1397,7 +1397,7 @@ section .text p {
   #license .container #forMoveIn .dif {
     width: 350px;
     margin-left: -3.5rem;
-    margin-top: 3rem;
+    margin-top: 1.8rem;
   }
 }
 @media (max-width: 390px) {
