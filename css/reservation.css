@@ -275,14 +275,31 @@ footer .footer_section {
     border-radius: 300px 300px 0 0;
   }
 }
-footer .footer_section .footer_img {
-  margin-left: -5rem;
-  margin-bottom: 10rem;
+footer .footer_section .moveIn {
+  animation: moveIn 4s;
+  animation-iteration-count: 1;
 }
-@media (max-width: 576px) {
-  footer .footer_section .footer_img {
-    width: 350px;
-    margin-left: -2rem;
+footer .footer_section .moveImg {
+  animation: fly-move 3s infinite alternate;
+  margin: 0;
+}
+@keyframes fly-move {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+@keyframes moveIn {
+  0% {
+    transform: translate(-500px, -500px);
+  }
+  50% {
+    transform: translate(-300px, -350px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 footer .footer_section .footer_web_map {
@@ -378,7 +395,7 @@ body {
 
 #free {
   width: 100%;
-  height: 730px;
+  height: 65vh;
   background-image: url(../img/grass.jpg);
   background-size: cover;
   background-position: center;
@@ -394,6 +411,7 @@ body {
 }
 #free .free_section .tittle {
   color: #ffffff;
+  border: 2px solid salmon;
   font-size: 40px;
   margin: 0;
   z-index: 1;
@@ -401,6 +419,16 @@ body {
   margin-left: -80%;
   padding: 10px;
   font-size: 32px;
+}
+@media (max-width: 390px) {
+  #free .free_section .tittle {
+    margin: auto;
+  }
+}
+@media (max-width: 576px) {
+  #free .free_section .tittle {
+    margin: auto;
+  }
 }
 #free .free_section .tittle div {
   font-weight: 700;
@@ -416,7 +444,8 @@ body {
   left: -15px;
   z-index: -1;
 }
-#free a {
+
+a {
   width: 881;
   height: 152px;
   display: flex;
@@ -424,48 +453,95 @@ body {
   align-items: center;
   background-color: web_bg;
 }
-#free a:hover {
+a:hover {
   transform: translateY(-3px);
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
 }
-#free .form_box {
-  height: 510px;
+
+.form_box {
+  height: 52vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-#free .free_form_1,
-#free .free_form_2,
-#free .free_form_3 {
+
+.free_form_1,
+.free_form_2,
+.free_form_3 {
   width: 865px;
   height: 152px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 5rem;
+  padding: 0.5rem;
+  border: 5px solid black;
 }
-@media (max-width: 576px) {
-  #free .free_form_1,
-  #free .free_form_2,
-  #free .free_form_3 {
-    transform: scale(1, 1);
+@media (max-width: 390px) {
+  .free_form_1,
+  .free_form_2,
+  .free_form_3 {
+    margin: auto;
+    width: 350px;
   }
 }
-#free .reserve_img img {
+@media (max-width: 576px) {
+  .free_form_1,
+  .free_form_2,
+  .free_form_3 {
+    width: 370px;
+  }
+}
+
+.reserve_img img {
   width: 130px;
   height: 130px;
   border-radius: 15px;
 }
-#free .content hr {
+@media (max-width: 576px) {
+  .reserve_img img {
+    margin-top: -19px;
+  }
+}
+
+.content hr {
   border: none;
   height: 1px;
   background: #545454;
   background: repeating-linear-gradient(90deg, #545454, #545454 6px, transparent 6px, transparent 12px);
 }
-#free .content {
+
+.content {
   color: #545454;
 }
-#free .content:hover {
-  color: rgb(240, 50, 91);
+.content:hover {
+  color: rgb(28, 122, 72);
+}
+@media (max-width: 576px) {
+  .content h2 {
+    font-size: 18px;
+    margin-top: -19px;
+  }
+}
+@media (max-width: 390px) {
+  .content h2 {
+    font-size: 18px;
+    margin-top: -19px;
+  }
+}
+@media (max-width: 390px) {
+  .content hr {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .content hr {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .content p {
+    display: none;
+  }
 }
 
 #custumized {
@@ -483,9 +559,20 @@ body {
   background-color: hsla(0, 0%, 0%, 0.5);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  width: 50%;
+}
+@media (max-width: 576px) {
+  #custumized .custumized_form {
+    width: 80%;
+  }
+}
+@media (max-width: 390px) {
+  #custumized .custumized_form {
+    width: 370px;
+    height: 250px;
+  }
 }
 #custumized .custumized_form .border_for_space {
-  width: 811px;
   height: 260px;
   display: flex;
   flex-direction: column;
@@ -521,6 +608,11 @@ body {
   color: #ffffff;
   font-size: 28px;
   text-align: center;
+}
+@media (max-width: 576px) {
+  #custumized .custumized_form .border_for_space .content_text {
+    font-size: 18px;
+  }
 }
 #custumized .custumized_form .border_for_space .btn_svg {
   display: flex;
