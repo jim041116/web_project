@@ -209,10 +209,10 @@ button:focus {
   perspective: 1000px;
   transform-style: preserve-3d;
 }
-
+/* 文字左右距離 */
 .info {
   margin-bottom: calc(var(--card-height) / 8);
-  margin-left: calc(var(--card-width) / 1.5);
+  margin-left: calc(var(--card-width) / 1);
   transform: translateZ(2rem);
   transition: transform var(--card-transition-duration)
     var(--card-transition-easing);

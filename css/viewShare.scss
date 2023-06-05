@@ -159,14 +159,14 @@ main {
   }
 }
 footer {
-  .move-in {
-    animation: move-in 4s;
+  .moveIn {
+    animation: moveIn 4s;
     animation-iteration-count: 1;
-    animation-delay: 1.5s;
-    .footer_img {
-      animation: fly-move 3s infinite alternate;
-      margin: 0;
-    }
+    // animation-delay: 1.5s;
+  }
+  .moveImg {
+    animation: fly-move 3s infinite alternate;
+    margin: 0;
   }
 }
 
@@ -178,7 +178,7 @@ footer {
     transform: rotate(360deg) translateX(20px) rotate(-360deg);
   }
 }
-@keyframes move-in {
+@keyframes moveIn {
   0% {
     transform: translate(-500px, -500px);
   }

@@ -532,7 +532,12 @@
             </div>
           </div>
           <!-- 5 -->
-          <div class="ins_box smoove" data-move-x="-200px" data-move-y="200px">
+          <div
+            id="lockPos"
+            class="ins_box smoove"
+            data-move-x="-200px"
+            data-move-y="200px"
+          >
             <!-- info左照片 -->
             <div class="left_img">
               <a
@@ -680,13 +685,8 @@
     </main>
     <footer>
       <div class="footer_section">
-        <div class="move-in">
-          <img
-            class="footer_img"
-            src="./img/001.png"
-            alt="drone"
-            width="670px"
-          />
+        <div id="movePic">
+          <img class="moveImg" src="./img/001.png" alt="drone" width="670px" />
         </div>
         <div class="footer_web_map">
           <ul class="web_map_item">
@@ -793,6 +793,39 @@
         // moveX: "150px",
         // moveY: "50px",
       });
+    </script>
+
+    <!-- move -->
+    <script>
+      let movePic = document.querySelector("#movePic");
+      let lockPos = document.querySelector("#lockPos");
+
+      // window.onscroll = function () {
+      //   myFunction();
+      // };
+
+      // function myFunction() {
+      //   if (
+      //     document.body.scrollTop > 1300 ||
+      //     document.documentElement.scrollTop > 1300
+      //   ) {
+      //     document.getElementById("test").className = "moveIn";
+      //   } else {
+      //     document.getElementById("test").className = "";
+      //   }
+      // }
+      window.addEventListener("scroll", checkMove);
+      checkMove();
+
+      function checkMove() {
+        console.log(window.scrollY); //852
+
+        if (window.scrollY > 900) {
+          document.querySelector("#movePic").classList.add("moveIn");
+        } else {
+          document.querySelector("#movePic").classList.remove("moveIn");
+        }
+      }
     </script>
   </body>
 </html>
