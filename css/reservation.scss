@@ -27,6 +27,10 @@ body {
       @include phone(){
         margin: auto;
       }
+
+      @include pad(){
+        margin: auto
+      }
       @include tittle();
       margin-left: -80%;
       padding: 10px;
@@ -80,6 +84,9 @@ body {
     @include phone() {
       width:370px;
     }
+    @include pad2(){
+      width: 550px;
+    }
   }
   .reserve_img img {
     width: 130px;
@@ -88,7 +95,10 @@ body {
     @include phone(){
       margin-top: -19px;
     }
+    @include pad2(){
+      margin-top:-18px ;
   }
+}
   .content hr {
     border: none;
     height: 1px;
@@ -117,7 +127,10 @@ body {
       font-size:$text_size-18px ;
       margin-top: -19px;
     }
+    @include pad2(){
+      margin-top:-20px ;
   }
+}
    hr{
       @include phone2() {
         display: none;
@@ -125,12 +138,18 @@ body {
       @include phone() {
         display: none;
       }
-    }
-
+      @include pad2(){
+        display: none;
+      }
+    
+  }
 
   p{
   @include phone() {
     display: none;
+}
+@include pad(){
+  display: none;
 }
 }
   }
