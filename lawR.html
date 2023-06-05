@@ -265,7 +265,10 @@
             </div>
             <div class="col" ontouchstart="this.classList.toggle('hover');">
               <div class="container">
-                <div class="front" style="background-image: url(#)">
+                <div
+                  class="front"
+                  style="background-image: url(./img/灰區.png)"
+                >
                   <div class="inner">
                     <p>灰區</p>
                   </div>
@@ -327,8 +330,14 @@
               但若操作2公斤以上，或是操作註冊於政府機關或法人單位的無人機，就需要操作證。
             </p>
           </div>
-          <img class="dif" src="./img/管理差異.png" alt="" />
-          <img class="oper" src="./img/操作證.png" alt="" />
+
+          <div id="forMoveIn">
+            <img class="dif" src="./img/管理差異.png" alt="" />
+          </div>
+
+          <div id="forMoveIn2">
+            <img class="oper" src="./img/操作證.png" alt="" />
+          </div>
         </div>
       </section>
 
@@ -338,58 +347,59 @@
       </div>
     </main>
     <footer>
-      <div class="footer_web_map">
-        <ul class="web_map_item">
-          <li class="web_map_title">空拍景點</li>
-          <a href="#">
-            <li>景點推薦</li>
-          </a>
-          <a href="./viewShare.html">
-            <li>景點分享</li>
-          </a>
-        </ul>
-        <ul class="web_map_item">
-          <li class="web_map_title">認識空拍機</li>
-          <a href="./droneInt.html">
-            <li>空拍機介紹</li>
-          </a>
-          <a href="./droneOperate.html">
-            <li>基礎操作</li>
-          </a>
-          <a href="./droneType.html">
-            <li>機型介紹</li>
-          </a>
-          <a href="./law.html">
-            <li>空拍法規</li>
-          </a>
-          <a href="./appCom.html">
-            <li>APP推薦</li>
-          </a>
-        </ul>
-        <ul class="web_map_item">
-          <a href="#">
-            <li class="web_map_title">預約專區</li>
-          </a>
-        </ul>
-        <ul class="web_map_item">
-          <a href="./news.html">
-            <li class="web_map_title">最新消息</li>
-          </a>
-        </ul>
-        <ul class="web_map_item">
-          <li class="web_map_title">登入會員</li>
-          <a href="./login.html">
-            <li>登入頁面</li>
-          </a>
-        </ul>
-      </div>
-      <div class="logo">
-        <div>
-          <a href="index.html">
-            <img src="./img/logo_w.png" alt="logo" width="250px" />
-          </a>
+      <div class="footer_section">
+        <img class="footer_img" src="./img/001.png" alt="drone" width="700px" />
+        <div class="footer_web_map">
+          <ul class="web_map_item">
+            <li class="web_map_title">空拍景點</li>
+            <a href="./viewCommend.html">
+              <li>景點推薦</li>
+            </a>
+            <a href="./viewShare.html">
+              <li>景點分享</li>
+            </a>
+          </ul>
+          <ul class="web_map_item">
+            <li class="web_map_title">認識空拍機</li>
+            <a href="./droneInt.html">
+              <li>空拍機介紹</li>
+            </a>
+            <a href="./droneOperate.html">
+              <li>基礎操作</li>
+            </a>
+            <a href="./droneType.html">
+              <li>機型介紹</li>
+            </a>
+            <a href="./lawR.html">
+              <li>空拍法規</li>
+            </a>
+            <a href="./appCom.html">
+              <li>APP推薦</li>
+            </a>
+          </ul>
+          <ul class="web_map_item">
+            <a href="./reservation.html">
+              <li class="web_map_title">預約專區</li>
+            </a>
+          </ul>
+          <ul class="web_map_item">
+            <a href="./news.html">
+              <li class="web_map_title">最新消息</li>
+            </a>
+          </ul>
+          <ul class="web_map_item">
+            <li class="web_map_title">登入會員</li>
+            <a href="./login.html">
+              <li>登入頁面</li>
+            </a>
+          </ul>
         </div>
-        <div class="copyright">copyright © TravelDrone 版權所有</div>
+      </div>
+      <div class="copyright_section">
+        <div>copyright © TravelDrone 版權所有</div>
+        <a href="index.html" class="footer_logo">
+          <img src="./img/logo_w.png" alt="logo" width="150px" />
+        </a>
       </div>
     </footer>
 
@@ -435,6 +445,32 @@
         }
       };
       // 漢堡結束
+    </script>
+
+    <!-- slide -->
+    <script>
+      let licH = document.querySelector(".license_t");
+      let dif = document.querySelector(".dif");
+      let oper = document.querySelector(".oper");
+
+      window.addEventListener("scroll", checkMove);
+      checkMove();
+
+      function checkMove() {
+        // 指定位置
+        let lic_Top = licH.getBoundingClientRect().top;
+        // console.log(lic_Top);
+
+        if (lic_Top <= 620) {
+          // licH.style.color = "#289DD2"; //測試有沒有指定位置
+          document.querySelector(".dif").classList.add("moveIn1");
+          document.querySelector(".oper").classList.add("moveIn2");
+        } else {
+          // licH.style.color = "";
+          document.querySelector(".dif").classList.remove("moveIn1");
+          document.querySelector(".oper").classList.remove("moveIn2");
+        }
+      }
     </script>
   </body>
 </html>
