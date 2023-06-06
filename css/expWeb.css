@@ -396,7 +396,7 @@ body {
 
 #form {
   width: 100%;
-  height: 1034px;
+  height: 100vh;
   background-image: url(../img/exppic.jpg);
   background-size: cover;
   background-position: center;
@@ -405,9 +405,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 576px) {
+  #form {
+    height: 150vh;
+  }
+}
 #form .form_outs {
   width: 1000px;
-  height: 808px;
+  height: 830px;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
@@ -417,9 +422,15 @@ body {
           backdrop-filter: blur(4px);
   background-color: hsla(255, 100%, 100%, 0.6);
 }
+@media (max-width: 576px) {
+  #form .form_outs {
+    height: 100%;
+    border-radius: 0%;
+  }
+}
 #form .form_outs .content {
   height: 85%;
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
@@ -427,6 +438,12 @@ body {
 #form .form_outs .content li {
   font-size: 18px;
   color: #545454;
+}
+@media (max-width: 576px) {
+  #form .form_outs .content {
+    flex-direction: column;
+    font-size: 16px;
+  }
 }
 #form .form_outs .content .left {
   flex: 2;
@@ -441,6 +458,14 @@ body {
   z-index: 1;
   position: relative;
   font-size: 32px;
+}
+@media (max-width: 576px) {
+  #form .form_outs .content .left .form_title .tittle {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+  }
 }
 #form .form_outs .content .left .form_title .tittle div {
   font-weight: 700;
@@ -460,9 +485,20 @@ body {
   margin-top: -5rem;
   margin-left: 1rem;
 }
+@media (max-width: 576px) {
+  #form .form_outs .content .left .content_up {
+    font-size: 14px;
+    line-height: 1.2rem;
+  }
+}
 #form .form_outs .content .left .content_down {
   line-height: 1rem;
   margin-left: 1rem;
+}
+@media (max-width: 576px) {
+  #form .form_outs .content .left .content_down {
+    font-size: 16px;
+  }
 }
 #form .form_outs .content .signup {
   flex: 1;
@@ -474,10 +510,23 @@ body {
 #form .form_outs .content .signup P {
   font-size: 28px;
 }
+@media (max-width: 576px) {
+  #form .form_outs .content .signup P {
+    font-size: 24px;
+  }
+}
 #form .form_outs .content .signup #signup_form {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+@media (max-width: 576px) {
+  #form .form_outs .content .signup #signup_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
 }
 #form .form_outs .content .signup #signup_form input {
   border-radius: 15px;

@@ -13,6 +13,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include phone() {
+      width: 90%;
+      height: 1800px;
+  }
 
     .form_outs {
         width: 1000px;
@@ -23,6 +27,9 @@ body {
         justify-content: center;
         align-items: center;
         background-color: hsla(255, 255, 255, 0.6);
+        @include phone() {
+          height: 1600px;
+      }
        
     }
     //表單內容
@@ -36,6 +43,10 @@ body {
           font-size: $text_size-18px;
           color: $text_color_g;
         }
+        @include phone() {
+          flex-direction: column;
+          font-size: 16px;
+        }
         //左表單
         .left {
           flex: 2;
@@ -47,6 +58,12 @@ body {
             // margin-top: -20%;
             .tittle {
               color: $text_color_g;
+              @include phone() {
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                margin-top: -100px;
+            }
               @include tittle();
               font-size: $text_size-32px;
               .tittle_ball {
@@ -92,7 +109,7 @@ body {
             margin-top: 0.5rem;
             letter-spacing: 2px;
             font-size: $text_size-16px;
-            color: #325ac9;
+            color: $text_color_g;
             box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
               7px 7px 20px 0px rgba(0, 0, 0, 0.1),
               4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -107,7 +124,7 @@ body {
             margin-top: 0.5rem;
             letter-spacing: 2px;
             font-size: $text_size-16px;
-            color: #325ac9;
+            color: #314dba;
             box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
               7px 7px 20px 0px rgba(0, 0, 0, 0.1),
               4px 4px 5px 0px rgba(0, 0, 0, 0.1);

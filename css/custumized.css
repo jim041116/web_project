@@ -404,6 +404,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 576px) {
+  #form {
+    width: 90%;
+    height: 1800px;
+  }
+}
 #form .form_outs {
   width: 1000px;
   height: 1000px;
@@ -413,6 +419,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsla(255, 100%, 100%, 0.6);
+}
+@media (max-width: 576px) {
+  #form .form_outs {
+    height: 1600px;
+  }
 }
 #form .content {
   height: 85%;
@@ -424,6 +435,12 @@ body {
 #form .content li {
   font-size: 18px;
   color: #545454;
+}
+@media (max-width: 576px) {
+  #form .content {
+    flex-direction: column;
+    font-size: 16px;
+  }
 }
 #form .content .left {
   flex: 2;
@@ -438,6 +455,14 @@ body {
   z-index: 1;
   position: relative;
   font-size: 32px;
+}
+@media (max-width: 576px) {
+  #form .content .left .form_title .tittle {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+  }
 }
 #form .content .left .form_title .tittle div {
   font-weight: 700;
@@ -490,7 +515,7 @@ body {
   margin-top: 0.5rem;
   letter-spacing: 2px;
   font-size: 16px;
-  color: #325ac9;
+  color: #545454;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .signup #signup_form textarea {
@@ -504,7 +529,7 @@ body {
   margin-top: 0.5rem;
   letter-spacing: 2px;
   font-size: 16px;
-  color: #325ac9;
+  color: #314dba;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 .signup #signup_form label {

@@ -7,7 +7,7 @@ body {
 
 #form {
   width: 100%;
-  height: 1034px;
+  height: 100vh;
   background-image: url(../img/exppic.jpg);
   background-size: cover;
   background-position: center;
@@ -16,9 +16,13 @@ body {
   justify-content: center;
   align-items: center;
 
+  @include phone() {
+    height:150vh ;
+  }
+
   .form_outs {
     width: 1000px;
-    height: 808px;
+    height: 830px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -26,17 +30,27 @@ body {
     align-items: center;
     backdrop-filter: blur(4px);
     background-color: hsla(255, 255, 255, 0.6);
+   
+    @include phone() {
+      height:100% ;
+      border-radius: 0%;
+    }
 
     //表單內容
     .content {
       height: 85%;
-      width: 80%;
+      width: 90%;
       display: flex;
       justify-content: space-between;
       p,
       li {
         font-size: $text_size-18px;
         color: $text_color_g;
+      }
+
+      @include phone() {
+        flex-direction: column;
+        font-size: 16px;
       }
       //左表單
       .left {
@@ -49,6 +63,12 @@ body {
           // margin-top: -20%;
           .tittle {
             color: $text_color_g;
+            @include phone() {
+              font-size: 24px;
+              display: flex;
+              align-items: center;
+              margin-top: -100px;
+          }
             @include tittle();
             font-size: $text_size-32px;
             .tittle_ball {
@@ -59,12 +79,20 @@ body {
         .content_up {
           margin-top: -5rem;
           margin-left: 1rem;
-        }
+          @include phone() {
+            font-size: 14px;
+            line-height: 1.2rem;
+          }
+    }
         .content_down {
           line-height: 1rem;
           margin-left: 1rem;
+          @include phone() {
+            font-size: 16px;
+          }
         }
       }
+    
       //右表單
       .signup {
         flex: 1;
@@ -74,11 +102,21 @@ body {
         align-items: center;
         P {
           font-size: 28px;
+          @include phone() {
+            font-size: 24px; 
+          }
         }
         #signup_form {
           display: flex;
           flex-direction: column;
           width: 100%;
+          @include phone() {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+
+          }
           input {
             border-radius: 15px;
             border: none;
@@ -93,11 +131,13 @@ body {
             box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
               7px 7px 20px 0px rgba(0, 0, 0, 0.1),
               4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+              
           }
           label {
             font-size: $text_size-18px;
             color: $text_color_g;
             margin-top: 2rem;
+            
 
             /*text-shadow 可以刪XD*/
             // text-shadow: 0 0 0.2em #289dd2, 0 0 0.2em #289dd2, 0 0 0.2em #289dd2;
