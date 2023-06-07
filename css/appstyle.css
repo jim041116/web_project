@@ -135,6 +135,7 @@ button {
   background-image: linear-gradient(rgba(255, 252, 252, 0), rgba(0, 0, 0, 1.2));
 }
 .app-section .item-desc {
+  text-align: justify; /**/
   padding: 0 24px 12px;
   color: #fff;
   position: relative;
