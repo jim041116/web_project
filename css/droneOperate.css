@@ -438,6 +438,7 @@ main section .banner .title {
 main section .banner .title h1,
 main section .banner .title p {
   color: #ffffff;
+  font-weight: 700;
   line-height: 1rem;
 }
 main section .banner .title h1 {
@@ -453,7 +454,7 @@ main section .banner .title p {
 }
 @media (max-width: 576px) {
   main section .banner .title p {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 main section .banner .text_word {

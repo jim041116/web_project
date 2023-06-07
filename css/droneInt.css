@@ -642,4 +642,10 @@ section {
   #drone_use .drone_use_text p {
     top: 30%;
   }
+}
+
+@media (max-width: 576px) {
+  footer {
+    margin-top: 5rem;
+  }
 }/*# sourceMappingURL=droneInt.css.map */

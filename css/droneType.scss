@@ -147,7 +147,7 @@ section {
     }
 
     .novice_btn {
-      background-image: linear-gradient(45deg, #193ee0  0%, #35bcfa 100%);
+      background-image: linear-gradient(45deg, #193ee0 0%, #35bcfa 100%);
     }
   }
 
@@ -387,5 +387,6 @@ section {
 }
 
 footer {
-  margin-top: 450px;
+  // margin-top: 450px;
+  transition: all .5s;
 }

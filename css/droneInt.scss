@@ -234,3 +234,9 @@ section {
         }
     }
 }
+
+footer {
+    @include phone() {
+        margin-top: 5rem;
+    }
+}
