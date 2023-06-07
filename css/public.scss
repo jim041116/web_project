@@ -407,6 +407,10 @@ footer {
       .moveImg {
         animation: fly-move 3s infinite alternate;
         margin: 0;
+
+        @include phone(){
+          width: 300px;
+        }
       }
 
     

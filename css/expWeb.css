@@ -284,6 +284,11 @@ footer .footer_section .moveImg {
   animation: fly-move 3s infinite alternate;
   margin: 0;
 }
+@media (max-width: 576px) {
+  footer .footer_section .moveImg {
+    width: 300px;
+  }
+}
 @keyframes fly-move {
   0% {
     transform: rotate(0deg) translateX(10px) rotate(0deg);
@@ -418,8 +423,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   background-color: hsla(255, 100%, 100%, 0.6);
 }
 @media (max-width: 576px) {
@@ -532,8 +536,7 @@ body {
   border-radius: 15px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   height: 35px;
   padding-left: 1rem;
   margin-top: 1rem;

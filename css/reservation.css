@@ -283,6 +283,11 @@ footer .footer_section .moveImg {
   animation: fly-move 3s infinite alternate;
   margin: 0;
 }
+@media (max-width: 576px) {
+  footer .footer_section .moveImg {
+    width: 300px;
+  }
+}
 @keyframes fly-move {
   0% {
     transform: rotate(0deg) translateX(10px) rotate(0deg);
@@ -593,8 +598,7 @@ body {
 #custumized .custumized_form {
   border-radius: 15px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   width: 50%;
 }
 @media (max-width: 576px) {

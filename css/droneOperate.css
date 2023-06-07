@@ -284,6 +284,11 @@ footer .footer_section .moveImg {
   animation: fly-move 3s infinite alternate;
   margin: 0;
 }
+@media (max-width: 576px) {
+  footer .footer_section .moveImg {
+    width: 300px;
+  }
+}
 @keyframes fly-move {
   0% {
     transform: rotate(0deg) translateX(10px) rotate(0deg);
