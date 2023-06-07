@@ -528,6 +528,9 @@ main section .operate .operate_box .operate_info {
   border-bottom-right-radius: 15px;
   background-image: linear-gradient(to bottom, rgba(255, 254, 254, 0.836), rgba(184, 184, 236, 0.637));
 }
+main section .operate .operate_box .operate_info h1, main section .operate .operate_box .operate_info p {
+  color: #545454;
+}
 main section .operate .operate_box .operate_info h1 {
   font-size: 28px;
   margin: 1rem auto 0;
@@ -610,7 +613,7 @@ main section .box2 .contain .video_title .tittle .tittle_ball {
     height: 300px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 375px) {
   main section .box1 .contain iframe,
   main section .box2 .contain iframe {
     width: 360px;
