@@ -1,0 +1,196 @@
+@import "./public.scss";
+
+p,
+h2 {
+  color: $text_color_g;
+}
+$raduis: 15px;
+
+#allPartCom {
+  width: 60%;
+  margin: 3rem auto;
+  @include phone() {
+    width: 90%;
+  }
+  .comTitle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    h2 {
+      font-size: $text_size-40px;
+      width: 200px;
+      text-align: center;
+      position: relative;
+      @include phone() {
+        font-size: $text_size-32px;
+      }
+    }
+    h2::before {
+      content: "";
+      display: block;
+      height: 30px;
+      width: 30px;
+      background-color: #289cd27a;
+      border-radius: 50%;
+
+      position: absolute;
+      top: -2px;
+      left: -3px;
+      z-index: -1;
+      @include phone() {
+        left: 5px;
+      }
+    }
+    h2::after {
+      content: "";
+      display: block;
+      height: 20px;
+      width: 20px;
+      background-color: #289cd279;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 35px;
+      right: 0px;
+      z-index: -1;
+      @include phone() {
+        right: 10px;
+        top: 32px;
+      }
+    }
+  }
+  // 圖片1
+  .pic_text1 {
+    border: 3px solid gray;
+    display: flex;
+    @include phone() {
+      height: 43vh;
+      flex-direction: column;
+    }
+    @include phone2() {
+      height: 53vh;
+    }
+    .com_pic {
+      margin: auto;
+      width: 30%;
+      height: 30vh;
+      background-image: url(../img/南子.jpg);
+      background-position: center;
+      background-size: cover;
+      object-fit: fill;
+      flex: 1;
+      border-radius: $raduis;
+      @include pad() {
+        height: 20vh;
+        flex: 1.4;
+      }
+      @include phone() {
+        width: 80%;
+      }
+    }
+    p {
+      flex: 1.2;
+      padding: 2rem 1rem;
+      text-align: justify;
+      text-indent: 1em;
+      @include phone() {
+        flex: 0;
+        padding: 1rem;
+      }
+    }
+  }
+  // 圖片2
+  .pic_text2 {
+    border: 3px solid gray;
+    display: flex;
+    @include phone() {
+      height: 43vh;
+      flex-direction: column-reverse;
+    }
+    @include phone2() {
+      height: 53vh;
+    }
+    .com_pic {
+      margin: auto;
+      width: 30%;
+      height: 40vh;
+      background-image: url(../img/南子.jpg);
+      background-position: center;
+      background-size: cover;
+      flex: 0.8;
+      border-radius: $raduis;
+      @include phone() {
+        width: 80%;
+      }
+      @include pad() {
+        height: 22vh;
+        flex: 1.2;
+      }
+    }
+    p {
+      flex: 1.2;
+      padding: 2rem 1rem;
+      text-align: justify;
+      text-indent: 1em;
+      @include phone() {
+        flex: 0;
+        padding: 1rem;
+      }
+    }
+  }
+  // 圖片3
+  .pic_text3 {
+    border: 3px solid gray;
+    display: flex;
+    flex-direction: column;
+    @include pad() {
+      height: 50vh;
+    }
+    @include phone() {
+      flex-direction: column-reverse;
+      height: 43vh;
+    }
+    @include phone2() {
+      height: 53vh;
+    }
+    .com_pic {
+      margin: auto;
+      width: 70%;
+      height: 40vh;
+      background-image: url(../img/南子.jpg);
+      background-position: center;
+      background-size: cover;
+      border-radius: $raduis;
+      @include pad() {
+        width: 90%;
+      }
+      @include phone() {
+        width: 80%;
+      }
+    }
+    p {
+      padding: 2rem 1rem;
+      text-align: justify;
+      text-indent: 1em;
+      @include phone() {
+        flex: 0;
+        padding: 1rem;
+      }
+    }
+  }
+
+  //返回鈕
+  .goBack {
+    width: 100px;
+    height: 40px;
+    background-color: #289dd2;
+    text-align: center;
+    border-radius: 15px;
+    margin: 2rem auto;
+    a {
+      text-decoration: none;
+      color: #fff;
+      line-height: 42px;
+    }
+  }
+}
