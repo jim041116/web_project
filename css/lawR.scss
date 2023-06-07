@@ -55,6 +55,7 @@ section {
       h1,
       p {
         color: $text_color_w;
+        font-weight: $text_weight-b;
         @include pad() {
           color: $text_color_g;
         }

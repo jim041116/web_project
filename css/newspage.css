@@ -574,4 +574,10 @@ section .to_news a {
 section .to_news a div {
   color: #ffffff;
   line-height: 40px;
+}
+
+@media (max-width: 576px) {
+  footer {
+    margin-top: 5rem;
+  }
 }/*# sourceMappingURL=newspage.css.map */

@@ -429,6 +429,7 @@ section .banner .law_title {
 section .banner .law_title h1,
 section .banner .law_title p {
   color: #ffffff;
+  font-weight: 700;
 }
 @media (max-width: 992px) {
   section .banner .law_title h1,

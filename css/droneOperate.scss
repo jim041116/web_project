@@ -43,6 +43,7 @@ main {
         h1,
         p {
           color: $text_color_w;
+          font-weight: $text_weight-b;
           line-height: 1rem;
         }
         h1 {
@@ -54,7 +55,7 @@ main {
         p {
           font-size: $text_size-32px;
           @include phone() {
-            font-size: 16px;
+            font-size: 18px;
           }
         }
       }

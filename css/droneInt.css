@@ -642,4 +642,37 @@ section {
   #drone_use .drone_use_text p {
     top: 30%;
   }
+}
+
+footer .moveIn {
+  animation: moveIn 4s;
+  animation-iteration-count: 1;
+}
+footer .moveImg {
+  animation: fly-move 3s infinite alternate;
+  margin: 0;
+}
+@media (max-width: 576px) {
+  footer .moveImg {
+    width: 300px;
+  }
+}
+@keyframes fly-move {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+@keyframes moveIn {
+  0% {
+    transform: translate(-500px, -500px);
+  }
+  50% {
+    transform: translate(-300px, -350px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }/*# sourceMappingURL=droneInt.css.map */

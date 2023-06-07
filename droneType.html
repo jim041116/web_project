@@ -399,7 +399,9 @@
     </section>
     <footer>
         <div class="footer_section">
-            <img class="footer_img" src="./img/001.png" alt="drone" width="700px">
+            <div id="movePic">
+                <img class="moveImg" src="./img/001.png" alt="drone" width="670px" />
+            </div>
             <div class="footer_web_map">
                 <ul class="web_map_item">
                     <li class="web_map_title">空拍景點</li>
@@ -444,7 +446,7 @@
                         <li>登入頁面</li>
                     </a>
                 </ul>
-            </div>            
+            </div>
         </div>
         <div class="copyright_section">
             <div>copyright © TravelDrone 版權所有</div>
@@ -521,16 +523,19 @@
             }
         };
 
+        let footer = document.querySelector('footer');
         let noviceItem4 = document.querySelector('.item_4');
         let mini3ProMore = document.getElementById('mini3ProMore');
         let mini3ProText = document.getElementById('mini3Pro_text');
         mini3ProMore.onclick = () => {
             if (mini3ProMore.innerHTML == '點我看更多　▼') {
                 // noviceItem4.style.marginBottom = '450px';
+                footer.style.marginTop = '500px';
                 mini3ProText.style.transform = 'translateY(0px)';
                 mini3ProMore.innerHTML = '點我看更多　▲';
             } else {
                 // noviceItem4.style.marginBottom = '5rem';
+                footer.style.marginTop = '100px';
                 mini3ProText.style.transform = 'translateY(-450px)';
                 mini3ProMore.innerHTML = '點我看更多　▼';
             }
@@ -567,16 +572,19 @@
             }
         };
 
+
         let advancedItem3 = document.querySelector('.advanced_item_3');
         let mv3pMore = document.getElementById('mv3pMore');
         let mv3pText = document.getElementById('mv3p_text');
         mv3pMore.onclick = () => {
             if (mv3pMore.innerHTML == '點我看更多　▼') {
                 // noviceItem4.style.marginBottom = '450px';
+                footer.style.marginTop = '500px';
                 mv3pText.style.transform = 'translateY(0px)';
                 mv3pMore.innerHTML = '點我看更多　▲';
             } else {
                 // noviceItem4.style.marginBottom = '5rem';
+                footer.style.marginTop = '100px';
                 mv3pText.style.transform = 'translateY(-450px)';
                 mv3pMore.innerHTML = '點我看更多　▼';
             }
@@ -604,10 +612,12 @@
         avataMore.onclick = () => {
             if (avataMore.innerHTML == '點我看更多　▼') {
                 // noviceItem4.style.marginBottom = '450px';
+                footer.style.marginTop = '500px';
                 avataText.style.transform = 'translateY(0px)';
                 avataMore.innerHTML = '點我看更多　▲';
             } else {
                 // noviceItem4.style.marginBottom = '5rem';
+                footer.style.marginTop = '100px';
                 avataText.style.transform = 'translateY(-450px)';
                 avataMore.innerHTML = '點我看更多　▼';
             }
@@ -668,6 +678,40 @@
             }
         }
         // 漢堡結束
+
+        // 飛機動畫開始
+        let movePic = document.querySelector("#movePic");
+        let lockPos = document.querySelector("#lockPos");
+
+        window.addEventListener("scroll", checkMove);
+        checkMove();
+
+        function checkMove() {
+            console.log(window.scrollY); //852
+
+            if (window.scrollY > 1750) {
+                document.querySelector("#movePic").classList.add("moveIn");
+            } else {
+                document.querySelector("#movePic").classList.remove("moveIn");
+            }
+        }
+
+                // window.onscroll = function () {
+        //   myFunction();
+        // };
+
+        // function myFunction() {
+        //   if (
+        //     document.body.scrollTop > 1300 ||
+        //     document.documentElement.scrollTop > 1300
+        //   ) {
+        //     document.getElementById("test").className = "moveIn";
+        //   } else {
+        //     document.getElementById("test").className = "";
+        //   }
+        // }
+
+        // 飛機動畫結束
 
     </script>
 </body>
