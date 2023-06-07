@@ -397,16 +397,18 @@ footer .copyright_section div {
 main {
   position: relative;
 }
-main img.fixed-image {
+main .bg-z {
+  background-image: url(../img/城市.jpg);
+  background-position: top center;
   position: fixed;
-  z-index: -99;
+  z-index: -5;
   width: 100%;
   min-height: 100vh;
   bottom: 0;
   left: 0;
 }
 main .mask {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -429,6 +431,7 @@ main section .banner .title {
   position: absolute;
   top: 7vh;
   left: 7%;
+  font-weight: text_weight-b;
 }
 @media (max-width: 576px) {
   main section .banner .title {
@@ -467,7 +470,6 @@ main section .banner .text_word {
   top: 19rem;
   left: 10%;
   background-image: url(../img/南子.jpg);
-  opacity: 0.9;
   background-size: cover;
   background-position: center;
 }
@@ -528,16 +530,11 @@ main section .operate .operate_box .operate_info {
 }
 main section .operate .operate_box .operate_info h1 {
   font-size: 28px;
-  margin: 1rem auto;
-}
-@media (max-width: 576px) {
-  main section .operate .operate_box .operate_info h1 {
-    margin-left: 3%;
-  }
+  margin: 1rem auto 0;
 }
 main section .operate .operate_box .operate_info p {
-  padding: 2.2rem;
   text-align: justify;
+  padding: 0 2rem;
   font-size: 16px;
 }
 @media (max-width: 576px) {
@@ -546,142 +543,83 @@ main section .operate .operate_box .operate_info p {
     margin: 20px auto;
   }
 }
-main section {
+main section .box1,
+main section .box2 {
+  display: flex;
+  justify-content: center;
+}
+main section .box1 .contain,
+main section .box2 .contain {
+  padding: 4rem 0;
+}
+main section .box1 .contain .video_title .tittle,
+main section .box2 .contain .video_title .tittle {
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
   position: relative;
 }
-main section .video {
-  display: flex;
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 576px) {
+  main section .box1 .contain .video_title .tittle,
+  main section .box2 .contain .video_title .tittle {
+    font-size: 32px;
+  }
 }
-main section .video iframe {
-  margin-top: 5rem;
+main section .box1 .contain .video_title .tittle div,
+main section .box2 .contain .video_title .tittle div {
+  font-weight: 700;
 }
-@media (max-width: 1440px) {
-  main section .video iframe {
-    width: 900px;
+main section .box1 .contain .video_title .tittle .tittle_ball,
+main section .box2 .contain .video_title .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289dd2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  main section .box1 .contain .video_title .tittle .tittle_ball,
+  main section .box2 .contain .video_title .tittle .tittle_ball {
+    width: 25px;
+    height: 25px;
+    left: -10px;
+    top: 5px;
+  }
+}
+@media (max-width: 992px) {
+  main section .box1 .contain iframe,
+  main section .box2 .contain iframe {
+    width: 780px;
   }
 }
 @media (max-width: 768px) {
-  main section .video iframe {
+  main section .box1 .contain iframe,
+  main section .box2 .contain iframe {
     width: 700px;
   }
 }
 @media (max-width: 576px) {
-  main section .video iframe {
-    width: 500px;
-    height: 45vh;
+  main section .box1 .contain iframe,
+  main section .box2 .contain iframe {
+    width: 380px;
+    height: 300px;
+  }
+}
+@media (max-width: 390px) {
+  main section .box1 .contain iframe,
+  main section .box2 .contain iframe {
+    width: 360px;
   }
 }
 main section .box1 {
-  margin-top: 40rem;
   background-image: url(../img/南子.jpg);
-  border-top: 7px solid rgba(255, 255, 255, 0.4745098039);
-}
-main section .box1 .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  color: #ffffff;
-  position: absolute;
-  top: 10vh;
-}
-@media (max-width: 992px) {
-  main section .box1 .tittle {
-    margin-top: -2rem;
-  }
-}
-@media (max-width: 768px) {
-  main section .box1 .tittle {
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  main section .box1 .tittle {
-    margin-top: 2rem;
-  }
-}
-main section .box1 .tittle div {
-  font-weight: 700;
-}
-@media (max-width: 576px) {
-  main section .box1 .tittle {
-    font-size: 18px;
-  }
-}
-main section .box1 .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289dd2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
-}
-@media (max-width: 576px) {
-  main section .box1 .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
 }
 main section .box2 {
+  margin-top: 40rem;
   background-image: url(../img/太魯閣.jpg);
-  border-bottom: 7px solid rgba(255, 255, 255, 0.4745098039);
-}
-main section .box2 .tittle {
-  font-size: 40px;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  color: #ffffff;
-  position: absolute;
-  top: 90vh;
-}
-@media (max-width: 992px) {
-  main section .box2 .tittle {
-    margin-top: -2rem;
-  }
-}
-@media (max-width: 768px) {
-  main section .box2 .tittle {
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 576px) {
-  main section .box2 .tittle {
-    margin-top: 2rem;
-  }
-}
-main section .box2 .tittle div {
-  font-weight: 700;
-}
-@media (max-width: 576px) {
-  main section .box2 .tittle {
-    font-size: 18px;
-  }
-}
-main section .box2 .tittle .tittle_ball {
-  width: 35px;
-  height: 35px;
-  background-color: #289dd2;
-  border-radius: 30px;
-  opacity: 0.8;
-  position: absolute;
-  top: -3px;
-  left: -15px;
-  z-index: -1;
-}
-@media (max-width: 576px) {
-  main section .box2 .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
 }/*# sourceMappingURL=droneOperate.css.map */
