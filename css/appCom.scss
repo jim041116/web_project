@@ -1,9 +1,8 @@
 @import "./public.scss";
-
+$raduis: 15px;
 header {
   flex-wrap: nowrap;
 }
-
 body {
   background-color: $web_bg;
 }
@@ -28,7 +27,7 @@ main {
       }
       @include phone() {
         background-image: url(../img/badouzi.jpg);
-        border-radius: 15px;
+        border-radius: $raduis;
         background-position: center;
         height: 330px;
       }
@@ -38,6 +37,7 @@ main {
       text-align: center;
       background-color: hsla(0, 0, 0, 0.9);
       border-bottom-left-radius: 150px;
+      font-weight: $text_weight-b;
       @include pad() {
         background-color: #545454a2;
       }

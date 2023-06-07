@@ -438,6 +438,7 @@ main .banner .text {
   text-align: center;
   background-color: hsla(0, 0%, 0%, 0.9);
   border-bottom-left-radius: 150px;
+  font-weight: 700;
 }
 @media (max-width: 992px) {
   main .banner .text {
