@@ -25,7 +25,7 @@ $raduis: 15px;
   padding: 1rem 0.5rem;
   text-align: left;
   color: $text_color_w;
-  border-radius: 15px;
+  border-radius: $raduis;
   margin-left: 5rem;
 }
 section {
@@ -43,6 +43,7 @@ section {
     .law_title {
       padding: 6rem 7rem;
       line-height: 2rem;
+      font-weight: $text_weight-b;
       @include pc() {
         padding: 9% 0 0 3.5%;
       }
@@ -138,6 +139,7 @@ section {
     justify-content: center;
   }
   .tittle {
+    color: $text_color_g;
     @include tittle();
     font-size: $text_size-40px;
     @include phone() {
@@ -350,6 +352,7 @@ section {
       }
       .tittle {
         margin: 0 auto;
+        color: $text_color_g;
         @include tittle();
         font-size: $text_size-40px;
         @include phone() {
@@ -463,6 +466,7 @@ section {
     margin-left: 18%;
   }
   .tittle {
+    color: $text_color_g;
     @include tittle();
     @include phone() {
       font-size: $text_size-32px;
@@ -570,6 +574,7 @@ section {
 .license_t {
   width: 65%;
   margin: 7rem auto 0;
+  color: $text_color_g;
   @include pad() {
     margin-top: 17%;
   }
