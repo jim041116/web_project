@@ -20,12 +20,20 @@ body {
     background-color: $text_color_w;
     opacity: 0.9;
     border-radius: 50px;
+    @include phone() {
+      width: 100%;
+      height: 60vh;
+      border-radius: 0;
+    }
     .form_title {
       margin: 3rem auto;
       display: flex;
       justify-content: center;
       .tittle {
         color: $text_color_g;
+        @include phone {
+          font-size: $text_size-28px;
+        }
         @include tittle();
         font-size: $text_size-32px;
       }

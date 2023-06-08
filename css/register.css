@@ -416,6 +416,13 @@ body {
   border-radius: 40px;
   opacity: 0.9;
 }
+@media (max-width: 576px) {
+  #register_member .form_outs {
+    width: 100%;
+    border-radius: 0;
+    height: 560px;
+  }
+}
 #register_member .form_outs .form_title {
   margin-top: 2rem;
   display: flex;
@@ -428,6 +435,11 @@ body {
   z-index: 1;
   position: relative;
   font-size: 32px;
+}
+@media (max-width: 576px) {
+  #register_member .form_outs .form_title .tittle {
+    font-size: 28px;
+  }
 }
 #register_member .form_outs .form_title .tittle div {
   font-weight: 700;
@@ -491,12 +503,27 @@ body {
   color: #325ac9;
   padding-left: 1.5rem;
 }
+@media (max-width: 576px) {
+  #register_member .form_outs #register_form .name input,
+  #register_member .form_outs #register_form .sex_select input,
+  #register_member .form_outs #register_form .email input,
+  #register_member .form_outs #register_form .password input,
+  #register_member .form_outs #register_form .ch_pass input {
+    width: 65%;
+    font-size: 16px;
+  }
+}
 #register_member .form_outs #register_form .sex_select {
   align-items: center;
 }
 #register_member .form_outs #register_form .sex_select .radio {
   display: flex;
   align-items: center;
+}
+#register_member .form_outs #register_form .show {
+  position: flex;
+  text-align: center;
+  font-size: 14px;
 }
 #register_member .btn_login {
   display: block;

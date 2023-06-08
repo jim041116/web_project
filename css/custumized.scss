@@ -15,7 +15,10 @@ body {
   justify-content: center;
   align-items: center;
 
+
   @include phone() {
+    display: flex;
+    justify-content: center;
     width: 90%;
     height: 1800px;
   }
@@ -32,7 +35,8 @@ body {
     margin-top: 10rem;
 
     @include phone() {
-      height: 1600px;
+      height: 1700px;
+     margin-left:2.5rem;
     }
 
   }
@@ -62,6 +66,11 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    
+      @include pad(){
+        margin-right: 3rem;
+        margin-top: -1rem;
+      }
 
       //預約體驗title
       .form_title {
@@ -69,16 +78,20 @@ body {
         // margin-top: -20%;
         .tittle {
           color: $text_color_g;
-
+          @include pad(){
+            font-size: 24px;
+          }
           @include phone() {
             font-size: 24px;
             display: flex;
             align-items: center;
             margin-top: -100px;
           }
+         
 
           @include tittle();
           font-size: $text_size-32px;
+          margin-top: -2rem;
 
           .tittle_ball {
             @include title_ball();
@@ -111,6 +124,10 @@ body {
     font-size: $text_size-28px;
     color: $text_color_g;
     font: weight 3px;
+    @include phone() {
+      font-size: 24px;
+      margin-top: 10px;
+    }
   }
 
   #signup_form {

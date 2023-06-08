@@ -4,6 +4,7 @@ body {
   width: 100%;
   height: 100vh;
 }
+
 #forget_pw {
   width: 100%;
   height: 82.5vh;
@@ -13,24 +14,42 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+
+
   .form_outs {
-    width: 415px;
+    width: 390px;
     height: 390px;
     background-color: $text_color_w;
     border-radius: 50px;
     // border: 5px solid blue;
     opacity: 0.9;
+
+    @include phone() {
+      width: 100%;
+      height: 60vh;
+      border-radius: 0;
+    }
+
     .form_title {
       margin: 1.5rem;
       display: flex;
       justify-content: center;
+
       .tittle {
         color: $text_color_g;
+
+        @include phone {
+          font-size: $text_size-28px;
+        }
+
         @include tittle();
         font-size: $text_size-32px;
+
         .move {
           display: inline-flex;
         }
+
         .tittle_ball {
           @include title_ball();
           animation: ballmove 2.8s linear;
@@ -46,6 +65,7 @@ body {
       // border: 1px solid red;
       width: 70%;
       margin: 2rem auto;
+
       .br_mail,
       .br_pass,
       .br_chepass {
@@ -53,11 +73,13 @@ body {
         display: flex;
         justify-content: space-between;
         margin: 2rem 0;
+
         label {
           font-size: $text_size-18px;
           color: $text_color_g;
           // border: 2px solid red;
         }
+
         input {
           border-radius: 40px;
           border: none;
@@ -81,6 +103,7 @@ body {
       background-color: #289dd2;
       color: white;
       transition: 0.3s ease-in-out;
+
       &:hover {
         transform: translateY(-5px);
         box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
@@ -99,6 +122,7 @@ footer {
   height: 0;
   display: flex;
   align-items: center;
+
   p {
     font-weight: 500;
     text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
@@ -107,34 +131,43 @@ footer {
   .footer_section {
     display: none;
   }
+
   .copyright_section {
     display: none;
   }
 }
+
 @keyframes ballmove {
   0% {
     transform: translateY(0px);
   }
+
   15% {
     transform: translate(3px, 32px);
   }
+
   25% {
     transform: translate(15px, 6px);
   }
+
   40% {
     transform: translate(20px, 32px);
   }
+
   55% {
     transform: translate(28px, 15px);
   }
+
   61% {
     transform: translate(34px, 32px);
     visibility: hidden;
   }
+
   74% {
     transform: translateY(0px);
     visibility: hidden;
   }
+
   100% {
     visibility: visible;
   }

@@ -17,7 +17,7 @@ body {
   align-items: center;
 
   @include phone() {
-    height:150vh ;
+    height:160vh ;
   }
 
   .form_outs {
@@ -65,9 +65,7 @@ body {
             color: $text_color_g;
             @include phone() {
               font-size: 24px;
-              display: flex;
-              align-items: center;
-              margin-top: -100px;
+              margin-top: -80px;
           }
             @include tittle();
             font-size: $text_size-32px;
@@ -77,18 +75,24 @@ body {
           }
         }
         .content_up {
-          margin-top: -5rem;
+          margin-top: -2rem;
           margin-left: 1rem;
           @include phone() {
             font-size: 14px;
             line-height: 1.2rem;
           }
+          @include pad(){
+            margin-right: 2.5rem;
+          }
     }
         .content_down {
-          line-height: 1rem;
           margin-left: 1rem;
           @include phone() {
             font-size: 16px;
+            line-height: 1.2rem;
+          }
+          @include pad(){
+            margin-right: 2.5rem;
           }
         }
       }

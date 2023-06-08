@@ -410,11 +410,18 @@ body {
   align-items: center;
 }
 #forget_pw .form_outs {
-  width: 415px;
+  width: 390px;
   height: 390px;
   background-color: #ffffff;
   border-radius: 50px;
   opacity: 0.9;
+}
+@media (max-width: 576px) {
+  #forget_pw .form_outs {
+    width: 100%;
+    height: 60vh;
+    border-radius: 0;
+  }
 }
 #forget_pw .form_outs .form_title {
   margin: 1.5rem;
@@ -428,6 +435,11 @@ body {
   z-index: 1;
   position: relative;
   font-size: 32px;
+}
+@media (max-width: 576px) {
+  #forget_pw .form_outs .form_title .tittle {
+    font-size: 28px;
+  }
 }
 #forget_pw .form_outs .form_title .tittle div {
   font-weight: 700;

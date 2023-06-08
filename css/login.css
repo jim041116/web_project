@@ -416,6 +416,13 @@ body {
   opacity: 0.9;
   border-radius: 50px;
 }
+@media (max-width: 576px) {
+  #login .form_outs {
+    width: 100%;
+    height: 60vh;
+    border-radius: 0;
+  }
+}
 #login .form_outs .form_title {
   margin: 3rem auto;
   display: flex;
@@ -428,6 +435,11 @@ body {
   z-index: 1;
   position: relative;
   font-size: 32px;
+}
+@media (max-width: 576px) {
+  #login .form_outs .form_title .tittle {
+    font-size: 28px;
+  }
 }
 #login .form_outs .form_title .tittle div {
   font-weight: 700;

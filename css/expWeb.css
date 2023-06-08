@@ -412,7 +412,7 @@ body {
 }
 @media (max-width: 576px) {
   #form {
-    height: 150vh;
+    height: 160vh;
   }
 }
 #form .form_outs {
@@ -467,9 +467,7 @@ body {
 @media (max-width: 576px) {
   #form .form_outs .content .left .form_title .tittle {
     font-size: 24px;
-    display: flex;
-    align-items: center;
-    margin-top: -100px;
+    margin-top: -80px;
   }
 }
 #form .form_outs .content .left .form_title .tittle div {
@@ -487,7 +485,7 @@ body {
   z-index: -1;
 }
 #form .form_outs .content .left .content_up {
-  margin-top: -5rem;
+  margin-top: -2rem;
   margin-left: 1rem;
 }
 @media (max-width: 576px) {
@@ -496,13 +494,23 @@ body {
     line-height: 1.2rem;
   }
 }
+@media (max-width: 992px) {
+  #form .form_outs .content .left .content_up {
+    margin-right: 2.5rem;
+  }
+}
 #form .form_outs .content .left .content_down {
-  line-height: 1rem;
   margin-left: 1rem;
 }
 @media (max-width: 576px) {
   #form .form_outs .content .left .content_down {
     font-size: 16px;
+    line-height: 1.2rem;
+  }
+}
+@media (max-width: 992px) {
+  #form .form_outs .content .left .content_down {
+    margin-right: 2.5rem;
   }
 }
 #form .form_outs .content .signup {

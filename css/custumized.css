@@ -409,6 +409,8 @@ body {
 }
 @media (max-width: 576px) {
   #form {
+    display: flex;
+    justify-content: center;
     width: 90%;
     height: 1800px;
   }
@@ -426,7 +428,8 @@ body {
 }
 @media (max-width: 576px) {
   #form .form_outs {
-    height: 1600px;
+    height: 1700px;
+    margin-left: 2.5rem;
   }
 }
 #form .content {
@@ -452,6 +455,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  #form .content .left {
+    margin-right: 3rem;
+    margin-top: -1rem;
+  }
+}
 #form .content .left .form_title .tittle {
   color: #545454;
   font-size: 40px;
@@ -459,6 +468,12 @@ body {
   z-index: 1;
   position: relative;
   font-size: 32px;
+  margin-top: -2rem;
+}
+@media (max-width: 992px) {
+  #form .content .left .form_title .tittle {
+    font-size: 24px;
+  }
 }
 @media (max-width: 576px) {
   #form .content .left .form_title .tittle {
@@ -502,6 +517,12 @@ body {
   font-size: 28px;
   color: #545454;
   font: weight 3px;
+}
+@media (max-width: 576px) {
+  .signup .detail {
+    font-size: 24px;
+    margin-top: 10px;
+  }
 }
 .signup #signup_form {
   display: flex;
