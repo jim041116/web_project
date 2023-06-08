@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/weather_style.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body onload="ShowTime()">
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        let ShowTime = () => {
+            let NowDate = new Date();
+            let h = NowDate.getHours();
+            let m = NowDate.getMinutes();
+            if (m < 10) {
+                m = '0' + m
+            }
+            document.getElementById('nowTime').innerHTML = h + ':' + m;
+            setTimeout('ShowTime()', 30000);
+        }
+
+        const { useState } = React;
+
+        const Weather = () => {
+
+            const [selectState, setSelectState] = useState('');          
+
+            const showData = () => {;
+                fetch("https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-73813A86-3EF5-4E6E-A811-B26E470CF6B6&locationName=")
+                    .then((response) => response.json())
+                    .then((data) => {
+                        console.log(data);
+                        const locationData = data.records.location[selectState]
+                        const StyleData = locationData.weatherElement[0].time[0]
+                        const Rain = locationData.weatherElement[1].time[0]
+                        const MinT = locationData.weatherElement[2].time[0]
+                        const MaxT = locationData.weatherElement[4].time[0]
+                        const Ci = locationData.weatherElement[3].time[0]
+
+
+                        setWeather({
+                            Location: locationData.locationName,
+                            WeatherStyle: StyleData.parameter.parameterName,
+                            WeatherValue: StyleData.parameter.parameterValue,
+                            Rain: Rain.parameter.parameterName + '%',
+                            MinT: MinT.parameter.parameterName + '°C',
+                            MaxT: MaxT.parameter.parameterName + '°C',
+                            Ci: Ci.parameter.parameterName
+                        });
+                    });
+            };
+
+            const [Weather, setWeather] = useState({
+                Location: '---',
+                WeatherStyle: '---',
+                Rain: '---',
+                MinT: '---',
+                MaxT: '---',
+                Ci: '---'
+            })
+
+            return (<div>
+                <div className="weather_item">
+                    {/*<選單>*/}
+                    <div className="LocationSelect">
+                        <select name="" id="" value={selectState} onChange={e => setSelectState(e.target.value)}> 
+                            {/*<option value="" disabled>--縣市--</option>*/}                    
+                            <option value="5">臺北市</option>
+                            <option value="1">新北市</option>
+                            <option value="13">桃園市</option>
+                            <option value="4">新竹市</option>
+                            <option value="3">新竹縣</option>
+                            <option value="8">苗栗縣</option>
+                            <option value="11">臺中市</option>
+                            <option value="20">彰化縣</option>
+                            <option value="14">南投縣</option>
+                            <option value="9">雲林縣</option>
+                            <option value="2">嘉義市</option>
+                            <option value="0">嘉義縣</option>
+                            <option value="6">臺南市</option>
+                            <option value="15">高雄市</option>
+                            <option value="17">屏東縣</option>
+                            <option value="12">臺東縣</option>
+                            <option value="10">花蓮縣</option>
+                            <option value="7">宜蘭縣</option>
+                            <option value="18">基隆市</option>
+                            <option value="19">澎湖縣</option>
+                            <option value="16">金門縣</option>
+                            <option value="21">連江縣</option>
+                        </select>
+                        {showData()}
+                    </div>
+                    <div className="item_ifo">
+                        <div className="Location">{Weather.Location}</div>
+                        <div className="WeatherStyle">{Weather.WeatherStyle} / {Weather.Ci}</div>
+                        <div className="Rain">
+                            <img src="./img/rain_icon.png" alt="" />
+                            {Weather.Rain}
+                        </div>
+                    </div>
+                    <div className="min_ifo">
+                        <div id="nowTime"></div>
+                        <div className="MinT">{Weather.MinT} / {Weather.MaxT}</div>
+                    </div>
+                    <img src={`./img/${Weather.WeatherValue}.svg`} alt={Weather.WeatherStyle} className="weather_img" />
+                </div>
+
+            </div>
+            )
+        }
+
+        const el = document.getElementById('root');
+        const root = ReactDOM.createRoot(el);
+        root.render(<Weather />);
+
+    </script>
+
+
+</body>
+
+</html>

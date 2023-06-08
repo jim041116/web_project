@@ -1,0 +1,56 @@
+
+.weather_item {
+    color: white;
+    margin:25vh auto;
+    padding: 0.5rem;
+    width: 50%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-image:linear-gradient(rgb(44, 132, 214), rgb(177, 208, 236)) ;
+
+    select {
+        width: 80px;
+        height: 30px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .item_ifo > * {
+        margin: 1rem;
+    }
+
+    .Rain {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+
+        img {
+            width: 30px;
+            margin-right: 1rem;
+        }
+    }
+
+    .min_ifo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .MinT {
+            font-size: 2rem;
+        }
+
+        #nowTime {
+            font-size: 5rem;
+        }
+    }
+
+    .weather_img {
+        width: 200px;
+        max-height: 200px;
+        margin-right: -8rem;
+    }
+}
