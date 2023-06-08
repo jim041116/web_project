@@ -519,8 +519,7 @@ footer .copyright_section div {
   height: 150px;
   border-radius: 25px;
   padding: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 576px) {
   #free .reserve_img img {
