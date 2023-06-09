@@ -336,6 +336,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -481,7 +482,8 @@ h2 {
   background-image: url(../img/南子.jpg);
   background-position: center;
   background-size: cover;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   flex: 1;
   border-radius: 15px;
 }

@@ -335,6 +335,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -426,7 +427,8 @@ section {
     border-radius: 0;
     width: 100%;
     height: calc(100vh - 110px);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 #video_section .g_box {
@@ -565,11 +567,7 @@ section {
 }
 #about_me .about_me_text p {
   width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  line-height: 25px;
 }
 @media (max-width: 576px) {
   #about_me .about_me_text p {

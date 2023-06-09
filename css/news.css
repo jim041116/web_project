@@ -335,6 +335,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -532,7 +533,8 @@ footer .copyright_section div {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: transform 1s ease;
   backface-visibility: hidden;
   position: relative;

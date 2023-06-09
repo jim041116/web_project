@@ -336,6 +336,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -497,7 +498,8 @@ body {
   border-radius: 40px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 30px;
   color: #325ac9;
   padding-left: 1.5rem;

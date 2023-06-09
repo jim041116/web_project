@@ -335,6 +335,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -519,7 +520,8 @@ footer .copyright_section div {
   height: 150px;
   border-radius: 25px;
   padding: 1rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 576px) {
   #free .reserve_img img {

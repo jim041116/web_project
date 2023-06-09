@@ -335,6 +335,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -402,7 +403,7 @@ body {
 
 #form {
   width: 100%;
-  height: 1034px;
+  height: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -411,13 +412,13 @@ body {
   #form {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: 1800px;
   }
 }
 #form .form_outs {
   width: 1000px;
-  height: 1000px;
+  height: 1200px;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
@@ -430,6 +431,7 @@ body {
   #form .form_outs {
     height: 1700px;
     margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 }
 #form .content {
@@ -502,7 +504,6 @@ body {
   margin-left: 1rem;
 }
 #form .content_down {
-  line-height: 1rem;
   margin-left: 1rem;
 }
 
@@ -534,7 +535,8 @@ body {
   border-radius: 15px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 35px;
   padding-left: 1rem;
   margin-top: 0.5rem;
@@ -547,7 +549,8 @@ body {
   border-radius: 20px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding-left: 1rem;
   padding-top: 1rem;
   margin-top: 0.5rem;
