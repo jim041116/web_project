@@ -79,13 +79,15 @@ $raduis: 15px;
     }
     .com_pic {
       flex: 1;
-      background-image: url(../img/com清水斷崖-2.jpg);
       background-position: center;
       background-size: cover;
 
       @include pad() {
         flex: 1.3;
       }
+    }
+    .picChange1 {
+      background-image: url(../img/com台東池上-1.jpg);
     }
     .com_text1 {
       flex: 1.3;
