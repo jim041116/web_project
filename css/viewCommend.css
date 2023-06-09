@@ -335,6 +335,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -529,9 +530,40 @@ main section .place_item .item .place_info .text .tag a:hover {
 main section .place_item .item .move2 {
   left: 5%;
 }
-main section .API {
-  height: 150px;
-  width: 90%;
-  background-color: aquamarine;
-  margin: 0 auto;
+main section {
+  margin-top: 3rem;
+}
+main section .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  color: #545454;
+  left: 15%;
+}
+main section .tittle div {
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  main section .tittle {
+    font-size: 28px;
+  }
+}
+main section .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289dd2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  main section .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+  }
 }/*# sourceMappingURL=viewCommend.css.map */

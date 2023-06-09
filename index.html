@@ -139,9 +139,8 @@
                 <div>關於我</div>
                 <div class="tittle_ball"></div>
             </div>
-            <p>空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常看到許多人想加入空拍的行列但卻不得其門而入，甚至是不了解空拍法規導致違規飛行。
-                所以我們想設計出一個介紹空拍機及台灣空拍景點的網站，讓想加入空拍的人有個網站可以了解到關於空拍機的相關資訊及空拍景點，並能透過投稿與大家分享空拍景點，讓大家跟我們一起從另一個角度看世界。</p>
-            <div class="more" onclick="more();">More</div>
+            <p>空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常...</p>
+            <div class="more">More</div>
         </div>
         <div class="about_me_img">
             <img class="img_1" src="./img/dji_fly_20230123_114334_435_1674465717246_photo_optimized.jpg" alt="img"
@@ -398,16 +397,28 @@
         });
 
         let moreText = document.querySelector('#about_me p');
-        more = () => {
-            moreText.style.overflow = 'visible';
-            moreText.style.width = '100%';
-            moreText.style.height = '100%';
-            moreText.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
-            moreText.style.color = 'white';
-            moreText.style.padding = '1rem';
-            moreText.style.borderRadius = '15px';
-            moreText.style.lineHeight = '25px';
-            moreText.style.webkitLineClamp = '99';
+        let more = document.querySelector('.more');
+        more.onclick = () => {
+            if (more.innerHTML == 'More') {
+                more.innerHTML = 'Close';
+                moreText.innerHTML = '空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常看到許多人想加入空拍的行列但卻不得其門而入，甚至是不了解空拍法規導致違規飛行。所以我們想設計出一個介紹空拍機及台灣空拍景點的網站，讓想加入空拍的人有個網站可以了解到關於空拍機的相關資訊及空拍景點，並能透過投稿與大家分享空拍景點，讓大家跟我們一起從另一個角度看世界。';
+                moreText.style.width = '100%';
+                moreText.style.height = '100%';
+                moreText.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+                moreText.style.color = 'white';
+                moreText.style.padding = '1rem';
+                moreText.style.borderRadius = '15px';
+            } else if (more.innerHTML == 'Close') {
+                more.innerHTML = 'More';
+                moreText.innerHTML = '空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常...';
+                moreText.style.width = '100%';
+                moreText.style.height = '30%';
+                moreText.style.backgroundColor = 'transparent';
+                moreText.style.color = '#545454';
+                moreText.style.padding = '0';
+                moreText.style.borderRadius = '0';
+            }
+
 
         }
 
