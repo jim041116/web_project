@@ -319,8 +319,8 @@ footer .footer_section .footer_web_map::after {
   content: "";
   background-color: rgba(84, 84, 84, 0.8156862745);
   width: 100%;
-  height: 300px;
-  top: -10px;
+  height: 320px;
+  top: -15px;
   left: 0;
   position: absolute;
   z-index: -1;
@@ -552,7 +552,7 @@ section {
   position: relative;
   transition: all 0.5s;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #drone_type .drone_section .drone_type_item {
     width: 100%;
     height: 350px;
@@ -669,7 +669,7 @@ section {
   height: 300px;
   background-color: #f5f5f5;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #drone_type .drone_section .drone_type_item .box_2 .box_3 {
     height: 350px;
   }
@@ -680,7 +680,7 @@ section {
   border-top: 300px solid rgba(150, 22, 22, 0);
   border-left: 300px solid #f5f5f5;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #drone_type .drone_section .drone_type_item .box_2 .box_4 {
     border-top: 350px solid rgba(150, 22, 22, 0);
   }
