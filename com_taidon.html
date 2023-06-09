@@ -8,6 +8,11 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/public.css" />
     <link rel="stylesheet" href="./css/comAll.css" />
+    <!-- 360 -->
+    <script
+      src="https://cdn.360player.io/static/dist/scripts/embed.js"
+      defer
+    ></script>
   </head>
 
   <body>
@@ -125,38 +130,48 @@
 
     <main>
       <section id="allPartCom">
+        <!-- title -->
         <div class="comTitle">
           <h2>台東－池上</h2>
         </div>
 
-        <div class="pic_text1">
+        <!-- 圖片1 -->
+        <div class="box_1">
           <div class="com_pic"></div>
-          <p>
-            台東池上，山水相依，自然風光美不勝收。彩繪村充滿童趣，文化薈萃。豐富的農產品和美食，如花生、文旦、芋頭等，吸引許多人前來品嚐。還有清幽的溫泉，讓人放鬆身心。池上是個充滿魅力的地方，值得一遊。
+          <p class="com_text1">
+            台東的住家如同一個寧靜的避風港，融合了自然之美和文化的精髓。這個住家矗立在郁郁蔥蔥的綠色山坡上，享有壯麗的山景和清新的空氣。室內裝飾融入了當地的傳統元素，如手工藝品和原木家具，散發著樸實而溫暖的氛圍。寬敞的窗戶帶來充足的自然光線，讓人感受到自然的悠然和宁靜。花園中種植著各種色彩繽紛的花卉和植物，為住家增添了生機和活力。在這個住家裡，你可以放鬆身心，感受到大自然的恩賜，享受平和寧靜的生活。
+          </p>
+        </div>
+        <!-- 圖片2 -->
+        <div class="box_2">
+          <img src="./img/com台東池上-2.jpg" alt="" />
+          <p class="com_text2">
+            耕田機在運作時展現出強大的動力和效率。它的引擎發出有力的轟鳴聲，如同一頭咆哮的野獸。巨大的鋤頭鏟進土壤中，碾壓、破碎和翻轉著土地的表面。土壤在鋤頭的撞擊下飛濺而起，形成一片飛揚的塵土。耕田機前進的輪胎在土地上留下深深的痕跡，如同一條通向未來的道路。
+          </p>
+          <p class="com_beh">
+            務農者站在耕田機後方，手握方向盤，牢牢掌握著掌控的權力。他們注視著前方，熟練地操作著機器，使其保持穩定的速度和方向。身後的耕田機帶著巨大的鋤頭不斷地穿越土地，翻鬆土壤，清除雜草和殘留物，為農作物的種植鋪平道路。
+          </p>
+          <p class="com_beh">
+            這場景充滿著農田的力量和生機。耕田機的運作象徵著農民的辛勤勞動和對土地的愛護。它代表著現代農業技術的進步，為農民提供了更高效和快速的耕作方式。耕田機的運作音和土地的氣息相互交織，彷彿在講述著人與大地的故事。
+          </p>
+          <p class="com_beh">
+            這個場景讓人感受到農耕的力量和農民的奮鬥。它呈現出一幅經濟發展和食物供應的重要場景，彰顯了人類與土地的互動與合作，以及農業對社會的重要性。耕田機的運作將土地轉化為肥沃的農田，為未來的豐收奠定了基礎。
           </p>
         </div>
 
-        <div class="pic_text2">
-          <p>
-            台東池上，山水相依，自然風光美不勝收。彩繪村充滿童趣，文化薈萃。豐富的農產品和美食，如花生、文旦、芋頭等，吸引許多人前來品嚐。還有清幽的溫泉，讓人放鬆身心。池上是個充滿魅力的地方，值得一遊。
-          </p>
-          <div class="com_pic"></div>
-        </div>
-
-        <div class="pic_text3">
-          <p>
-            台東池上，山水相依，自然風光美不勝收。彩繪村充滿童趣，文化薈萃。豐富的農產品和美食，如花生、文旦、芋頭等，吸引許多人前來品嚐。還有清幽的溫泉，讓人放鬆身心。池上是個充滿魅力的地方，值得一遊。
-          </p>
-          <div class="com_pic"></div>
-        </div>
-
+        <!-- 360度 -->
+        <iframe
+          src="https://360player.io/p/htutWN/"
+          frameborder="0"
+          allow="fullscreen; xr-spatial-tracking"
+          data-token="htutWN"
+        ></iframe>
         <!-- 返回鈕 -->
         <div class="goBack">
           <a href="#">返回上頁</a>
         </div>
       </section>
     </main>
-
     <footer>
       <div class="footer_section">
         <div id="movePic">
@@ -268,7 +283,7 @@
       function checkMove() {
         console.log(window.scrollY);
 
-        if (window.scrollY > 100) {
+        if (window.scrollY > 750) {
           document.querySelector("#movePic").classList.add("moveIn");
         } else {
           document.querySelector("#movePic").classList.remove("moveIn");

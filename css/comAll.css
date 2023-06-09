@@ -336,7 +336,6 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -404,7 +403,7 @@ h2 {
   width: 60%;
   margin: 3rem auto;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   #allPartCom {
     width: 90%;
   }
@@ -412,7 +411,6 @@ h2 {
 #allPartCom .comTitle {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 #allPartCom .comTitle h2 {
   font-size: 40px;
@@ -460,165 +458,117 @@ h2 {
     top: 32px;
   }
 }
-#allPartCom .pic_text1 {
-  border: 3px solid gray;
+#allPartCom .box_1 {
   display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0;
 }
 @media (max-width: 576px) {
-  #allPartCom .pic_text1 {
-    height: 43vh;
+  #allPartCom .box_1 {
     flex-direction: column;
+    height: 70vh;
   }
 }
 @media (max-width: 375px) {
-  #allPartCom .pic_text1 {
-    height: 53vh;
+  #allPartCom .box_1 {
+    height: 90vh;
   }
 }
-#allPartCom .pic_text1 .com_pic {
-  margin: auto;
-  width: 30%;
-  height: 30vh;
-  background-image: url(../img/南子.jpg);
-  background-position: center;
-  background-size: cover;
-  -o-object-fit: fill;
-     object-fit: fill;
+#allPartCom .box_1 .com_pic {
   flex: 1;
-  border-radius: 15px;
+  background-image: url(../img/com台東池上-1.jpg);
+  background-position: center;
+  background-size: cover;
 }
 @media (max-width: 992px) {
-  #allPartCom .pic_text1 .com_pic {
-    height: 20vh;
-    flex: 1.4;
+  #allPartCom .box_1 .com_pic {
+    flex: 1.3;
   }
 }
-@media (max-width: 576px) {
-  #allPartCom .pic_text1 .com_pic {
-    width: 80%;
-  }
-}
-#allPartCom .pic_text1 p {
-  flex: 1.2;
-  padding: 2rem 1rem;
+#allPartCom .box_1 .com_text1 {
+  flex: 1.3;
   text-align: justify;
+  padding: 0 1rem 0 2rem;
   text-indent: 1em;
+  line-height: 2.2rem;
 }
-@media (max-width: 576px) {
-  #allPartCom .pic_text1 p {
-    flex: 0;
-    padding: 1rem;
+@media (max-width: 992px) {
+  #allPartCom .box_1 .com_text1 {
+    flex: 1;
   }
 }
-#allPartCom .pic_text2 {
-  border: 3px solid gray;
-  display: flex;
-}
 @media (max-width: 576px) {
-  #allPartCom .pic_text2 {
-    height: 43vh;
+  #allPartCom .box_1 .com_text1 {
+    padding: 0 1rem;
+    line-height: 1.5rem;
+  }
+}
+#allPartCom .box_2 {
+  padding-top: 0.5rem;
+}
+@media (max-width: 992px) {
+  #allPartCom .box_2 {
+    display: flex;
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 375px) {
-  #allPartCom .pic_text2 {
-    height: 53vh;
-  }
-}
-#allPartCom .pic_text2 .com_pic {
-  margin: auto;
-  width: 30%;
-  height: 40vh;
-  background-image: url(../img/南子.jpg);
-  background-position: center;
-  background-size: cover;
-  flex: 0.8;
-  border-radius: 15px;
-}
 @media (max-width: 576px) {
-  #allPartCom .pic_text2 .com_pic {
-    width: 80%;
+  #allPartCom .box_2 {
+    flex-direction: column;
+    padding-top: 0;
   }
+}
+#allPartCom .box_2 img {
+  width: 50%;
+  height: 50%;
+  float: right;
+  margin-left: 2rem;
 }
 @media (max-width: 992px) {
-  #allPartCom .pic_text2 .com_pic {
-    height: 22vh;
-    flex: 1.2;
+  #allPartCom .box_2 img {
+    width: 100%;
+    margin: 0;
   }
 }
-#allPartCom .pic_text2 p {
-  flex: 1.2;
-  padding: 2rem 1rem;
+@media (max-width: 576px) {
+  #allPartCom .box_2 img {
+    height: 30vh;
+  }
+}
+#allPartCom .box_2 .com_text2,
+#allPartCom .box_2 .com_beh {
   text-align: justify;
   text-indent: 1em;
 }
-@media (max-width: 576px) {
-  #allPartCom .pic_text2 p {
-    flex: 0;
-    padding: 1rem;
-  }
-}
-#allPartCom .pic_text3 {
-  border: 3px solid gray;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 992px) {
-  #allPartCom .pic_text3 {
-    height: 50vh;
-  }
+#allPartCom .box_2 .com_text2,
+#allPartCom .box_2 .com_beh {
+  padding: 0 2rem;
 }
 @media (max-width: 576px) {
-  #allPartCom .pic_text3 {
-    flex-direction: column-reverse;
-    height: 43vh;
+  #allPartCom .box_2 .com_text2,
+  #allPartCom .box_2 .com_beh {
+    padding: 0 1rem;
   }
 }
-@media (max-width: 375px) {
-  #allPartCom .pic_text3 {
-    height: 53vh;
-  }
-}
-#allPartCom .pic_text3 .com_pic {
-  margin: auto;
-  width: 70%;
-  height: 40vh;
-  background-image: url(../img/南子.jpg);
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px;
-}
-@media (max-width: 992px) {
-  #allPartCom .pic_text3 .com_pic {
-    width: 90%;
-  }
-}
-@media (max-width: 576px) {
-  #allPartCom .pic_text3 .com_pic {
-    width: 80%;
-  }
-}
-#allPartCom .pic_text3 p {
-  padding: 2rem 1rem;
-  text-align: justify;
-  text-indent: 1em;
-}
-@media (max-width: 576px) {
-  #allPartCom .pic_text3 p {
-    flex: 0;
-    padding: 1rem;
-  }
+#allPartCom iframe {
+  width: 100%;
+  height: 60vh;
 }
 #allPartCom .goBack {
+  margin: 3rem auto;
   width: 100px;
   height: 40px;
   background-color: #289dd2;
   text-align: center;
   border-radius: 15px;
-  margin: 2rem auto;
+  line-height: 40px;
+  cursor: pointer;
+}
+#allPartCom .goBack:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
 }
 #allPartCom .goBack a {
   text-decoration: none;
-  color: #fff;
-  line-height: 42px;
+  color: #ffffff;
 }/*# sourceMappingURL=comAll.css.map */
