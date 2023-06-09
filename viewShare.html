@@ -869,5 +869,21 @@
         }
       }
     </script>
+
+    <!-- smoove -->
+    <script>
+      window.addEventListener("resize", checkSize);
+      checkSize();
+
+      function checkSize() {
+        console.log(window.innerWidth);
+
+        if (width <= 576) {
+          window.onresize = function () {
+            location.reload();
+          };
+        }
+      }
+    </script>
   </body>
 </html>
