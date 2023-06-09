@@ -173,11 +173,12 @@ main {
   //------- API -------//
   section {
     margin-top: 3rem;
-    
+
     .tittle {
       @include tittle();
       color: $text_color_g;
       left: 15%;
+      width: 250px;
 
       @include phone() {
           font-size: $text_size-28px;
