@@ -29,6 +29,7 @@ $raduis: 15px;
       font-size: $text_size-40px;
       text-align: center;
       position: relative;
+      // border: 1px solid black;
       @include phone() {
         font-size: $text_size-32px;
       }
@@ -42,12 +43,9 @@ $raduis: 15px;
       border-radius: 50%;
 
       position: absolute;
-      top: -2px;
-      left: -3px;
+      top: 2px;
+      left: -9px;
       z-index: -1;
-      @include phone() {
-        left: 5px;
-      }
     }
     h2::after {
       content: "";
@@ -58,12 +56,12 @@ $raduis: 15px;
       border-radius: 50%;
 
       position: absolute;
-      top: 35px;
-      right: 0px;
+      top: 37px;
+      right: -5px;
       z-index: -1;
       @include phone() {
-        right: 10px;
         top: 32px;
+        right: -7px;
       }
     }
   }
