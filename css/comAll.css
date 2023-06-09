@@ -320,8 +320,8 @@ footer .footer_section .footer_web_map::after {
   content: "";
   background-color: rgba(84, 84, 84, 0.8156862745);
   width: 100%;
-  height: 300px;
-  top: -10px;
+  height: 320px;
+  top: -15px;
   left: 0;
   position: absolute;
   z-index: -1;
@@ -336,6 +336,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -476,7 +477,7 @@ h2 {
 }
 #allPartCom .box_1 .com_pic {
   flex: 1;
-  background-image: url(../img/com台東池上-1.jpg);
+  background-image: url(../img/com清水斷崖-2.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -535,6 +536,9 @@ h2 {
     height: 30vh;
   }
 }
+#allPartCom .box_2 p {
+  line-height: 2.2rem;
+}
 #allPartCom .box_2 .com_text2,
 #allPartCom .box_2 .com_beh {
   text-align: justify;
@@ -553,6 +557,7 @@ h2 {
 #allPartCom iframe {
   width: 100%;
   height: 60vh;
+  margin-top: 2rem;
 }
 #allPartCom .goBack {
   margin: 3rem auto;

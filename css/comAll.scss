@@ -79,9 +79,10 @@ $raduis: 15px;
     }
     .com_pic {
       flex: 1;
-      background-image: url(../img/com台東池上-1.jpg);
+      background-image: url(../img/com清水斷崖-2.jpg);
       background-position: center;
       background-size: cover;
+
       @include pad() {
         flex: 1.3;
       }
@@ -126,6 +127,9 @@ $raduis: 15px;
         height: 30vh;
       }
     }
+    p {
+      line-height: 2.2rem;
+    }
     .com_text2,
     .com_beh {
       text-align: justify;
@@ -143,6 +147,7 @@ $raduis: 15px;
   iframe {
     width: 100%;
     height: 60vh;
+    margin-top: 2rem;
   }
   //返回鈕
   .goBack {
