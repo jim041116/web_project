@@ -482,7 +482,8 @@ h2 {
   background-image: url(../img/南子.jpg);
   background-position: center;
   background-size: cover;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   flex: 1;
   border-radius: 15px;
 }

@@ -407,7 +407,8 @@ main section .banner {
 main section .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main section .banner .banner_title {
   position: absolute;
@@ -455,7 +456,8 @@ main section .place_item .item img {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 1.2s ease-in-out;
   transform: scale(1.3, 1.3);
 }

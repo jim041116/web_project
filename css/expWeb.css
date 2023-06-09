@@ -397,12 +397,11 @@ footer .copyright_section div {
 
 body {
   width: 100%;
-  height: 100vh;
 }
 
 #form {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-image: url(../img/exppic.jpg);
   background-size: cover;
   background-position: center;
@@ -424,7 +423,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
   background-color: hsla(255, 100%, 100%, 0.6);
 }
 @media (max-width: 576px) {
@@ -545,7 +545,8 @@ body {
   border-radius: 15px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 35px;
   padding-left: 1rem;
   margin-top: 1rem;

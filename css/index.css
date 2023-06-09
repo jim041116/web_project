@@ -427,7 +427,8 @@ section {
     border-radius: 0;
     width: 100%;
     height: calc(100vh - 110px);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 #video_section .g_box {
