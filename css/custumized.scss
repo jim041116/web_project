@@ -10,7 +10,7 @@ body {
 
 #form {
   width: 100%;
-  height: 1034px;
+  height: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,13 +19,13 @@ body {
   @include phone() {
     display: flex;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     height: 1800px;
   }
 
   .form_outs {
     width: 1000px;
-    height: 1000px;
+    height: 1200px;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,8 @@ body {
 
     @include phone() {
       height: 1700px;
-     margin-left:2.5rem;
+      margin-left: 2.5rem;
+      margin-right: 2.5rem;
     }
 
   }
@@ -66,8 +67,8 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    
-      @include pad(){
+
+      @include pad() {
         margin-right: 3rem;
         margin-top: -1rem;
       }
@@ -78,16 +79,18 @@ body {
         // margin-top: -20%;
         .tittle {
           color: $text_color_g;
-          @include pad(){
+
+          @include pad() {
             font-size: 24px;
           }
+
           @include phone() {
             font-size: 24px;
             display: flex;
             align-items: center;
             margin-top: -100px;
           }
-         
+
 
           @include tittle();
           font-size: $text_size-32px;
@@ -107,7 +110,7 @@ body {
   }
 
   .content_down {
-    line-height: 1rem;
+    // line-height: 1rem;
     margin-left: 1rem;
   }
 }
@@ -124,6 +127,7 @@ body {
     font-size: $text_size-28px;
     color: $text_color_g;
     font: weight 3px;
+
     @include phone() {
       font-size: 24px;
       margin-top: 10px;
