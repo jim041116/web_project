@@ -498,7 +498,8 @@ body {
   border-radius: 40px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   height: 30px;
   padding-left: 1rem;
   color: #325ac9;

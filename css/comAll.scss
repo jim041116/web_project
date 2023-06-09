@@ -1,5 +1,11 @@
 @import "./public.scss";
 
+@mixin pc2() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
 p,
 h2 {
   color: $text_color_g;
@@ -21,9 +27,9 @@ $raduis: 15px;
     // border: 1px solid black;
     h2 {
       font-size: $text_size-40px;
-      width: 200px;
       text-align: center;
       position: relative;
+      // border: 1px solid black;
       @include phone() {
         font-size: $text_size-32px;
       }
@@ -37,12 +43,9 @@ $raduis: 15px;
       border-radius: 50%;
 
       position: absolute;
-      top: -2px;
-      left: -3px;
+      top: 2px;
+      left: -9px;
       z-index: -1;
-      @include phone() {
-        left: 5px;
-      }
     }
     h2::after {
       content: "";
@@ -53,12 +56,12 @@ $raduis: 15px;
       border-radius: 50%;
 
       position: absolute;
-      top: 35px;
-      right: 0px;
+      top: 37px;
+      right: -5px;
       z-index: -1;
       @include phone() {
-        right: 10px;
         top: 32px;
+        right: -7px;
       }
     }
   }
@@ -79,13 +82,17 @@ $raduis: 15px;
     }
     .com_pic {
       flex: 1;
-      background-image: url(../img/com清水斷崖-2.jpg);
       background-position: center;
       background-size: cover;
-
       @include pad() {
         flex: 1.3;
       }
+    }
+    .picChange1 {
+      background-image: url(../img/com台東池上-1.jpg);
+    }
+    .picChange2 {
+      background-image: url(../img/com清水斷崖-2.jpg);
     }
     .com_text1 {
       flex: 1.3;
@@ -98,7 +105,6 @@ $raduis: 15px;
       }
       @include phone() {
         padding: 0 1rem;
-        line-height: 1.5rem;
       }
     }
   }
@@ -119,6 +125,7 @@ $raduis: 15px;
       height: 50%;
       float: right;
       margin-left: 2rem;
+      object-fit: cover;
       @include pad() {
         width: 100%;
         margin: 0;
@@ -140,6 +147,25 @@ $raduis: 15px;
       padding: 0 2rem;
       @include phone() {
         padding: 0 1rem;
+      }
+    }
+    .floatL {
+      object-fit: cover;
+      width: 35%;
+      height: 20%;
+      float: left;
+      margin-right: 2rem;
+      @include pc2() {
+        width: 45%;
+      }
+      @include pad() {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+      }
+      @include phone() {
+        width: 100%;
+        height: 25vh;
       }
     }
   }
