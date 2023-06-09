@@ -155,6 +155,8 @@ main {
       .contain {
         padding: 4rem 0;
         .video_title {
+          margin-bottom: 1.5rem;
+
           .tittle {
             color: $text_color_w;
             @include phone() {

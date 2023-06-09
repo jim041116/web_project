@@ -427,8 +427,7 @@ section {
     border-radius: 0;
     width: 100%;
     height: calc(100vh - 110px);
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 #video_section .g_box {
@@ -503,7 +502,7 @@ section {
   align-items: center;
   height: 700px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #about_me {
     flex-direction: column;
     justify-content: start;
@@ -519,7 +518,7 @@ section {
   height: 300px;
   margin-left: -5rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #about_me .about_me_text {
     margin-top: 2rem;
     width: 300px;
@@ -604,7 +603,7 @@ section {
     top: -120px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #about_me .about_me_img .img_1 {
     width: 250px;
     top: -30px;
@@ -632,7 +631,7 @@ section {
     left: -350px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #about_me .about_me_img .img_2 {
     width: 265px;
     height: 160px;
@@ -659,7 +658,7 @@ section {
     width: 400px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #about_me .about_me_img .img_3 {
     width: 300px;
     top: 100px;
@@ -684,6 +683,7 @@ section {
   z-index: 1;
   position: relative;
   margin-left: -70%;
+  margin-bottom: 1.5rem;
 }
 #attractions .tittle div {
   font-weight: 700;
@@ -725,7 +725,7 @@ section {
 }
 @media (max-width: 1440px) {
   #attractions .attractions_item {
-    width: 80%;
+    width: 75%;
     height: 180px;
   }
 }
@@ -911,30 +911,14 @@ section {
   margin: 0;
   z-index: 1;
   position: relative;
-  margin: 1.5rem 0 1.5rem -68rem;
+  margin: 1.5rem 0 1.5rem -60%;
 }
 #reserve .tittle div {
   font-weight: 700;
 }
-@media (max-width: 1440px) {
-  #reserve .tittle {
-    margin: 1.5rem 0 1.5rem -55rem;
-  }
-}
-@media (max-width: 992px) {
-  #reserve .tittle {
-    margin: 1.5rem 0 1.5rem -40rem;
-  }
-}
-@media (max-width: 768px) {
-  #reserve .tittle {
-    margin: 1.5rem 0 1.5rem -20rem;
-  }
-}
 @media (max-width: 576px) {
   #reserve .tittle {
     font-size: 28px;
-    margin: 1.5rem 0 1.5rem -10rem;
   }
 }
 #reserve .tittle .tittle_ball {
