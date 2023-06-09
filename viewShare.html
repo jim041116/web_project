@@ -268,7 +268,7 @@
       <section>
         <div class="container_info">
           <!-- 1 -->
-          <div id="rem" class="ins_box smoove">
+          <div class="ins_box smoove">
             <!-- info左照片 -->
             <div class="left_img">
               <a
@@ -343,7 +343,7 @@
             </div>
           </div>
           <!-- 2 -->
-          <div id="rem" class="ins_box smoove">
+          <div class="ins_box smoove">
             <!-- info左照片 -->
             <div class="left_img">
               <a
@@ -418,12 +418,7 @@
             </div>
           </div>
           <!-- 3 -->
-          <div
-            id="rem"
-            class="ins_box smoove"
-            data-move-x="-100px"
-            data-move-y="200px"
-          >
+          <div class="ins_box smoove" data-move-x="-100px" data-move-y="200px">
             <!-- info左照片 -->
             <div class="left_img">
               <a
@@ -498,12 +493,7 @@
             </div>
           </div>
           <!-- 4 -->
-          <div
-            id="rem"
-            class="ins_box smoove"
-            data-move-x="100px"
-            data-move-y="200px"
-          >
+          <div class="ins_box smoove" data-move-x="100px" data-move-y="200px">
             <!-- info左照片 -->
             <div class="left_img">
               <a
@@ -579,7 +569,7 @@
           </div>
           <!-- 5 -->
           <div
-            id="rem lockPos"
+            id="lockPos"
             class="ins_box smoove"
             data-move-x="-100px"
             data-move-y="200px"
@@ -658,16 +648,7 @@
             </div>
           </div>
           <!-- 6 -->
-<<<<<<< HEAD
           <div class="ins_box smoove" data-move-x="100px" data-move-y="200px">
-=======
-          <div
-            id="rem"
-            class="ins_box smoove"
-            data-move-x="200px"
-            data-move-y="200px"
-          >
->>>>>>> main
             <!-- info左照片 -->
             <div class="left_img">
               <a
@@ -879,32 +860,13 @@
       checkMove();
 
       function checkMove() {
-        // console.log(window.scrollY); //852
+        console.log(window.scrollY); //852
 
         if (window.scrollY > 900) {
           document.querySelector("#movePic").classList.add("moveIn");
         } else {
           document.querySelector("#movePic").classList.remove("moveIn");
         }
-      }
-    </script>
-
-    <!-- smoove -->
-    <script>
-      window.addEventListener("resize", checkSize);
-      checkSize();
-
-      function checkSize() {
-        console.log(window.innerWidth);
-
-        window.onresize = function () {
-          location.reload();
-        };
-
-        // let width = window.innerWidth;
-        // if (width <= 576) {
-        //   document.querySelectorAll("#rem").classList.remove("smoove");
-        // }
       }
     </script>
   </body>
