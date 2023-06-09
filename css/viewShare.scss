@@ -43,43 +43,64 @@ main {
       //992
       @include pad() {
         margin: 0 auto;
-        width: 80%;
+        width: 80vw;
       }
       //768
       @include pad2() {
         margin: 0 auto;
-        width: 60%;
+        width: 70%;
       }
       //576
       @include phone() {
-        margin: 0 auto;
-        width: 100%;
+        margin: 0 -0.2rem;
+        width: 47vh;
       }
+      //375
+      @include phone2() {
+        // border: 3px solid black;
+        margin: 0 auto;
+        width: 46vh;
+      }
+
       .ins_box {
         width: 530px;
-        height: 355px;
+        height: 380px;
         display: flex;
         margin: 3rem 1.5rem;
+        // border: 3px solid black;
         @include pc() {
           margin: 1rem;
         }
         @include pad2() {
-          height: 340px;
+          height: 330px;
         }
         @include phone() {
           width: 100%;
           height: 260px;
         }
+        @include phone2() {
+          margin-top: 2rem;
+          width: 100%;
+          height: 260px;
+        }
         .left_img {
-          width: 55%;
+          width: 53%;
           height: 100%;
           overflow: hidden;
           border-radius: 0 0 0 100px;
+          object-fit: cover;
           @include bor_style();
+          @include phone() {
+            border-radius: 0 0 0 50px;
+          }
+          @include phone2() {
+            border-radius: 0 0 0 50px;
+          }
           img {
             width: 100%;
             height: 100%;
             transition: 1.2s ease-in-out;
+            object-fit: cover;
             &:hover {
               transform: scale(1.2, 1.2);
             }
@@ -109,8 +130,12 @@ main {
               margin-top: -0.2rem;
             }
             p {
+              text-align: justify;
               @include phone() {
                 font-size: 16px;
+              }
+              @include phone2() {
+                font-size: 14px;
               }
             }
           }

@@ -335,7 +335,6 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -423,24 +422,30 @@ main section .container_info {
 @media (max-width: 992px) {
   main section .container_info {
     margin: 0 auto;
-    width: 80%;
+    width: 80vw;
   }
 }
 @media (max-width: 768px) {
   main section .container_info {
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
   }
 }
 @media (max-width: 576px) {
   main section .container_info {
+    margin: 0 -0.2rem;
+    width: 47vh;
+  }
+}
+@media (max-width: 375px) {
+  main section .container_info {
     margin: 0 auto;
-    width: 100%;
+    width: 46vh;
   }
 }
 main section .container_info .ins_box {
   width: 530px;
-  height: 355px;
+  height: 380px;
   display: flex;
   margin: 3rem 1.5rem;
 }
@@ -451,7 +456,7 @@ main section .container_info .ins_box {
 }
 @media (max-width: 768px) {
   main section .container_info .ins_box {
-    height: 340px;
+    height: 330px;
   }
 }
 @media (max-width: 576px) {
@@ -460,18 +465,39 @@ main section .container_info .ins_box {
     height: 260px;
   }
 }
+@media (max-width: 375px) {
+  main section .container_info .ins_box {
+    margin-top: 2rem;
+    width: 100%;
+    height: 260px;
+  }
+}
 main section .container_info .ins_box .left_img {
-  width: 55%;
+  width: 53%;
   height: 100%;
   overflow: hidden;
   border-radius: 0 0 0 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top: thick double #545454;
   border-left: thick double #545454;
+}
+@media (max-width: 576px) {
+  main section .container_info .ins_box .left_img {
+    border-radius: 0 0 0 50px;
+  }
+}
+@media (max-width: 375px) {
+  main section .container_info .ins_box .left_img {
+    border-radius: 0 0 0 50px;
+  }
 }
 main section .container_info .ins_box .left_img img {
   width: 100%;
   height: 100%;
   transition: 1.2s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main section .container_info .ins_box .left_img img:hover {
   transform: scale(1.2, 1.2);
@@ -502,9 +528,17 @@ main section .container_info .ins_box .right_info .right_info_content {
     margin-top: -0.2rem;
   }
 }
+main section .container_info .ins_box .right_info .right_info_content p {
+  text-align: justify;
+}
 @media (max-width: 576px) {
   main section .container_info .ins_box .right_info .right_info_content p {
     font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  main section .container_info .ins_box .right_info .right_info_content p {
+    font-size: 14px;
   }
 }
 main section .container_info .ins_box .right_info_footer {
