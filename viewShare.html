@@ -860,7 +860,7 @@
       checkMove();
 
       function checkMove() {
-        console.log(window.scrollY); //852
+        // console.log(window.scrollY); //852
 
         if (window.scrollY > 900) {
           document.querySelector("#movePic").classList.add("moveIn");
@@ -878,6 +878,7 @@
       function checkSize() {
         console.log(window.innerWidth);
 
+        let width = window.innerWidth;
         if (width <= 576) {
           window.onresize = function () {
             location.reload();
