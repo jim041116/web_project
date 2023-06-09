@@ -415,7 +415,6 @@ h2 {
 }
 #allPartCom .comTitle h2 {
   font-size: 40px;
-  width: 200px;
   text-align: center;
   position: relative;
 }
@@ -488,6 +487,9 @@ h2 {
 #allPartCom .box_1 .picChange1 {
   background-image: url(../img/com台東池上-1.jpg);
 }
+#allPartCom .box_1 .picChange2 {
+  background-image: url(../img/com清水斷崖-2.jpg);
+}
 #allPartCom .box_1 .com_text1 {
   flex: 1.3;
   text-align: justify;
@@ -503,7 +505,6 @@ h2 {
 @media (max-width: 576px) {
   #allPartCom .box_1 .com_text1 {
     padding: 0 1rem;
-    line-height: 1.5rem;
   }
 }
 #allPartCom .box_2 {
@@ -526,6 +527,8 @@ h2 {
   height: 50%;
   float: right;
   margin-left: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   #allPartCom .box_2 img {
@@ -554,6 +557,32 @@ h2 {
   #allPartCom .box_2 .com_text2,
   #allPartCom .box_2 .com_beh {
     padding: 0 1rem;
+  }
+}
+#allPartCom .box_2 .floatL {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 35%;
+  height: 20%;
+  float: left;
+  margin-right: 2rem;
+}
+@media (max-width: 1024px) {
+  #allPartCom .box_2 .floatL {
+    width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .box_2 .floatL {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  #allPartCom .box_2 .floatL {
+    width: 100%;
+    height: 25vh;
   }
 }
 #allPartCom iframe {
