@@ -319,8 +319,8 @@ footer .footer_section .footer_web_map::after {
   content: "";
   background-color: rgba(84, 84, 84, 0.8156862745);
   width: 100%;
-  height: 300px;
-  top: -10px;
+  height: 320px;
+  top: -15px;
   left: 0;
   position: absolute;
   z-index: -1;
@@ -417,7 +417,7 @@ footer .copyright_section div {
   z-index: 1;
   position: relative;
   color: #ffffff;
-  margin: 0 0 1rem -65%;
+  margin: 0 0 1.5rem -65%;
   padding: 10px;
 }
 #free .free_section .tittle div {
@@ -425,12 +425,12 @@ footer .copyright_section div {
 }
 @media (max-width: 992px) {
   #free .free_section .tittle {
-    margin: 0 0 1rem -55%;
+    margin: 0 0 1.5rem -55%;
   }
 }
 @media (max-width: 576px) {
   #free .free_section .tittle {
-    margin: 1rem 0 2rem -35%;
+    margin: 1rem 0 1.5rem -35%;
     font-size: 28px;
   }
 }
@@ -479,7 +479,7 @@ footer .copyright_section div {
 #free .form_box .free_form_3 {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 70%;
   height: 160px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -520,8 +520,7 @@ footer .copyright_section div {
   height: 150px;
   border-radius: 25px;
   padding: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 576px) {
   #free .reserve_img img {
@@ -532,6 +531,7 @@ footer .copyright_section div {
   }
 }
 #free .content hr {
+  margin: 0;
   border: none;
   height: 1px;
   background: #545454;
@@ -543,6 +543,9 @@ footer .copyright_section div {
 }
 #free .content:hover {
   color: rgb(28, 122, 72);
+}
+#free .content h2 {
+  padding: 0 1rem;
 }
 @media (max-width: 576px) {
   #free .content h2 {
@@ -557,6 +560,10 @@ footer .copyright_section div {
   #free .content hr {
     display: none;
   }
+}
+#free .content p {
+  padding: 0 1rem;
+  margin: 0;
 }
 @media (max-width: 992px) {
   #free .content p {
@@ -579,6 +586,11 @@ footer .copyright_section div {
   border-radius: 15px;
   background-color: hsla(0, 0%, 0%, 0.5);
   width: 50%;
+}
+@media (max-width: 1440px) {
+  #custumized .custumized_form {
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 992px) {
   #custumized .custumized_form {
@@ -759,7 +771,7 @@ footer .footer_section .footer_web_map::after {
   content: "";
   background-color: rgba(84, 84, 84, 0.8156862745);
   width: 100%;
-  height: 300px;
+  height: 320px;
   top: -10px;
   left: 0;
   position: absolute;

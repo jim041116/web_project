@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
 *,
 *::after,
@@ -320,8 +319,8 @@ footer .footer_section .footer_web_map::after {
   content: "";
   background-color: rgba(84, 84, 84, 0.8156862745);
   width: 100%;
-  height: 300px;
-  top: -10px;
+  height: 320px;
+  top: -15px;
   left: 0;
   position: absolute;
   z-index: -1;
@@ -397,83 +396,72 @@ footer .copyright_section div {
 
 body {
   width: 100%;
-}
-
-#form {
-  width: 100%;
-  height: 110vh;
   background-image: url(../img/exppic.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-@media (max-width: 576px) {
-  #form {
-    height: 160vh;
-  }
-}
-#form .form_outs {
-  width: 1000px;
-  height: 830px;
+
+#form {
+  width: 70%;
+  padding: 2rem;
+  margin: 3rem auto;
   border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   background-color: hsla(255, 100%, 100%, 0.6);
 }
 @media (max-width: 576px) {
-  #form .form_outs {
-    height: 100%;
-    border-radius: 0%;
+  #form {
+    width: 90%;
   }
 }
-#form .form_outs .content {
-  height: 85%;
+#form .content {
   width: 90%;
+  margin: auto;
   display: flex;
   justify-content: space-between;
 }
-#form .form_outs .content p,
-#form .form_outs .content li {
+@media (max-width: 992px) {
+  #form .content {
+    flex-direction: column;
+  }
+}
+#form .content p,
+#form .content li {
   font-size: 18px;
   color: #545454;
 }
-@media (max-width: 576px) {
-  #form .form_outs .content {
-    flex-direction: column;
-    font-size: 16px;
-  }
-}
-#form .form_outs .content .left {
-  flex: 2;
+#form .content .left {
+  width: 100%;
+  margin-right: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#form .form_outs .content .left .form_title .tittle {
-  color: #545454;
+@media (max-width: 992px) {
+  #form .content .left {
+    margin-right: 0;
+  }
+}
+#form .content .left .form_title {
+  margin: 5% 0 0 5%;
+}
+#form .content .left .form_title .tittle {
   font-size: 40px;
   margin: 0;
   z-index: 1;
   position: relative;
   font-size: 32px;
+  color: #545454;
 }
-@media (max-width: 576px) {
-  #form .form_outs .content .left .form_title .tittle {
-    font-size: 24px;
-    margin-top: -80px;
-  }
-}
-#form .form_outs .content .left .form_title .tittle div {
+#form .content .left .form_title .tittle div {
   font-weight: 700;
 }
-#form .form_outs .content .left .form_title .tittle .tittle_ball {
+@media (max-width: 576px) {
+  #form .content .left .form_title .tittle {
+    font-size: 28px;
+  }
+}
+#form .content .left .form_title .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289dd2;
@@ -484,69 +472,44 @@ body {
   left: -15px;
   z-index: -1;
 }
-#form .form_outs .content .left .content_up {
-  margin-top: -2rem;
-  margin-left: 1rem;
-}
 @media (max-width: 576px) {
-  #form .form_outs .content .left .content_up {
-    font-size: 14px;
-    line-height: 1.2rem;
+  #form .content .left .form_title .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+    left: -12px;
   }
 }
-@media (max-width: 992px) {
-  #form .form_outs .content .left .content_up {
-    margin-right: 2.5rem;
-  }
-}
-#form .form_outs .content .left .content_down {
+#form .content .signup {
+  width: 100%;
   margin-left: 1rem;
-}
-@media (max-width: 576px) {
-  #form .form_outs .content .left .content_down {
-    font-size: 16px;
-    line-height: 1.2rem;
-  }
-}
-@media (max-width: 992px) {
-  #form .form_outs .content .left .content_down {
-    margin-right: 2.5rem;
-  }
-}
-#form .form_outs .content .signup {
-  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-#form .form_outs .content .signup P {
-  font-size: 28px;
-}
-@media (max-width: 576px) {
-  #form .form_outs .content .signup P {
-    font-size: 24px;
+@media (max-width: 992px) {
+  #form .content .signup {
+    margin-left: 0;
   }
 }
-#form .form_outs .content .signup #signup_form {
+#form .content .signup P {
+  font-size: 28px;
+}
+@media (max-width: 992px) {
+  #form .content .signup P {
+    margin-bottom: 0;
+  }
+}
+#form .content .signup #signup_form {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-@media (max-width: 576px) {
-  #form .form_outs .content .signup #signup_form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-  }
-}
-#form .form_outs .content .signup #signup_form input {
+#form .content .signup #signup_form input {
   border-radius: 15px;
   border: none;
   background-color: rgba(84, 84, 84, 0.3);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   height: 35px;
   padding-left: 1rem;
   margin-top: 1rem;
@@ -555,32 +518,36 @@ body {
   color: #325ac9;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
-#form .form_outs .content .signup #signup_form label {
+#form .content .signup #signup_form label {
   font-size: 18px;
   color: #545454;
   margin-top: 2rem;
-  /*text-shadow 可以刪XD*/
 }
-#form .form_outs .content .signup .btn_signup {
+@media (max-width: 992px) {
+  #form .content .signup #signup_form label {
+    margin-top: 1rem;
+  }
+}
+#form .content .signup .btn_signup {
   display: block;
   padding: 0.2rem 2rem;
   font-size: 18px;
   cursor: pointer;
-  margin: 3.8rem auto;
+  margin: 3rem auto;
   border-radius: 15px;
   border: none;
   background-color: #289dd2;
   color: white;
   transition: 0.3s ease-in-out;
 }
-#form .form_outs .content .signup .btn_signup:hover {
+#form .content .signup .btn_signup:hover {
   transform: translateY(-3px);
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
 }
 
 /*!!!!!!!!!!!!!!!!!!*/
 footer {
-  background-color: #545454;
+  background-color: transparent;
   border-radius: 300px 0 0 0;
   width: 100%;
   height: 420px;
@@ -599,7 +566,7 @@ footer .footer_section {
   align-items: center;
   height: 350px;
   border-bottom: 1px solid #f5f5f5;
-  background-image: url(../img/respic.jpg);
+  background-image: none;
   border-radius: 300px 0 0 0;
 }
 @media (max-width: 576px) {
@@ -607,14 +574,36 @@ footer .footer_section {
     border-radius: 300px 300px 0 0;
   }
 }
-footer .footer_section .footer_img {
-  margin-left: -5rem;
-  margin-bottom: 10rem;
+footer .footer_section .moveIn {
+  animation: moveIn 4s;
+  animation-iteration-count: 1;
+}
+footer .footer_section .moveImg {
+  animation: fly-move 3s infinite alternate;
+  margin: 0;
 }
 @media (max-width: 576px) {
-  footer .footer_section .footer_img {
-    width: 350px;
-    margin-left: -2rem;
+  footer .footer_section .moveImg {
+    width: 300px;
+  }
+}
+@keyframes fly-move {
+  0% {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
+}
+@keyframes moveIn {
+  0% {
+    transform: translate(-500px, -500px);
+  }
+  50% {
+    transform: translate(-300px, -350px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
 footer .footer_section .footer_web_map {
@@ -629,8 +618,8 @@ footer .footer_section .footer_web_map::after {
   content: "";
   background-color: rgba(84, 84, 84, 0.8156862745);
   width: 100%;
-  height: 300px;
-  top: -10px;
+  height: 320px;
+  top: -15px;
   left: 0;
   position: absolute;
   z-index: -1;
@@ -645,6 +634,7 @@ footer .footer_section .footer_web_map .web_map_item {
   margin: 0.5rem 2rem;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
 }
 footer .footer_section .footer_web_map .web_map_item .web_map_title {
   width: 114px;
@@ -681,6 +671,7 @@ footer .footer_section .footer_logo {
   }
 }
 footer .copyright_section {
+  background-color: #545454;
   display: flex;
   height: 70px;
   justify-content: center;

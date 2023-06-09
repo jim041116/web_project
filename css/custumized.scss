@@ -2,53 +2,32 @@
 
 body {
   width: 100%;
-  // height: 100vh;
   background-image: url(../img/sea.jpg);
   background-position: center;
   background-size: cover;
 }
 
 #form {
-  width: 100%;
-  height: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  width: 70%;
+  border-radius: 40px;
+  background-color: hsla(255, 255, 255, 0.6);
+  margin: 10rem auto;
+  padding: 1.5rem;
 
   @include phone() {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 1800px;
-  }
-
-  .form_outs {
-    width: 1000px;
-    height: 1200px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: hsla(255, 255, 255, 0.6);
-    margin-top: 10rem;
-
-    @include phone() {
-      height: 1700px;
-      margin-left: 2.5rem;
-      margin-right: 2.5rem;
-    }
-
+    width: 90%;
   }
 
   //表單內容
   .content {
-    height: 85%;
-    width: 80%;
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 
+    @include pad() {
+      flex-direction: column;
+    }
 
     p,
     li {
@@ -56,72 +35,59 @@ body {
       color: $text_color_g;
     }
 
-    @include phone() {
-      flex-direction: column;
-      font-size: 16px;
-    }
-
     //左表單
     .left {
-      flex: 2;
+      width: 100%;
+      margin-right: 1rem;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: space-around;
 
       @include pad() {
-        margin-right: 3rem;
-        margin-top: -1rem;
+        margin-right: 0;
       }
 
       //預約體驗title
       .form_title {
+        margin: 3rem 0 0 1rem;
 
-        // margin-top: -20%;
         .tittle {
+          @include tittle();
           color: $text_color_g;
-
-          @include pad() {
-            font-size: 24px;
-          }
+          font-size: $text_size-32px;
 
           @include phone() {
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            margin-top: -100px;
+            font-size: $text_size-28px;
           }
-
-
-          @include tittle();
-          font-size: $text_size-32px;
-          margin-top: -2rem;
 
           .tittle_ball {
             @include title_ball();
+
+            @include phone() {
+              width: 20px;
+              height: 20px;
+              left: -10px;
+            }
           }
         }
       }
     }
   }
-
-  .content_up {
-    margin-top: -5rem;
-    margin-left: 1rem;
-  }
-
-  .content_down {
-    // line-height: 1rem;
-    margin-left: 1rem;
-  }
 }
 
 //右表單
 .signup {
-  flex: 1;
+  width: 100%;
+  margin-left: 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  @include pad() {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
 
   .detail {
     font-size: $text_size-28px;
