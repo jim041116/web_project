@@ -461,18 +461,20 @@ h2 {
 @media (max-width: 576px) {
   #allPartCom .box_1 {
     flex-direction: column;
-    height: 70vh;
+    height: 75vh;
   }
 }
 @media (max-width: 375px) {
   #allPartCom .box_1 {
-    height: 90vh;
+    height: 100vh;
   }
 }
 #allPartCom .box_1 .com_pic {
   flex: 1;
   background-position: center;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   #allPartCom .box_1 .com_pic {
@@ -484,6 +486,21 @@ h2 {
 }
 #allPartCom .box_1 .picChange2 {
   background-image: url(../img/com清水斷崖-2.jpg);
+}
+#allPartCom .box_1 .picChange3 {
+  background-image: url(../img/com合歡山-2.jpg);
+}
+@media (max-width: 1024px) {
+  #allPartCom .box_1 .picChange3 {
+    height: 60vh;
+    margin: auto 0;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .box_1 .picChange3 {
+    height: 37vh;
+    margin: auto 0;
+  }
 }
 #allPartCom .box_1 .com_text1 {
   flex: 1.3;
@@ -578,6 +595,87 @@ h2 {
   #allPartCom .box_2 .floatL {
     width: 100%;
     height: 25vh;
+  }
+}
+#allPartCom .box_2 .widthNa_cloud {
+  width: 45%;
+}
+@media (max-width: 992px) {
+  #allPartCom .box_2 .widthNa_cloud {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  #allPartCom .box_2 .widthNa_cloud {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  #allPartCom .box_2 .widthNa_cloud {
+    height: 35vh;
+  }
+}
+#allPartCom .box_2 .widthNa_mr {
+  float: right;
+  width: 37%;
+}
+@media (max-width: 1024px) {
+  #allPartCom .box_2 .widthNa_mr {
+    width: 44%;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .box_2 .widthNa_mr {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  #allPartCom .box_2 .widthNa_mr {
+    width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  #allPartCom .box_2 .widthNa_mr {
+    height: 32vh;
+  }
+}
+#allPartCom .box_2 .widthNa_flower {
+  width: 42%;
+  height: 32vh;
+}
+@media (max-width: 992px) {
+  #allPartCom .box_2 .widthNa_flower {
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  #allPartCom .box_2 .widthNa_flower {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .widthNa_moutain {
+    flex-direction: column;
+  }
+}
+#allPartCom .widthNa_moutain img {
+  width: 35%;
+}
+@media (max-width: 1024px) {
+  #allPartCom .widthNa_moutain img {
+    width: 45%;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .widthNa_moutain img {
+    width: 70%;
+    height: 25vh;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  #allPartCom .widthNa_moutain img {
+    width: 100%;
   }
 }
 #allPartCom iframe {
