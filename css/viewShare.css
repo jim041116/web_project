@@ -434,8 +434,8 @@ main section .container_info {
 }
 @media (max-width: 576px) {
   main section .container_info {
-    margin: 0 -0.2rem;
-    width: 47vh;
+    margin: 0 auto;
+    width: 46vh;
   }
 }
 @media (max-width: 375px) {

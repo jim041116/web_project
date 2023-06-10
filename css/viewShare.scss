@@ -52,8 +52,8 @@ main {
       }
       //576
       @include phone() {
-        margin: 0 -0.2rem;
-        width: 47vh;
+        margin: 0 auto;
+        width: 46vh;
       }
       //375
       @include phone2() {
