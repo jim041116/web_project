@@ -107,6 +107,16 @@ $raduis: 15px;
       }
       // @include phone3
     }
+    .picChange4 {
+      background-image: url(../img/com象鼻岩-4.jpg);
+      @include pc2() {
+        height: 60vh;
+        margin: auto 0;
+      }
+      @include pad() {
+        height: 40vh;
+      }
+    }
     .com_text1 {
       flex: 1.3;
       text-align: justify;
@@ -223,6 +233,23 @@ $raduis: 15px;
       }
     }
   }
+  // 象鼻岩照片
+  .box3 {
+    // border: 3px solid black;
+    display: flex;
+    @include phone() {
+      flex-direction: column;
+    }
+    img {
+      padding: 0.5rem;
+      width: 50%;
+      @include phone() {
+        width: 100%;
+        height: 31vh;
+      }
+    }
+  }
+
   // 圖片2 調整寬度
   .widthNa_moutain {
     @include pad() {
@@ -243,7 +270,22 @@ $raduis: 15px;
       }
     }
   }
-
+  .widthXin_sea1 {
+    img {
+      width: 40%;
+      height: 30vh;
+      margin-bottom: 0.3rem;
+      object-fit: cover;
+      @include pc2() {
+        width: 50%;
+        height: 30vh;
+      }
+      @include pad() {
+        padding: 0 0.5rem;
+        width: 100%;
+      }
+    }
+  }
   iframe {
     width: 100%;
     height: 60vh;

@@ -502,6 +502,20 @@ h2 {
     margin: auto 0;
   }
 }
+#allPartCom .box_1 .picChange4 {
+  background-image: url(../img/com象鼻岩-4.jpg);
+}
+@media (max-width: 1024px) {
+  #allPartCom .box_1 .picChange4 {
+    height: 60vh;
+    margin: auto 0;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .box_1 .picChange4 {
+    height: 40vh;
+  }
+}
 #allPartCom .box_1 .com_text1 {
   flex: 1.3;
   text-align: justify;
@@ -653,6 +667,24 @@ h2 {
     width: 100%;
   }
 }
+#allPartCom .box3 {
+  display: flex;
+}
+@media (max-width: 576px) {
+  #allPartCom .box3 {
+    flex-direction: column;
+  }
+}
+#allPartCom .box3 img {
+  padding: 0.5rem;
+  width: 50%;
+}
+@media (max-width: 576px) {
+  #allPartCom .box3 img {
+    width: 100%;
+    height: 31vh;
+  }
+}
 @media (max-width: 992px) {
   #allPartCom .widthNa_moutain {
     flex-direction: column;
@@ -675,6 +707,25 @@ h2 {
 }
 @media (max-width: 576px) {
   #allPartCom .widthNa_moutain img {
+    width: 100%;
+  }
+}
+#allPartCom .widthXin_sea1 img {
+  width: 40%;
+  height: 30vh;
+  margin-bottom: 0.3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1024px) {
+  #allPartCom .widthXin_sea1 img {
+    width: 50%;
+    height: 30vh;
+  }
+}
+@media (max-width: 992px) {
+  #allPartCom .widthXin_sea1 img {
+    padding: 0 0.5rem;
     width: 100%;
   }
 }
