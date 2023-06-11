@@ -4,12 +4,16 @@
   background-size: cover;
   background-position: center;
 }
-
+@mixin pc2() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
 $border-rus: 15px;
 main {
   position: relative;
   .bg-z {
-    background-image: url(../img/城市.jpg);
+    background-image: url(../img/com安平軍港-3.jpg);
     background-position: top center;
     position: fixed;
     z-index: -5;
@@ -17,6 +21,9 @@ main {
     min-height: 100vh;
     bottom: 0;
     left: 0;
+    @include phone2() {
+      background-position: center;
+    }
   }
   .mask {
     background-color: rgba(0, 0, 0, 0.2);
@@ -71,7 +78,7 @@ main {
         border-radius: $border-rus;
         top: 19rem;
         left: 10%;
-        background-image: url(../img/南子.jpg);
+        background-image: url(../img/share南子吝-3.jpg);
         @include backPo();
         @include phone() {
           height: 315px;
@@ -171,8 +178,11 @@ main {
           }
         }
         iframe {
+          @include pc2() {
+            width: 880px;
+          }
           @include pad() {
-            width: 780px;
+            width: 760px;
           }
           @include pad2() {
             width: 700px;
@@ -189,11 +199,11 @@ main {
     }
 
     .box1 {
-      background-image: url(../img/南子.jpg);
+      background-image: url(../img/share南子吝-4.jpg);
     }
     .box2 {
       margin-top: 40rem;
-      background-image: url(../img/太魯閣.jpg);
+      background-image: url(../img/share太魯閣-2.jpg);
     }
   }
 }

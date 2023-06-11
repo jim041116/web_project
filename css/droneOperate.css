@@ -399,7 +399,7 @@ main {
   position: relative;
 }
 main .bg-z {
-  background-image: url(../img/城市.jpg);
+  background-image: url(../img/com安平軍港-3.jpg);
   background-position: top center;
   position: fixed;
   z-index: -5;
@@ -407,6 +407,11 @@ main .bg-z {
   min-height: 100vh;
   bottom: 0;
   left: 0;
+}
+@media (max-width: 375px) {
+  main .bg-z {
+    background-position: center;
+  }
 }
 main .mask {
   background-color: rgba(0, 0, 0, 0.2);
@@ -470,7 +475,7 @@ main section .banner .text_word {
   border-radius: 15px;
   top: 19rem;
   left: 10%;
-  background-image: url(../img/南子.jpg);
+  background-image: url(../img/share南子吝-3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -599,10 +604,16 @@ main section .box2 .contain .video_title .tittle .tittle_ball {
     top: 5px;
   }
 }
+@media (max-width: 1024px) {
+  main section .box1 .contain iframe,
+  main section .box2 .contain iframe {
+    width: 880px;
+  }
+}
 @media (max-width: 992px) {
   main section .box1 .contain iframe,
   main section .box2 .contain iframe {
-    width: 780px;
+    width: 760px;
   }
 }
 @media (max-width: 768px) {
@@ -625,9 +636,9 @@ main section .box2 .contain .video_title .tittle .tittle_ball {
   }
 }
 main section .box1 {
-  background-image: url(../img/南子.jpg);
+  background-image: url(../img/share南子吝-4.jpg);
 }
 main section .box2 {
   margin-top: 40rem;
-  background-image: url(../img/太魯閣.jpg);
+  background-image: url(../img/share太魯閣-2.jpg);
 }/*# sourceMappingURL=droneOperate.css.map */
