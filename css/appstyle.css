@@ -161,6 +161,8 @@ button {
   transform: translateY(32px);
   transition: all 0.4s ease-in-out 0.2s;
   -webkit-transition: all 0.4s ease-in-out 0.2s;
+
+  /* border: 3px solid #fff; */
 }
 .app-section .item.active .item-desc p {
   opacity: 1;
@@ -178,6 +180,10 @@ button {
 .google_down {
   width: 180px;
   border-radius: 15px;
+}
+.apple_down,
+.google_down {
+  padding: 0.5rem;
 }
 /* APP ICON END*/
 .app-section .owl-theme.custom-carousel .owl-dots {
@@ -324,9 +330,29 @@ button {
   .app-section .item {
     margin: 0 10px 40px;
     width: 180px;
-    height: 270px;
+    height: 300px;
   }
   .small_390 {
     max-width: 65%;
+  }
+  .app-section .item.active {
+    width: 190px;
+  }
+  .app_down {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+  .app-section .item-desc {
+    height: 90%;
+  }
+  .owl-carousel .owl-item img {
+    width: 60%;
+  }
+  .google_down {
+    margin-top: -0.2rem;
+  }
+  .app-section .item:after {
+    background-color: rgba(0, 0, 0, 0.35);
   }
 }
