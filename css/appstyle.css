@@ -84,6 +84,10 @@ button {
 /* -------- Landing page ------- */
 .app-section {
   padding: 30px;
+  width: 100%;
+  /* border: 1px solid black;  */
+  margin: 0 auto; /**/
+  width: 65%;
 }
 .app-section .owl-stage {
   margin: 15px 0;
@@ -117,10 +121,11 @@ button {
 
 .app-section .item .qrcode img {
   width: 80px;
+  object-fit: cover;
 }
 /* QR CODE END*/
 .app-section .item.active {
-  width: 450px;
+  width: 420px;
   box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
 }
@@ -184,6 +189,11 @@ button {
 
 /***** responsive css Start ******/
 
+@media (max-width: 1440px) {
+  .app-section {
+    width: 70%;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   h2 {
     margin-bottom: 32px;
@@ -197,6 +207,7 @@ button {
   /* -------- Landing page ------- */
   .app-section {
     padding: 50px 30px;
+    width: 95%;
   }
   .app-section .item {
     margin: 0 12px 60px;
@@ -209,6 +220,10 @@ button {
   .app-section .item-desc {
     transform: translateY(calc(100% - 46px));
     -webkit-transform: translateY(calc(100% - 46px));
+  }
+  .apple_down,
+  .google_down {
+    padding: 0.3rem;
   }
 }
 
@@ -228,18 +243,23 @@ button {
   /* -------- Landing page ------- */
   .app-section {
     padding: 50px 30px 40px;
+    width: 100%;
   }
   .app-section .item {
     margin: 0 12px 60px;
-    width: 240px;
+    width: 220px;
     height: 330px;
   }
   .app-section .item.active {
-    width: 360px;
+    width: 300px;
   }
   .app-section .item-desc {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
+  }
+  .apple_down,
+  .google_down {
+    padding: 0.3rem;
   }
 }
 
@@ -262,6 +282,7 @@ button {
   /* -------- Landing page ------- */
   .app-section {
     padding: 30px 15px 20px;
+    width: 100%;
   }
   .app-section .item {
     margin: 0 10px 40px;
@@ -278,13 +299,34 @@ button {
     transform: translateY(calc(100% - 42px));
     -webkit-transform: translateY(calc(100% - 42px));
   }
+  .apple_down,
+  .google_down {
+    padding: 0.5rem;
+  }
 }
 
 @media (max-width: 576px) {
   .line-title::after {
-    width: 45%;
+    width: 55%;
   }
   h2 {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .app-section .item {
+    margin: 0 15px 40px;
+    width: 200px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 390px) {
+  .app-section .item {
+    margin: 0 10px 40px;
+    width: 180px;
+    height: 270px;
+  }
+  .small_390 {
+    max-width: 65%;
   }
 }
