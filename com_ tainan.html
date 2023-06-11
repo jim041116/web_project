@@ -136,9 +136,9 @@
         </div>
 
         <!-- 圖片1 -->
-        <div class="box_1">
+        <div class="box_1 heightTai_h">
           <div class="com_pic picChange5"></div>
-          <p class="com_text1">
+          <p class="com_text1 widthTai_w">
             台南安平是台灣台南市的一個地區，而安平軍港則是安平的重要地標之一。安平軍港歷史悠久，曾是台灣重要的海軍基地。在19世紀時，安平軍港是荷蘭人在台灣的軍事據點，後來又成為明鄭王朝和清朝的海軍基地。在二戰期間，日本佔領台灣後，安平軍港成為日本帝國海軍的重要據點。
             <br />
             　如今，安平軍港已經轉型為一個觀光景點，遊客可以參觀軍港博物館，了解台灣的海軍歷史，並欣賞到當地的海景風光。此外，軍港附近還有許多古老的建築和文化遺產，例如安平古堡和安平老街，都是值得一遊的地方。
@@ -147,10 +147,9 @@
           </p>
         </div>
 
-
         <!-- 圖片2 -->
         <div class="box_2 widthTai_ship">
-          <img  src="./img/com安平軍港-1.jpg" alt="" />
+          <img src="./img/com安平軍港-1.jpg" alt="" />
           <p class="com_text2">
             軍艦博物館是一個展示軍艦歷史和文化的特殊博物館。這些博物館通常展示著實際的軍艦，讓遊客可以近距離觀賞和了解這些巨大而強大的戰艦。
           </p>
@@ -162,7 +161,7 @@
           </p>
           <br />
           <!-- 圖片3 -->
-          <img class="floatL widthTai_ship2" src="./img/com安平軍港-2.jpg"alt=""/>
+          <img  class="floatL widthTai_ship2"  src="./img/com安平軍港-2.jpg"  alt=""/>
           <p class="com_beh">
             軍艦上的直升機起降夾板，是一種特殊的設備，用於在海上的軍艦上進行直升機的起降操作。這種夾板通常是由堅固的材料（如金屬）製成，並固定在軍艦的特定區域，稱為直升機甲板。
           </p>
@@ -174,7 +173,7 @@
           </p>
           <br />
           <!-- 圖片4 -->
-          <img class="floatL widthTai_ship3" src="./img/com安平軍港-4.jpg"alt=""/>
+          <img  class="floatL widthTai_ship3"  src="./img/com安平軍港-4.jpg" alt=""/>
           <p class="com_beh">
             台南月牙灣位於台南市安南區，是一個知名的海灣。這個海灣因其形狀彷彿一個月牙而得名。月牙灣擁有細膩的沙灘和清澈的海水，是一個適合休閒和欣賞海景的地方。
           </p>
@@ -187,13 +186,17 @@
         </div>
 
         <!-- 360度 -->
-        <iframe src="https://360player.io/p/vzvJTb/" frameborder="0" allow="fullscreen; xr-spatial-tracking" data-token="vzvJTb"></iframe>
+        <iframe
+          src="https://360player.io/p/vzvJTb/"
+          frameborder="0"
+          allow="fullscreen; xr-spatial-tracking"
+          data-token="vzvJTb"
+        ></iframe>
         <!-- 返回鈕 -->
 
         <div class="goBack">
           <a href="#">返回上頁</a>
         </div>
-        
       </section>
     </main>
     <footer>
@@ -305,9 +308,9 @@
       checkMove();
 
       function checkMove() {
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
 
-        if (window.scrollY > 1800) {
+        if (window.scrollY > 1570) {
           document.querySelector("#movePic").classList.add("moveIn");
         } else {
           document.querySelector("#movePic").classList.remove("moveIn");

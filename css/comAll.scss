@@ -233,7 +233,6 @@ $raduis: 15px;
       width: 35%;
       height: 20%;
       float: left;
-      margin-right: 2rem;
       @include pc2() {
         width: 45%;
       }
@@ -248,6 +247,7 @@ $raduis: 15px;
     //花蓮
     .widthHua_pic2 {
       height: 30vh;
+      margin-right: 2rem;
       img {
         @include pc2() {
           height: 35vh;
@@ -257,6 +257,9 @@ $raduis: 15px;
     //南投
     .widthNa_cloud {
       width: 45%;
+      @include pc2() {
+        height: 28vh;
+      }
       @include pad() {
         width: 70%;
       }
@@ -286,6 +289,9 @@ $raduis: 15px;
     .widthNa_flower {
       width: 42%;
       height: 32vh;
+      @include pc2() {
+        height: 33vh;
+      }
       @include pad() {
         width: 70%;
       }
@@ -297,6 +303,7 @@ $raduis: 15px;
     .widthTai_ship2 {
       width: 38%;
       height: 30vh;
+      margin-right: 2rem;
       @include pc() {
         height: 33vh;
       }
