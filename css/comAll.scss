@@ -91,9 +91,30 @@ $raduis: 15px;
     }
     .picChange1 {
       background-image: url(../img/com台東池上-1.jpg);
+      height: 30vh;
+      flex: 0.8;
+      margin: auto 0;
+      @include pc2() {
+        height: 53vh;
+        margin: auto 0;
+      }
+      @include pad() {
+        height: 30vh;
+      }
     }
     .picChange2 {
+      height: 25vh;
       background-image: url(../img/com清水斷崖-2.jpg);
+      @include pc() {
+        height: 35vh;
+      }
+      @include pc2() {
+        height: 48vh;
+        margin: auto 0;
+      }
+      @include pad() {
+        height: 30vh;
+      }
     }
     .picChange3 {
       background-image: url(../img/com合歡山-2.jpg);
@@ -117,6 +138,20 @@ $raduis: 15px;
         height: 40vh;
       }
     }
+    .picChange5 {
+      background-image: url(../img/com安平軍港-3.jpg);
+      @include pc() {
+        height: 47vh;
+        margin: auto 0;
+      }
+      @include pc2() {
+        height: 90vh;
+        flex: 1.5;
+      }
+      @include pad() {
+        height: 45vh;
+      }
+    }
     .com_text1 {
       flex: 1.3;
       text-align: justify;
@@ -130,8 +165,29 @@ $raduis: 15px;
         padding: 0 1rem;
       }
     }
+    .widthTai_w {
+      @include pc2() {
+        flex: 1.5;
+      }
+      @include pad() {
+        margin: auto 0;
+      }
+    }
+    .textHua_m {
+      margin: auto 0;
+    }
+    .textTai_m {
+      margin: auto 0;
+    }
   }
-  // 圖片2
+  .heightTai_h {
+    @include phone() {
+      height: 100vh;
+    }
+    @include phone2() {
+      height: 120vh;
+    }
+  }
   .box_2 {
     // border: 3px solid blue;
     padding-top: 0.5rem;
@@ -182,16 +238,23 @@ $raduis: 15px;
         width: 45%;
       }
       @include pad() {
-        width: 70%;
-        display: block;
-        margin: 0 auto;
+        width: 100%;
       }
       @include phone() {
         width: 100%;
         height: 25vh;
       }
     }
-    // 圖片3 調整寬度
+    //花蓮
+    .widthHua_pic2 {
+      height: 30vh;
+      img {
+        @include pc2() {
+          height: 35vh;
+        }
+      }
+    }
+    //南投
     .widthNa_cloud {
       width: 45%;
       @include pad() {
@@ -204,7 +267,6 @@ $raduis: 15px;
         height: 35vh;
       }
     }
-    // 圖片4 調整寬度&位置
     .widthNa_mr {
       float: right;
       width: 37%;
@@ -221,7 +283,6 @@ $raduis: 15px;
         height: 32vh;
       }
     }
-    // 圖片5 調整寬度&高度
     .widthNa_flower {
       width: 42%;
       height: 32vh;
@@ -230,6 +291,37 @@ $raduis: 15px;
       }
       @include phone() {
         width: 100%;
+      }
+    }
+    //台南
+    .widthTai_ship2 {
+      width: 38%;
+      height: 30vh;
+      @include pc() {
+        height: 33vh;
+      }
+      @include pc2() {
+        width: 50%;
+        height: 45vh;
+      }
+      @include pad() {
+        height: 30vh;
+        width: 100%;
+      }
+    }
+    .widthTai_ship3 {
+      float: right;
+      height: 32vh;
+      @include pc() {
+        height: 35vh;
+        width: 40%;
+      }
+      @include pc2() {
+        height: 40vh;
+      }
+      @include pad() {
+        width: 100%;
+        height: 30vh;
       }
     }
   }
@@ -243,6 +335,13 @@ $raduis: 15px;
     img {
       padding: 0.5rem;
       width: 50%;
+      object-fit: cover;
+      @include pc2() {
+        height: 37vh;
+      }
+      @include pad() {
+        height: 35vh;
+      }
       @include phone() {
         width: 100%;
         height: 31vh;
@@ -251,6 +350,22 @@ $raduis: 15px;
   }
 
   // 圖片2 調整寬度
+  .widthTai_pic1 {
+    img {
+      width: 45%;
+      height: 38vh;
+      @include pc2() {
+        height: 45vh;
+        width: 50%;
+        margin-top: 2rem; /**/
+      }
+      @include pad() {
+        width: 100%;
+        height: 43vh;
+        margin-top: 0rem;
+      }
+    }
+  }
   .widthNa_moutain {
     @include pad() {
       flex-direction: column;
@@ -270,6 +385,19 @@ $raduis: 15px;
       }
     }
   }
+  .widthHua_pic {
+    @include pad() {
+      flex-direction: column;
+    }
+    img {
+      @include pc2() {
+        height: 30vh;
+      }
+      @include pad() {
+        height: 45vh;
+      }
+    }
+  }
   .widthXin_sea1 {
     img {
       width: 40%;
@@ -278,11 +406,31 @@ $raduis: 15px;
       object-fit: cover;
       @include pc2() {
         width: 50%;
-        height: 30vh;
+        height: 35vh;
       }
       @include pad() {
         padding: 0 0.5rem;
         width: 100%;
+      }
+    }
+  }
+  .widthTai_ship {
+    @include pad() {
+      flex-direction: column;
+    }
+    img {
+      width: 32%;
+      height: 30vh;
+      @include pc() {
+        height: 35vh;
+      }
+      @include pc2() {
+        height: 40vh;
+        width: 42%;
+      }
+      @include pad() {
+        width: 100%;
+        height: 32vh;
       }
     }
   }
