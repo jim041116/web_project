@@ -1,5 +1,11 @@
 @import "./public.scss";
 $raduis: 15px;
+
+@mixin pc2() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
 header {
   flex-wrap: nowrap;
 }
@@ -8,68 +14,65 @@ body {
 }
 main {
   .banner {
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 5rem;
-    display: flex;
-    height: 400px;
-    .left_info {
-      display: flex;
-      width: 90%;
-      height: 360px;
-      opacity: 0.9;
-      margin: 0 auto;
-      @include pad() {
-        background-image: url(../img/badouzi.jpg);
-        border-bottom-left-radius: 150px;
-        border-top-right-radius: 50px;
-        background-position: center;
-      }
-      @include phone() {
-        background-image: url(../img/badouzi.jpg);
-        border-radius: $raduis;
-        background-position: center;
-        height: 330px;
-      }
+    width: 60%;
+    height: 35vh;
+    margin: 5rem auto 3rem;
+    @include pc() {
+      height: 40vh;
     }
-    .text {
-      width: 330px;
-      text-align: center;
-      background-color: hsla(0, 0, 0, 0.9);
-      border-bottom-left-radius: 150px;
-      font-weight: $text_weight-b;
-      @include pad() {
-        background-color: #545454a2;
-      }
-      @include phone() {
-        border-radius: 15px 0 0 15px;
-      }
-      h1 {
-        font-size: $text_size-48px;
-        margin: 6.5rem 0 3rem 0;
-        color: $text_color_w;
-        @include pad() {
-          font-size: $text_size-32px;
-        }
-      }
-      p {
-        font-size: $text_size-32px;
-        color: $text_color_w;
-        @include pad() {
-          font-size: $text_size-18px;
-        }
-      }
+    @include pc2() {
+      height: 50vh;
+      width: 70%;
+    }
+    @include pad() {
+      width: 85%;
+      height: 32vh;
+    }
+    @include phone() {
+      width: 90%;
+      height: 38vh;
+    }
+    @include phone2() {
+      height: 45vh;
     }
     .back-img {
-      background-image: url(../img/badouzi.jpg);
-      width: 100%;
-      background-position: cneter;
+      background-image: url(../img/share曾文水庫-4.jpg);
+      background-position: center;
       background-size: cover;
+      height: 100%;
+      border-bottom-left-radius: 150px;
       @include pad() {
-        background-image: none;
+        background-image: url(../img/share南子吝-3.jpg);
+        border-top-right-radius: 150px;
       }
       @include phone() {
-        background-image: none;
+        border-radius: 50px;
+        background-image: url(../img/share八斗子-4.jpg);
+      }
+      .text {
+        width: 30%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-bottom-left-radius: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include phone() {
+          width: 50%;
+          background-color: #0000006e;
+          border-radius: 50px 0 0 50px;
+        }
+        h1,
+        p {
+          color: #fff;
+        }
+        h1 {
+          margin-bottom: 3rem;
+        }
+        p {
+          font-size: $text_size-18px;
+        }
       }
     }
   }
