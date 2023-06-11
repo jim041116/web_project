@@ -463,7 +463,8 @@ section .text {
   left: 10%;
   width: 80%;
   margin: 0 auto;
-  background-image: url(../img/伯朗.jpg);
+  background-image: url(../img/com台東池上-1.jpg);
+  background-position: top center;
   height: 350px;
   border-radius: 15px;
 }
@@ -519,47 +520,47 @@ section .text p {
   }
 }
 
-.text_t {
-  width: 210px;
-  margin: 16rem auto -1.5rem;
+.law_contain {
+  margin-top: 13%;
 }
 @media (max-width: 1440px) {
-  .text_t {
-    margin-top: 20%;
+  .law_contain {
+    margin-top: 18%;
   }
 }
 @media (max-width: 992px) {
-  .text_t {
-    margin-top: 38%;
+  .law_contain {
+    margin-top: 37%;
   }
 }
 @media (max-width: 576px) {
-  .text_t {
+  .law_contain {
     margin-top: 50%;
-    display: flex;
-    justify-content: center;
   }
 }
-.text_t .tittle {
-  color: #545454;
+@media (max-width: 375px) {
+  .law_contain {
+    margin-top: 60%;
+  }
+}
+.law_contain .text_t {
+  display: flex;
+  justify-content: center;
+}
+.law_contain .text_t .tittle {
   font-size: 40px;
   margin: 0;
   z-index: 1;
   position: relative;
 }
-.text_t .tittle div {
+.law_contain .text_t .tittle div {
   font-weight: 700;
 }
-@media (max-width: 576px) {
-  .text_t .tittle {
-    font-size: 32px;
-  }
-}
-.text_t .tittle p {
-  font-size: 40px;
+.law_contain .text_t .tittle p {
+  color: #545454;
   font-weight: 700;
 }
-.text_t .tittle .tittle_ball {
+.law_contain .text_t .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289dd2;
@@ -570,368 +571,460 @@ section .text p {
   left: -15px;
   z-index: -1;
 }
-@media (max-width: 576px) {
-  .text_t .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
-}
-
-#contain {
-  height: 60vh;
-  margin: 4rem auto;
+.law_contain .effect_box {
   width: 40%;
+  margin: 1rem auto;
+  display: flex;
 }
-@media (max-width: 1440px) {
-  #contain {
-    width: 45%;
+@media (max-width: 1024px) {
+  .law_contain .effect_box {
+    width: 50%;
   }
 }
 @media (max-width: 992px) {
-  #contain {
+  .law_contain .effect_box {
     width: 80%;
   }
 }
 @media (max-width: 576px) {
-  #contain {
-    width: 80%;
-    height: 54vh;
+  .law_contain .effect_box {
+    width: 90%;
   }
 }
-#contain .effect_box {
-  height: 100%;
-  display: flex;
+.law_contain .effect_box .move {
+  flex: 0.5;
 }
-#contain .effect_box .move {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-#contain .effect_box .move .move_box1,
-#contain .effect_box .move .move_box2,
-#contain .effect_box .move .move_box3,
-#contain .effect_box .move .move_box4,
-#contain .effect_box .move .move_box5 {
-  width: 170px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  border-radius: 15px;
-  position: relative;
-  top: 0;
-  left: 0;
-  transition: 0.5s ease-out;
+.law_contain .effect_box .move .moveBor {
+  width: 90%;
+  height: 10vh;
   background-color: #289dd2;
+  border-radius: 15px;
+  margin: 0.5rem;
+  transition: 0.3s ease-in-out;
+  position: relative;
 }
-@media (max-width: 1440px) {
-  #contain .effect_box .move .move_box1,
-  #contain .effect_box .move .move_box2,
-  #contain .effect_box .move .move_box3,
-  #contain .effect_box .move .move_box4,
-  #contain .effect_box .move .move_box5 {
-    height: 90px;
+@media (max-width: 1024px) {
+  .law_contain .effect_box .move .moveBor {
+    width: 85%;
+  }
+}
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .moveBor {
+    height: 8vh;
   }
 }
 @media (max-width: 576px) {
-  #contain .effect_box .move .move_box1,
-  #contain .effect_box .move .move_box2,
-  #contain .effect_box .move .move_box3,
-  #contain .effect_box .move .move_box4,
-  #contain .effect_box .move .move_box5 {
-    width: 120px;
-    height: 60px;
-    margin-left: 20px;
+  .law_contain .effect_box .move .moveBor {
+    width: 60%;
+    margin: 0rem 1rem 2rem;
   }
 }
 @media (max-width: 375px) {
-  #contain .effect_box .move .move_box1,
-  #contain .effect_box .move .move_box2,
-  #contain .effect_box .move .move_box3,
-  #contain .effect_box .move .move_box4,
-  #contain .effect_box .move .move_box5 {
-    width: 100px;
-    height: 50px;
-    margin-left: 0px;
+  .law_contain .effect_box .move .moveBor {
+    height: 9vh;
+    margin: 0 0 2rem 0;
   }
 }
-#contain .effect_box .move .move_box1:hover,
-#contain .effect_box .move .move_box2:hover,
-#contain .effect_box .move .move_box3:hover,
-#contain .effect_box .move .move_box4:hover,
-#contain .effect_box .move .move_box5:hover {
-  cursor: pointer;
+.law_contain .effect_box .move .moveBor:hover {
   transform: translateX(-40px);
 }
 @media (max-width: 576px) {
-  #contain .effect_box .move .move_box1:hover,
-  #contain .effect_box .move .move_box2:hover,
-  #contain .effect_box .move .move_box3:hover,
-  #contain .effect_box .move .move_box4:hover,
-  #contain .effect_box .move .move_box5:hover {
+  .law_contain .effect_box .move .moveBor:hover {
     transform: translateX(0);
   }
 }
-#contain .effect_box .move .move_box1 span,
-#contain .effect_box .move .move_box2 span,
-#contain .effect_box .move .move_box3 span,
-#contain .effect_box .move .move_box4 span,
-#contain .effect_box .move .move_box5 span {
-  color: #ffffff;
+.law_contain .effect_box .move .moveBor p {
+  color: #fff;
+  text-align: center;
+  line-height: 10vh;
+  cursor: pointer;
 }
-@media (max-width: 576px) {
-  #contain .effect_box .move .move_box1 span,
-  #contain .effect_box .move .move_box2 span,
-  #contain .effect_box .move .move_box3 span,
-  #contain .effect_box .move .move_box4 span,
-  #contain .effect_box .move .move_box5 span {
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .moveBor p {
+    line-height: 8vh;
   }
 }
 @media (max-width: 375px) {
-  #contain .effect_box .move .move_box1 span,
-  #contain .effect_box .move .move_box2 span,
-  #contain .effect_box .move .move_box3 span,
-  #contain .effect_box .move .move_box4 span,
-  #contain .effect_box .move .move_box5 span {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .law_contain .effect_box .move .moveBor p {
+    line-height: 9vh;
   }
 }
-#contain .move_box1:hover ::after {
-  content: "飛航高度超過限高區200呎(60公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過60公尺";
+.law_contain .effect_box .move .box1:hover ::after {
+  content: "飛航高度超過限高區200呎(60公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過60公尺。";
   position: absolute;
-  top: -3px;
-  left: 195px;
-  width: 300px;
-  height: 100px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: #ffffff;
-  line-height: 1.2rem;
-  text-align: left;
+  width: 30vh;
+  height: 10vh;
+  position: absolute;
+  top: 0px;
+  left: 12rem;
   border-radius: 15px;
-  padding: 0.7rem 2.3rem;
+  color: #fff;
+  text-align: justify;
+  padding: 0.6rem;
+  line-height: 1.2rem;
+}
+@media (max-width: 1440px) {
+  .law_contain .effect_box .move .box1:hover ::after {
+    height: 12vh;
+    left: 11rem;
+  }
+}
+@media (max-width: 1024px) {
+  .law_contain .effect_box .move .box1:hover ::after {
+    width: 40vh;
+    height: 15vh;
+    left: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .box1:hover ::after {
+    height: 7vh;
+    width: 25vh;
+    left: 12rem;
+  }
+}
+@media (max-width: 768px) {
+  .law_contain .effect_box .move .box1:hover ::after {
+    width: 30vh;
+    height: 7.5vh;
+  }
 }
 @media (max-width: 576px) {
-  #contain .move_box1:hover ::after {
+  .law_contain .effect_box .move .box1:hover ::after {
     display: none;
   }
 }
-#contain .move_box2:hover ::after {
-  content: "飛航高度超過限高區400呎(120公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過120公尺";
+.law_contain .effect_box .move .box2:hover ::after {
+  content: "飛航高度超過限高區400呎(120公尺):30~150萬，以起飛地的海拔開始計算，無人機往上飛不得超過120公尺。";
   position: absolute;
-  top: -3px;
-  left: 195px;
-  width: 300px;
-  height: 100px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: #ffffff;
-  line-height: 1.2rem;
-  text-align: left;
+  width: 30vh;
+  height: 10vh;
+  position: absolute;
+  top: 0px;
+  left: 12rem;
   border-radius: 15px;
-  padding: 0.7rem 2.3rem;
+  color: #fff;
+  text-align: justify;
+  padding: 0.6rem;
+  line-height: 1.2rem;
+}
+@media (max-width: 1440px) {
+  .law_contain .effect_box .move .box2:hover ::after {
+    height: 12vh;
+    left: 11rem;
+  }
+}
+@media (max-width: 1024px) {
+  .law_contain .effect_box .move .box2:hover ::after {
+    width: 40vh;
+    height: 15vh;
+    left: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .box2:hover ::after {
+    height: 7vh;
+    width: 25vh;
+    left: 12rem;
+  }
+}
+@media (max-width: 768px) {
+  .law_contain .effect_box .move .box2:hover ::after {
+    width: 30vh;
+    height: 7.5vh;
+  }
 }
 @media (max-width: 576px) {
-  #contain .move_box2:hover ::after {
+  .law_contain .effect_box .move .box2:hover ::after {
     display: none;
   }
 }
-#contain .move_box3:hover ::after {
+.law_contain .effect_box .move .box3:hover ::after {
   content: "人群及集會上方操作空拍機:6萬，在人群及集會遊行上方等場所，未申請操作空拍機將開罰。";
   position: absolute;
-  top: -3px;
-  left: 195px;
-  width: 300px;
-  height: 100px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: #ffffff;
-  line-height: 1.2rem;
-  text-align: left;
+  width: 30vh;
+  height: 10vh;
+  position: absolute;
+  top: 0px;
+  left: 12rem;
   border-radius: 15px;
-  padding: 0.8rem 2.5rem;
+  color: #fff;
+  text-align: justify;
+  padding: 0.6rem;
+  line-height: 1.2rem;
+}
+@media (max-width: 1440px) {
+  .law_contain .effect_box .move .box3:hover ::after {
+    height: 12vh;
+    left: 11rem;
+  }
+}
+@media (max-width: 1024px) {
+  .law_contain .effect_box .move .box3:hover ::after {
+    width: 40vh;
+    height: 12vh;
+    left: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .box3:hover ::after {
+    height: 7vh;
+    width: 25vh;
+    left: 12rem;
+  }
+}
+@media (max-width: 768px) {
+  .law_contain .effect_box .move .box3:hover ::after {
+    width: 30vh;
+    height: 7.5vh;
+  }
 }
 @media (max-width: 576px) {
-  #contain .move_box3:hover ::after {
+  .law_contain .effect_box .move .box3:hover ::after {
     display: none;
   }
 }
-#contain .move_box4:hover ::after {
+.law_contain .effect_box .move .box4:hover ::after {
   content: "無人機沒註冊：3~15 萬，250g以上無人機都需要至民航局網站註冊，立即註冊立即使用。";
   position: absolute;
-  top: -3px;
-  left: 195px;
-  width: 300px;
-  height: 100px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: #ffffff;
-  line-height: 1.2rem;
-  text-align: left;
+  width: 30vh;
+  height: 10vh;
+  position: absolute;
+  top: 0px;
+  left: 12rem;
   border-radius: 15px;
-  padding: 1.2rem 2.3rem;
+  color: #fff;
+  text-align: justify;
+  padding: 0.6rem;
+  line-height: 1.2rem;
+}
+@media (max-width: 1440px) {
+  .law_contain .effect_box .move .box4:hover ::after {
+    height: 12vh;
+    left: 11rem;
+  }
+}
+@media (max-width: 1024px) {
+  .law_contain .effect_box .move .box4:hover ::after {
+    width: 40vh;
+    height: 12vh;
+    left: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .box4:hover ::after {
+    height: 7vh;
+    width: 25vh;
+    left: 12rem;
+  }
 }
 @media (max-width: 576px) {
-  #contain .move_box4:hover ::after {
+  .law_contain .effect_box .move .box4:hover ::after {
     display: none;
   }
 }
-#contain .move_box5:hover ::after {
+.law_contain .effect_box .move .box5:hover ::after {
   content: "在非規定時間飛行：6萬，未經申請在日落後及日出前進行空拍活動將開罰。";
   position: absolute;
-  top: -3px;
-  left: 195px;
-  width: 300px;
-  height: 100px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: #ffffff;
-  line-height: 1.2rem;
-  text-align: left;
+  width: 30vh;
+  height: 10vh;
+  position: absolute;
+  top: 0px;
+  left: 12rem;
   border-radius: 15px;
-  padding: 1.4rem 2.3rem;
+  color: #fff;
+  text-align: justify;
+  padding: 0.6rem;
+  line-height: 1.2rem;
+}
+@media (max-width: 1440px) {
+  .law_contain .effect_box .move .box5:hover ::after {
+    left: 11rem;
+  }
+}
+@media (max-width: 1024px) {
+  .law_contain .effect_box .move .box5:hover ::after {
+    width: 40vh;
+    height: 12vh;
+    left: 10rem;
+  }
+}
+@media (max-width: 992px) {
+  .law_contain .effect_box .move .box5:hover ::after {
+    height: 7vh;
+    width: 25vh;
+    left: 12rem;
+  }
 }
 @media (max-width: 576px) {
-  #contain .move_box5:hover ::after {
+  .law_contain .effect_box .move .box5:hover ::after {
     display: none;
   }
 }
 @media (max-width: 576px) {
-  #contain .move_box1::after {
-    content: "飛航高度超過限高區200呎(60公尺)";
-    width: 190px;
-    height: 60px;
+  .law_contain .effect_box .move .box1::after {
+    content: "飛航高度超過限高區200呎(60公尺)。";
     background-color: hsla(0, 0%, 0%, 0.5);
+    width: 20vh;
+    height: 8vh;
     position: absolute;
     top: 0px;
-    line-height: 1rem;
-    font-size: 12px;
-    padding: 1rem 0.5rem;
-    text-align: left;
-    color: #ffffff;
+    left: 9rem;
     border-radius: 15px;
-    margin-left: 5rem;
+    text-align: justify;
+    padding: 0.5rem;
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .law_contain .effect_box .move .box1::after {
+    width: 24vh;
+    height: 10vh;
   }
 }
 @media (max-width: 576px) {
-  #contain .move_box2::after {
-    content: "飛航高度超過限高區400呎(120公尺)";
-    width: 190px;
-    height: 60px;
+  .law_contain .effect_box .move .box2::after {
+    content: "飛航高度超過限高區400呎(120公尺)。";
     background-color: hsla(0, 0%, 0%, 0.5);
+    width: 20vh;
+    height: 8vh;
     position: absolute;
     top: 0px;
-    line-height: 1rem;
-    font-size: 12px;
-    padding: 1rem 0.5rem;
-    text-align: left;
-    color: #ffffff;
+    left: 9rem;
     border-radius: 15px;
-    margin-left: 5rem;
+    text-align: justify;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .law_contain .effect_box .move .box2::after {
+    width: 24vh;
+    height: 10vh;
   }
 }
 @media (max-width: 576px) {
-  #contain .move_box3::after {
+  .law_contain .effect_box .move .box3::after {
     content: "在人群及集會遊行上方等場所，未申請操作空拍機將開罰。";
-    width: 190px;
-    height: 60px;
     background-color: hsla(0, 0%, 0%, 0.5);
+    width: 20vh;
+    height: 10vh;
     position: absolute;
     top: 0px;
-    line-height: 1rem;
-    font-size: 12px;
-    padding: 1rem 0.5rem;
-    text-align: left;
-    color: #ffffff;
+    left: 9rem;
     border-radius: 15px;
-    margin-left: 5rem;
+    text-align: justify;
+    padding: 0.25rem 0.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .law_contain .effect_box .move .box3::after {
+    width: 24vh;
+    height: 12vh;
   }
 }
 @media (max-width: 576px) {
-  #contain .move_box4::after {
-    content: "250g以上無人機都需要至民航局網站註冊，立即註冊立即使用。";
-    width: 190px;
-    height: 60px;
+  .law_contain .effect_box .move .box4::after {
+    content: "250g以上無人機都需要至民航局註冊。";
     background-color: hsla(0, 0%, 0%, 0.5);
+    width: 20vh;
+    height: 8vh;
     position: absolute;
     top: 0px;
-    line-height: 1rem;
-    font-size: 12px;
-    padding: 1rem 0.5rem;
-    text-align: left;
-    color: #ffffff;
+    left: 9rem;
     border-radius: 15px;
-    margin-left: 5rem;
+    text-align: justify;
+    padding: 0.25rem 0.5rem;
+  }
+}
+@media (max-width: 375px) {
+  .law_contain .effect_box .move .box4::after {
+    width: 24vh;
+    height: 10vh;
   }
 }
 @media (max-width: 576px) {
-  #contain .move_box5::after {
+  .law_contain .effect_box .move .box5::after {
     content: "未經申請在日落後及日出前進行空拍活動將開罰。";
-    width: 190px;
-    height: 60px;
     background-color: hsla(0, 0%, 0%, 0.5);
+    width: 20vh;
+    height: 10vh;
     position: absolute;
     top: 0px;
-    line-height: 1rem;
-    font-size: 12px;
-    padding: 1rem 0.5rem;
-    text-align: left;
-    color: #ffffff;
+    left: 9rem;
     border-radius: 15px;
-    margin-left: 5rem;
+    text-align: justify;
+    padding: 0.25rem 0.5rem;
   }
 }
-#contain .img_bg {
-  width: 58vh;
-  height: 100%;
+@media (max-width: 375px) {
+  .law_contain .effect_box .move .box5::after {
+    width: 24vh;
+    height: 12vh;
+  }
+}
+.law_contain .effect_box .img_bg {
+  flex: 1.5;
   background-image: url(../img/law_glass.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  left: 210px;
   border-radius: 15px;
 }
 @media (max-width: 992px) {
-  #contain .img_bg {
-    width: 65%;
-    margin-left: 2rem;
+  .law_contain .effect_box .img_bg {
+    flex: 1.4;
   }
 }
 @media (max-width: 576px) {
-  #contain .img_bg {
+  .law_contain .effect_box .img_bg {
     display: none;
   }
 }
 
 #limit {
+  margin: 6rem auto 0;
+  width: 60%;
+  height: 50vh;
   display: flex;
-  width: 80%;
-  margin: 8% auto;
 }
-#limit .box {
-  width: 50%;
-  margin-left: 10%;
+@media (max-width: 1024px) {
+  #limit {
+    width: 80%;
+    height: 60vh;
+  }
 }
 @media (max-width: 992px) {
-  #limit .box {
-    margin-top: 10%;
-    margin-left: 0;
-    width: 50%;
+  #limit {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  #limit {
+    height: 60vh;
   }
 }
 @media (max-width: 576px) {
-  #limit .box .limit_t {
-    margin-left: 2rem;
+  #limit {
+    flex-direction: column;
+    height: 83vh;
   }
 }
+@media (max-width: 375px) {
+  #limit {
+    height: 110vh;
+  }
+}
+#limit .box {
+  height: 100%;
+  flex: 1.5;
+  position: relative;
+  z-index: -2;
+}
 #limit .box .limit_t .tittle {
-  margin: 0 auto;
-  color: #545454;
   font-size: 40px;
   margin: 0;
   z-index: 1;
@@ -941,20 +1034,8 @@ section .text p {
   font-weight: 700;
 }
 #limit .box .limit_t .tittle p {
-  font-size: 40px;
+  color: #545454;
   font-weight: 700;
-}
-@media (max-width: 576px) {
-  #limit .box .limit_t .tittle {
-    font-size: 32px;
-    width: 130px;
-    margin-left: 55%;
-  }
-}
-@media (max-width: 375px) {
-  #limit .box .limit_t .tittle {
-    margin-left: 50%;
-  }
 }
 #limit .box .limit_t .tittle .tittle_ball {
   width: 35px;
@@ -967,102 +1048,99 @@ section .text p {
   left: -15px;
   z-index: -1;
 }
-@media (max-width: 576px) {
-  #limit .box .limit_t .tittle .tittle_ball {
-    width: 20px;
-    height: 20px;
-    left: -10px;
-  }
-}
 #limit .box .limit_text {
-  height: 40vh;
-  background-image: url(../img/law_limit_place.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   margin-top: 2rem;
-  border-radius: 15px;
-  position: relative;
-  z-index: -1;
+  background-image: url(../img/law_limit_place.png);
+  background-size: cover;
+  height: 70%;
 }
 @media (max-width: 992px) {
   #limit .box .limit_text {
-    height: 30vh;
-    border-radius: 15px 0 0 15px;
+    height: 58%;
   }
 }
 @media (max-width: 576px) {
   #limit .box .limit_text {
-    display: none;
+    width: 100%;
+    height: 75%;
+    border-radius: 15px;
   }
 }
 #limit .box .limit_text p {
-  color: #ffffff;
-  padding: 6rem;
+  color: #fff;
+  text-align: justify;
+  padding: 5rem 10rem 0 2rem;
   line-height: 2rem;
 }
 @media (max-width: 1440px) {
   #limit .box .limit_text p {
-    padding: 3rem 7rem 3rem 5rem;
+    padding: 1.5rem 5rem 0 2rem;
   }
 }
 @media (max-width: 992px) {
   #limit .box .limit_text p {
-    text-align: left;
+    padding: 1.5rem 5rem 0 2rem;
+  }
+}
+@media (max-width: 768px) {
+  #limit .box .limit_text p {
+    padding: 1rem 4.5rem 0 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  #limit .box .limit_text p {
     padding: 1rem;
   }
 }
-@media (max-width: 576px) {
-  #limit .box .limit_text p {
-    display: none;
-  }
-}
-#limit .box-right {
-  margin-left: 3rem;
+#limit .bg-right {
+  padding-left: 2rem;
+  flex: 0.95;
+  background-image: url(../img/law_info.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
-@media (max-width: 992px) {
-  #limit .box-right {
-    width: 50%;
-    margin: 0;
-  }
-}
-@media (max-width: 576px) {
-  #limit .box-right {
-    z-index: 1;
-    display: flex;
-    height: 300px;
-    margin-top: 6.5rem;
-    left: -150px;
+@media (max-width: 1440px) {
+  #limit .bg-right {
+    flex: 1.2;
   }
 }
 @media (max-width: 992px) {
-  #limit .box-right img {
-    z-index: 0;
-    width: 100%;
-    height: 80%;
-    margin-top: 3.5rem;
-    border-radius: 15px 15px 15px 0;
+  #limit .bg-right {
+    flex: 1.5;
+    background-size: contain;
+    margin-top: 7rem;
   }
 }
 @media (max-width: 576px) {
-  #limit .box-right img {
-    height: 100%;
-    margin: 0;
-    width: 300px;
+  #limit .bg-right {
+    margin-top: 0;
   }
 }
-#limit .box-right .bg_img {
-  width: 420px;
-  height: 420px;
+#limit .bg-right .shadowPic {
+  width: 100%;
+  height: 100%;
   background-image: url(../img/law_infoVague.png);
+  background-size: cover;
   position: absolute;
   z-index: -1;
   left: -7rem;
-  top: -3rem;
+  top: -2rem;
+}
+@media (max-width: 1440px) {
+  #limit .bg-right .shadowPic {
+    left: -3rem;
+  }
 }
 @media (max-width: 992px) {
-  #limit .box-right .bg_img {
+  #limit .bg-right .shadowPic {
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -3.5rem;
+  }
+}
+@media (max-width: 576px) {
+  #limit .bg-right .shadowPic {
     display: none;
   }
 }
@@ -1139,44 +1217,45 @@ section .text p {
 }
 #register .text_content {
   width: 50%;
-  height: 230px;
+  height: 25vh;
   border-radius: 15px;
   background-color: hsla(0, 0%, 0%, 0.5);
   padding: 2.5rem 4rem;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  text-align: justify;
 }
 @media (max-width: 1440px) {
   #register .text_content {
-    padding: 2rem;
+    width: 55%;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  #register .text_content {
+    width: 60%;
+    height: 30vh;
   }
 }
 @media (max-width: 992px) {
   #register .text_content {
-    width: 545px;
     padding: 2rem;
-    margin-top: 20%;
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
-  }
-}
-@media (max-width: 768px) {
-  #register .text_content {
-    width: 510px;
+    margin: 0 auto;
+    width: 80%;
+    height: 22vh;
   }
 }
 @media (max-width: 576px) {
   #register .text_content {
-    width: 350px;
-    height: 260px;
-    margin-left: -15%;
+    width: 100%;
+    height: 30vh;
+    line-height: 1rem;
+    padding: 1.5rem;
   }
 }
 @media (max-width: 375px) {
   #register .text_content {
-    margin-left: -3rem;
-    height: 250px;
-    width: 340px;
+    height: 38vh;
   }
 }
 #register .text_content p {
@@ -1184,22 +1263,9 @@ section .text p {
   line-height: 1.5rem;
   margin-top: 1rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   #register .text_content p {
-    line-height: 2rem;
-    margin-top: 0;
-  }
-}
-@media (max-width: 576px) {
-  #register .text_content p {
-    margin-top: -10px;
-  }
-}
-@media (max-width: 375px) {
-  #register .text_content p {
-    font-size: 14px;
-    line-height: 1.8rem;
-    margin-top: -0.5rem;
+    margin: 0;
   }
 }
 
@@ -1217,8 +1283,7 @@ section .text p {
 }
 @media (max-width: 992px) {
   .pic_p {
-    top: -27%;
-    right: -27%;
+    display: none;
   }
 }
 .pic_p img {
@@ -1264,19 +1329,19 @@ section .text p {
   z-index: 1;
   position: relative;
 }
-.license_t .tittle p {
-  font-size: 40px;
-  font-weight: 700;
-}
 @media (max-width: 576px) {
   .license_t .tittle {
     margin-top: 2rem;
     font-size: 32px;
-    color: black;
   }
 }
 .license_t .tittle div {
   font-weight: 700;
+}
+.license_t .tittle p {
+  font-size: 40px;
+  font-weight: 700;
+  color: #545454;
 }
 .license_t .tittle .tittle_ball {
   width: 35px;
@@ -1335,39 +1400,39 @@ section .text p {
 }
 #license .container .con_border {
   width: 60%;
-  height: 228px;
+  height: 25vh;
   background-color: hsla(0, 0%, 0%, 0.5);
   padding: 2rem;
   border-radius: 15px;
+  text-align: justify;
 }
 @media (max-width: 1440px) {
   #license .container .con_border {
-    padding: 2rem;
+    padding: 1.5rem;
+    height: 26vh;
+  }
+}
+@media (max-width: 1024px) {
+  #license .container .con_border {
+    padding: 1rem;
+    height: 30vh;
+    width: 80%;
   }
 }
 @media (max-width: 992px) {
   #license .container .con_border {
-    width: 500px;
-    height: 250px;
-    padding: 2.5rem;
-    margin-left: -1.8rem;
-  }
-}
-@media (max-width: 768px) {
-  #license .container .con_border {
-    margin: 0 0 1rem -1.5rem;
+    width: 100%;
+    padding: 1.5rem;
   }
 }
 @media (max-width: 576px) {
   #license .container .con_border {
-    display: none;
+    height: 35vh;
   }
 }
 @media (max-width: 375px) {
   #license .container .con_border {
-    width: 340px;
-    margin-left: -4rem;
-    height: 250px;
+    height: 45vh;
   }
 }
 #license .container .con_border h4,
@@ -1376,41 +1441,32 @@ section .text p {
   font-size: 16px;
   line-height: 2rem;
 }
-@media (max-width: 576px) {
-  #license .container .con_border h4,
-  #license .container .con_border p {
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  #license .container .con_border h4,
-  #license .container .con_border p {
-    font-size: 14px;
-    padding: 0;
-    margin-top: -1rem;
-  }
-}
 #license .container #forMoveIn {
   transform: translateX(-900px);
 }
+@media (max-width: 1024px) {
+  #license .container #forMoveIn {
+    transform: translateX(-780px);
+  }
+}
 @media (max-width: 992px) {
   #license .container #forMoveIn {
-    transform: 0;
+    transform: translateX(-785px);
   }
 }
 @media (max-width: 768px) {
   #license .container #forMoveIn {
-    transform: 0;
+    transform: translateX(-790px);
   }
 }
 @media (max-width: 576px) {
   #license .container #forMoveIn {
-    transform: 0;
+    transform: translateX(-810px);
   }
 }
 @media (max-width: 375px) {
   #license .container #forMoveIn {
-    transform: 0;
+    transform: translateX(-826px);
   }
 }
 #license .container #forMoveIn .dif {
@@ -1418,65 +1474,13 @@ section .text p {
   width: 500px;
   margin: 1.5rem 0 0 -7rem;
 }
-@media (max-width: 1440px) {
-  #license .container #forMoveIn .dif {
-    width: 60%;
-    margin-left: 10rem;
-  }
-}
-@media (max-width: 992px) {
-  #license .container #forMoveIn .dif {
-    width: 50vw;
-    margin-left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  #license .container #forMoveIn .dif {
-    width: 50vw;
-    margin-left: 35px;
-  }
-}
 @media (max-width: 576px) {
   #license .container #forMoveIn .dif {
-    width: 350px;
-    margin-left: -3.5rem;
-    margin-top: 1.8rem;
-  }
-}
-@media (max-width: 375px) {
-  #license .container #forMoveIn .dif {
-    width: 350px;
-    margin-top: 3rem;
-    margin-left: -4rem;
+    width: 300px;
   }
 }
 #license .container #forMoveIn2 {
   transform: translateX(1400px);
-}
-@media (max-width: 992px) {
-  #license .container #forMoveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 768px) {
-  #license .container #forMoveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 576px) {
-  #license .container #forMoveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 1440px) {
-  #license .container #forMoveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 375px) {
-  #license .container #forMoveIn2 {
-    transform: 0;
-  }
 }
 #license .container #forMoveIn2 .oper {
   position: absolute;
@@ -1485,29 +1489,7 @@ section .text p {
   height: 580px;
   border-radius: 15px;
 }
-@media (max-width: 1440px) {
-  #license .container #forMoveIn2 .oper {
-    display: none;
-  }
-}
-@media (max-width: 992px) {
-  #license .container #forMoveIn2 .oper {
-    height: 450px;
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  #license .container #forMoveIn2 .oper {
-    margin-top: 1%;
-    display: none;
-  }
-}
-@media (max-width: 576px) {
-  #license .container #forMoveIn2 .oper {
-    display: none;
-  }
-}
-@media (max-width: 375px) {
+@media (max-width: 1024px) {
   #license .container #forMoveIn2 .oper {
     display: none;
   }
@@ -1517,124 +1499,33 @@ section .text p {
   transform: translateX(900px);
   transition: 1.5s ease-in-out;
 }
-@media (max-width: 992px) {
-  .moveIn1 {
-    transform: 0;
-  }
-}
-@media (max-width: 768px) {
-  .moveIn1 {
-    transform: 0;
-  }
-}
-@media (max-width: 576px) {
-  .moveIn1 {
-    transform: 0;
-  }
-}
-@media (max-width: 375px) {
-  .moveIn1 {
-    transform: 0;
-  }
-}
 
 .moveIn2 {
   transform: translateX(-970px);
   transition: 2.2s ease-in-out;
   top: -32rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1440px) {
   .moveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 768px) {
-  .moveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 576px) {
-  .moveIn2 {
-    transform: 0;
-  }
-}
-@media (max-width: 375px) {
-  .moveIn2 {
-    transform: 0;
+    transform: translateX(-1000px);
   }
 }
 
 .fly_pic {
   width: 100%;
-  height: 580px;
+  height: 63vh;
+}
+@media (max-width: 1024px) {
+  .fly_pic {
+    margin-top: 10%;
+  }
 }
 @media (max-width: 992px) {
   .fly_pic {
-    margin-top: -5rem;
-    height: 380px;
-  }
-}
-@media (max-width: 768px) {
-  .fly_pic {
-    height: 420px;
+    margin-top: -30%;
   }
 }
 .fly_pic img {
   height: 100%;
   width: 100%;
-}
-@media (max-width: 768px) {
-  .fly_pic img {
-    margin-top: 8rem;
-  }
-}
-@media (max-width: 576px) {
-  .fly_pic img {
-    margin-top: 3rem;
-    height: 300px;
-  }
-}
-@media (max-width: 375px) {
-  .fly_pic img {
-    margin-top: -1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  footer {
-    margin-top: 8rem;
-  }
-}
-@media (max-width: 576px) {
-  footer {
-    margin-top: -3rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  #register .text_content {
-    height: 33vh;
-  }
-  .fly_pic img {
-    margin-top: 14rem;
-    height: 250px;
-    width: 375px;
-  }
-  #license .container .con_border {
-    margin-top: -1.5rem;
-  }
-  footer {
-    margin-top: 3rem;
-  }
-  .moveIn2 {
-    transform: 0;
-  }
-}
-@media screen and (max-width: 820px) {
-  .fly_pic {
-    margin-top: -30rem;
-  }
-  .moveIn2 {
-    transform: 0;
-  }
 }/*# sourceMappingURL=lawR.css.map */

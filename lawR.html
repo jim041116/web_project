@@ -140,41 +140,37 @@
         </div>
       </section>
 
-      <!-- 易觸犯title -->
-      <div class="text_t">
-        <div class="tittle">
-          <p>易觸犯規範</p>
-          <div class="tittle_ball"></div>
+      <!-- 易觸犯規範 -->
+      <div class="law_contain">
+        <div class="text_t">
+          <div class="tittle">
+            <p>易觸犯規範</p>
+            <div class="tittle_ball"></div>
+          </div>
         </div>
-      </div>
 
-      <!-- 易觸犯規範content-->
-      <section id="contain">
-        <!-- 容器 -->
         <div class="effect_box">
-          <!-- 移動列 -->
           <div class="move">
-            <div class="move_box1">
-              <span>限高200呎</span>
+            <div class="moveBor box1">
+              <p>限高200呎</p>
             </div>
-            <div class="move_box2">
-              <span>限高400呎</span>
+            <div class="moveBor box2">
+              <p>限高400呎</p>
             </div>
-            <div class="move_box3">
-              <span>操作空拍機</span>
+            <div class="moveBor box3">
+              <p>操作空拍機</p>
             </div>
-            <div class="move_box4">
-              <span>註冊</span>
+            <div class="moveBor box4">
+              <p>註冊</p>
             </div>
-            <div class="move_box5">
-              <span>非規定時間</span>
+            <div class="moveBor box5">
+              <p>非規定時間</p>
             </div>
           </div>
 
-          <!-- 圖片 -->
           <div class="img_bg"></div>
         </div>
-      </section>
+      </div>
 
       <!-- 限高區域 -->
       <section id="limit">
@@ -193,14 +189,13 @@
           </div>
         </div>
 
-        <div class="box-right">
-          <img src="./img/law_info.png" alt="" />
-          <div class="bg_img"></div>
+        <div class="bg-right">
+          <div class="shadowPic"></div>
         </div>
       </section>
 
       <!-- 綠黃紅灰區 -->
-      <section id="block">
+      <section>
         <div class="wrapper">
           <div class="cols">
             <div class="col" ontouchstart="this.classList.toggle('hover');">
@@ -295,6 +290,7 @@
           <div class="tittle_ball"></div>
         </div>
       </div>
+
       <!-- 註冊 -->
       <section id="register">
         <div class="text_content">
@@ -486,8 +482,9 @@
 
       function checkMove() {
         console.log(window.scrollY);
+        console.log(window.innerWidth);
 
-        if (window.scrollY > 3500) {
+        if (window.scrollY > 3500 && window.innerWidth > 768) {
           document.querySelector("#movePic").classList.add("moveIn");
         } else {
           document.querySelector("#movePic").classList.remove("moveIn");
