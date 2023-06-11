@@ -525,12 +525,12 @@ main section .operate .operate_box .operate_info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-image: linear-gradient(to bottom, rgba(255, 254, 254, 0.836), rgba(184, 184, 236, 0.637));
+  border-radius: 15px;
+  background-color: rgba(84, 84, 84, 0.6980392157);
 }
-main section .operate .operate_box .operate_info h1, main section .operate .operate_box .operate_info p {
-  color: #545454;
+main section .operate .operate_box .operate_info h1,
+main section .operate .operate_box .operate_info p {
+  color: #f5f5f5;
 }
 main section .operate .operate_box .operate_info h1 {
   font-size: 28px;
