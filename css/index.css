@@ -427,8 +427,7 @@ section {
     border-radius: 0;
     width: 100%;
     height: calc(100vh - 110px);
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 #video_section .g_box {
@@ -444,7 +443,7 @@ section {
   #video_section .g_box {
     width: 40%;
     height: 20%;
-    top: 55%;
+    top: 75%;
     left: 12%;
   }
 }
@@ -465,7 +464,7 @@ section {
 @media (max-width: 1440px) {
   #video_section .b_box {
     width: 20%;
-    height: 60%;
+    height: 75%;
     top: 10%;
     left: 9%;
   }
