@@ -310,29 +310,41 @@
       <!-- 考照title -->
       <div class="license_t">
         <div class="tittle">
-          <p>空拍機一定要考照嗎?</p>
+          <p class="color">空拍機一定要考照嗎?</p>
           <div class="tittle_ball"></div>
         </div>
       </div>
+
       <!-- 考照 -->
-      <section id="license">
-        <div class="container">
-          <div class="con_border">
-            <h4>
-              只要操作的無人機的重量不超過2公斤，且在民航局劃定的綠區操作，就不需要去考無人機駕照。
-            </h4>
-            <br />
-            <p>
-              但若操作2公斤以上，或是操作註冊於政府機關或法人單位的無人機，就需要操作證。
-            </p>
+      <section>
+        <div class="containerLi">
+          <div class="leftPic_li">
+            <div class="con_border">
+              <h4>
+                只要操作的無人機的重量不超過2公斤，且在民航局劃定的綠區操作，就不需要去考無人機駕照。
+              </h4>
+              <p>
+                但若操作2公斤以上，或是操作註冊於政府機關或法人單位的無人機，就需要操作證。
+              </p>
+            </div>
+
+            <div id="forMoveIn1">
+              <img
+                id="move1"
+                class="leftMoveOut"
+                src="./img/管理差異.png"
+                alt=""
+              />
+            </div>
           </div>
 
-          <div id="forMoveIn">
-            <img class="dif" src="./img/管理差異.png" alt="" />
-          </div>
-
-          <div id="forMoveIn2">
-            <img class="oper" src="./img/操作證.png" alt="" />
+          <div id="rightPic_li">
+            <img
+              id="move2"
+              class="rightMoveOut"
+              src="./img/操作證.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
@@ -448,26 +460,33 @@
 
     <!-- slide -->
     <script>
-      let licH = document.querySelector(".license_t");
-      let dif = document.querySelector(".dif");
-      let oper = document.querySelector(".oper");
+      let height = document.querySelector(".license_t");
 
       window.addEventListener("scroll", checkMove);
       checkMove();
 
       function checkMove() {
         // 指定位置
-        let lic_Top = licH.getBoundingClientRect().top;
-        // console.log(lic_Top);
+        let checkTop = height.getBoundingClientRect().top;
+        // console.log(checkTop); //838
+        let width = window.innerWidth;
+        console.log(width);
 
-        if (lic_Top <= 620) {
-          // licH.style.color = "#289DD2"; //測試有沒有指定位置
-          document.querySelector(".dif").classList.add("moveIn1");
-          document.querySelector(".oper").classList.add("moveIn2");
+        if (checkTop <= 320) {
+          // document.querySelector(".color").style.color = "#289DD2";//test
+          // 左邊
+          document.querySelector("#move1").classList.remove("leftMoveIn");
+          document.querySelector("#move1").classList.add("moveIn1");
+          // 右邊
+          document.querySelector("#move2").classList.remove("rightMoveOut");
+          document.querySelector("#move2").classList.add("moveIn1");
         } else {
-          // licH.style.color = "";
-          document.querySelector(".dif").classList.remove("moveIn1");
-          document.querySelector(".oper").classList.remove("moveIn2");
+          // 左邊
+          document.querySelector("#move1").classList.remove("moveIn1");
+          document.querySelector("#move1").classList.add("leftMoveIn");
+          // 右邊
+          document.querySelector("#move2").classList.remove("moveIn1");
+          document.querySelector("#move2").classList.add("rightMoveOut");
         }
       }
     </script>
@@ -481,8 +500,8 @@
       checkMove();
 
       function checkMove() {
-        console.log(window.scrollY);
-        console.log(window.innerWidth);
+        // console.log(window.scrollY);
+        // console.log(window.innerWidth);
 
         if (window.scrollY > 3500 && window.innerWidth > 768) {
           document.querySelector("#movePic").classList.add("moveIn");

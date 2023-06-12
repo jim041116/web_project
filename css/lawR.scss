@@ -487,7 +487,7 @@ section {
   height: 50vh;
   display: flex;
 
-  border: 1px solid red;
+  // border: 1px solid red;
   @include pc2() {
     width: 80%;
     height: 60vh;
@@ -646,11 +646,6 @@ section {
     }
     .tittle_ball {
       @include title_ball();
-      @include phone() {
-        width: 20px;
-        height: 20px;
-        left: -10px;
-      }
     }
   }
   @include phone2() {
@@ -735,168 +730,186 @@ section {
     }
   }
 }
+
 // 考照title
 .license_t {
   width: 65%;
   margin: 7rem auto 0;
-  color: $text_color_g;
-  @include pad() {
-    margin-top: 17%;
-  }
-  @include pad2() {
+  @include phone2() {
     margin: 10rem auto 0;
   }
-  @include phone2() {
-    margin-top: 10rem;
-  }
   .tittle {
-    @include phone() {
-      margin-top: 2rem;
-      font-size: $text_size-32px;
-    }
     @include tittle();
     p {
       font-size: 40px;
       font-weight: $text_weight-b;
-      color: #545454;
+      color: $text_color_g;
     }
     .tittle_ball {
       @include title_ball();
-      @include phone() {
-        width: 20px;
-        height: 20px;
-        left: -10px;
-      }
     }
   }
 }
+
 //考照相關
-#license {
-  height: 90vh;
-  width: 55%;
-  margin: 3rem auto;
+.containerLi {
+  width: 60%;
+  height: 75vh;
+  margin: 2rem auto;
+  // border: 3px solid green;
   background-image: url(../img/操作證-模糊.png);
+  background-position: right;
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 58%;
-  // border: 3px solid black;
+  display: flex;
   @include pc() {
-    width: 65%;
-    height: 105vh;
+    background-size: 60%;
   }
-  @include pad2() {
-    width: 80%;
-    margin-left: 13%;
+  @include pc2() {
+    width: 75%;
   }
   @include pad() {
+    height: 75vh;
+  }
+  @include pad1() {
     background-image: none;
   }
   @include phone() {
-    background-image: none;
+    width: 85%;
   }
-  .container {
-    width: 80%;
-    margin: 3rem auto 0;
-    flex-wrap: wrap;
-    // border: 1px solid black;
+
+  .leftPic_li {
+    width: 55%;
+    // border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    @include pad1() {
+      margin: 0 auto;
+      width: 80%;
+      padding: 1rem;
+    }
+    @include phone() {
+      padding: 0;
+      width: 100%;
+    }
     .con_border {
-      width: 60%;
-      height: 25vh;
+      width: 80%;
+      height: 23vh;
+      border-radius: 15px;
       background-color: hsla(0, 0, 0, 0.5);
-      padding: 2rem;
-      border-radius: $raduis;
       text-align: justify;
+      padding: 2rem 3rem;
+      margin-left: 7rem;
       @include pc() {
-        padding: 1.5rem;
-        height: 26vh;
+        width: 90%;
+        margin-left: 4rem;
+        padding: 1rem;
+        height: 25vh;
       }
       @include pc2() {
-        padding: 1rem;
-        height: 30vh;
-        width: 80%;
+        width: 100%;
+        padding: 0.7rem;
+        height: 28vh;
       }
       @include pad() {
-        width: 100%;
-        padding: 1.5rem;
+        margin-left: 0;
+      }
+      @include pad1() {
+        padding: 3rem;
       }
       @include phone() {
-        height: 35vh;
+        padding: 0.5rem;
       }
       @include phone2() {
-        height: 45vh;
+        padding: 0.5rem;
+        height: 30vh;
       }
       h4,
       p {
-        color: $text_color_w;
-        font-size: $text_size-16px;
+        color: #fff;
+        padding-top: 0.5rem;
         line-height: 2rem;
+        @include phone2() {
+          line-height: 1.5rem;
+        }
       }
-    }
-    #forMoveIn {
-      transform: translateX(-900px);
-      @include pc2() {
-        transform: translateX(-780px);
-      }
-      @include pad() {
-        transform: translateX(-785px);
-      }
-      @include pad2() {
-        transform: translateX(-790px);
-      }
-      @include phone() {
-        transform: translateX(-810px);
-      }
-      @include phone2() {
-        transform: translateX(-826px);
-      }
-      .dif {
-        border-radius: $raduis;
-        width: 500px;
-        margin: 1.5rem 0 0 -7rem;
+      h4 {
+        padding-bottom: 1rem;
         @include phone() {
-          width: 300px;
+          padding-bottom: 0.5rem;
+        }
+        @include phone2() {
+          padding-bottom: 0;
         }
       }
     }
-    #forMoveIn2 {
-      transform: translateX(1400px);
-      .oper {
-        position: absolute;
-        z-index: 50;
-        margin: -3rem 0 0 1rem;
-        height: 580px;
-        border-radius: $raduis;
-        @include pc2() {
-          display: none;
-        }
+    #forMoveIn1 {
+      width: 80%;
+      height: 45vh;
+      margin-top: 2rem;
+      @include pad() {
+        width: 100%;
       }
+      @include pad1() {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  #rightPic_li {
+    // border: 3px solid black;
+    height: 56vh;
+    position: relative;
+    z-index: 1;
+    top: 10rem;
+    left: -3rem;
+    @include pc2() {
+      left: 0rem;
+      top: 10rem;
+    }
+    @include pad() {
+      height: 65vh;
+      top: 4rem;
+      left: 0;
+    }
+    @include pad1() {
+      display: none;
+    }
+    img {
+      height: 100%;
+      border-radius: 15px;
     }
   }
 }
 
 // 左右slide
+.leftMoveOut {
+  transform: translateX(-900px);
+  transition: 2s linear;
+}
+.rightMoveOut {
+  transform: translateX(950px);
+  transition: 2s linear;
+}
 .moveIn1 {
-  transform: translateX(900px);
+  transform: translateX(0);
   transition: 1.5s ease-in-out;
 }
-.moveIn2 {
-  transform: translateX(-970px);
-  transition: 2.2s ease-in-out;
-  top: -32rem;
-  @include pc() {
-    transform: translateX(-1000px);
-  }
-}
-
 //安全飛行
 .fly_pic {
   width: 100%;
   height: 63vh;
+  object-fit: cover;
   @include pc2() {
     margin-top: 10%;
   }
-  @include pad() {
-    margin-top: -30%;
+  @include pad1() {
+    height: 50vh;
+  }
+  @include phone() {
+    height: 40vh;
   }
   img {
     height: 100%;
