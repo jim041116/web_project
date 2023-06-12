@@ -10,9 +10,13 @@
   <link rel="stylesheet" href="./css/public.css" />
   <link rel="stylesheet" href="./css/viewCommend.css" />
   <link rel="stylesheet" href="./css/weather_style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/map_style.css" /> -->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script type="module" src="./js/map.js"></script>
 </head>
 
 <body onload="ShowTime()">
@@ -227,6 +231,14 @@
       <!-- React 元件 -->
       <div id="root"></div>
     </section>
+    <!-- 地圖 api -->
+    <div class="container">
+      <div class="tittle">
+        <div>景點查詢</div>
+        <div class="tittle_ball"></div>
+      </div>
+      <div id="map"></div>
+    </div>
   </main>
 
   <footer>
@@ -501,6 +513,11 @@
 
   </script>
   <!-- 天氣API結束 -->
+
+  <!-- google map api -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbUweKyzZmYb9ByVMRVui-gM9ZkHi1S6E&callback=initMap&v=weekly"
+    defer></script>
 </body>
 
 </html>

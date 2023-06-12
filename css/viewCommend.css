@@ -567,4 +567,50 @@ main section .tittle .tittle_ball {
     height: 20px;
     left: -10px;
   }
+}
+main .container {
+  margin: 3rem auto;
+  /* border: 3px solid black; */
+  width: 1000px;
+  height: 500px;
+}
+main .container .tittle {
+  font-size: 40px;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  color: #545454;
+  left: -16%;
+  width: 250px;
+  margin-bottom: 3rem;
+}
+main .container .tittle div {
+  font-weight: 700;
+}
+@media (max-width: 576px) {
+  main .container .tittle {
+    font-size: 28px;
+  }
+}
+main .container .tittle .tittle_ball {
+  width: 35px;
+  height: 35px;
+  background-color: #289dd2;
+  border-radius: 30px;
+  opacity: 0.8;
+  position: absolute;
+  top: -3px;
+  left: -15px;
+  z-index: -1;
+}
+@media (max-width: 576px) {
+  main .container .tittle .tittle_ball {
+    width: 20px;
+    height: 20px;
+    left: -10px;
+  }
+}
+main .container #map {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=viewCommend.css.map */
