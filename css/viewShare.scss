@@ -1,5 +1,15 @@
 @import "./public.scss";
 
+@mixin pc2() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin pad1() {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
 $green_block: green;
 $red_block: red;
 $gray_block: gray;
@@ -35,53 +45,56 @@ main {
       justify-content: center;
       flex-wrap: wrap;
 
-      //1440
       @include pc() {
         width: 90%;
         margin: 2rem auto;
       }
-      //992
       @include pad() {
         margin: 0 auto;
         width: 80vw;
       }
-      //768
       @include pad2() {
         margin: 0 auto;
         width: 70%;
       }
-      //576
       @include phone() {
         margin: 0 auto;
         width: 46vh;
       }
-      //375
       @include phone2() {
-        // border: 3px solid black;
         margin: 0 auto;
         width: 46vh;
       }
 
       .ins_box {
-        width: 530px;
-        height: 380px;
+        width: 40%;
+        height: 37vh;
         display: flex;
         margin: 3rem 1.5rem;
-        // border: 3px solid black;
         @include pc() {
           margin: 1rem;
+          width: 38%;
+          height: 45vh;
+          margin-top: 2rem;
         }
-        @include pad2() {
-          height: 330px;
+        @include pc2() {
+          width: 55%;
+          height: 53vh;
+        }
+        @include pad() {
+          width: 65%;
+          height: 45vh;
+        }
+        @include pad1() {
+          width: 75%;
+          height: 30vh;
         }
         @include phone() {
-          width: 100%;
-          height: 260px;
+          width: 90%;
         }
         @include phone2() {
-          margin-top: 2rem;
           width: 100%;
-          height: 260px;
+          height: 35vh;
         }
         .left_img {
           width: 53%;
@@ -90,6 +103,9 @@ main {
           border-radius: 0 0 0 100px;
           object-fit: cover;
           @include bor_style();
+          @include pc() {
+            width: 50%;
+          }
           @include phone() {
             border-radius: 0 0 0 50px;
           }
@@ -113,6 +129,9 @@ main {
           justify-content: space-between;
           font-size: $text_size-16px;
           // border-bottom: 2px solid #545454;
+          @include pc() {
+            width: 50%;
+          }
           .right_info_title {
             border: 3px solid $text_color_g;
             border-radius: 0 15px 0 0;
@@ -169,14 +188,20 @@ main {
             font-size: 14px;
           }
         }
-        .footer_info_b hr {
-          margin-top: 1rem;
-          border: 1px solid $text_color_g;
-        }
+        // .footer_info_b hr {
+        //   margin-top: 1rem;
+        //   border: 1px solid $text_color_g;
+        // }
         .footer_info_b,
         .footer_info_c {
           @include pad2() {
             display: none;
+          }
+        }
+        .footer_info_c {
+          // border: 3px solid black;
+          @include pc() {
+            width: 98%;
           }
         }
       }
