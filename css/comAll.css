@@ -473,7 +473,8 @@ h2 {
   flex: 1;
   background-position: center;
   background-size: cover;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   #allPartCom .box_1 .com_pic {
@@ -629,7 +630,8 @@ h2 {
   height: 50%;
   float: right;
   margin-left: 2rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 992px) {
   #allPartCom .box_2 img {
@@ -661,7 +663,8 @@ h2 {
   }
 }
 #allPartCom .box_2 .floatL {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 35%;
   height: 20%;
   float: left;
@@ -693,6 +696,7 @@ h2 {
 }
 #allPartCom .box_2 .widthNa_cloud {
   width: 45%;
+  margin-right: 2rem;
 }
 @media (max-width: 1024px) {
   #allPartCom .box_2 .widthNa_cloud {
@@ -702,6 +706,7 @@ h2 {
 @media (max-width: 992px) {
   #allPartCom .box_2 .widthNa_cloud {
     width: 70%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 576px) {
@@ -741,6 +746,7 @@ h2 {
 #allPartCom .box_2 .widthNa_flower {
   width: 42%;
   height: 32vh;
+  margin-right: 2rem;
 }
 @media (max-width: 1024px) {
   #allPartCom .box_2 .widthNa_flower {
@@ -750,6 +756,7 @@ h2 {
 @media (max-width: 992px) {
   #allPartCom .box_2 .widthNa_flower {
     width: 70%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 576px) {
@@ -811,7 +818,8 @@ h2 {
 #allPartCom .box3 img {
   padding: 0.5rem;
   width: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1024px) {
   #allPartCom .box3 img {
@@ -891,7 +899,8 @@ h2 {
   width: 40%;
   height: 30vh;
   margin-bottom: 0.3rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1024px) {
   #allPartCom .widthXin_sea1 img {

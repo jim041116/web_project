@@ -257,11 +257,13 @@ $raduis: 15px;
     //南投
     .widthNa_cloud {
       width: 45%;
+      margin-right: 2rem;
       @include pc2() {
         height: 28vh;
       }
       @include pad() {
         width: 70%;
+        margin: 0 auto;
       }
       @include phone() {
         width: 100%;
@@ -289,11 +291,13 @@ $raduis: 15px;
     .widthNa_flower {
       width: 42%;
       height: 32vh;
+      margin-right: 2rem;
       @include pc2() {
         height: 33vh;
       }
       @include pad() {
         width: 70%;
+        margin: 0 auto;
       }
       @include phone() {
         width: 100%;
