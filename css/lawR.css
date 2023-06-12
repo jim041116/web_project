@@ -1221,8 +1221,7 @@ section .text p {
   border-radius: 15px;
   background-color: hsla(0, 0%, 0%, 0.5);
   padding: 2.5rem 4rem;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   text-align: justify;
 }
 @media (max-width: 1440px) {

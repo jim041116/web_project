@@ -373,7 +373,17 @@
           document.querySelector("#movePic").classList.remove("moveIn");
         }
       }
+<<<<<<< HEAD
     </script>
+=======
+    }
+  </script>
+
+  <!-- smoove
+  <script>
+    window.addEventListener("resize", checkSize);
+    checkSize();
+>>>>>>> main
 
     <!-- smoove -->
     <script>
@@ -383,9 +393,20 @@
       function checkSize() {
         console.log(window.innerWidth);
 
+<<<<<<< HEAD
         // window.onresize = function () {
         //   location.reload();
         // };
+=======
+      let width = window.innerWidth;
+      if (width <= 576) {
+        window.onresize = function () {
+        location.reload();
+      };
+      }
+    }
+  </script> -->
+>>>>>>> main
 
         let width = window.innerWidth;
         if (width <= 576) {
