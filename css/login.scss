@@ -20,6 +20,8 @@
     background-color: $text_color_w;
     opacity: 0.9;
     border-radius: 50px;
+    animation: show 1.35s linear;
+    // border: 2px solid black;
     @include phone() {
       width: 90%;
       border-radius: 50px;
@@ -172,5 +174,29 @@ footer {
   }
   100% {
     visibility: visible;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.15;
+  }
+  35% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    opacity: 0.9;
   }
 }
