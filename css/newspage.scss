@@ -109,6 +109,21 @@ section {
             }
         }
 
+        .no_link {
+            width: 100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            margin: auto;
+            background-image: linear-gradient(45deg, #373838 0%, #a7a7a7 100%);
+            color: $text_color_w;
+            border-radius: 15px;
+            // transition: all .5s;
+            // position: relative;
+            // z-index: 0;
+            // display: block;
+        }
+
         .link {
             width: 100px;
             height: 40px;
