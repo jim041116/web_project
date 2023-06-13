@@ -681,6 +681,7 @@ footer .copyright_section div {
   color: white;
   background-color: #289dd2;
   font-size: 18px;
+  border: none;
 }
 @media (max-width: 576px) {
   #custumized .custumized_form .border_for_space .btn_svg .btn_signup {

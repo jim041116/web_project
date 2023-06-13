@@ -2,7 +2,7 @@ function initMap() {
   //創建map % 定位 & 縮放
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 7,
-    center: { lat: 25.03746, lng: 121.564558 },
+    center: { lat: 23.965864328701933, lng: 120.96686104954387 }, 
     // mapTypeId: 'satellite',
   });
   //創建 info

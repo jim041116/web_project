@@ -530,10 +530,10 @@ main section .place_item .item .place_info .text .tag a:hover {
 main section .place_item .item .move2 {
   left: 5%;
 }
-main section {
+main .weather {
   margin-top: 3rem;
 }
-main section .tittle {
+main .weather .tittle {
   font-size: 40px;
   margin: 0;
   z-index: 1;
@@ -542,15 +542,15 @@ main section .tittle {
   left: 15%;
   width: 250px;
 }
-main section .tittle div {
+main .weather .tittle div {
   font-weight: 700;
 }
 @media (max-width: 576px) {
-  main section .tittle {
+  main .weather .tittle {
     font-size: 28px;
   }
 }
-main section .tittle .tittle_ball {
+main .weather .tittle .tittle_ball {
   width: 35px;
   height: 35px;
   background-color: #289dd2;
@@ -562,7 +562,7 @@ main section .tittle .tittle_ball {
   z-index: -1;
 }
 @media (max-width: 576px) {
-  main section .tittle .tittle_ball {
+  main .weather .tittle .tittle_ball {
     width: 20px;
     height: 20px;
     left: -10px;
@@ -570,9 +570,13 @@ main section .tittle .tittle_ball {
 }
 main .container {
   margin: 3rem auto;
-  /* border: 3px solid black; */
-  width: 1000px;
+  width: 60%;
   height: 500px;
+}
+@media (max-width: 992px) {
+  main .container {
+    width: 90%;
+  }
 }
 main .container .tittle {
   font-size: 40px;
@@ -580,12 +584,16 @@ main .container .tittle {
   z-index: 1;
   position: relative;
   color: #545454;
-  left: -16%;
+  left: -8%;
   width: 250px;
-  margin-bottom: 3rem;
 }
 main .container .tittle div {
   font-weight: 700;
+}
+@media (max-width: 992px) {
+  main .container .tittle {
+    left: 10%;
+  }
 }
 @media (max-width: 576px) {
   main .container .tittle {
@@ -613,4 +621,5 @@ main .container .tittle .tittle_ball {
 main .container #map {
   width: 100%;
   height: 100%;
+  margin: 3rem 0;
 }/*# sourceMappingURL=viewCommend.css.map */
