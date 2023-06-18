@@ -150,7 +150,7 @@
                     電池續航力：● ● ● ~ ● ● ● ● ●<br>
                     價格：● ● ~ ● ● ● ● ●<br>
                 </div>
-                <a href="./droneType.html" class="btnMore" onmouseover="go()" onmouseout="more()">More</a>
+                <a href="./droneType.html" class="btnMore">More</a>
             </div>
             <video src="./img/F19_WM2605_Webclips_banner_PC-M_V1_2400x1440_AfterCodecs.mp4" autoplay loop muted></video>
         </div>
@@ -168,7 +168,7 @@
                     電池續航力：● ● ○ ○ ○<br>
                     價格：● ● ● ○ ○<br>
                 </div>
-                <a href="./droneType.html" class="btnMore1" onmouseover="go1()" onmouseout="more1()">More</a>
+                <a href="./droneType.html" class="btnMore1">More</a>
             </div>
         </div>
 
@@ -325,18 +325,21 @@
         });
 
         //控制More跟Go之間的切換
-        let go = () => {
-            document.querySelector('.btnMore').innerHTML = 'Go'
-        }
-        let more = () => {
-            document.querySelector('.btnMore').innerHTML = 'More'
-        }
-        let go1 = () => {
-            document.querySelector('.btnMore1').innerHTML = 'Go'
-        }
-        let more1 = () => {
-            document.querySelector('.btnMore1').innerHTML = 'More'
-        }
+        $('.btnMore').mouseenter(() => {
+            $('.btnMore').html('Go');
+        });
+
+        $('.btnMore').mouseleave(() => {
+            $('.btnMore').html('More');
+        });
+
+        $('.btnMore1').mouseenter(() => {
+            $('.btnMore1').html('Go');
+        });
+
+        $('.btnMore1').mouseleave(() => {
+            $('.btnMore1').html('More');
+        });
 
         // 漢堡
         $(document).ready(function () {
