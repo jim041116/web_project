@@ -626,39 +626,40 @@
         // fpv區結束
         
         //按鈕區
-        let noviceBtn = document.querySelector('.novice_btn');
-        let advancedBtn = document.querySelector('.advanced_btn');
-        let fpvBtn = document.querySelector('.fpv_btn');
+        let noviceBtn = $('.novice_btn');
+        let advancedBtn = $('.advanced_btn');
+        let fpvBtn = $('.fpv_btn');
 
-        let novice = document.querySelector('.novice');
-        let advanced = document.querySelector('.advanced');
-        let fpv = document.querySelector('.fpv');
-        let droneSection = document.querySelector('.drone_section');
+        let novice = $('.novice');
+        let advanced = $('.advanced');
+        let fpv = $('.fpv');
 
-        noviceBtn.onclick = () => {
-            novice.style.display = 'flex';
-            advanced.style.display = 'none';
-            fpv.style.display = 'none';
-            noviceBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-            advancedBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            fpvBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-        }
-        advancedBtn.onclick = () => {
-            novice.style.display = 'none';
-            advanced.style.display = 'flex';
-            fpv.style.display = 'none';
-            noviceBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            advancedBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-            fpvBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-        }
-        fpvBtn.onclick = () => {
-            novice.style.display = 'none';
-            advanced.style.display = 'none';
-            fpv.style.display = 'flex';
-            noviceBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            advancedBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            fpvBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-        }
+        noviceBtn.click(() => {
+            novice.fadeIn();
+            advanced.fadeOut();
+            fpv.fadeOut();
+            noviceBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+            advancedBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            fpvBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+        });
+
+        advancedBtn.click(() => {
+            novice.fadeOut();
+            advanced.fadeIn();
+            fpv.fadeOut();
+            noviceBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            advancedBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+            fpvBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+        });
+
+        fpvBtn.click(() => {
+            novice.fadeOut();
+            advanced.fadeOut();
+            fpv.fadeIn();
+            noviceBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            advancedBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            fpvBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+        });
         //按鈕區結束
 
         // 漢堡

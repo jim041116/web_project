@@ -275,7 +275,6 @@
 
         </div>
     </div>
-
     <footer>
         <div class="footer_section">
             <div id="movePic">
@@ -357,71 +356,54 @@
         });
 
         //按鈕動態效果
-        let allBtn = document.querySelector('.all_btn');
-        let reserveBtn = document.querySelector('.reserve_btn');
-        let newDroneBtn = document.querySelector('.new_drone_btn');
-        let infoBtn = document.querySelector('.info_btn');
+        let allBtn = $('.all_btn');
+        let reserveBtn = $('.reserve_btn');
+        let newDroneBtn = $('.new_drone_btn');
+        let infoBtn = $('.info_btn');
 
-        let newsCard = document.querySelectorAll('.news-card');
-        let newsReserve = document.querySelectorAll('.news_reserve');
-        let newsInfo = document.querySelectorAll('.news_info');
-        let newsDrone = document.querySelectorAll('.news_new_drone');
-        console.log(newsReserve);
+        let newsCard = $('.news-card');
+        let newsReserve = $('.news_reserve');
+        let newsInfo = $('.news_info');
+        let newsDrone = $('.news_new_drone');
 
-        allBtn.onclick = () => {
-            for (let i = 0; i < newsCard.length; i++) {
-                newsCard[i].style.display = 'block';
-            }
-            allBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-            reserveBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            newDroneBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            infoBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-        }
-        reserveBtn.onclick = () => {
-            for (let i = 0; i < newsReserve.length; i++) {
-                newsReserve[i].style.display = 'block';
-            }
-            for (let i = 0; i < newsInfo.length; i++) {
-                newsInfo[i].style.display = 'none';
-            }
-            for (let i = 0; i < newsDrone.length; i++) {
-                newsDrone[i].style.display = 'none';
-            }
-            allBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            reserveBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-            newDroneBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            infoBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-        }
-        newDroneBtn.onclick = () => {
-            for (let i = 0; i < newsReserve.length; i++) {
-                newsReserve[i].style.display = 'none';
-            }
-            for (let i = 0; i < newsInfo.length; i++) {
-                newsInfo[i].style.display = 'none';
-            }
-            for (let i = 0; i < newsDrone.length; i++) {
-                newsDrone[i].style.display = 'block';
-            }
-            allBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            reserveBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            newDroneBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-            infoBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-        }
-        infoBtn.onclick = () => {
-            for (let i = 0; i < newsReserve.length; i++) {
-                newsReserve[i].style.display = 'none';
-            }
-            for (let i = 0; i < newsInfo.length; i++) {
-                newsInfo[i].style.display = 'block';
-            }
-            for (let i = 0; i < newsDrone.length; i++) {
-                newsDrone[i].style.display = 'none';
-            }
-            allBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            reserveBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            newDroneBtn.style.backgroundImage = 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)';
-            infoBtn.style.backgroundImage = 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)';
-        }
+        allBtn.click(() => {
+            newsCard.fadeIn();
+            allBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+            reserveBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            newDroneBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            infoBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+        });
+
+        reserveBtn.click(() => {
+            newsReserve.fadeIn();
+            newsInfo.fadeOut();
+            newsDrone.fadeOut();
+            reserveBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+            allBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            newDroneBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            infoBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+        });
+
+        newDroneBtn.click(() => {
+            newsDrone.fadeIn();
+            newsInfo.fadeOut();
+            newsReserve.fadeOut();
+            newDroneBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+            allBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            reserveBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            infoBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+        });
+
+        infoBtn.click(() => {
+            newsInfo.fadeIn();
+            newsDrone.fadeOut();
+            newsReserve.fadeOut();
+            infoBtn.css('background-image', 'linear-gradient(45deg, #193ee0  0%, #35bcfa 100%)');
+            allBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            reserveBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+            newDroneBtn.css('background-image', 'linear-gradient(45deg, #289DD2  0%, #38ecce 100%)');
+        });
+        //按鈕動態效果結束
 
         // 漢堡
         $(document).ready(function () {
