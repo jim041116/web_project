@@ -839,35 +839,33 @@
 
     <!-- move -->
     <script>
-      let movePic = document.querySelector("#movePic");
-      let lockPos = document.querySelector("#lockPos");
+      // let movePic = document.querySelector("#movePic");
+      // let lockPos = document.querySelector("#lockPos");
 
-      // window.onscroll = function () {
-      //   myFunction();
-      // };
+      // window.addEventListener("scroll", checkMove);
+      // checkMove();
 
-      // function myFunction() {
-      //   if (
-      //     document.body.scrollTop > 1300 ||
-      //     document.documentElement.scrollTop > 1300
-      //   ) {
-      //     document.getElementById("test").className = "moveIn";
+      // function checkMove() {
+      //   // console.log(window.scrollY); //852
+
+      //   if (window.scrollY > 900) {
+      //     document.querySelector("#movePic").classList.add("moveIn");
       //   } else {
-      //     document.getElementById("test").className = "";
+      //     document.querySelector("#movePic").classList.remove("moveIn");
       //   }
       // }
-      window.addEventListener("scroll", checkMove);
-      checkMove();
 
-      function checkMove() {
-        // console.log(window.scrollY); //852
-
-        if (window.scrollY > 900) {
-          document.querySelector("#movePic").classList.add("moveIn");
-        } else {
-          document.querySelector("#movePic").classList.remove("moveIn");
-        }
-      }
+      $(function () {
+        $(window).scroll(() => {
+          let height = $(this).scrollTop();
+          console.log(height); //900
+          if (height > 1220) {
+            $("#movePic").addClass("moveIn");
+          } else {
+            $("#movePic").removeClass("moveIn");
+          }
+        });
+      });
     </script>
 
     <!-- smoove -->
