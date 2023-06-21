@@ -316,7 +316,7 @@
       </div>
 
       <!-- 考照 -->
-      <section>
+      <section id="hide">
         <div class="containerLi">
           <div class="leftPic_li">
             <div class="con_border">
@@ -413,7 +413,11 @@
         </a>
       </div>
     </footer>
-
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/jquery-1.11.3.min.js"></script>
     <!-- GO-top -->
     <script>
@@ -460,35 +464,51 @@
 
     <!-- slide -->
     <script>
-      let height = document.querySelector(".license_t");
+      /*  let height = document.querySelector(".license_t");
 
-      window.addEventListener("scroll", checkMove);
-      checkMove();
+       window.addEventListener("scroll", checkMove);
+       checkMove();
 
-      function checkMove() {
-        // 指定位置
-        let checkTop = height.getBoundingClientRect().top;
-        // console.log(checkTop); //838
-        let width = window.innerWidth;
-        console.log(width);
+       function checkMove() {
+         // 指定位置
+         let checkTop = height.getBoundingClientRect().top;
+         // console.log(checkTop); //838
+         let width = window.innerWidth;
+         console.log(width);
 
-        if (checkTop <= 320) {
-          // document.querySelector(".color").style.color = "#289DD2";//test
-          // 左邊
-          document.querySelector("#move1").classList.remove("leftMoveIn");
-          document.querySelector("#move1").classList.add("moveIn1");
-          // 右邊
-          document.querySelector("#move2").classList.remove("rightMoveOut");
-          document.querySelector("#move2").classList.add("moveIn1");
-        } else {
-          // 左邊
-          document.querySelector("#move1").classList.remove("moveIn1");
-          document.querySelector("#move1").classList.add("leftMoveIn");
-          // 右邊
-          document.querySelector("#move2").classList.remove("moveIn1");
-          document.querySelector("#move2").classList.add("rightMoveOut");
-        }
-      }
+         if (checkTop <= 320) {
+           // document.querySelector(".color").style.color = "#289DD2";//test
+           // 左邊
+           document.querySelector("#move1").classList.remove("leftMoveIn");
+           document.querySelector("#move1").classList.add("moveIn1");
+           // 右邊
+           document.querySelector("#move2").classList.remove("rightMoveOut");
+           document.querySelector("#move2").classList.add("moveIn1");
+         } else {
+           // 左邊
+           document.querySelector("#move1").classList.remove("moveIn1");
+           document.querySelector("#move1").classList.add("leftMoveIn");
+           // 右邊
+           document.querySelector("#move2").classList.remove("moveIn1");
+           document.querySelector("#move2").classList.add("rightMoveOut");
+         }
+       } */
+
+      $(function () {
+        $(window).scroll(function () {
+          let height = $(this).scrollTop();
+          // console.log(height); //2370
+
+          if (height >= 2850) {
+            $("#move1,#move2").removeClass("leftMoveIn rightMoveOut");
+            $("#move1,#move2").addClass("moveIn1");
+          } else {
+            $("#move1,#move2").removeClass("moveIn1");
+            $("#move1").addClass("leftMoveIn");
+            $("#move2").addClass("rightMoveOut");
+          }
+        });
+      });
     </script>
 
     <!-- move -->

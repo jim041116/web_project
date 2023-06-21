@@ -12,6 +12,7 @@ $raduis: 15px;
     @content;
   }
 }
+
 section {
   .banner {
     width: 100%;
@@ -111,7 +112,6 @@ section {
 
 // 易觸犯規範
 .law_contain {
-  // border: 1px solid black;
   margin-top: 13%;
   @include pc() {
     margin-top: 18%;
@@ -140,7 +140,6 @@ section {
     }
   }
   .effect_box {
-    // border: 1px solid black;
     width: 40%;
     margin: 1rem auto;
     display: flex;
@@ -152,6 +151,9 @@ section {
     }
     @include phone() {
       width: 90%;
+    }
+    @include phone2() {
+      width: 80%;
     }
     .move {
       flex: 0.5;
@@ -220,13 +222,18 @@ section {
           left: 10rem;
         }
         @include pad() {
-          height: 7vh;
-          width: 25vh;
+          height: 10vh;
+          width: 40vh;
+          left: 14rem;
+        }
+        @include pad1() {
+          width: 33vh;
           left: 12rem;
+          line-height: 1.5rem;
+          height: 8vh;
         }
         @include pad2() {
-          width: 30vh;
-          height: 7.5vh;
+          height: 9vh;
         }
         @include phone() {
           display: none;
@@ -256,13 +263,18 @@ section {
           left: 10rem;
         }
         @include pad() {
-          height: 7vh;
-          width: 25vh;
+          height: 10vh;
+          width: 40vh;
+          left: 14rem;
+        }
+        @include pad1() {
+          width: 33vh;
           left: 12rem;
+          line-height: 1.5rem;
+          height: 8vh;
         }
         @include pad2() {
-          width: 30vh;
-          height: 7.5vh;
+          height: 9vh;
         }
         @include phone() {
           display: none;
@@ -292,13 +304,18 @@ section {
           left: 10rem;
         }
         @include pad() {
-          height: 7vh;
-          width: 25vh;
+          height: 10vh;
+          width: 40vh;
+          left: 14rem;
+        }
+        @include pad1() {
+          width: 33vh;
           left: 12rem;
+          line-height: 1.5rem;
+          height: 8vh;
         }
         @include pad2() {
-          width: 30vh;
-          height: 7.5vh;
+          height: 9vh;
         }
         @include phone() {
           display: none;
@@ -328,9 +345,18 @@ section {
           left: 10rem;
         }
         @include pad() {
-          height: 7vh;
-          width: 25vh;
+          height: 10vh;
+          width: 40vh;
+          left: 14rem;
+        }
+        @include pad1() {
+          width: 33vh;
           left: 12rem;
+          line-height: 1.5rem;
+          height: 8vh;
+        }
+        @include pad2() {
+          height: 9vh;
         }
         @include phone() {
           display: none;
@@ -359,9 +385,15 @@ section {
           left: 10rem;
         }
         @include pad() {
-          height: 7vh;
-          width: 25vh;
+          height: 10vh;
+          width: 40vh;
+          left: 14rem;
+        }
+        @include pad1() {
+          width: 33vh;
           left: 12rem;
+          line-height: 1.5rem;
+          height: 8vh;
         }
         @include phone() {
           display: none;
@@ -385,6 +417,7 @@ section {
         @include phone2() {
           width: 24vh;
           height: 10vh;
+          left: 8rem;
         }
       }
       .box2::after {
@@ -404,6 +437,7 @@ section {
         @include phone2() {
           width: 24vh;
           height: 10vh;
+          left: 8rem;
         }
       }
       .box3::after {
@@ -423,6 +457,7 @@ section {
         @include phone2() {
           width: 24vh;
           height: 12vh;
+          left: 8rem;
         }
       }
       .box4::after {
@@ -442,6 +477,7 @@ section {
         @include phone2() {
           width: 24vh;
           height: 10vh;
+          left: 8rem;
         }
       }
       .box5::after {
@@ -461,6 +497,7 @@ section {
         @include phone2() {
           width: 24vh;
           height: 12vh;
+          left: 8rem;
         }
       }
     }
@@ -617,6 +654,7 @@ section {
 }
 
 /*線性漸層 - 蓋住中間線 */
+
 .container .back {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
@@ -752,134 +790,143 @@ section {
 }
 
 //考照相關
-.containerLi {
-  width: 60%;
-  height: 75vh;
-  margin: 2rem auto;
-  // border: 3px solid green;
-  background-image: url(../img/操作證-模糊.png);
-  background-position: right;
-  background-repeat: no-repeat;
-  display: flex;
-  @include pc() {
-    background-size: 60%;
-  }
-  @include pc2() {
-    width: 75%;
-  }
-  @include pad() {
+#hide {
+  overflow: hidden;
+  .containerLi {
+    width: 60%;
     height: 75vh;
-  }
-  @include pad1() {
-    background-image: none;
-  }
-  @include phone() {
-    width: 85%;
-  }
-
-  .leftPic_li {
-    width: 55%;
-    // border: 2px solid black;
+    margin: 2rem auto;
+    // border: 3px solid green;
+    background-image: url(../img/操作證-模糊.png);
+    background-position: right;
+    background-repeat: no-repeat;
     display: flex;
-    flex-direction: column;
-    @include pad1() {
-      margin: 0 auto;
-      width: 80%;
-      padding: 1rem;
+    @include pc() {
+      background-size: 60%;
     }
-    @include phone() {
-      padding: 0;
-      width: 100%;
-    }
-    .con_border {
-      width: 80%;
-      height: 23vh;
-      border-radius: 15px;
-      background-color: hsla(0, 0, 0, 0.5);
-      text-align: justify;
-      padding: 2rem 3rem;
-      margin-left: 7rem;
-      @include pc() {
-        width: 90%;
-        margin-left: 4rem;
-        padding: 1rem;
-        height: 25vh;
-      }
-      @include pc2() {
-        width: 100%;
-        padding: 0.7rem;
-        height: 28vh;
-      }
-      @include pad() {
-        margin-left: 0;
-      }
-      @include pad1() {
-        padding: 3rem;
-      }
-      @include phone() {
-        padding: 0.5rem;
-      }
-      @include phone2() {
-        padding: 0.5rem;
-        height: 30vh;
-      }
-      h4,
-      p {
-        color: #fff;
-        padding-top: 0.5rem;
-        line-height: 2rem;
-        @include phone2() {
-          line-height: 1.5rem;
-        }
-      }
-      h4 {
-        padding-bottom: 1rem;
-        @include phone() {
-          padding-bottom: 0.5rem;
-        }
-        @include phone2() {
-          padding-bottom: 0;
-        }
-      }
-    }
-    #forMoveIn1 {
-      width: 80%;
-      height: 45vh;
-      margin-top: 2rem;
-      @include pad() {
-        width: 100%;
-      }
-      @include pad1() {
-        width: 100%;
-      }
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-  #rightPic_li {
-    // border: 3px solid black;
-    height: 56vh;
-    position: relative;
-    z-index: 1;
-    top: 10rem;
-    left: -3rem;
     @include pc2() {
-      left: 0rem;
-      top: 10rem;
+      width: 75%;
     }
     @include pad() {
-      height: 65vh;
-      top: 4rem;
-      left: 0;
+      height: 75vh;
     }
     @include pad1() {
-      display: none;
+      background-image: none;
     }
-    img {
-      height: 100%;
-      border-radius: 15px;
+    @include phone() {
+      width: 85%;
+    }
+
+    .leftPic_li {
+      width: 55%;
+      // border: 2px solid black;
+      display: flex;
+      flex-direction: column;
+      @include pad1() {
+        margin: 0 auto;
+        width: 80%;
+        padding: 1rem;
+      }
+      @include phone() {
+        padding: 0;
+        width: 100%;
+      }
+      .con_border {
+        width: 80%;
+        height: 23vh;
+        border-radius: 15px;
+        background-color: hsla(0, 0, 0, 0.5);
+        text-align: justify;
+        padding: 1.5rem 3rem;
+        margin-left: 7rem;
+        @include pc() {
+          width: 90%;
+          margin-left: 4rem;
+          padding: 1rem;
+          height: 25vh;
+        }
+        @include pc2() {
+          width: 100%;
+          padding: 0.7rem;
+          height: 28vh;
+        }
+        @include pad() {
+          margin-left: 0;
+        }
+        @include pad1() {
+          padding: 3rem;
+        }
+        @include pad2() {
+          padding: 2.5rem;
+        }
+        @include phone() {
+          padding: 0.5rem 1rem;
+        }
+        @include phone2() {
+          // padding: 0.5rem;
+          height: 32vh;
+        }
+        h4,
+        p {
+          color: #fff;
+          padding-top: 0.5rem;
+          line-height: 2rem;
+          @include phone() {
+            line-height: 1.5rem;
+          }
+          @include phone2() {
+            line-height: 1.3rem;
+          }
+        }
+        h4 {
+          padding-bottom: 1rem;
+          @include phone() {
+            padding-bottom: 0.5rem;
+          }
+          @include phone2() {
+            padding-bottom: 0;
+          }
+        }
+      }
+      #forMoveIn1 {
+        width: 80%;
+        height: 45vh;
+        margin-top: 2rem;
+        @include pad() {
+          width: 100%;
+        }
+        @include pad1() {
+          width: 100%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    #rightPic_li {
+      // border: 3px solid black;
+      height: 56vh;
+      position: relative;
+      z-index: 1;
+      top: 10rem;
+      left: -3rem;
+      @include pc2() {
+        left: 0rem;
+        top: 10rem;
+      }
+      @include pad() {
+        height: 65vh;
+        top: 4rem;
+        left: 0;
+      }
+      @include pad1() {
+        display: none;
+      }
+      img {
+        height: 100%;
+        border-radius: 15px;
+      }
     }
   }
 }
