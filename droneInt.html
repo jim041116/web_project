@@ -137,7 +137,7 @@
         </p>
     </div>
     <section id="drone_ifo">
-        <div class="drone_item">
+        <div class="drone_item smoove smoove-1">
             <div class="drone_text">
                 <div class="tittle">
                     <div>空拍機</div>
@@ -154,7 +154,7 @@
             </div>
             <video src="./img/F19_WM2605_Webclips_banner_PC-M_V1_2400x1440_AfterCodecs.mp4" autoplay loop muted></video>
         </div>
-        <div class="drone_item">
+        <div class="drone_item smoove smoove-2">
             <video src="./img/169 shot on-pc-1_AfterCodecs.mp4" autoplay loop muted class="fpv"></video>
             <div class="drone_text">
                 <div class="tittle">
@@ -171,7 +171,6 @@
                 <a href="./droneType.html" class="btnMore1">More</a>
             </div>
         </div>
-
     </section>
     <section id="drone_use">
         <div class="drone_use_text">
@@ -182,7 +181,7 @@
             <p>現在空拍機不是只有娛樂用的功能，在這個數位化的時代空拍機已經被運用在許多領域上，像是在農業、巡檢及土地測量等方面，使用空拍機去完成這些作業已經是很成熟的技術了，可以帶來作業效率的提升及成本上的優化。</p>
         </div>
         <div class="wrapper">
-            <div class="cols">
+            <div class="cols smoove smoove-s">
                 <div class="col" ontouchstart="this.classList.toggle('hover');">
                     <div class="container">
                         <div class="front" style="background-image: url(./img/c51a31f9ca6cb3dfc6a0b7e1adabf9db.jpg)">
@@ -305,6 +304,7 @@
 
 
     <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
     <script>
         $(function () {
             $('body').append('<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>');
@@ -323,6 +323,25 @@
                 }
             });
         });
+
+        // smoove
+        $('.smoove').smoove({
+            offset: '30%',
+        });
+
+        $('.smoove-1').smoove({
+            moveX: '-200px',
+            moveY: '200px',
+        });
+
+        $('.smoove-2').smoove({
+            moveX: '200px',
+            moveY: '200px',
+        });
+
+        // $('.smoove-s').smoove({
+        //     scale: '2.5',
+        // });
 
         //控制More跟Go之間的切換
         $('.btnMore').mouseenter(() => {

@@ -144,7 +144,7 @@
             <div class="btn fpv_btn">穿越機</div>
         </div>
         <div class="novice drone_section">
-            <div class="mine2se item">
+            <div class="mine2se item smoove-x">
                 <div class="drone_type_item item_1">
                     <div class="img_mini2_se"></div>
                     <div class="box_2">
@@ -173,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mine2 item">
+            <div class="mine2 item smoove-y">
                 <div class="drone_type_item item_2">
                     <div class="img_mini2"></div>
                     <div class="box_2">
@@ -202,7 +202,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mine3 item">
+            <div class="mine3 item smoove-x">
                 <div class="drone_type_item item_3">
                     <div class="img_mini3"></div>
                     <div class="box_2">
@@ -231,7 +231,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mine3pro item">
+            <div class="mine3pro item smoove-y">
                 <div class="drone_type_item item_4">
                     <div class="img_mini3_pro"></div>
                     <div class="box_2">
@@ -262,7 +262,7 @@
             </div>
         </div>
         <div class="advanced drone_section" style="display: none;">
-            <div class="air2s item">
+            <div class="air2s item smoove-x">
                 <div class="drone_type_item advanced_item_1">
                     <div class="img_air2s"></div>
                     <div class="box_2">
@@ -291,7 +291,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m3c item">
+            <div class="m3c item smoove-y">
                 <div class="drone_type_item advanced_item_2">
                     <div class="img_m3c"></div>
                     <div class="box_2">
@@ -320,7 +320,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mv3p item">
+            <div class="mv3p item smoove-x">
                 <div class="drone_type_item advanced_item_3">
                     <div class="img_mv3p"></div>
                     <div class="box_2">
@@ -353,7 +353,7 @@
             </div>
         </div>
         <div class="fpv drone_section" style="display: none;">
-            <div class="fpvitem item">
+            <div class="fpvitem item smoove-x">
                 <div class="drone_type_item fpv_item_1">
                     <div class="img_fpv"></div>
                     <div class="box_2">
@@ -383,7 +383,7 @@
                     </div>
                 </div>
             </div>
-            <div class="avata item">
+            <div class="avata item smoove-y">
                 <div class="drone_type_item fpv_item_2">
                     <div class="img_avata"></div>
                     <div class="box_2">
@@ -476,6 +476,7 @@
 
 
     <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.10/jquery.smoove.min.js"></script>
     <script>
         $(function () {
             $('body').append('<a href="#" id="fixedTop" class="go_top"><img src="./img/to-top.svg" alt=""></a>');
@@ -493,6 +494,19 @@
                     fixedTop.fadeOut('false');
                 }
             });
+        });
+
+        // smoove 
+        $('.smoove').smoove({
+            offset: '30%',
+        });
+
+        $('.smoove-x').smoove({
+            moveX: '-200px',
+        });
+
+        $('.smoove-y').smoove({
+            moveX: '200px',
         });
 
         // novice區
