@@ -16,6 +16,11 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div id="loading_img">
+            <img src="./img/web_loading.gif" alt="">
+        </div>
+    </div>
     <header>
         <div id="logo">
             <a href="index.html">
@@ -396,18 +401,23 @@
             });
         });
 
+        $(document).ready(() => {
+            $("#loading_img").delay(3000).fadeOut(3000);
+            $("#loading").delay(5000).fadeOut(3000);
+        });
+
         // about
         $('.more').click(() => {
             let aboutText = $('.about_text');
             let more = $('.more');
             let moreText = '空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常...';
             let closeText = '空拍機及無人機這個名詞一直出現在我們的生活中，不管是節日中的無人機表演或是在新聞中看到用於戰爭上，這個名詞對於一般人彷彿很接近卻又很遙遠，網路上也常看到許多人想加入空拍的行列但卻不得其門而入，甚至是不了解空拍法規導致違規飛行。所以我們想設計出一個介紹空拍機及台灣空拍景點的網站，讓想加入空拍的人有個網站可以了解到關於空拍機的相關資訊及空拍景點，並能透過投稿與大家分享空拍景點，讓大家跟我們一起從另一個角度看世界。';
-            
-            if (aboutText.hasClass('active')){
+
+            if (aboutText.hasClass('active')) {
                 aboutText.removeClass('active', aboutText.html(moreText), more.html('More'));
-            }else {
+            } else {
                 aboutText.html(closeText, more.html('Close'), aboutText.toggleClass("active"));
-            }           
+            }
         });
 
         // 漢堡
