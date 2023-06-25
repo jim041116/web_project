@@ -148,7 +148,6 @@
               id="username"
               title="請輸入姓名"
               placeholder="請輸入姓名"
-              required
             />
           </div>
           <!-- <legend>性別:</legend> -->
@@ -174,7 +173,6 @@
               id="email"
               title="請輸入註冊信箱"
               placeholder="輸入信箱"
-              required
             />
           </div>
           <!-- 密碼 -->
@@ -186,7 +184,6 @@
               id="password"
               title="請輸入新密碼"
               placeholder="輸入密碼"
-              required
             />
           </div>
           <!-- 確認密碼 -->
@@ -194,18 +191,16 @@
             <label for="password_1">確認密碼:</label>
             <input
               type="password"
-              name="password"
+              name="password_1"
               id="password_1"
               title="請確認密碼"
               placeholder="請確認密碼"
-              required
             />
           </div>
           <div class="show">(此表單僅為展示用，無蒐集資料功能。)</div>
+          <button type="submit" class="btn_login">註冊會員</button>
+          <div id="error"></div>  
         </form>
-
-        <button class="btn_login">註冊會員</button>
-       
       </div>
     </section>
 
@@ -255,6 +250,30 @@
         }
       };
       // 漢堡結束
+
+      // 表單判斷
+      $('#register_form').submit((e) => {
+        e.preventDefault();
+        let username = $('#username').val();
+        let email = $('#email').val();
+        let password = $('#password').val();
+        let password_1 = $('#password_1').val();
+        let errorMsg = '';
+
+        if (username == '' || email == '' || password == '' || password_1 == '') {
+          errorMsg = '請確認欄位是否填寫';
+        }else if (password != password_1) {
+          errorMsg = '請確認密碼是否正確';
+        }
+
+        if (errorMsg == '') {
+                $('#error').html('已成功註冊!');
+                $('#error').css('color', 'green');
+            }else {
+                $('#error').html(errorMsg);
+                $('#error').css('color', 'red');
+            }
+      });
     </script>
   </body>
 </html>

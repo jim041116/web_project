@@ -159,7 +159,7 @@
                 <p>報名資料</p>
                 <form name="signup_form" id="signup_form" action="" method="post">
                     <label for="username">姓名</label>
-                    <input type="text" name="username" id="username" placeholder="請輸入姓名" required />
+                    <input type="text" name="username" id="username" placeholder="請輸入姓名" />
 
                     <label for="tel">手機</label>
                     <input type="tel" name="tel" id="tel" placeholder="請輸入手機" />
@@ -167,11 +167,12 @@
                     <label for="email">信箱</label>
                     <input type="email" name="email" id="email" placeholder="請輸入Eamil" />
 
-                    <label for="number">人數</label>
-                    <input type="text" name="numberofapplicants" id="numberofapplicants" placeholder="請輸入預約人數" />
-                </form>
-                <button class="btn_signup">立即預約
-                </button>
+                    <label for="numberofapplicants">人數</label>
+                    <input type="text" name="numberofapplicants" id="numberofapplicants" placeholder="請輸入預約人數" />                    
+                    <button type="submit" class="btn_signup">立即預約
+                    </button>
+                </form>       
+                <div id="error"></div>         
                 <small>(此表單僅為展示用，無蒐集資料功能。)</small>
             </div>
         </div>
@@ -297,7 +298,7 @@
             }
         }
 
-                // window.onscroll = function () {
+        // window.onscroll = function () {
         //   myFunction();
         // };
 
@@ -313,6 +314,28 @@
         // }
 
         // 飛機動畫結束
+
+        // 表單判斷
+        $('#signup_form').submit((e) => {
+            let errorMsg = '';
+            e.preventDefault();
+            let username = $('#username').val();
+            let tel = $('#tel').val();
+            let email = $('#email').val();
+            let numberofapplicants = $('#numberofapplicants').val();
+
+            if (username == '' || tel == '' || email == '' || numberofapplicants == '') {
+                errorMsg = '請確認欄位是否填寫';
+            }
+
+            if (errorMsg == '') {
+                $('#error').html('已成功預約');
+                $('#error').css('color', 'green');
+            } else {
+                $('#error').html(errorMsg);
+                $('#error').css('color', 'red');
+            }
+        });
     </script>
 </body>
 

@@ -18,7 +18,7 @@ body {
 
   .form_outs {
     width: 400px;
-    height: 530px;
+    height: auto;
     background-color: $web_bg;
     border-radius: 40px;
     opacity: 0.9;
@@ -143,6 +143,11 @@ body {
       box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
     }
   }
+}
+
+#error {
+  margin: -1rem 0 1rem 0;
+  text-align: center;
 }
 
 /* 頁尾區*/

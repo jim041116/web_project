@@ -1,232 +1,229 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>會員登入</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./css/public.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <div id="logo">
-        <a href="index.html">
-          <img src="./img/logo_g.png" alt="logo" width="250px" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會員登入</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/public.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="./img/logo_g.png" alt="logo" width="250px" />
+      </a>
+    </div>
+    <div id="nav_bar">
+      <ul>
+        <li class="nav_bar_item">
+          空拍景點
+          <ul class="drop_nav_bar">
+            <li class="drop_nav_bar_item">
+              <a href="./viewCommend.html">景點推薦</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./viewShare.html">景點分享</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav_bar_item">
+          認識空拍機
+          <ul class="drop_nav_bar">
+            <li class="drop_nav_bar_item">
+              <a href="./droneInt.html">空拍機介紹</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./droneOperate.html">基礎操作</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./droneType.html">機型介紹</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./lawR.html">空拍法規</a>
+            </li>
+            <li class="drop_nav_bar_item">
+              <a href="./appCom.html">APP推薦</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav_bar_item">
+          <a href="./reservation.html">預約專區</a>
+        </li>
+        <li class="nav_bar_item">
+          <a href="./news.html">最新消息</a>
+        </li>
+        <li class="nav_bar_item">
+          登入會員
+          <ul class="drop_nav_bar">
+            <li class="drop_nav_bar_item">
+              <a href="./login.html">登入頁面</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- 漢堡 -->
+    <div class="hamburger_box">
+      <div class="hamburger" id="hamburger-item">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <!-- 漢堡nav -->
+    <div class="hamburger_nav">
+      <ul class="hamburger_nav_item">
+        <li class="hamburger_nav_title">空拍景點</li>
+        <a href="./viewCommend.html">
+          <li>景點推薦</li>
         </a>
-      </div>
-      <div id="nav_bar">
-        <ul>
-          <li class="nav_bar_item">
-            空拍景點
-            <ul class="drop_nav_bar">
-              <li class="drop_nav_bar_item">
-                <a href="./viewCommend.html">景點推薦</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./viewShare.html">景點分享</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav_bar_item">
-            認識空拍機
-            <ul class="drop_nav_bar">
-              <li class="drop_nav_bar_item">
-                <a href="./droneInt.html">空拍機介紹</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./droneOperate.html">基礎操作</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./droneType.html">機型介紹</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./lawR.html">空拍法規</a>
-              </li>
-              <li class="drop_nav_bar_item">
-                <a href="./appCom.html">APP推薦</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav_bar_item">
-            <a href="./reservation.html">預約專區</a>
-          </li>
-          <li class="nav_bar_item">
-            <a href="./news.html">最新消息</a>
-          </li>
-          <li class="nav_bar_item">
-            登入會員
-            <ul class="drop_nav_bar">
-              <li class="drop_nav_bar_item">
-                <a href="./login.html">登入頁面</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <!-- 漢堡 -->
-      <div class="hamburger_box">
-        <div class="hamburger" id="hamburger-item">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </div>
-      </div>
-      <!-- 漢堡nav -->
-      <div class="hamburger_nav">
-        <ul class="hamburger_nav_item">
-          <li class="hamburger_nav_title">空拍景點</li>
-          <a href="./viewCommend.html">
-            <li>景點推薦</li>
-          </a>
-          <a href="./viewShare.html">
-            <li>景點分享</li>
-          </a>
-        </ul>
-        <ul class="hamburger_nav_item">
-          <li class="hamburger_nav_title">認識空拍機</li>
-          <a href="./droneInt.html">
-            <li>空拍機介紹</li>
-          </a>
-          <a href="./droneOperate.html">
-            <li>基礎操作</li>
-          </a>
-          <a href="./droneType.html">
-            <li>機型介紹</li>
-          </a>
-          <a href="./lawR.html">
-            <li>空拍法規</li>
-          </a>
-          <a href="./appCom.html">
-            <li>APP推薦</li>
-          </a>
-        </ul>
-        <ul class="hamburger_nav_item">
-          <a href="./reservation.html">
-            <li class="hamburger_nav_title">預約專區</li>
-          </a>
-        </ul>
-        <ul class="hamburger_nav_item">
-          <a href="./news.html">
-            <li class="hamburger_nav_title">最新消息</li>
-          </a>
-        </ul>
-        <ul class="hamburger_nav_item">
-          <li class="hamburger_nav_title">登入會員</li>
-          <a href="./login.html">
-            <li>登入頁面</li>
-          </a>
-        </ul>
-      </div>
-      <!-- 漢堡結束 -->
-    </header>
+        <a href="./viewShare.html">
+          <li>景點分享</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <li class="hamburger_nav_title">認識空拍機</li>
+        <a href="./droneInt.html">
+          <li>空拍機介紹</li>
+        </a>
+        <a href="./droneOperate.html">
+          <li>基礎操作</li>
+        </a>
+        <a href="./droneType.html">
+          <li>機型介紹</li>
+        </a>
+        <a href="./lawR.html">
+          <li>空拍法規</li>
+        </a>
+        <a href="./appCom.html">
+          <li>APP推薦</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <a href="./reservation.html">
+          <li class="hamburger_nav_title">預約專區</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <a href="./news.html">
+          <li class="hamburger_nav_title">最新消息</li>
+        </a>
+      </ul>
+      <ul class="hamburger_nav_item">
+        <li class="hamburger_nav_title">登入會員</li>
+        <a href="./login.html">
+          <li>登入頁面</li>
+        </a>
+      </ul>
+    </div>
+    <!-- 漢堡結束 -->
+  </header>
 
-    <!-- content -->
-    <main>
-      <section id="login">
-        <div class="form_outs">
-          <div class="form_title">
-            <div class="tittle">
-              <span>會員登入</span>
-              <div class="tittle_ball">
-                <div class="afterball"></div>
-              </div>
+  <!-- content -->
+  <main>
+    <section id="login">
+      <div class="form_outs">
+        <div class="form_title">
+          <div class="tittle">
+            <span>會員登入</span>
+            <div class="tittle_ball">
+              <div class="afterball"></div>
             </div>
           </div>
+        </div>
 
-          <form name="login_form" id="login_form" method="post">
-            <div class="la_in">
-              <label for="email">信箱：</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                title="輸入註冊信箱"
-                placeholder="請輸入信箱"
-                required
-              />
-            </div>
-            <div class="la_in">
-              <label for="password">密碼：</label>
-              <input
-                type="password"
-                name="password"
-                id="floatingPassword"
-                title="輸入密碼"
-                placeholder="請輸入密碼"
-                required
-              />
-              <!-- 閉眼 -->
-              <i
-                id="eyeClose"
-                class="fa-solid fa-eye-slash"
-                style="color: #4a4747"
-              ></i>
-            </div>
-          </form>
+        <form name="login_form" id="login_form" method="post">
+          <div class="la_in">
+            <label for="email">信箱：</label>
+            <input type="email" name="email" id="email" title="輸入註冊信箱" placeholder="信箱drone@gmail.com" />
+          </div>
+          <div class="la_in">
+            <label for="floatingPassword">密碼：</label>
+            <input type="password" name="floatingPassword" id="floatingPassword" title="輸入密碼" placeholder="密碼drone123" />
+            <!-- 閉眼 -->
+            <i id="eyeClose" class="fa-solid fa-eye-slash" style="color: #4a4747"></i>
+          </div>
           <button class="btn_login">登入</button>
-          <div class="login_forget">
-            <div class="login">
-              <a href="./register.html">註冊會員</a>
-            </div>
-            <span>|</span>
-            <div class="forget">
-              <a href="./forgetpw.html">忘記密碼</a>
-            </div>
+          <div id="error"></div>
+        </form>
+        <div class="login_forget">
+          <div class="login">
+            <a href="./register.html">註冊會員</a>
+          </div>
+          <span>|</span>
+          <div class="forget">
+            <a href="./forgetpw.html">忘記密碼</a>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      <p>copyright &copy TravelDrone版權所有 reserved.</p>
-    </footer>
-    <script src="./js/jquery-1.11.3.min.js"></script>
-    <script>
-      // 漢堡
-      $(document).ready(function () {
-        $(".hamburger").click(function () {
-          $(this).toggleClass("is-active");
-        });
+  <footer>
+    <p>copyright &copy TravelDrone版權所有 reserved.</p>
+  </footer>
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script>
+    // 漢堡
+    $(document).ready(function () {
+      $(".hamburger").click(function () {
+        $(this).toggleClass("is-active");
       });
+    });
 
-      // 漢堡nav
-      let hb = document.querySelector(".hamburger_box");
-      let hn = document.querySelector(".hamburger_nav");
+    // 漢堡nav
+    let hb = document.querySelector(".hamburger_box");
+    let hn = document.querySelector(".hamburger_nav");
 
-      hb.onclick = () => {
-        if (hn.style.transform == "translateY(0vh)") {
-          hn.style.transform = "translateY(-100vh)";
-        } else {
-          hn.style.transform = "translateY(0vh)";
-        }
-      };
+    hb.onclick = () => {
+      if (hn.style.transform == "translateY(0vh)") {
+        hn.style.transform = "translateY(-100vh)";
+      } else {
+        hn.style.transform = "translateY(0vh)";
+      }
+    };
       // 漢堡結束
-    </script>
-    <!-- 開眼/閉眼 -->
-    <script>
-      let eyeClose = document.querySelector("#eyeClose");
-      let password = document.querySelector("#floatingPassword");
+  </script>
+  <!-- 開眼/閉眼 -->
+  <script>
+    let eyeClose = document.querySelector("#eyeClose");
+    let password = document.querySelector("#floatingPassword");
 
-      eyeClose.addEventListener("click", (e) => {
-        if (e.target.classList.contains("fa-eye-slash")) {
-          e.target.classList.remove("fa-eye-slash");
-          e.target.classList.add("fa-eye");
-          password.setAttribute("type", "text");
-        } else {
-          e.target.classList.remove("fa-eye");
-          e.target.classList.add("fa-eye-slash");
-          password.setAttribute("type", "password");
-        }
-      });
-    </script>
-  </body>
+    eyeClose.addEventListener("click", (e) => {
+      if (e.target.classList.contains("fa-eye-slash")) {
+        e.target.classList.remove("fa-eye-slash");
+        e.target.classList.add("fa-eye");
+        password.setAttribute("type", "text");
+      } else {
+        e.target.classList.remove("fa-eye");
+        e.target.classList.add("fa-eye-slash");
+        password.setAttribute("type", "password");
+      }
+    });
+
+    // 表單判斷
+    $('#login_form').submit((e) => {
+      e.preventDefault();
+      let email = $('#email').val();
+      let floatingPassword = $('#floatingPassword').val();
+
+      if (email == 'drone@gmail.com' && floatingPassword == 'drone123') {
+        $('#error').html('已成功登入');
+        $('#error').css('color', 'green');
+      }else if (email != 'drone@gmail.com' || floatingPassword != 'drone123') {
+        $('#error').html('信箱或密碼錯誤');
+        $('#error').css('color', 'red');
+      }
+    });
+  </script>
+</body>
+
 </html>

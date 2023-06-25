@@ -496,7 +496,7 @@ footer .copyright_section div {
   padding: 0.2rem 2rem;
   font-size: 18px;
   cursor: pointer;
-  margin: 5rem auto 0;
+  margin: 1.5rem auto 0;
   border-radius: 15px;
   border: none;
   background-color: #289dd2;
@@ -506,6 +506,10 @@ footer .copyright_section div {
 #login .form_outs .btn_login:hover {
   transform: translateY(-5px);
   box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.137);
+}
+#login .form_outs #error {
+  margin: 1.5rem;
+  text-align: center;
 }
 #login .form_outs .login_forget {
   display: flex;

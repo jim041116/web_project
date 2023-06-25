@@ -147,11 +147,10 @@
               id="email"
               title="輸入註冊信箱"
               placeholder="請輸入信箱"
-              required
             />
           </div>
 
-          <div class="br_pass">
+          <!-- <div class="br_pass">
             <label for="password">密碼:</label>
             <input
               type="password"
@@ -173,10 +172,12 @@
               placeholder="請再次輸入密碼"
               required
             />
-          </div>
+          </div> -->
+          <button type="submit" class="btn_login">發送認證信</button>
+          <div id="error"></div>
         </form>
 
-        <button class="btn_login">發送認證信</button>
+
       </div>
     </section>
     <footer>
@@ -224,6 +225,25 @@
         }
       };
       // 漢堡結束
+
+      // 表單判斷
+      $('#forget_form').submit((e) => {
+        e.preventDefault();
+        let email = $('#email').val();
+        let errorMsg = '';
+
+        if (email == '') {
+          errorMsg = '請確認欄位是否填寫';
+        }
+
+        if (errorMsg == '') {
+                $('#error').html('新密碼已成功寄出!');
+                $('#error').css('color', 'green');
+            }else {
+                $('#error').html(errorMsg);
+                $('#error').css('color', 'red');
+            }
+      });
     </script>
   </body>
 </html>
