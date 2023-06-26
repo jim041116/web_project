@@ -163,7 +163,7 @@
                 <form name="signup_form" id="signup_form" action="" method="post">
                     <label for="username">姓名</label>
 
-                    <input type="text" name="username" id="username" placeholder="請輸入姓名" required />
+                    <input type="text" name="username" id="username" placeholder="請輸入姓名" />
 
                     <label for="tel">手機</label>
 
@@ -194,14 +194,14 @@
                         <option value="no">否</option>
                     </select>
 
-
-                    <label for="number">人數</label>
+                    <label for="numberofapplicants">人數</label>
                     <input type="text" name="numberofapplicants" id="numberofapplicants" placeholder="請輸入拍攝人數" />
 
                     <label for="message">備註：</label>
                     <textarea name="message" id="message" cols="30" rows="5" title="請備註在此欄位"></textarea>
+                    <button type="submit" class="btn_signup">立即預約</button>
                 </form>
-                <button class="btn_signup">立即預約</button>
+                <div id="error"></div>
                 <small>(此表單僅為展示用，無蒐集資料功能。)</small>
             </div>
         </div>
@@ -326,7 +326,7 @@
             }
         }
 
-                // window.onscroll = function () {
+        // window.onscroll = function () {
         //   myFunction();
         // };
 
@@ -342,6 +342,35 @@
         // }
 
         // 飛機動畫結束
+
+        // 表單判斷
+        $('#signup_form').submit((e) => {
+            e.preventDefault();
+            let username = $('#username').val();
+            let tel = $('#tel').val();
+            let email = $('#email').val();
+            let date = $('#date').val();
+            let time = $('#time').val();
+            let pickup = $('#pickup').val();
+            let numberofapplicants = $('#numberofapplicants').val();
+            let errorMsg = '';
+
+            if (username = '' || tel == '' || email == '' || date == '' || numberofapplicants == '') {
+                errorMsg = '請確認欄位是否填寫';
+            }else if (time == '請選擇') {
+                errorMsg = '請確認預約時間';
+            }else if (pickup == '請選擇') {
+                errorMsg = '請確認接送需求';
+            }
+
+            if (errorMsg == '') {
+                $('#error').html('已成功預約');
+                $('#error').css('color', 'green');
+            } else {
+                $('#error').html(errorMsg);
+                $('#error').css('color', 'red');
+            }
+        });
     </script>
 </body>
 
